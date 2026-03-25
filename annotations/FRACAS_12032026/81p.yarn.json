@@ -1,0 +1,156 @@
+{
+  "meta": {
+    "sent_id": "81p",
+    "text": "Smith, Jones and Anderson signed the contract."
+  },
+  "s": [
+    "s1"
+  ],
+  "v": [
+    "vs1",
+    "vj1",
+    "va1",
+    "vc1",
+    "vs2",
+    "va2",
+    "vs3",
+    "vj2",
+    "va3"
+  ],
+  "f": {
+    "s1": [
+      "s1-temp",
+      "s1-def",
+      "s1-num",
+      "s1-quant"
+    ]
+  },
+  "e": {
+    "e1": [
+      "va2",
+      "op1",
+      "vs1"
+    ],
+    "e2": [
+      "va2",
+      "op2",
+      "vj1"
+    ],
+    "e3": [
+      "va2",
+      "op3",
+      "va1"
+    ],
+    "e4": [
+      "vs2",
+      "ARG0",
+      "va2"
+    ],
+    "e5": [
+      "vs2",
+      "ARG1",
+      "vc1"
+    ],
+    "e6": [
+      "va1",
+      "name",
+      "va3"
+    ],
+    "e7": [
+      "vj1",
+      "name",
+      "vj2"
+    ],
+    "e8": [
+      "vs1",
+      "name",
+      "vs3"
+    ]
+  },
+  "l": {
+    "l1": [
+      "s1-temp",
+      "past",
+      "vs2"
+    ],
+    "l2": [
+      "s1-def",
+      "definite",
+      "vc1"
+    ],
+    "l3": [
+      "s1-num",
+      "singular",
+      "vc1"
+    ],
+    "l4": [
+      "s1-def",
+      "definite",
+      "va1"
+    ],
+    "l5": [
+      "s1-def",
+      "definite",
+      "vj1"
+    ],
+    "l6": [
+      "s1-def",
+      "definite",
+      "vs1"
+    ],
+    "l7": [
+      "s1-num",
+      "singular",
+      "vs1"
+    ],
+    "l8": [
+      "s1-num",
+      "singular",
+      "vj1"
+    ],
+    "l9": [
+      "s1-num",
+      "singular",
+      "va1"
+    ],
+    "l10": [
+      "s1-quant",
+      "exists",
+      "vs1"
+    ],
+    "l11": [
+      "s1-quant",
+      "exists",
+      "vj1"
+    ],
+    "l12": [
+      "s1-quant",
+      "exists",
+      "va1"
+    ],
+    "l13": [
+      "s1-quant",
+      "exists",
+      "vc1"
+    ]
+  },
+  "d": {},
+  "c": {},
+  "h": {},
+  "i": {},
+  "labels": {
+    "vs1": "person",
+    "vj1": "person",
+    "va1": "person",
+    "vc1": "contract",
+    "vs2": "sign-02",
+    "va2": "and",
+    "s1-temp": "temp",
+    "s1-def": "def",
+    "s1-num": "num",
+    "vs3": "Smith",
+    "vj2": "Jones",
+    "va3": "Anderson",
+    "s1-quant": "quant"
+  }
+}

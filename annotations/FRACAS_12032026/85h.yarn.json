@@ -1,0 +1,84 @@
+{
+  "meta": {
+    "sent_id": "85h",
+    "text": "Six lawyers signed the contract."
+  },
+  "s": [
+    "s1"
+  ],
+  "v": [
+    "vs1",
+    "vc1",
+    "vs2"
+  ],
+  "f": {
+    "s1": [
+      "s1-temp",
+      "s1-def",
+      "s1-num",
+      "s1-quant"
+    ]
+  },
+  "e": {
+    "e5": [
+      "vs2",
+      "ARG1",
+      "vc1"
+    ],
+    "e1": [
+      "vs2",
+      "ARG0",
+      "vs1"
+    ]
+  },
+  "l": {
+    "l1": [
+      "s1-temp",
+      "past",
+      "vs2"
+    ],
+    "l2": [
+      "s1-def",
+      "definite",
+      "vc1"
+    ],
+    "l3": [
+      "s1-num",
+      "singular",
+      "vc1"
+    ],
+    "l6": [
+      "s1-def",
+      "indefinite",
+      "vs1"
+    ],
+    "l9": [
+      "s1-num",
+      "plural",
+      "vs1"
+    ],
+    "l10": [
+      "s1-quant",
+      "6",
+      "vs1"
+    ],
+    "l12": [
+      "s1-quant",
+      "exists",
+      "vc1"
+    ]
+  },
+  "d": {},
+  "c": {},
+  "h": {},
+  "i": {},
+  "labels": {
+    "vs1": "lawyer",
+    "vc1": "contract",
+    "vs2": "sign-02",
+    "s1-temp": "temp",
+    "s1-def": "def",
+    "s1-num": "num",
+    "s1-quant": "quant"
+  }
+}

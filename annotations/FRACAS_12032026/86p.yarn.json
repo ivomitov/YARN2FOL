@@ -1,0 +1,113 @@
+{
+  "meta": {
+    "sent_id": "86p",
+    "text": "Exactly two layers and three accountants signed the contract."
+  },
+  "s": [
+    "s1"
+  ],
+  "v": [
+    "vs1",
+    "vj1",
+    "vc1",
+    "vs2",
+    "va2"
+  ],
+  "f": {
+    "s1": [
+      "s1-temp",
+      "s1-def",
+      "s1-num",
+      "s1-quant"
+    ]
+  },
+  "e": {
+    "e1": [
+      "va2",
+      "op1",
+      "vs1"
+    ],
+    "e2": [
+      "va2",
+      "op2",
+      "vj1"
+    ],
+    "e4": [
+      "vs2",
+      "ARG0",
+      "va2"
+    ],
+    "e5": [
+      "vs2",
+      "ARG1",
+      "vc1"
+    ]
+  },
+  "l": {
+    "l1": [
+      "s1-temp",
+      "past",
+      "vs2"
+    ],
+    "l2": [
+      "s1-def",
+      "definite",
+      "vc1"
+    ],
+    "l3": [
+      "s1-num",
+      "singular",
+      "vc1"
+    ],
+    "l5": [
+      "s1-def",
+      "indefinite",
+      "vj1"
+    ],
+    "l6": [
+      "s1-def",
+      "indefinite",
+      "vs1"
+    ],
+    "l8": [
+      "s1-num",
+      "plural",
+      "vj1"
+    ],
+    "l9": [
+      "s1-num",
+      "plural",
+      "vs1"
+    ],
+    "l10": [
+      "s1-quant",
+      "2",
+      "vs1"
+    ],
+    "l11": [
+      "s1-quant",
+      "3",
+      "vj1"
+    ],
+    "l12": [
+      "s1-quant",
+      "exists",
+      "vc1"
+    ]
+  },
+  "d": {},
+  "c": {},
+  "h": {},
+  "i": {},
+  "labels": {
+    "vs1": "lawyer",
+    "vj1": "accountant",
+    "vc1": "contract",
+    "vs2": "sign-02",
+    "va2": "and",
+    "s1-temp": "temp",
+    "s1-def": "def",
+    "s1-num": "num",
+    "s1-quant": "quant"
+  }
+}

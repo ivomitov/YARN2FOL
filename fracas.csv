@@ -1,0 +1,347 @@
+section,subsection,problem_id,fracas_answer,fracas_nonstandard,multiple_p,p,h,a,include,comment,minimal_layers
+1 GENERALIZED QUANTIFIERS,1.1 Conservativity,1,yes,,0,An Italian became the world's greatest tenor.,There was an Italian who became the world's greatest tenor.,Yes,0,degree,"temp, quant, num, def, degree"
+1 GENERALIZED QUANTIFIERS,1.1 Conservativity,2,yes,,1,Every Italian man wants to be a great tenor. Some Italian men are great tenors.,There are Italian men who want to be a great tenor.,Yes,,,
+1 GENERALIZED QUANTIFIERS,1.1 Conservativity,3,yes,,1,All Italian men want to be a great tenor. Some Italian men are great tenors.,There are Italian men who want to be a great tenor.,Yes,,,
+1 GENERALIZED QUANTIFIERS,1.1 Conservativity,4,yes,,1,Each Italian tenor wants to be great. Some Italian tenors are great.,There are Italian tenors who want to be great.,Yes,,,
+1 GENERALIZED QUANTIFIERS,1.1 Conservativity,5,yes,,0,The really ambitious tenors are Italian.,There are really ambitious tenors who are Italian.,Yes,done,,"temp, quant, num, def"
+1 GENERALIZED QUANTIFIERS,1.1 Conservativity,6,no,,0,No really great tenors are modest.,There are really great tenors who are modest.,No,done,,"temp, quant, num, def, neg"
+1 GENERALIZED QUANTIFIERS,1.1 Conservativity,7,yes,,0,Some great tenors are Swedish.,There are great tenors who are Swedish.,Yes,done,,"temp, quant, num, def"
+1 GENERALIZED QUANTIFIERS,1.1 Conservativity,8,yes,,0,Many great tenors are German.,There are great tenors who are German.,Yes,done,many?,"temp, quant, num, def"
+1 GENERALIZED QUANTIFIERS,1.1 Conservativity,9,yes,,0,Several great tenors are British.,There are great tenors who are British.,Yes,done,several?,"temp, quant, num, def"
+1 GENERALIZED QUANTIFIERS,1.1 Conservativity,10,yes,,0,Most great tenors are Italian.,There are great tenors who are Italian.,Yes,done,most?,"temp, quant, num, def"
+1 GENERALIZED QUANTIFIERS,1.1 Conservativity,11,yes,,1,A few great tenors sing popular music. Some great tenors like popular music.,There are great tenors who sing popular music.,Yes,,,
+1 GENERALIZED QUANTIFIERS,1.1 Conservativity,12,undef,TRUE,0,Few great tenors are poor.,There are great tenors who are poor.,Not many,,,
+1 GENERALIZED QUANTIFIERS,1.1 Conservativity,13,yes,,1,Both leading tenors are excellent. Leading tenors who are excellent are indispensable.,Both leading tenors are indispensable.,Yes,,,
+1 GENERALIZED QUANTIFIERS,1.1 Conservativity,14,no,,1,Neither leading tenor comes cheap. One of the leading tenors is Pavarotti.,Pavarotti is a leading tenor who comes cheap.,No,,,
+1 GENERALIZED QUANTIFIERS,1.1 Conservativity,15,yes,,0,At least three tenors will take part in the concert.,There are tenors who will take part in the concert.,Yes,1,at least?,"temp, quant, num, def, mod"
+1 GENERALIZED QUANTIFIERS,1.1 Conservativity,16,undef,TRUE,0,At most two tenors will contribute their fees to charity.,There are tenors who will contribute their fees to charity.,At most two,,,
+1 GENERALIZED QUANTIFIERS,1.2 Monotonicity (upwards on second argument),17,yes,,0,An Irishman won the Nobel prize for literature.,An Irishman won a Nobel prize.,Yes,done,,"temp, quant, num, def"
+1 GENERALIZED QUANTIFIERS,1.2 Monotonicity (upwards on second argument),18,yes,,1,Every European has the right to live in Europe. Every European is a person. Every person who has the right to live in Europe can travel freely within Europe.,Every European can travel freely within Europe.,Yes,,,
+1 GENERALIZED QUANTIFIERS,1.2 Monotonicity (upwards on second argument),19,yes,,1,All Europeans have the right to live in Europe. Every European is a person. Every person who has the right to live in Europe can travel freely within Europe.,All Europeans can travel freely within Europe.,Yes,,,
+1 GENERALIZED QUANTIFIERS,1.2 Monotonicity (upwards on second argument),20,yes,,1,Each European has the right to live in Europe. Every European is a person. Every person who has the right to live in Europe can travel freely within Europe.,Each European can travel freely within Europe.,Yes,,,
+1 GENERALIZED QUANTIFIERS,1.2 Monotonicity (upwards on second argument),21,yes,,1,The residents of member states have the right to live in Europe. All residents of member states are individuals. Every individual who has the right to live in Europe can travel freely within Europe.,The residents of member states can travel freely within Europe.,Yes,,,
+1 GENERALIZED QUANTIFIERS,1.2 Monotonicity (upwards on second argument),22,unknown,,0,No delegate finished the report on time.,No delegate finished the report.,Don't know,,,
+1 GENERALIZED QUANTIFIERS,1.2 Monotonicity (upwards on second argument),23,yes,,0,Some delegates finished the survey on time.,Some delegates finished the survey.,Yes,1,,"temp, quant, num, def, mod"
+1 GENERALIZED QUANTIFIERS,1.2 Monotonicity (upwards on second argument),24,yes,,0,Many delegates obtained interesting results from the survey.,Many delegates obtained results from the survey.,Yes,done,,"temp, quant, num, def"
+1 GENERALIZED QUANTIFIERS,1.2 Monotonicity (upwards on second argument),25,yes,,0,Several delegates got the results published in major national newspapers.,Several delegates got the results published.,Yes,1,,"temp, quant, num, def, loc"
+1 GENERALIZED QUANTIFIERS,1.2 Monotonicity (upwards on second argument),26,yes,,1,Most Europeans are resident in Europe. All Europeans are people. All people who are resident in Europe can travel freely within Europe.,Most Europeans can travel freely within Europe.,Yes,,,
+1 GENERALIZED QUANTIFIERS,1.2 Monotonicity (upwards on second argument),27,yes,,1,A few committee members are from Sweden. All committee members are people. All people who are from Sweden are from Scandinavia.,At least a few committee members are from Scandinavia.,Yes,,,
+1 GENERALIZED QUANTIFIERS,1.2 Monotonicity (upwards on second argument),28,unknown,,1,Few committee members are from Portugal. All committee members are people. All people who are from Portugal are from southern Europe.,There are few committee members from southern Europe.,Don't know,,,
+1 GENERALIZED QUANTIFIERS,1.2 Monotonicity (upwards on second argument),29,yes,,0,Both commissioners used to be leading businessmen.,Both commissioners used to be businessmen.,Yes,1,both?,"temp, quant, num, def"
+1 GENERALIZED QUANTIFIERS,1.2 Monotonicity (upwards on second argument),30,unknown,,0,Neither commissioner spends a lot of time at home.,Neither commissioner spends time at home.,Don't know,,,
+1 GENERALIZED QUANTIFIERS,1.2 Monotonicity (upwards on second argument),31,yes,,0,At least three commissioners spend a lot of time at home.,At least three commissioners spend time at home.,Yes,1,at least?,"temp, quant, num, def, loc"
+1 GENERALIZED QUANTIFIERS,1.2 Monotonicity (upwards on second argument),32,unknown,,0,At most ten commissioners spend a lot of time at home.,At most ten commissioners spend time at home.,Don't know,,,
+1 GENERALIZED QUANTIFIERS,1.3 Monotonicity (downwards on second argument),33,unknown,,0,An Irishman won a Nobel prize.,An Irishman won the Nobel prize for literature.,Don't know,,,
+1 GENERALIZED QUANTIFIERS,1.3 Monotonicity (downwards on second argument),34,unknown,,1,Every European can travel freely within Europe. Every European is a person. Every person who has the right to live in Europe can travel freely within Europe.,Every European has the right to live in Europe.,Don't know,,,
+1 GENERALIZED QUANTIFIERS,1.3 Monotonicity (downwards on second argument),35,unknown,,1,All Europeans can travel freely within Europe. Every European is a person. Every person who has the right to live in Europe can travel freely within Europe.,All Europeans have the right to live in Europe.,Don't know,,,
+1 GENERALIZED QUANTIFIERS,1.3 Monotonicity (downwards on second argument),36,unknown,,1,Each European can travel freely within Europe. Every European is a person. Every person who has the right to live in Europe can travel freely within Europe.,Each European has the right to live in Europe.,Don't know,,,
+1 GENERALIZED QUANTIFIERS,1.3 Monotonicity (downwards on second argument),37,unknown,,1,The residents of member states can travel freely within Europe. All residents of member states are individuals. Every individual who has the right to live anywhere in Europe can travel freely within Europe.,The residents of member states have the right to live anywhere in Europe.,Don't know,,,
+1 GENERALIZED QUANTIFIERS,1.3 Monotonicity (downwards on second argument),38,no,,0,No delegate finished the report.,Some delegate finished the report on time.,No,1,,"temp, quant, num, def, neg, manner"
+1 GENERALIZED QUANTIFIERS,1.3 Monotonicity (downwards on second argument),39,unknown,,0,Some delegates finished the survey.,Some delegates finished the survey on time.,Don't know,,,
+1 GENERALIZED QUANTIFIERS,1.3 Monotonicity (downwards on second argument),40,unknown,,0,Many delegates obtained results from the survey.,Many delegates obtained interesting results from the survey.,Don't know,,,
+1 GENERALIZED QUANTIFIERS,1.3 Monotonicity (downwards on second argument),41,unknown,,0,Several delegates got the results published.,Several delegates got the results published in major national newspapers.,Don't know,,,
+1 GENERALIZED QUANTIFIERS,1.3 Monotonicity (downwards on second argument),42,unknown,,1,Most Europeans can travel freely within Europe. All Europeans are people. All people who are resident in Europe can travel freely within Europe.,Most Europeans are resident in Europe.,Don't know,,,
+1 GENERALIZED QUANTIFIERS,1.3 Monotonicity (downwards on second argument),43,unknown,,1,A few committee members are from Scandinavia. All committee members are people. All people who are from Sweden are from Scandinavia.,At least a few committee members are from Sweden.,Don't know,,,
+1 GENERALIZED QUANTIFIERS,1.3 Monotonicity (downwards on second argument),44,yes,,1,Few committee members are from southern Europe. All committee members are people. All people who are from Portugal are from southern Europe.,There are few committee members from Portugal.,Yes,,,
+1 GENERALIZED QUANTIFIERS,1.3 Monotonicity (downwards on second argument),45,unknown,,0,Both commissioners used to be businessmen.,Both commissioners used to be leading businessmen.,Don't know,,,
+1 GENERALIZED QUANTIFIERS,1.3 Monotonicity (downwards on second argument),46,no,,0,Neither commissioner spends time at home.,One of the commissioners spends a lot of time at home.,No,1,neither?,"temp, quant, num, def, neg, loc"
+1 GENERALIZED QUANTIFIERS,1.3 Monotonicity (downwards on second argument),47,unknown,,0,At least three commissioners spend time at home.,At least three commissioners spend a lot of time at home.,Don't know,,,
+1 GENERALIZED QUANTIFIERS,1.3 Monotonicity (downwards on second argument),48,yes,,0,At most ten commissioners spend time at home.,At most ten commissioners spend a lot of time at home.,Yes,1,at most?,"temp, quant, num, def, loc"
+1 GENERALIZED QUANTIFIERS,1.4 Monotonicity (upwards on first argument),49,yes,,1,A Swede won a Nobel prize. Every Swede is a Scandinavian.,A Scandinavian won a Nobel prize.,Yes,,,
+1 GENERALIZED QUANTIFIERS,1.4 Monotonicity (upwards on first argument),50,unknown,,1,Every Canadian resident can travel freely within Europe. Every Canadian resident is a resident of the North American continent.,Every resident of the North American continent can travel freely within Europe.,Don't know,,,
+1 GENERALIZED QUANTIFIERS,1.4 Monotonicity (upwards on first argument),51,unknown,,1,All Canadian residents can travel freely within Europe. Every Canadian resident is a resident of the North American continent.,All residents of the North American continent can travel freely within Europe.,Don't know,,,
+1 GENERALIZED QUANTIFIERS,1.4 Monotonicity (upwards on first argument),52,unknown,,1,Each Canadian resident can travel freely within Europe. Every Canadian resident is a resident of the North American continent.,Each resident of the North American continent can travel freely within Europe.,Don't know,,,
+1 GENERALIZED QUANTIFIERS,1.4 Monotonicity (upwards on first argument),53,unknown,,1,The residents of major western countries can travel freely within Europe. All residents of major western countries are residents of western countries.,The residents of western countries have the right to live in Europe.,Don't know,,,
+1 GENERALIZED QUANTIFIERS,1.4 Monotonicity (upwards on first argument),54,unknown,,0,No Scandinavian delegate finished the report on time.,Some delegate finished the report on time.,Don't know,,,
+1 GENERALIZED QUANTIFIERS,1.4 Monotonicity (upwards on first argument),55,yes,,0,Some Irish delegates finished the survey on time.,Some delegates finished the survey on time.,Yes,1,,"temp, quant, num, def, manner"
+1 GENERALIZED QUANTIFIERS,1.4 Monotonicity (upwards on first argument),56,unknown,,0,Many British delegates obtained interesting results from the survey.,Many delegates obtained interesting results from the survey.,Don't know,,,
+1 GENERALIZED QUANTIFIERS,1.4 Monotonicity (upwards on first argument),57,yes,,0,Several Portuguese delegates got the results published in major national newspapers.,Several delegates got the results published in major national newspapers.,Yes,1,several?,"temp, quant, num, def, loc"
+1 GENERALIZED QUANTIFIERS,1.4 Monotonicity (upwards on first argument),58,unknown,,0,Most Europeans who are resident in Europe can travel freely within Europe.,Most Europeans can travel freely within Europe.,Don't know,,,
+1 GENERALIZED QUANTIFIERS,1.4 Monotonicity (upwards on first argument),59,yes,,0,A few female committee members are from Scandinavia.,At least a few committee members are from Scandinavia.,Yes,1,a few? at least?,"temp, quant, num, def, mod"
+1 GENERALIZED QUANTIFIERS,1.4 Monotonicity (upwards on first argument),60,unknown,,0,Few female committee members are from southern Europe.,Few committee members are from southern Europe.,Don't know,,,
+1 GENERALIZED QUANTIFIERS,1.4 Monotonicity (upwards on first argument),61,undef,TRUE,0,Both female commissioners used to be in business.,Both commissioners used to be in business.,"Yes, if both commissioners are female; otherwise there are more than two commissioners.",,,
+1 GENERALIZED QUANTIFIERS,1.4 Monotonicity (upwards on first argument),62,undef,TRUE,0,Neither female commissioner spends a lot of time at home.,One of the commissioners spends a lot of time at home.,"No, if both commissioners are female; otherwise there are more than two commissioners.",,,
+1 GENERALIZED QUANTIFIERS,1.4 Monotonicity (upwards on first argument),63,yes,,0,At least three female commissioners spend time at home.,At least three commissioners spend time at home.,Yes,1,at least?,"temp, quant, num, def, loc"
+1 GENERALIZED QUANTIFIERS,1.4 Monotonicity (upwards on first argument),64,unknown,,0,At most ten female commissioners spend time at home.,At most ten commissioners spend time at home.,Don't know,,,
+1 GENERALIZED QUANTIFIERS,1.5 Monotonicity (downwards on first argument),65,unknown,,1,A Scandinavian won a Nobel prize. Every Swede is a Scandinavian.,A Swede won a Nobel prize.,Don't know,,,
+1 GENERALIZED QUANTIFIERS,1.5 Monotonicity (downwards on first argument),66,yes,,1,Every resident of the North American continent can travel freely within Europe. Every Canadian resident is a resident of the North American continent.,Every Canadian resident can travel freely within Europe.,Yes,,,
+1 GENERALIZED QUANTIFIERS,1.5 Monotonicity (downwards on first argument),67,yes,,1,All residents of the North American continent can travel freely within Europe. Every Canadian resident is a resident of the North American continent.,All Canadian residents can travel freely within Europe.,Yes,,,
+1 GENERALIZED QUANTIFIERS,1.5 Monotonicity (downwards on first argument),68,yes,,1,Each resident of the North American continent can travel freely within Europe. Every Canadian resident is a resident of the North American continent.,Each Canadian resident can travel freely within Europe.,Yes,,,
+1 GENERALIZED QUANTIFIERS,1.5 Monotonicity (downwards on first argument),69,yes,,1,The residents of western countries can travel freely within Europe. All residents of major western countries are residents of western countries.,The residents of major western countries have the right to live in Europe.,Yes,,,
+1 GENERALIZED QUANTIFIERS,1.5 Monotonicity (downwards on first argument),70,no,,0,No delegate finished the report on time.,Some Scandinavian delegate finished the report on time.,No,1,,"temp, quant, num, def, neg, manner"
+1 GENERALIZED QUANTIFIERS,1.5 Monotonicity (downwards on first argument),71,unknown,,0,Some delegates finished the survey on time.,Some Irish delegates finished the survey on time.,Don't know,,,
+1 GENERALIZED QUANTIFIERS,1.5 Monotonicity (downwards on first argument),72,unknown,,0,Many delegates obtained interesting results from the survey.,Many British delegates obtained interesting results from the survey.,Don't know,,,
+1 GENERALIZED QUANTIFIERS,1.5 Monotonicity (downwards on first argument),73,unknown,,0,Several delegates got the results published in major national newspapers.,Several Portuguese delegates got the results published in major national newspapers.,Don't know,,,
+1 GENERALIZED QUANTIFIERS,1.5 Monotonicity (downwards on first argument),74,unknown,,0,Most Europeans can travel freely within Europe.,Most Europeans who are resident outside Europe can travel freely within Europe.,Don't know,,,
+1 GENERALIZED QUANTIFIERS,1.5 Monotonicity (downwards on first argument),75,unknown,,0,A few committee members are from Scandinavia.,At least a few female committee members are from Scandinavia.,Don't know,,,
+1 GENERALIZED QUANTIFIERS,1.5 Monotonicity (downwards on first argument),76,yes,,0,Few committee members are from southern Europe.,Few female committee members are from southern Europe.,Yes,done,few?,"temp, quant, num, def"
+1 GENERALIZED QUANTIFIERS,1.5 Monotonicity (downwards on first argument),77,undef,TRUE,0,Both commissioners used to be in business.,Both female commissioners used to be in business.,"Yes, if both commissioners are female; otherwise there are more than two commissioners.",,,
+1 GENERALIZED QUANTIFIERS,1.5 Monotonicity (downwards on first argument),78,undef,TRUE,0,Neither commissioner spends a lot of time at home.,One of the female commissioners spends a lot of time at home.,"No, if both commissioners are female; otherwise there are more than two commissioners.",,,
+1 GENERALIZED QUANTIFIERS,1.5 Monotonicity (downwards on first argument),79,unknown,,0,At least three commissioners spend time at home.,At least three male commissioners spend time at home.,Don't know,,,
+1 GENERALIZED QUANTIFIERS,1.5 Monotonicity (downwards on first argument),80,yes,,0,At most ten commissioners spend time at home.,At most ten female commissioners spend time at home.,Yes,1,at most?,"temp, quant, num, def, loc"
+2 PLURALS,2.1 Conjoined Noun Phrases,81,yes,,0,"Smith, Jones and Anderson signed the contract.",Jones signed the contract.,Yes,done,,"temp, quant, num, def"
+2 PLURALS,2.1 Conjoined Noun Phrases,82,yes,,0,"Smith, Jones and several lawyers signed the contract.",Jones signed the contract.,Yes,done,several?,"temp, quant, num, def"
+2 PLURALS,2.1 Conjoined Noun Phrases,83,unknown,,0,"Either Smith, Jones or Anderson signed the contract.",Jones signed the contract.,Don't know,,,
+2 PLURALS,2.1 Conjoined Noun Phrases,84,yes,,0,"Either Smith, Jones or Anderson signed the contract.","If Smith and Anderson did not sign the contract, Jones signed the contract.",Yes,1,either?,"temp, quant, num, def, neg, CONSEQUENCE "
+2 PLURALS,2.1 Conjoined Noun Phrases,85,no,,0,Exactly two lawyers and three accountants signed the contract.,Six lawyers signed the contract.,No,done,,"temp, quant, num, def"
+2 PLURALS,2.1 Conjoined Noun Phrases,86,no,,0,Exactly two lawyers and three accountants signed the contract.,Six accountants signed the contract.,No,done,,"temp, quant, num, def"
+2 PLURALS,2.1 Conjoined Noun Phrases,87,yes,TRUE,0,Every representative and client was at the meeting.,Every representative was at the meeting.,"Yes, on one reading",1,,"temp, quant, num, def, loc"
+2 PLURALS,2.1 Conjoined Noun Phrases,88,unknown,TRUE,0,Every representative and client was at the meeting.,Every representative was at the meeting.,"Don't know, on one reading",,,
+2 PLURALS,2.1 Conjoined Noun Phrases,89,yes,,0,Every representative or client was at the meeting.,Every representative and every client was at the meeting.,Yes,1,,"temp, quant, num, def, loc"
+2 PLURALS,2.2 Definite Plurals,90,yes,,0,The chairman read out the items on the agenda.,The chairman read out every item on the agenda.,Yes,1,,"temp, quant, num, def"
+2 PLURALS,2.2 Definite Plurals,91,unknown,,0,The people who were at the meeting voted for a new chairman.,Everyone at the meeting voted for a new chairman.,Don't know,,,
+2 PLURALS,2.2 Definite Plurals,92,yes,,0,All the people who were at the meeting voted for a new chairman.,Everyone at the meeting voted for a new chairman.,Yes,1,two events?,"temp, quant, num, def, loc"
+2 PLURALS,2.2 Definite Plurals,93,yes,,0,The people who were at the meeting all voted for a new chairman.,Everyone at the meeting voted for a new chairman.,Yes,1,two events?,"temp, quant, num, def, loc"
+2 PLURALS,2.2 Definite Plurals,94,unknown,,0,The inhabitants of Cambridge voted for a Labour MP.,Every inhabitant of Cambridge voted for a Labour MP.,Don't know,,,
+2 PLURALS,2.2 Definite Plurals,95,unknown,,0,The Ancient Greeks were noted philosophers.,Every Ancient Greek was a noted philosopher.,Don't know,,,
+2 PLURALS,2.2 Definite Plurals,96,yes,,0,The Ancient Greeks were all noted philosophers.,Every Ancient Greek was a noted philosopher.,Yes,1,,"temp, quant, num, def"
+2 PLURALS,2.3 Bare Plurals,97,yes,,0,Software faults were blamed for the system failure.,The system failure was blamed on one or more software faults.,Yes,1,at least?,"temp, quant, num, def, mod"
+2 PLURALS,2.3 Bare Plurals,98,unknown,,1,Software faults were blamed for the system failure. Bug # 32-985 is a known software fault.,Bug # 32-985 was blamed for the system failure.,Don't know,,,
+2 PLURALS,2.3 Bare Plurals,99,yes,,1,Clients at the demonstration were all impressed by the system's performance. Smith was a client at the demonstration.,Smith was impressed by the system's performance.,Yes,,,
+2 PLURALS,2.3 Bare Plurals,100,yes,,0,Clients at the demonstration were impressed by the system's performance.,Most clients at the demonstration were impressed by the system's performance.,Yes,1,two events?,"temp, quant, num, def, loc"
+2 PLURALS,2.3 Bare Plurals,101,yes,,1,University graduates make poor stock-market traders. Smith is a university graduate.,Smith is likely to make a poor stock market trader.,Yes,,,
+2 PLURALS,2.3 Bare Plurals,102,unknown,,1,University graduates make poor stock-market traders. Smith is a university graduate.,Smith will make a poor stock market trader.,Don't know,,,
+2 PLURALS,2.4 Dependent Plurals,103,yes,,1,All APCOM managers have company cars. Jones is an APCOM manager.,Jones has a company car.,Yes,,,
+2 PLURALS,2.4 Dependent Plurals,104,unknown,,1,All APCOM managers have company cars. Jones is an APCOM manager.,Jones has more than one company car.,Don't know,,,
+2 PLURALS,2.5 Negated Plurals,105,no,,0,Just one accountant attended the meeting.,No accountants attended the meeting.,No,done,,"temp, quant, num, def, neg"
+2 PLURALS,2.5 Negated Plurals,106,no,,0,Just one accountant attended the meeting.,No accountant attended the meeting.,No,done,,"temp, quant, num, def, neg"
+2 PLURALS,2.5 Negated Plurals,107,yes,,0,Just one accountant attended the meeting.,Some accountants attended the meeting.,Yes,done,,"temp, quant, num, def"
+2 PLURALS,2.5 Negated Plurals,108,yes,,0,Just one accountant attended the meeting.,Some accountant attended the meeting.,Yes,done,,"temp, quant, num, def"
+2 PLURALS,2.5 Negated Plurals,109,no,TRUE,0,Just one accountant attended the meeting.,Some accountants attended the meeting.,"No, just one",1,,"temp, quant, num, def"
+2 PLURALS,2.5 Negated Plurals,110,yes,,0,Just one accountant attended the meeting.,Some accountant attended the meeting.,Yes,1,,"temp, quant, num, def"
+2 PLURALS,2.6 Collective and Distributive Plurals,111,yes,TRUE,1,Smith signed one contract. Jones signed another contract.,Smith and Jones signed two contracts.,"Yes, on a collective/cumulative reading of the conclusion.",,,
+2 PLURALS,2.6 Collective and Distributive Plurals,112,yes,TRUE,1,Smith signed two contracts. Jones signed two contracts.,Smith and Jones signed two contracts.,"Yes, on a distributive reading of ""Smith and Jones"".",,,
+2 PLURALS,2.6 Collective and Distributive Plurals,113,yes,,1,Smith signed two contracts. Jones also signed them.,Smith and Jones signed two contracts.,Yes,,,
+3 (NOMINAL) ANAPHORA,3.1 Intra-Sentential,114,yes,,0,Mary used her workstation.,Mary's workstation was used.,Yes,1,,"temp, quant, num, def"
+3 (NOMINAL) ANAPHORA,3.1 Intra-Sentential,115,yes,,0,Mary used her workstation.,Mary has a workstation.,Yes,1,,"temp, quant, num, def"
+3 (NOMINAL) ANAPHORA,3.1 Intra-Sentential,116,yes,,0,Mary used her workstation.,Mary is female.,Yes,0,gender,"temp, quant, num, def"
+3 (NOMINAL) ANAPHORA,3.1 Intra-Sentential,117,yes,,1,Every student used her workstation. Mary is a student.,Mary used her workstation.,Yes,,,
+3 (NOMINAL) ANAPHORA,3.1 Intra-Sentential,118,yes,,1,Every student used her workstation. Mary is a student.,Mary has a workstation.,Yes,,,
+3 (NOMINAL) ANAPHORA,3.1 Intra-Sentential,119,no,,1,No student used her workstation. Mary is a student.,Mary used a workstation.,No,,,
+3 (NOMINAL) ANAPHORA,3.2 Inter-Sentential,120,yes,,1,Smith attended a meeting. She chaired it.,Smith chaired a meeting.,Yes,,,
+3 (NOMINAL) ANAPHORA,3.2 Inter-Sentential,121,yes,,1,Smith delivered a report to ITEL. She also delivered them an invoice. And she delivered them a project proposal.,"Smith delivered a report, an invoice and a project proposal to ITEL.",Yes,,,
+3 (NOMINAL) ANAPHORA,3.2 Inter-Sentential,122,yes,,1,Every committee has a chairman. He is appointed its members.,Every committee has a chairman appointed by members of the committee.,Yes,,,
+3 (NOMINAL) ANAPHORA,3.3 Plural Anaphora,123,yes,,1,ITEL has sent most of the reports Smith needs. They are on her desk.,There are some reports from ITEL on Smith's desk.,Yes,,,
+3 (NOMINAL) ANAPHORA,3.3 Plural Anaphora,124,yes,,1,Two out of ten machines are missing. They have been removed.,Two machines have been removed.,Yes,,,
+3 (NOMINAL) ANAPHORA,3.3 Plural Anaphora,125,unknown,,1,Two out of ten machines are missing. They have been removed.,Eight machines have been removed.,Don't know,,,
+3 (NOMINAL) ANAPHORA,3.3 Plural Anaphora,126,yes,,1,Two out of ten machines are missing. They were all here yesterday.,Ten machines were here yesterday.,Yes,,,
+3 (NOMINAL) ANAPHORA,3.3 Plural Anaphora,127,yes,TRUE,1,"Smith took a machine on Tuesday, and Jones took a machine on Wednesday. They put them in the lobby.",Smith and Jones put two machines in the lobby.,"Yes, on a distributive reading of the question.",,,
+3 (NOMINAL) ANAPHORA,3.3 Plural Anaphora,128,yes,,1,John and his colleagues went to a meeting. They hated it.,John's colleagues hated the meeting.,Yes,,,
+3 (NOMINAL) ANAPHORA,3.3 Plural Anaphora,129,yes,TRUE,1,John and his colleagues went to a meeting. They hated it.,John hated the meeting.,"Yes, on one possible reading",,,
+3 (NOMINAL) ANAPHORA,3.3 Plural Anaphora,130,unknown,TRUE,1,John and his colleagues went to a meeting. They hated it.,John hated the meeting.,"Don't know, on one possible reading",,,
+3 (NOMINAL) ANAPHORA,3.3 Plural Anaphora,131,yes,,1,Each department has a dedicated line. They rent them from BT.,Every department rents a line from BT.,Yes,,,
+3 (NOMINAL) ANAPHORA,3.3 Plural Anaphora,132,yes,,1,Each department has a dedicated line. The sales department rents it from BT.,The sales department rents a line from BT.,Yes,,,
+3 (NOMINAL) ANAPHORA,3.4 E-type and Donkey Pronouns,133,yes,,1,GFI owns several computers. ITEL maintains them.,ITEL maintains all the computers that GFI owns.,Yes,,,
+3 (NOMINAL) ANAPHORA,3.4 E-type and Donkey Pronouns,134,yes,,1,Every customer who owns a computer has a service contract for it. MFI is a customer that owns exactly one computer.,MFI has a service contract for all its computers.,Yes,,,
+3 (NOMINAL) ANAPHORA,3.4 E-type and Donkey Pronouns,135,yes,,1,Every customer who owns a computer has a service contract for it. MFI is a customer that owns several computers.,MFI has a service contract for all its computers.,Yes,,,
+3 (NOMINAL) ANAPHORA,3.4 E-type and Donkey Pronouns,136,unknown,,1,Every executive who had a laptop computer brought it to take notes at the meeting. Smith is a executive who owns five different laptop computers.,Smith took five laptop computers to the meeting.,Don't know,,,
+3 (NOMINAL) ANAPHORA,3.4 E-type and Donkey Pronouns,137,yes,,1,There are 100 companies. ICM is one of the companies and owns 150 computers. It does not have service contracts for any of its computers. Each of the other 99 companies owns one computer. They have service contracts for them.,Most companies that own a computer have a service contract for it.,Yes,,,
+3 (NOMINAL) ANAPHORA,3.5 Functional and Subsectional,138,yes,,1,Every report has a cover page. R-95-103 is a report. Smith signed the cover page.,Smith signed the cover page of R-95-103.,Yes,,,
+3 (NOMINAL) ANAPHORA,3.6 Simple Reflexives,139,yes,,0,A company director awarded himself a large payrise.,A company director has awarded and been awarded a payrise.,Yes,1,if e1=e2,"temp, quant, num, def"
+3 (NOMINAL) ANAPHORA,3.6 Simple Reflexives,140,yes,,0,John said Bill had hurt himself.,John said Bill had been hurt.,Yes,,two events,"temp, quant, num, def"
+3 (NOMINAL) ANAPHORA,3.6 Simple Reflexives,141,unknown,,0,John said Bill had hurt himself.,Someone said John had been hurt.,Don't know,,,
+4 ELLIPSIS,4.1 VP Ellipsis,142,yes,,1,John spoke to Mary. So did Bill.,Bill spoke to Mary.,Yes,,,
+4 ELLIPSIS,4.1 VP Ellipsis,143,unknown,,1,John spoke to Mary. So did Bill. John spoke to Mary at four o'clock.,Bill spoke to Mary at four o'clock.,Don't know,,,
+4 ELLIPSIS,4.1 VP Ellipsis,144,yes,,1,John spoke to Mary at four o'clock. So did Bill.,Bill spoke to Mary at four o'clock.,Yes,,,
+4 ELLIPSIS,4.1 VP Ellipsis,145,yes,,1,John spoke to Mary at four o'clock. And Bill did at five o'clock.,Bill spoke to Mary at five o'clock.,Yes,,,
+4 ELLIPSIS,4.1 VP Ellipsis,146,yes,,1,John has spoken to Mary. Bill is going to.,Bill will speak to Mary.,Yes,,,
+4 ELLIPSIS,4.1 VP Ellipsis,147,no,,1,John spoke to Mary on Monday. Bill didn't.,Bill spoke to Mary on Monday.,No,,,
+4 ELLIPSIS,4.1 VP Ellipsis,148,yes,,1,Has John spoken to Mary? Bill has.,Bill has spoken to Mary.,Yes,,,
+4 ELLIPSIS,4.1 VP Ellipsis,149,yes,,1,John has spoken to Mary. The students have too.,The students have spoken to Mary.,Yes,,,
+4 ELLIPSIS,4.2 Gapping,150,yes,,0,"John went to Paris by car, and Bill by train.",Bill went to Paris by train.,Yes,,two events,"temp, quant, num, def, manner, PARALLEL"
+4 ELLIPSIS,4.2 Gapping,151,yes,,0,"John went to Paris by car, and Bill by train to Berlin.",Bill went to Berlin by train.,Yes,,two events,"temp, quant, num, def, manner, PARALLEL"
+4 ELLIPSIS,4.2 Gapping,152,yes,,0,"John went to Paris by car, and Bill to Berlin.",Bill went to Berlin by car.,Yes,,two events,"temp, quant, num, def, manner, PARALLEL"
+4 ELLIPSIS,4.2 Gapping,153,yes,,0,"John is going to Paris by car, and the students by train.",The students are going to Paris by train.,Yes,,two events,"temp, quant, num, def, manner, PARALLEL"
+4 ELLIPSIS,4.2 Gapping,154,yes,,1,John went to Paris by car. Bill by train.,Bill went to Paris by train.,Yes,,,
+4 ELLIPSIS,4.3 One Anaphora,155,yes,,1,John owns a car. Bill owns one too.,Bill owns a car.,Yes,,,
+4 ELLIPSIS,4.3 One Anaphora,156,unknown,,1,John owns a car. Bill owns one too.,There is a car that John and Bill own.,Don't know,,,
+4 ELLIPSIS,4.3 One Anaphora,157,yes,,1,John owns a red car. Bill owns a blue one.,Bill owns a blue car.,Yes,,,
+4 ELLIPSIS,4.3 One Anaphora,158,unknown,,1,John owns a red car. Bill owns a blue one.,Bill owns a red car.,Don't know,,,
+4 ELLIPSIS,4.3 One Anaphora,159,yes,,1,John owns a red car. Bill owns a fast one.,Bill owns a fast car.,Yes,,,
+4 ELLIPSIS,4.3 One Anaphora,160,yes,TRUE,1,John owns a red car. Bill owns a fast one.,Bill owns a fast red car.,"Yes, on one possible reading",,,
+4 ELLIPSIS,4.3 One Anaphora,161,unknown,TRUE,1,John owns a red car. Bill owns a fast one.,Bill owns a fast red car.,"Don't know, on one possible reading",,,
+4 ELLIPSIS,4.3 One Anaphora,162,yes,,1,John owns a fast red car. Bill owns a slow one.,Bill owns a slow red car.,Yes,,,
+4 ELLIPSIS,4.4 Sluicing,163,no,,1,John had his paper accepted. Bill doesn't know why.,Bill knows why John had his paper accepted.,No,,,
+4 ELLIPSIS,4.5 Phrasal Ellipsis,164,yes,,1,John spoke to Mary. And to Sue.,John spoke to Sue.,Yes,,,
+4 ELLIPSIS,4.5 Phrasal Ellipsis,165,yes,,1,John spoke to Mary. On Friday.,John spoke to Mary on Friday.,Yes,,,
+4 ELLIPSIS,4.5 Phrasal Ellipsis,166,yes,,1,John spoke to Mary on Thursday. And on Friday.,John spoke to Mary on Friday.,Yes,,,
+4 ELLIPSIS,4.5 Phrasal Ellipsis,167,no,,1,Twenty men work in the Sales Department. But only one woman.,Two women work in the Sales Department.,No,,,
+4 ELLIPSIS,4.5 Phrasal Ellipsis,168,yes,,1,Five men work part time. And forty five women.,Forty five women work part time.,Yes,,,
+4 ELLIPSIS,4.5 Phrasal Ellipsis,169,yes,TRUE,0,John found Mary before Bill.,John found Mary before Bill found Mary.,"Yes, on one possible reading",,two events,"temp, quant, num, def, manner, BEFORE"
+4 ELLIPSIS,4.5 Phrasal Ellipsis,170,yes,TRUE,0,John found Mary before Bill.,John found Mary before John found Bill.,"Yes, on one possible reading",,two events,"temp, quant, num, def, manner, BEFORE"
+4 ELLIPSIS,4.5 Phrasal Ellipsis,171,yes,,1,John wants to know how many men work part time. And women.,John wants to know how many women work part time.,Yes,,,
+4 ELLIPSIS,4.5 Phrasal Ellipsis,172,yes,,0,"John wants to know how many men work part time, and which.",John wants to know which men work part time.,Yes,,two events; question,"temp, quant, num, def, manner, question"
+4 ELLIPSIS,4.6 Antecedent Contained Deletion,173,yes,,1,Bill spoke to everyone that John did. John spoke to Mary.,Bill spoke to Mary.,Yes,,,
+4 ELLIPSIS,4.6 Antecedent Contained Deletion,174,unknown,,1,Bill spoke to everyone that John did. Bill spoke to Mary.,John spoke to Mary.,Don't know,,,
+4 ELLIPSIS,4.7 Configurational Effects,175,yes,TRUE,0,"John said Mary wrote a report, and Bill did too.",Bill said Mary wrote a report.,"Yes, on one possible reading/parse",,three events; two interpretations; mod?,"temp, quant, num, def, mod, PARALLEL"
+4 ELLIPSIS,4.7 Configurational Effects,176,yes,TRUE,0,"John said Mary wrote a report, and Bill did too.",John said Bill wrote a report.,"Yes, on one possible reading/parse",,three events; two interpretations' mod?,"temp, quant, num, def, mod, PARALLEL"
+4 ELLIPSIS,4.7 Configurational Effects,177,unknown,,0,"John said that Mary wrote a report, and that Bill did too.",Bill said Mary wrote a report.,Don't know,,,
+4 ELLIPSIS,4.7 Configurational Effects,178,yes,,0,"John wrote a report, and Bill said Peter did too.",Bill said Peter wrote a report.,Yes,,three events; mod?,"temp, quant, num, def, mod, PARALLEL"
+4 ELLIPSIS,4.7 Configurational Effects,179,yes,,1,"If John wrote a report, then Bill did too. John wrote a report.",Bill wrote a report.,Yes,,,
+4 ELLIPSIS,4.7 Configurational Effects,180,yes,,0,"John wanted to buy a car, and he did.",John bought a car.,Yes,,two events,"temp, quant, num, def, RESULT"
+4 ELLIPSIS,4.7 Configurational Effects,181,unknown,,0,"John needed to buy a car, and Bill did.",Bill bought a car.,Don't know,,,
+4 ELLIPSIS,4.8 Ellipsis and Anaphora,182,yes,TRUE,0,Smith represents his company and so does Jones.,Jones represents Jones' company.,"Yes, on one reading",,two events,"temp, quant, num, def, PARALLEL"
+4 ELLIPSIS,4.8 Ellipsis and Anaphora,183,yes,TRUE,0,Smith represents his company and so does Jones.,Jones represents Smith's company.,"Yes, on one reading",,two events,"temp, quant, num, def, PARALLEL"
+4 ELLIPSIS,4.8 Ellipsis and Anaphora,184,unknown,,0,Smith represents his company and so does Jones.,Smith represents Jones' company.,Don't know,,,
+4 ELLIPSIS,4.8 Ellipsis and Anaphora,185,yes,TRUE,0,Smith claimed he had costed his proposal and so did Jones.,Jones claimed he had costed his own proposal.,"Yes, on one reading",,three events,"temp, quant, num, def, PARALLEL"
+4 ELLIPSIS,4.8 Ellipsis and Anaphora,186,yes,TRUE,0,Smith claimed he had costed his proposal and so did Jones.,Jones claimed he had costed Smith's proposal.,"Yes, on one reading",,three events,"temp, quant, num, def, PARALLEL"
+4 ELLIPSIS,4.8 Ellipsis and Anaphora,187,yes,TRUE,0,Smith claimed he had costed his proposal and so did Jones.,Jones claimed Smith had costed Smith's proposal.,"Yes, on one reading",,three events,"temp, quant, num, def, PARALLEL"
+4 ELLIPSIS,4.8 Ellipsis and Anaphora,188,unknown,,0,Smith claimed he had costed his proposal and so did Jones.,Jones claimed Smith had costed Jones' proposal.,Don't know,,,
+4 ELLIPSIS,4.8 Ellipsis and Anaphora,189,yes,TRUE,1,John is a man and Mary is a woman. John represents his company and so does Mary.,Mary represents her own company.,"Yes, on one reading",,,
+4 ELLIPSIS,4.8 Ellipsis and Anaphora,190,yes,TRUE,1,John is a man and Mary is a woman. John represents his company and so does Mary.,Mary represents John's company.,"Yes, on one reading",,,
+4 ELLIPSIS,4.8 Ellipsis and Anaphora,191,yes,,0,"Bill suggested to Frank's boss that they should go to the meeting together, and Carl to Alan's wife.","If it was suggested that Bill and Frank should go together, it was suggested that Carl and Alan should go together.",Yes,,-,"temp, quant, num, def, modal, manner, CONSEQUENCE"
+4 ELLIPSIS,4.8 Ellipsis and Anaphora,192,unknown,,0,"Bill suggested to Frank's boss that they should go to the meeting together, and Carl to Alan's wife.","If it was suggested that Bill and Frank should go together, it was suggested that Carl and Alan's wife should go together.",Don't know,,,
+4 ELLIPSIS,4.8 Ellipsis and Anaphora,193,yes,,0,"Bill suggested to Frank's boss that they should go to the meeting together, and Carl to Alan's wife.","If it was suggested that Bill and Frank's boss should go together, it was suggested that Carl and Alan's wife should go together.",Yes,,-,"temp, quant, num, def, modal, manner, CONSEQUENCE"
+4 ELLIPSIS,4.8 Ellipsis and Anaphora,194,unknown,,0,"Bill suggested to Frank's boss that they should go to the meeting together, and Carl to Alan's wife.","If it was suggested that Bill and Frank's boss should go together, it was suggested that Carl and Alan should go together.",Don't know,,,
+4 ELLIPSIS,4.8 Ellipsis and Anaphora,195,yes,,0,"Bill suggested to Frank's boss that they should go to the meeting together, and Carl to Alan's wife.","If it was suggested that Bill, Frank and Frank's boss should go together, it was suggested that Carl, Alan and Alan's wife should go together.",Yes,,-,"temp, quant, num, def, modal, manner, CONSEQUENCE"
+4 ELLIPSIS,4.9 Ellipsis and Quantification,196,yes,,1,"A lawyer signed every report, and so did an auditor. That is, there was one lawyer who signed all the reports.",There was one auditor who signed all the reports.,Yes,,,
+5 ADJECTIVES,5.1 Affirmative and Non-Affirmative,197,yes,,0,John has a genuine diamond.,John has a diamond.,Yes,1,,"temp, quant, num, def"
+5 ADJECTIVES,5.1 Affirmative and Non-Affirmative,198,no,TRUE,0,John is a former university student.,John is a university student.,No / don't know,1,,"temp, quant, num, def"
+5 ADJECTIVES,5.1 Affirmative and Non-Affirmative,199,yes,TRUE,0,John is a successful former university student.,John is successful.,Yes (for a former university student),1,,"temp, quant, num, def"
+5 ADJECTIVES,5.1 Affirmative and Non-Affirmative,200,unknown,,0,John is a former successful university student.,John is successful.,Don't know,,,
+5 ADJECTIVES,5.1 Affirmative and Non-Affirmative,201,unknown,,0,John is a former successful university student.,John is a university student.,Don't know,,,
+5 ADJECTIVES,5.2 No Comparison Class,202,yes,,0,Every mammal is an animal.,Every four-legged mammal is a four-legged animal.,Yes,,,"temp, quant, num, def"
+5 ADJECTIVES,5.2 No Comparison Class,203,yes,,0,Dumbo is a four-legged animal.,Dumbo is four-legged.,Yes,,,"temp, quant, num, def"
+5 ADJECTIVES,5.3 Opposites,204,no,,0,Mickey is a small animal.,Mickey is a large animal.,No,,,"temp, quant, num, def"
+5 ADJECTIVES,5.3 Opposites,205,no,,0,Dumbo is a large animal.,Dumbo is a small animal.,No,,,"temp, quant, num, def"
+5 ADJECTIVES,5.3 Opposites,206,unknown,,0,Fido is not a small animal.,Fido is a large animal.,Don't know,,,
+5 ADJECTIVES,5.3 Opposites,207,unknown,,0,Fido is not a large animal.,Fido is a small animal.,Don't know,,,
+5 ADJECTIVES,5.3 Opposites,208,yes,,1,Mickey is a small animal. Dumbo is a large animal.,Mickey is smaller than Dumbo.,Yes,,,
+5 ADJECTIVES,5.3 Opposites,209,no,,1,Mickey is a small animal. Dumbo is a large animal.,Mickey is larger than Dumbo.,No,,,
+5 ADJECTIVES,5.4 Extensional Comparison Classes,210,no,,1,All mice are small animals. Mickey is a large mouse.,Mickey is a large animal.,No,,,
+5 ADJECTIVES,5.4 Extensional Comparison Classes,211,no,,1,All elephants are large animals. Dumbo is a small elephant.,Dumbo is a small animal.,No,,,
+5 ADJECTIVES,5.4 Extensional Comparison Classes,212,yes,,1,All mice are small animals. All elephants are large animals. Mickey is a large mouse. Dumbo is a small elephant.,Dumbo is larger than Mickey.,Yes,,,
+5 ADJECTIVES,5.4 Extensional Comparison Classes,213,undef,TRUE,1,All mice are small animals. Mickey is a large mouse.,Mickey is small.,??: Yes for a mouse; ?? No for an animal,,,
+5 ADJECTIVES,5.5 Extensional and Intensional Comparison Classes,214,yes,,1,All legal authorities are law lecturers. All law lecturers are legal authorities.,All fat legal authorities are fat law lecturers.,Yes,,,
+5 ADJECTIVES,5.5 Extensional and Intensional Comparison Classes,215,unknown,,1,All legal authorities are law lecturers. All law lecturers are legal authorities.,All competent legal authorities are competent law lecturers.,Don't know,,,
+5 ADJECTIVES,5.5 Extensional and Intensional Comparison Classes,216,yes,,0,John is a fatter politician than Bill.,John is fatter than Bill.,Yes,,degree,"temp, quant, num, def, degree"
+5 ADJECTIVES,5.5 Extensional and Intensional Comparison Classes,217,unknown,,0,John is a cleverer politician than Bill.,John is cleverer than Bill.,Don't know,,,
+5 ADJECTIVES,5.6 Default Comparison Classes,218,yes,,0,Kim is a clever person.,Kim is clever.,Yes,,degree,"temp, quant, num, def"
+5 ADJECTIVES,5.6 Default Comparison Classes,219,unknown,,0,Kim is a clever politician.,Kim is clever.,Don't know,,,
+6 COMPARATIVES,6.1 Phrasal Comparatives,220,yes,,1,The PC-6082 is faster than the ITEL-XZ. The ITEL-XZ is fast.,The PC-6082 is fast.,Yes,,,
+6 COMPARATIVES,6.1 Phrasal Comparatives,221,unknown,,0,The PC-6082 is faster than the ITEL-XZ.,The PC-6082 is fast.,Don't know,,,
+6 COMPARATIVES,6.1 Phrasal Comparatives,222,unknown,,1,The PC-6082 is faster than the ITEL-XZ. The PC-6082 is fast.,The ITEL-XZ is fast.,Don't know,,,
+6 COMPARATIVES,6.1 Phrasal Comparatives,223,no,,1,The PC-6082 is faster than the ITEL-XZ. The PC-6082 is slow.,The ITEL-XZ is fast.,No,,,
+6 COMPARATIVES,6.1 Phrasal Comparatives,224,yes,,1,The PC-6082 is as fast as the ITEL-XZ. The ITEL-XZ is fast.,The PC-6082 is fast.,Yes,,,
+6 COMPARATIVES,6.1 Phrasal Comparatives,225,unknown,,0,The PC-6082 is as fast as the ITEL-XZ.,The PC-6082 is fast.,Don't know,,,
+6 COMPARATIVES,6.1 Phrasal Comparatives,226,unknown,,1,The PC-6082 is as fast as the ITEL-XZ. The PC-6082 is fast.,The ITEL-XZ is fast.,Don't know,,,
+6 COMPARATIVES,6.1 Phrasal Comparatives,227,no,,1,The PC-6082 is as fast as the ITEL-XZ. The PC-6082 is slow.,The ITEL-XZ is fast.,No,,,
+6 COMPARATIVES,6.1 Phrasal Comparatives,228,unknown,,0,The PC-6082 is as fast as the ITEL-XZ.,The PC-6082 is faster than the ITEL-XZ.,Don't know,,,
+6 COMPARATIVES,6.1 Phrasal Comparatives,229,no,,0,The PC-6082 is as fast as the ITEL-XZ.,The PC-6082 is slower than the ITEL-XZ.,No,,degree,"temp, quant, num, def, degree"
+6 COMPARATIVES,6.1 Phrasal Comparatives,230,yes,,0,ITEL won more orders than APCOM did.,ITEL won some orders.,Yes,,degree,"temp, quant, num, def, degree"
+6 COMPARATIVES,6.1 Phrasal Comparatives,231,unknown,,0,ITEL won more orders than APCOM did.,APCOM won some orders.,Don't know,,,
+6 COMPARATIVES,6.1 Phrasal Comparatives,232,yes,,1,ITEL won more orders than APCOM did. APCOM won ten orders.,ITEL won at least eleven orders.,Yes,,,
+6 COMPARATIVES,6.1 Phrasal Comparatives,233,yes,,0,ITEL won more orders than APCOM.,ITEL won some orders.,Yes,,degree,"temp, quant, num, def, degree"
+6 COMPARATIVES,6.1 Phrasal Comparatives,234,unknown,,0,ITEL won more orders than APCOM.,APCOM won some orders.,Don't know,,,
+6 COMPARATIVES,6.1 Phrasal Comparatives,235,yes,,1,ITEL won more orders than APCOM. APCOM won ten orders.,ITEL won at least eleven orders.,Yes,,,
+6 COMPARATIVES,6.1 Phrasal Comparatives,236,yes,,0,ITEL won more orders than the APCOM contract.,ITEL won the APCOM contract.,Yes,,degree,"temp, quant, num, def, degree"
+6 COMPARATIVES,6.1 Phrasal Comparatives,237,yes,,0,ITEL won more orders than the APCOM contract.,ITEL won more than one order.,Yes,,degree,"temp, quant, num, def, degree"
+6 COMPARATIVES,6.1 Phrasal Comparatives,238,yes,,1,ITEL won twice as many orders than APCOM. APCOM won ten orders.,ITEL won twenty orders.,Yes,,,
+6 COMPARATIVES,6.2 Clausal Complement,239,yes,,0,ITEL won more orders than APCOM lost.,ITEL won some orders.,Yes,,degree,"temp, quant, num, def, degree"
+6 COMPARATIVES,6.2 Clausal Complement,240,unknown,,0,ITEL won more orders than APCOM lost.,APCOM lost some orders.,Don't know,,,
+6 COMPARATIVES,6.2 Clausal Complement,241,yes,,1,ITEL won more orders than APCOM lost. APCOM lost ten orders.,ITEL won at least eleven orders.,Yes,,,
+6 COMPARATIVES,6.3 Measure Phrases,242,yes,,1,The PC-6082 is faster than 500 MIPS. The ITEL-ZX is slower than 500 MIPS.,The PC-6082 is faster than the ITEL-ZX.,Yes,,,
+6 COMPARATIVES,6.4 Differential Comparatives,243,yes,,1,ITEL sold 3000 more computers than APCOM. APCOM sold exactly 2500 computers.,ITEL sold 5500 computers.,Yes,,,
+6 COMPARATIVES,6.5 Attributive Comparatives,244,yes,TRUE,0,APCOM has a more important customer than ITEL.,APCOM has a more important customer than ITEL is.,"Yes, on one reading of the premise",,degree,"temp, quant, num, def, degree"
+6 COMPARATIVES,6.5 Attributive Comparatives,245,yes,TRUE,0,APCOM has a more important customer than ITEL.,APCOM has a more important customer than ITEL has.,"Yes, on one reading of the premise",,degree,"temp, quant, num, def, degree"
+6 COMPARATIVES,6.6 Comparatives and Quantifiers,246,yes,,1,The PC-6082 is faster than every ITEL computer. The ITEL-ZX is an ITEL computer.,The PC-6082 is faster than the ITEL-ZX.,Yes,,,
+6 COMPARATIVES,6.6 Comparatives and Quantifiers,247,unknown,,1,The PC-6082 is faster than some ITEL computer. The ITEL-ZX is an ITEL computer.,The PC-6082 is faster than the ITEL-ZX.,Don't know,,,
+6 COMPARATIVES,6.6 Comparatives and Quantifiers,248,yes,,1,The PC-6082 is faster than any ITEL computer. The ITEL-ZX is an ITEL computer.,The PC-6082 is faster than the ITEL-ZX.,Yes,,,
+6 COMPARATIVES,6.6 Comparatives and Quantifiers,249,yes,,0,The PC-6082 is faster than the ITEL-ZX and the ITEL-ZY.,The PC-6082 is faster than the ITEL-ZX.,Yes,,degree,"temp, quant, num, def, degree"
+6 COMPARATIVES,6.6 Comparatives and Quantifiers,250,yes,TRUE,0,The PC-6082 is faster than the ITEL-ZX or the ITEL-ZY.,The PC-6082 is faster than the ITEL-ZX.,"Yes, on one reading of the premise",,degree,"temp, quant, num, def, degree"
+7 TEMPORAL REFERENCE,7.1 Standard Use of Tenses,251,yes,,0,ITEL has a factory in Birmingham.,ITEL currently has a factory in Birmingham.,Yes,,,"temp, quant, num, def"
+7 TEMPORAL REFERENCE,7.1 Standard Use of Tenses,252,yes,,1,Since 1992 ITEL has been in Birmingham. It is now 1996.,Itel was in Birmingham in 1993.,Yes,,,
+7 TEMPORAL REFERENCE,7.1 Standard Use of Tenses,253,unknown,,1,ITEL has developed a new editor since 1992. It is now 1996.,ITEL developed a new editor in 1993.,Don't know,,,
+7 TEMPORAL REFERENCE,7.1 Standard Use of Tenses,254,unknown,,1,ITEL has expanded since 1992. It is now 1996.,ITEL expanded in 1993.,Don't know,,,
+7 TEMPORAL REFERENCE,7.1 Standard Use of Tenses,255,yes,,1,Since 1992 ITEL has made a loss. It is now 1996.,ITEL made a loss in 1993.,Yes,,,
+7 TEMPORAL REFERENCE,7.1 Standard Use of Tenses,256,unknown,TRUE,1,ITEL has made a loss since 1992. It is now 1996.,ITEL made a loss in 1993.,"Don't know, on one reading of the premise",,,
+7 TEMPORAL REFERENCE,7.1 Standard Use of Tenses,257,yes,TRUE,1,ITEL has made a loss since 1992. It is now 1996.,ITEL made a loss in 1993.,"Yes, on one reading of the premise",,,
+7 TEMPORAL REFERENCE,7.1 Standard Use of Tenses,258,no,,0,In March 1993 APCOM founded ITEL.,ITEL existed in 1992.,No,,,"temp, quant, num, def"
+7 TEMPORAL REFERENCE,7.2 Temporal Adverbials,259,yes,,1,"The conference started on July 4th, 1994. It lasted 2 days.","The conference was over on July 8th, 1994.",Yes,,,
+7 TEMPORAL REFERENCE,7.2 Temporal Adverbials,260,yes,,1,"Yesterday APCOM signed the contract. Today is Saturday, July 14th.","APCOM signed the contract Friday, 13th.",Yes,,,
+7 TEMPORAL REFERENCE,7.2 Temporal Adverbials,261,yes,,1,Smith left before Jones left. Jones left before Anderson left.,Smith left before Anderson left.,Yes,,,
+7 TEMPORAL REFERENCE,7.2 Temporal Adverbials,262,yes,,1,Smith left after Jones left. Jones left after Anderson left.,Smith left after Anderson left.,Yes,,,
+7 TEMPORAL REFERENCE,7.2 Temporal Adverbials,263,unknown,,1,Smith was present after Jones left. Jones left after Anderson was present.,Smith was present after Anderson was present.,Don't know,,,
+7 TEMPORAL REFERENCE,7.2 Temporal Adverbials,264,yes,,1,Smith left. Jones left. Smith left before Jones left.,Jones left after Smith left.,Yes,,,
+7 TEMPORAL REFERENCE,7.2 Temporal Adverbials,265,yes,,1,Smith left. Jones left. Smith left after Jones left.,Jones left before Smith left.,Yes,,,
+7 TEMPORAL REFERENCE,7.2 Temporal Adverbials,266,yes,,1,Smith left. Jones left. Jones left before Smith left.,Smith left after Jones left.,Yes,,,
+7 TEMPORAL REFERENCE,7.2 Temporal Adverbials,267,yes,,1,Jones revised the contract. Smith revised the contract. Jones revised the contract before Smith did.,Smith revised the contract after Jones did.,Yes,,,
+7 TEMPORAL REFERENCE,7.2 Temporal Adverbials,268,yes,,1,Jones revised the contract. Smith revised the contract. Jones revised the contract after Smith did.,Smith revised the contract before Jones did.,Yes,,,
+7 TEMPORAL REFERENCE,7.2 Temporal Adverbials,269,unknown,,1,Smith swam. Jones swam. Smith swam before Jones swam.,Jones swam after Smith swam.,Don't know,,,
+7 TEMPORAL REFERENCE,7.2 Temporal Adverbials,270,yes,,1,Smith swam to the shore. Jones swam to the shore. Smith swam to the shore before Jones swam to the shore.,Jones swam to the shore after Smith swam to the shore.,Yes,,,
+7 TEMPORAL REFERENCE,7.2 Temporal Adverbials,271,unknown,,1,Smith was present. Jones was present. Smith was present after Jones was present.,Jones was present before Smith was present.,Don't know,,,
+7 TEMPORAL REFERENCE,7.2 Temporal Adverbials,272,unknown,,1,Smith was present. Jones was present. Smith was present before Jones was present.,Jones was present after Smith was present.,Don't know,,,
+7 TEMPORAL REFERENCE,7.2 Temporal Adverbials,273,unknown,,1,Smith was writing a report. Jones was writing a report. Smith was writing a report before Jones was writing a report.,Jones was writing a report after Smith was writing a report.,Don't know,,,
+7 TEMPORAL REFERENCE,7.2 Temporal Adverbials,274,unknown,,1,Smith was writing a report. Jones was writing a report. Smith was writing a report after Jones was writing a report.,Jones was writing a report before Smith was writing a report.,Don't know,,,
+7 TEMPORAL REFERENCE,7.2 Temporal Adverbials,275,unknown,,0,Smith left the meeting before he lost his temper.,Smith lost his temper.,Don't know,,,
+7 TEMPORAL REFERENCE,7.2 Temporal Adverbials,276,undef,TRUE,0,"When they opened the M25, traffic increased.",,,,,
+7 TEMPORAL REFERENCE,7.2 Temporal Adverbials,277,unknown,,0,Smith lived in Birmingham in 1991.,Smith lived in Birmingham in 1992.,Don't know,,,
+7 TEMPORAL REFERENCE,7.2 Temporal Adverbials,278,no,,0,Smith wrote his first novel in 1991.,Smith wrote his first novel in 1992.,No,,,"temp, quant, num, def"
+7 TEMPORAL REFERENCE,7.2 Temporal Adverbials,279,no,,0,Smith wrote a novel in 1991.,Smith wrote it in 1992.,No,0,anaphora,"temp, quant, num, def"
+7 TEMPORAL REFERENCE,7.2 Temporal Adverbials,280,unknown,,0,Smith wrote a novel in 1991.,Smith wrote a novel in 1992.,Don't know,,,
+7 TEMPORAL REFERENCE,7.2 Temporal Adverbials,281,unknown,,0,Smith was running a business in 1991.,Smith was running it in 1992.,Don't know,,,
+7 TEMPORAL REFERENCE,7.2 Temporal Adverbials,282,no,,0,Smith discovered a new species in 1991.,Smith discovered it in 1992.,No,0,anaphora,"temp, quant, num, def"
+7 TEMPORAL REFERENCE,7.2 Temporal Adverbials,283,unknown,,0,Smith discovered a new species in 1991.,Smith discovered a new species in 1992.,Don't know,,,
+7 TEMPORAL REFERENCE,7.2 Temporal Adverbials,284,yes,,1,Smith wrote a report in two hours. Smith started writing the report at 8 am.,Smith had finished writing the report by 11 am.,Yes,,,
+7 TEMPORAL REFERENCE,7.2 Temporal Adverbials,285,unknown,,0,Smith wrote a report in two hours.,Smith spent two hours writing the report.,Don't know,,,
+7 TEMPORAL REFERENCE,7.2 Temporal Adverbials,286,no,,0,Smith wrote a report in two hours.,Smith spent more than two hours writing the report.,No,,two events?,"temp, quant, num, def, duration, aspect"
+7 TEMPORAL REFERENCE,7.2 Temporal Adverbials,287,unknown,,0,Smith wrote a report in two hours.,Smith wrote a report in one hour.,Don't know,,,
+7 TEMPORAL REFERENCE,7.2 Temporal Adverbials,288,yes,,0,Smith wrote a report in two hours.,Smith wrote a report.,Yes,,two events?,"temp, quant, num, def, duration"
+7 TEMPORAL REFERENCE,7.2 Temporal Adverbials,289,no,,0,Smith discovered a new species in two hours.,Smith spent two hours discovering the new species.,No,,two events?,"temp, quant, num, def, duration, aspect"
+7 TEMPORAL REFERENCE,7.2 Temporal Adverbials,290,yes,,0,Smith discovered a new species in two hours.,Smith discovered a new species.,Yes,,,"temp, quant, num, def, duration"
+7 TEMPORAL REFERENCE,7.2 Temporal Adverbials,291,yes,TRUE,0,Smith discovered many new species in two hours.,Smith spent two hours discovering new species.,?Yes,,,"temp, quant, num, def, duration, aspect"
+7 TEMPORAL REFERENCE,7.2 Temporal Adverbials,292,unknown,,0,Smith was running his own business in two years.,Smith spent two years running his own business.,Don't know,,,
+7 TEMPORAL REFERENCE,7.2 Temporal Adverbials,293,unknown,,0,Smith was running his own business in two years.,Smith spent more than two years running his own business.,Don't know,,,
+7 TEMPORAL REFERENCE,7.2 Temporal Adverbials,294,yes,,0,Smith was running his own business in two years.,Smith ran his own business.,Yes,,duration? temp?,"temp, quant, num, def, duration"
+7 TEMPORAL REFERENCE,7.2 Temporal Adverbials,295,unknown,,0,In two years Smith owned a chain of businesses.,Smith owned a chain of business for two years.,Don't know,,,
+7 TEMPORAL REFERENCE,7.2 Temporal Adverbials,296,unknown,,0,In two years Smith owned a chain of businesses.,Smith owned a chain of business for more than two years.,Don't know,,,
+7 TEMPORAL REFERENCE,7.2 Temporal Adverbials,297,yes,,0,In two years Smith owned a chain of businesses.,Smith owned a chain of business.,Yes,,duration? temp?,"temp, quant, num, def, duration"
+7 TEMPORAL REFERENCE,7.2 Temporal Adverbials,298,yes,,0,Smith lived in Birmingham for two years.,Smith lived in Birmingham for a year.,Yes,,,"temp, quant, num, def, duration, loc"
+7 TEMPORAL REFERENCE,7.2 Temporal Adverbials,299,no,,0,Smith lived in Birmingham for two years.,Smith lived in Birmingham for exactly a year.,No,,,"temp, quant, num, def, duration, loc"
+7 TEMPORAL REFERENCE,7.2 Temporal Adverbials,300,yes,,0,Smith lived in Birmingham for two years.,Smith lived in Birmingham.,Yes,,,"temp, quant, num, def, duration, loc"
+7 TEMPORAL REFERENCE,7.2 Temporal Adverbials,301,yes,,0,Smith ran his own business for two years.,Smith ran his own business for a year.,Yes,,,"temp, quant, num, def, duration"
+7 TEMPORAL REFERENCE,7.2 Temporal Adverbials,302,yes,,0,Smith ran his own business for two years.,Smith ran his own business.,Yes,,,"temp, quant, num, def, duration"
+7 TEMPORAL REFERENCE,7.2 Temporal Adverbials,303,yes,,0,Smith wrote a report for two hours.,Smith wrote a report for an hour.,Yes,,,"temp, quant, num, def, duration"
+7 TEMPORAL REFERENCE,7.2 Temporal Adverbials,304,unknown,,0,Smith wrote a report for two hours.,Smith wrote a report.,Don't know,,,
+7 TEMPORAL REFERENCE,7.2 Temporal Adverbials,305,undef,TRUE,0,Smith discovered a new species for an hour.,,,,,
+7 TEMPORAL REFERENCE,7.2 Temporal Adverbials,306,yes,,0,Smith discovered new species for two years.,Smith discovered new species.,Yes,,aspect?,"temp, quant, num, def, duration, aspect"
+7 TEMPORAL REFERENCE,7.2 Temporal Adverbials,307,yes,,0,In 1994 ITEL sent a progress report every month.,ITEL sent a progress report in July 1994.,Yes,,knowledge?,"temp, quant, num, def, frequency"
+7 TEMPORAL REFERENCE,7.2 Temporal Adverbials,308,undef,TRUE,0,Smith wrote to a representative every week.,There is a representative that Smith wrote to every week.,Yes on one scoping; unknown on another scoping,,,
+7 TEMPORAL REFERENCE,7.3 Anaphoric Dimension,309,undef,TRUE,1,Smith left the house at a quarter past five. She took a taxi to the station and caught the first train to Luxembourg.,,,,,
+7 TEMPORAL REFERENCE,7.3 Anaphoric Dimension,310,undef,TRUE,1,Smith lost some files. They were destroyed when her hard disk crashed.,,,,,
+7 TEMPORAL REFERENCE,7.3 Anaphoric Dimension,311,yes,,1,Smith had left the house at a quarter past five. Then she took a taxi to the station.,Smith left the house before she took a taxi to the station.,Yes,,,
+7 TEMPORAL REFERENCE,7.4 Adverbs of Quantification,312,yes,,1,ITEL always delivers reports late. In 1993 ITEL delivered reports.,ITEL delivered reports late in 1993.,Yes,,,
+7 TEMPORAL REFERENCE,7.4 Adverbs of Quantification,313,no,,1,ITEL never delivers reports late. In 1993 ITEL delivered reports.,ITEL delivered reports late in 1993.,No,,,
+7 TEMPORAL REFERENCE,7.5 Some more Complex Examples,314,yes,,1,"Smith arrived in Paris on the 5th of May, 1995. Today is the 15th of May, 1995. She is still in Paris.","Smith was in Paris on the 7th of May, 1995.",Yes,,,
+7 TEMPORAL REFERENCE,7.5 Some more Complex Examples,315,yes,,0,When Smith arrived in Katmandu she had been travelling for three days.,Smith had been travelling the day before she arrived in Katmandu.,Yes,,two events,"temp, quant, num, def, duration, BEFORE"
+7 TEMPORAL REFERENCE,7.5 Some more Complex Examples,316,yes,,1,Jones graduated in March and has been employed ever since. Jones has been unemployed in the past.,Jones was unemployed at some time before he graduated.,Yes,,,
+7 TEMPORAL REFERENCE,7.5 Some more Complex Examples,317,yes,,1,Every representative has read this report. No two representatives have read it at the same time. No representative took less than half a day to read the report. There are sixteen representatives.,It took the representatives more than a week to read the report.,Yes,,,
+7 TEMPORAL REFERENCE,7.5 Some more Complex Examples,318,no,,1,"While Jones was updating the program, Mary came in and told him about the board meeting. She finished before he did.",Mary's story lasted as long as Jones's updating the program.,No,,,
+7 TEMPORAL REFERENCE,7.5 Some more Complex Examples,319,yes,,1,"Before APCOM bought its present office building, it had been paying mortgage interest on the previous one for 8 years. Since APCOM bought its present office building it has been paying mortgage interest on it for more than 10 years.",APCOM has been paying mortgage interest for a total of 15 years or more.,Yes,,,
+7 TEMPORAL REFERENCE,7.5 Some more Complex Examples,320,yes,,0,"When Jones got his job at the CIA, he knew that he would never be allowed to write his memoirs.",It is the case that Jones is not and will never be allowed to write his memoirs.,Yes,,three events,"temp, quant, num, def, modal"
+7 TEMPORAL REFERENCE,7.5 Some more Complex Examples,321,yes,,1,Smith has been to Florence twice in the past. Smith will go to Florence twice in the coming year.,Two years from now Smith will have been to Florence at least four times.,Yes,,,
+7 TEMPORAL REFERENCE,7.5 Some more Complex Examples,322,yes,,0,"Last week I already knew that when, in a month's time, Smith would discover that she had been duped she would be furious.",It will be the case that in a few weeks Smith will discover that she has been duped; and she will be furious.,Yes,,,"temp, quant, num, def, modal, manner, RESULT"
+7 TEMPORAL REFERENCE,7.5 Some more Complex Examples,323,yes,,1,No one gambling seriously stops until he is broke. No one can gamble when he is broke.,Everyone who starts gambling seriously stops the moment he is broke.,Yes,,,
+7 TEMPORAL REFERENCE,7.5 Some more Complex Examples,324,yes,,0,No one who starts gambling seriously stops until he is broke.,Everyone who starts gambling seriously continues until he is broke.,Yes,,,"temp, quant, num, def, modal, BEFORE"
+7 TEMPORAL REFERENCE,7.5 Some more Complex Examples,325,yes,,1,Nobody who is asleep ever knows that he is asleep. But some people know that they have been asleep after they have been asleep.,Some people discover that they have been asleep.,Yes,,,
+8 VERBS,8.1 Aspectual Classes,326,yes,,0,ITEL built MTALK in 1993.,ITEL finished MTALK in 1993.,Yes,,,"temp, quant, num, def"
+8 VERBS,8.1 Aspectual Classes,327,unknown,,0,ITEL was building MTALK in 1993.,ITEL finished MTALK in 1993.,Don't know,,,
+8 VERBS,8.1 Aspectual Classes,328,yes,,0,ITEL won the contract from APCOM in 1993.,ITEL won a contract in 1993.,Yes,,,"temp, quant, num, def"
+8 VERBS,8.1 Aspectual Classes,329,unknown,,0,ITEL was winning the contract from APCOM in 1993.,ITEL won a contract in 1993.,Don't know,,,
+8 VERBS,8.1 Aspectual Classes,330,yes,,0,ITEL owned APCOM from 1988 to 1992.,ITEL owned APCOM in 1990.,Yes,,,"temp, quant, num, def, duration"
+8 VERBS,8.2 Distributive and Collective Predication,331,yes,,0,Smith and Jones left the meeting.,Smith left the meeting.,Yes,,,"temp, quant, num, def, distributivity"
+8 VERBS,8.2 Distributive and Collective Predication,332,yes,,0,Smith and Jones left the meeting.,Jones left the meeting.,Yes,,,"temp, quant, num, def, distributivity"
+8 VERBS,8.2 Distributive and Collective Predication,333,yes,,0,"Smith, Anderson and Jones met.",There was a group of people that met.,Yes,,knowledge?,"temp, quant, num, def, distributivity"
+9 ATTITUDES,"9.1 Epistemic, Intentional and Reportive Attitudes",334,yes,,0,Smith knew that ITEL had won the contract in 1992.,ITEL won the contract in 1992.,Yes,,two events,"temp, quant, num, def"
+9 ATTITUDES,"9.1 Epistemic, Intentional and Reportive Attitudes",335,unknown,,0,Smith believed that ITEL had won the contract in 1992.,ITEL won the contract in 1992.,Don't know,,,
+9 ATTITUDES,"9.1 Epistemic, Intentional and Reportive Attitudes",336,yes,,0,ITEL managed to win the contract in 1992.,ITEL won the contract in 1992.,Yes,,two events,"temp, quant, num, def"
+9 ATTITUDES,"9.1 Epistemic, Intentional and Reportive Attitudes",337,unknown,,0,ITEL tried to win the contract in 1992.,ITEL won the contract in 1992.,Don't know,,,
+9 ATTITUDES,"9.1 Epistemic, Intentional and Reportive Attitudes",338,yes,,0,It is true that ITEL won the contract in 1992.,ITEL won the contract in 1992.,Yes,,two events,"temp, quant, num, def"
+9 ATTITUDES,"9.1 Epistemic, Intentional and Reportive Attitudes",339,no,,0,It is false that ITEL won the contract in 1992.,ITEL won the contract in 1992.,No,,two events,"temp, quant, num, def"
+9 ATTITUDES,"9.2 Preceptive Attitudes: ""See"" with Bare Infinitive Complements",340,unknown,,1,"Smith saw Jones sign the contract. If Jones signed the contract, his heart was beating.",Smith saw Jones' heart beat.,Don't know,,,
+9 ATTITUDES,"9.2 Preceptive Attitudes: ""See"" with Bare Infinitive Complements",341,unknown,,1,"Smith saw Jones sign the contract. When Jones signed the contract, his heart was beating.",Smith saw Jones' heart beat.,Don't know,,,
+9 ATTITUDES,"9.2 Preceptive Attitudes: ""See"" with Bare Infinitive Complements",342,yes,,0,Smith saw Jones sign the contract.,Jones signed the contract.,Yes,,two events; intensionality?,"temp, quant, num, def"
+9 ATTITUDES,"9.2 Preceptive Attitudes: ""See"" with Bare Infinitive Complements",343,yes,,1,Smith saw Jones sign the contract. Jones is the chairman of ITEL.,Smith saw the chairman of ITEL sign the contract.,Yes,,,
+9 ATTITUDES,"9.2 Preceptive Attitudes: ""See"" with Bare Infinitive Complements",344,yes,,1,Helen saw the chairman of the department answer the phone. The chairman of the department is a person.,There is someone whom Helen saw answer the phone.,Yes,,,
+9 ATTITUDES,"9.2 Preceptive Attitudes: ""See"" with Bare Infinitive Complements",345,yes,,0,Smith saw Jones sign the contract and his secretary make a copy.,Smith saw Jones sign the contract.,Yes,,two events; intensionality?,"temp, quant, num, def"
+9 ATTITUDES,"9.2 Preceptive Attitudes: ""See"" with Bare Infinitive Complements",346,yes,,0,Smith saw Jones sign the contract or cross out the crucial clause.,Smith either saw Jones sign the contract or saw Jones cross out the crucial clause.,Yes,,two events; intensionality?,"temp, quant, num, def"

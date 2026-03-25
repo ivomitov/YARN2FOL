@@ -1,0 +1,77 @@
+{
+  "meta": {
+    "sent_id": "6h",
+    "text": "There are really great tenors who are modest."
+  },
+  "s": [
+    "s1"
+  ],
+  "v": [
+    "vt1",
+    "vr1",
+    "vm1",
+    "vg1"
+  ],
+  "f": {
+    "s1": [
+      "s1-temp",
+      "s1-quant",
+      "s1-num",
+      "s1-def"
+    ]
+  },
+  "e": {
+    "e1": [
+      "vg1",
+      "ARG1",
+      "vt1"
+    ],
+    "e2": [
+      "vg1",
+      "mod",
+      "vr1"
+    ],
+    "e3": [
+      "vt1",
+      "mod",
+      "vm1"
+    ]
+  },
+  "l": {
+    "l1": [
+      "s1-quant",
+      "exists",
+      "vt1"
+    ],
+    "l2": [
+      "s1-num",
+      "plural",
+      "vt1"
+    ],
+    "l3": [
+      "s1-def",
+      "indefinite",
+      "vt1"
+    ]
+  },
+  "d": {},
+  "c": {},
+  "h": {
+    "h1": [
+      "s1-temp",
+      "present",
+      "e3"
+    ]
+  },
+  "i": {},
+  "labels": {
+    "vt1": "tenor",
+    "vr1": "really",
+    "vm1": "modest",
+    "vg1": "great-02",
+    "s1-temp": "temp",
+    "s1-quant": "quant",
+    "s1-num": "num",
+    "s1-def": "def"
+  }
+}

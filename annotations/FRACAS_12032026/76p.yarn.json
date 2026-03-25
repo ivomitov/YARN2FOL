@@ -1,0 +1,89 @@
+{
+  "meta": {
+    "sent_id": "76p",
+    "text": "Few committee members are from southern Europe."
+  },
+  "s": [
+    "s1"
+  ],
+  "v": [
+    "vc1",
+    "vm1",
+    "vc2",
+    "ve1",
+    "vs1"
+  ],
+  "f": {
+    "s1": [
+      "s1-temp",
+      "s1-quant",
+      "s1-num",
+      "s1-def"
+    ]
+  },
+  "e": {
+    "e1": [
+      "vs1",
+      "part-of",
+      "vc2"
+    ],
+    "e2": [
+      "vc2",
+      "name",
+      "ve1"
+    ],
+    "e3": [
+      "vc1",
+      "consist-of",
+      "vm1"
+    ],
+    "e4": [
+      "vm1",
+      "mod",
+      "vs1"
+    ]
+  },
+  "l": {
+    "l1": [
+      "s1-quant",
+      "few",
+      "vm1"
+    ],
+    "l2": [
+      "s1-num",
+      "plural",
+      "vm1"
+    ],
+    "l3": [
+      "s1-def",
+      "indefinite",
+      "vm1"
+    ],
+    "l4": [
+      "s1-quant",
+      "exists",
+      "vc1"
+    ]
+  },
+  "d": {},
+  "c": {},
+  "h": {
+    "h1": [
+      "s1-temp",
+      "present",
+      "e4"
+    ]
+  },
+  "i": {},
+  "labels": {
+    "vc1": "committee",
+    "vm1": "member",
+    "vc2": "continent",
+    "ve1": "Europe",
+    "vs1": "south",
+    "s1-temp": "temp",
+    "s1-quant": "quant",
+    "s1-num": "num",
+    "s1-def": "def"
+  }
+}

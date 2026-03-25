@@ -1,0 +1,77 @@
+{
+  "meta": {
+    "sent_id": "9p",
+    "text": "Several great tenors are British."
+  },
+  "s": [
+    "s1"
+  ],
+  "v": [
+    "vg1",
+    "vt1",
+    "vc1",
+    "vg2"
+  ],
+  "f": {
+    "s1": [
+      "s1-temp",
+      "s1-quant",
+      "s1-num",
+      "s1-def"
+    ]
+  },
+  "e": {
+    "e2": [
+      "vc1",
+      "name",
+      "vg2"
+    ],
+    "e3": [
+      "vg1",
+      "ARG1",
+      "vt1"
+    ],
+    "e1": [
+      "vt1",
+      "mod",
+      "vc1"
+    ]
+  },
+  "l": {
+    "l1": [
+      "s1-quant",
+      "several",
+      "vt1"
+    ],
+    "l2": [
+      "s1-num",
+      "plural",
+      "vt1"
+    ],
+    "l3": [
+      "s1-def",
+      "indefinite",
+      "vt1"
+    ]
+  },
+  "d": {},
+  "c": {},
+  "h": {
+    "h1": [
+      "s1-temp",
+      "present",
+      "e1"
+    ]
+  },
+  "i": {},
+  "labels": {
+    "vg1": "great-02",
+    "vt1": "tenor",
+    "vc1": "country",
+    "vg2": "United Kingdom",
+    "s1-temp": "temp",
+    "s1-quant": "quant",
+    "s1-num": "num",
+    "s1-def": "def"
+  }
+}

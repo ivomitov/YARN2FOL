@@ -1,0 +1,105 @@
+{
+  "meta": {
+    "sent_id": "17h",
+    "text": "An Irishman won a Nobel prize."
+  },
+  "s": [
+    "s1"
+  ],
+  "v": [
+    "vm1",
+    "vc1",
+    "vi1",
+    "vw1",
+    "vp1",
+    "vn1"
+  ],
+  "f": {
+    "s1": [
+      "s1-temp",
+      "s1-quant",
+      "s1-num",
+      "s1-def"
+    ]
+  },
+  "e": {
+    "e1": [
+      "vm1",
+      "mod",
+      "vc1"
+    ],
+    "e2": [
+      "vc1",
+      "name",
+      "vi1"
+    ],
+    "e3": [
+      "vw1",
+      "ARG0",
+      "vm1"
+    ],
+    "e4": [
+      "vw1",
+      "ARG1",
+      "vp1"
+    ],
+    "e5": [
+      "vp1",
+      "name",
+      "vn1"
+    ]
+  },
+  "l": {
+    "l1": [
+      "s1-temp",
+      "past",
+      "vw1"
+    ],
+    "l2": [
+      "s1-quant",
+      "exists",
+      "vm1"
+    ],
+    "l3": [
+      "s1-num",
+      "singular",
+      "vm1"
+    ],
+    "l4": [
+      "s1-def",
+      "indefinite",
+      "vm1"
+    ],
+    "l5": [
+      "s1-def",
+      "indefinite",
+      "vp1"
+    ],
+    "l6": [
+      "s1-num",
+      "singular",
+      "vp1"
+    ],
+    "l7": [
+      "s1-quant",
+      "exists",
+      "vp1"
+    ]
+  },
+  "d": {},
+  "c": {},
+  "h": {},
+  "i": {},
+  "labels": {
+    "vm1": "man",
+    "vc1": "country",
+    "vi1": "Ireland",
+    "vw1": "win-01",
+    "vp1": "prize",
+    "vn1": "Nobel Prize",
+    "s1-temp": "temp",
+    "s1-quant": "quant",
+    "s1-num": "num",
+    "s1-def": "def"
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "meta": {
+    "sent_id": "81h",
+    "text": "Jones signed the contract."
+  },
+  "s": [
+    "s1"
+  ],
+  "v": [
+    "vj1",
+    "vc1",
+    "vs2",
+    "vj2"
+  ],
+  "f": {
+    "s1": [
+      "s1-temp",
+      "s1-def",
+      "s1-num",
+      "s1-quant"
+    ]
+  },
+  "e": {
+    "e5": [
+      "vs2",
+      "ARG1",
+      "vc1"
+    ],
+    "e1": [
+      "vs2",
+      "ARG0",
+      "vj1"
+    ],
+    "e2": [
+      "vj1",
+      "name",
+      "vj2"
+    ]
+  },
+  "l": {
+    "l1": [
+      "s1-temp",
+      "past",
+      "vs2"
+    ],
+    "l2": [
+      "s1-def",
+      "definite",
+      "vc1"
+    ],
+    "l3": [
+      "s1-num",
+      "singular",
+      "vc1"
+    ],
+    "l4": [
+      "s1-def",
+      "definite",
+      "vj1"
+    ],
+    "l5": [
+      "s1-num",
+      "singular",
+      "vj1"
+    ],
+    "l6": [
+      "s1-quant",
+      "exists",
+      "vc1"
+    ],
+    "l7": [
+      "s1-quant",
+      "exists",
+      "vj1"
+    ]
+  },
+  "d": {},
+  "c": {},
+  "h": {},
+  "i": {},
+  "labels": {
+    "vj1": "person",
+    "vc1": "contract",
+    "vs2": "sign-02",
+    "s1-temp": "temp",
+    "s1-def": "def",
+    "s1-num": "num",
+    "vj2": "Jones",
+    "s1-quant": "quant"
+  }
+}

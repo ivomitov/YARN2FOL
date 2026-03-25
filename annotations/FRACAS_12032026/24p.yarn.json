@@ -1,0 +1,113 @@
+{
+  "meta": {
+    "sent_id": "24p",
+    "text": "Many delegates obtained interesting results from the survey."
+  },
+  "s": [
+    "s1"
+  ],
+  "v": [
+    "vd1",
+    "vr1",
+    "vs1",
+    "vo1",
+    "vi1"
+  ],
+  "f": {
+    "s1": [
+      "s1-temp",
+      "s1-quant",
+      "s1-num",
+      "s1-def"
+    ]
+  },
+  "e": {
+    "e1": [
+      "vi1",
+      "ARG0",
+      "vr1"
+    ],
+    "e2": [
+      "vo1",
+      "ARG0",
+      "vd1"
+    ],
+    "e3": [
+      "vo1",
+      "ARG1",
+      "vr1"
+    ],
+    "e4": [
+      "vo1",
+      "ARG2",
+      "vs1"
+    ]
+  },
+  "l": {
+    "l1": [
+      "s1-temp",
+      "past",
+      "vo1"
+    ],
+    "l2": [
+      "s1-quant",
+      "many",
+      "vd1"
+    ],
+    "l3": [
+      "s1-num",
+      "plural",
+      "vd1"
+    ],
+    "l4": [
+      "s1-def",
+      "indefinite",
+      "vd1"
+    ],
+    "l5": [
+      "s1-def",
+      "definite",
+      "vs1"
+    ],
+    "l6": [
+      "s1-num",
+      "singular",
+      "vs1"
+    ],
+    "l7": [
+      "s1-def",
+      "indefinite",
+      "vr1"
+    ],
+    "l8": [
+      "s1-num",
+      "plural",
+      "vr1"
+    ],
+    "l9": [
+      "s1-quant",
+      "exists",
+      "vr1"
+    ],
+    "l10": [
+      "s1-quant",
+      "exists",
+      "vs1"
+    ]
+  },
+  "d": {},
+  "c": {},
+  "h": {},
+  "i": {},
+  "labels": {
+    "vd1": "delegate",
+    "vr1": "result",
+    "vs1": "survey",
+    "vo1": "obtain-01",
+    "vi1": "interest-01",
+    "s1-temp": "temp",
+    "s1-quant": "quant",
+    "s1-num": "num",
+    "s1-def": "def"
+  }
+}

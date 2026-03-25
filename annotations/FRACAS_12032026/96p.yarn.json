@@ -1,0 +1,62 @@
+{
+  "meta": {
+    "sent_id": "96p",
+    "text": "The Ancient Greeks were all noted philosophers."
+  },
+  "s": [
+    "s1"
+  ],
+  "v": [
+    "vp1",
+    "vc1",
+    "vp2",
+    "vn1",
+    "va1"
+  ],
+  "f": {
+    "s1": [
+      "s1-temp"
+    ]
+  },
+  "e": {
+    "e1": [
+      "vn1",
+      "ARG1",
+      "vp2"
+    ],
+    "e2": [
+      "vp2",
+      "domain",
+      "vp1"
+    ],
+    "e3": [
+      "vp1",
+      "mod",
+      "vc1"
+    ],
+    "e4": [
+      "vc1",
+      "name",
+      "va1"
+    ]
+  },
+  "l": {},
+  "d": {},
+  "c": {},
+  "h": {
+    "h1": [
+      "s1-temp",
+      "past",
+      "e2"
+    ]
+  },
+  "i": {},
+  "labels": {
+    "vp1": "person",
+    "vc1": "country",
+    "vp2": "philosopher",
+    "vn1": "note-02",
+    "va1": "Ancient Greece",
+    "s1-temp": "temp"
+  }
+}
