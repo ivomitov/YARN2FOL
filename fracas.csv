@@ -57,7 +57,7 @@ section,subsection,problem_id,fracas_answer,fracas_nonstandard,multiple_p,p,h,a,
 1 GENERALIZED QUANTIFIERS,1.4 Monotonicity (upwards on first argument),56,unknown,,0,Many British delegates obtained interesting results from the survey.,Many delegates obtained interesting results from the survey.,Don't know,,,,
 1 GENERALIZED QUANTIFIERS,1.4 Monotonicity (upwards on first argument),57,yes,,0,Several Portuguese delegates got the results published in major national newspapers.,Several delegates got the results published in major national newspapers.,Yes,1,several?,1,"temp, quant, num, def, loc"
 1 GENERALIZED QUANTIFIERS,1.4 Monotonicity (upwards on first argument),58,unknown,,0,Most Europeans who are resident in Europe can travel freely within Europe.,Most Europeans can travel freely within Europe.,Don't know,,,,
-1 GENERALIZED QUANTIFIERS,1.4 Monotonicity (upwards on first argument),59,yes,,0,A few female committee members are from Scandinavia.,At least a few committee members are from Scandinavia.,Yes,1,generalized quantifier,?,"temp, quant, num, def, mod"
+1 GENERALIZED QUANTIFIERS,1.4 Monotonicity (upwards on first argument),59,yes,,0,A few female committee members are from Scandinavia.,At least a few committee members are from Scandinavia.,Yes,1,generalized quantifier,1,"temp, quant, num, def, mod"
 1 GENERALIZED QUANTIFIERS,1.4 Monotonicity (upwards on first argument),60,unknown,,0,Few female committee members are from southern Europe.,Few committee members are from southern Europe.,Don't know,,,,
 1 GENERALIZED QUANTIFIERS,1.4 Monotonicity (upwards on first argument),61,undef,TRUE,0,Both female commissioners used to be in business.,Both commissioners used to be in business.,"Yes, if both commissioners are female; otherwise there are more than two commissioners.",,,,
 1 GENERALIZED QUANTIFIERS,1.4 Monotonicity (upwards on first argument),62,undef,TRUE,0,Neither female commissioner spends a lot of time at home.,One of the commissioners spends a lot of time at home.,"No, if both commissioners are female; otherwise there are more than two commissioners.",,,,
@@ -74,11 +74,11 @@ section,subsection,problem_id,fracas_answer,fracas_nonstandard,multiple_p,p,h,a,
 1 GENERALIZED QUANTIFIERS,1.5 Monotonicity (downwards on first argument),73,unknown,,0,Several delegates got the results published in major national newspapers.,Several Portuguese delegates got the results published in major national newspapers.,Don't know,,,,
 1 GENERALIZED QUANTIFIERS,1.5 Monotonicity (downwards on first argument),74,unknown,,0,Most Europeans can travel freely within Europe.,Most Europeans who are resident outside Europe can travel freely within Europe.,Don't know,,,,
 1 GENERALIZED QUANTIFIERS,1.5 Monotonicity (downwards on first argument),75,unknown,,0,A few committee members are from Scandinavia.,At least a few female committee members are from Scandinavia.,Don't know,,,,
-1 GENERALIZED QUANTIFIERS,1.5 Monotonicity (downwards on first argument),76,yes,,0,Few committee members are from southern Europe.,Few female committee members are from southern Europe.,Yes,done,generalized quantifier,?,"temp, quant, num, def"
+1 GENERALIZED QUANTIFIERS,1.5 Monotonicity (downwards on first argument),76,yes,,0,Few committee members are from southern Europe.,Few female committee members are from southern Europe.,Yes,done,generalized quantifier,1,"temp, quant, num, def"
 1 GENERALIZED QUANTIFIERS,1.5 Monotonicity (downwards on first argument),77,undef,TRUE,0,Both commissioners used to be in business.,Both female commissioners used to be in business.,"Yes, if both commissioners are female; otherwise there are more than two commissioners.",,,,
 1 GENERALIZED QUANTIFIERS,1.5 Monotonicity (downwards on first argument),78,undef,TRUE,0,Neither commissioner spends a lot of time at home.,One of the female commissioners spends a lot of time at home.,"No, if both commissioners are female; otherwise there are more than two commissioners.",,,,
 1 GENERALIZED QUANTIFIERS,1.5 Monotonicity (downwards on first argument),79,unknown,,0,At least three commissioners spend time at home.,At least three male commissioners spend time at home.,Don't know,,,,
-1 GENERALIZED QUANTIFIERS,1.5 Monotonicity (downwards on first argument),80,yes,,0,At most ten commissioners spend time at home.,At most ten female commissioners spend time at home.,Yes,1,generalized quantifier,?,"temp, quant, num, def, loc"
+1 GENERALIZED QUANTIFIERS,1.5 Monotonicity (downwards on first argument),80,yes,,0,At most ten commissioners spend time at home.,At most ten female commissioners spend time at home.,Yes,1,generalized quantifier,1,"temp, quant, num, def, loc"
 2 PLURALS,2.1 Conjoined Noun Phrases,81,yes,,0,"Smith, Jones and Anderson signed the contract.",Jones signed the contract.,Yes,done,,1,"temp, quant, num, def"
 2 PLURALS,2.1 Conjoined Noun Phrases,82,yes,,0,"Smith, Jones and several lawyers signed the contract.",Jones signed the contract.,Yes,done,several?,1,"temp, quant, num, def"
 2 PLURALS,2.1 Conjoined Noun Phrases,83,unknown,,0,"Either Smith, Jones or Anderson signed the contract.",Jones signed the contract.,Don't know,,,,
@@ -196,14 +196,14 @@ section,subsection,problem_id,fracas_answer,fracas_nonstandard,multiple_p,p,h,a,
 4 ELLIPSIS,4.8 Ellipsis and Anaphora,195,yes,,0,"Bill suggested to Frank's boss that they should go to the meeting together, and Carl to Alan's wife.","If it was suggested that Bill, Frank and Frank's boss should go together, it was suggested that Carl, Alan and Alan's wife should go together.",Yes,,representable?,1,"temp, quant, num, def, modal, manner, CONSEQUENCE"
 4 ELLIPSIS,4.9 Ellipsis and Quantification,196,yes,,1,"A lawyer signed every report, and so did an auditor. That is, there was one lawyer who signed all the reports.",There was one auditor who signed all the reports.,Yes,,,,
 5 ADJECTIVES,5.1 Affirmative and Non-Affirmative,197,yes,,0,John has a genuine diamond.,John has a diamond.,Yes,1,,1,"temp, quant, num, def"
-5 ADJECTIVES,5.1 Affirmative and Non-Affirmative,198,no,TRUE,0,John is a former university student.,John is a university student.,No / don't know,1,non-intersectional adjective,?,"temp, quant, num, def"
-5 ADJECTIVES,5.1 Affirmative and Non-Affirmative,199,yes,TRUE,0,John is a successful former university student.,John is successful.,Yes (for a former university student),1,non-intersectional adjective,?,"temp, quant, num, def"
+5 ADJECTIVES,5.1 Affirmative and Non-Affirmative,198,no,TRUE,0,John is a former university student.,John is a university student.,No / don't know,1,non-intersectional adjective,2,"temp, quant, num, def"
+5 ADJECTIVES,5.1 Affirmative and Non-Affirmative,199,yes,TRUE,0,John is a successful former university student.,John is successful.,Yes (for a former university student),1,non-intersectional adjective,2,"temp, quant, num, def"
 5 ADJECTIVES,5.1 Affirmative and Non-Affirmative,200,unknown,,0,John is a former successful university student.,John is successful.,Don't know,,,,
 5 ADJECTIVES,5.1 Affirmative and Non-Affirmative,201,unknown,,0,John is a former successful university student.,John is a university student.,Don't know,,,,
 5 ADJECTIVES,5.2 No Comparison Class,202,yes,,0,Every mammal is an animal.,Every four-legged mammal is a four-legged animal.,Yes,,,1,"temp, quant, num, def"
 5 ADJECTIVES,5.2 No Comparison Class,203,yes,,0,Dumbo is a four-legged animal.,Dumbo is four-legged.,Yes,,,1,"temp, quant, num, def"
-5 ADJECTIVES,5.3 Opposites,204,no,,0,Mickey is a small animal.,Mickey is a large animal.,No,,lexical,?,"temp, quant, num, def"
-5 ADJECTIVES,5.3 Opposites,205,no,,0,Dumbo is a large animal.,Dumbo is a small animal.,No,,lexical,?,"temp, quant, num, def"
+5 ADJECTIVES,5.3 Opposites,204,no,,0,Mickey is a small animal.,Mickey is a large animal.,No,,lexical,2,"temp, quant, num, def"
+5 ADJECTIVES,5.3 Opposites,205,no,,0,Dumbo is a large animal.,Dumbo is a small animal.,No,,lexical,2,"temp, quant, num, def"
 5 ADJECTIVES,5.3 Opposites,206,unknown,,0,Fido is not a small animal.,Fido is a large animal.,Don't know,,,,
 5 ADJECTIVES,5.3 Opposites,207,unknown,,0,Fido is not a large animal.,Fido is a small animal.,Don't know,,,,
 5 ADJECTIVES,5.3 Opposites,208,yes,,1,Mickey is a small animal. Dumbo is a large animal.,Mickey is smaller than Dumbo.,Yes,,,,
@@ -227,7 +227,7 @@ section,subsection,problem_id,fracas_answer,fracas_nonstandard,multiple_p,p,h,a,
 6 COMPARATIVES,6.1 Phrasal Comparatives,226,unknown,,1,The PC-6082 is as fast as the ITEL-XZ. The PC-6082 is fast.,The ITEL-XZ is fast.,Don't know,,,,
 6 COMPARATIVES,6.1 Phrasal Comparatives,227,no,,1,The PC-6082 is as fast as the ITEL-XZ. The PC-6082 is slow.,The ITEL-XZ is fast.,No,,,,
 6 COMPARATIVES,6.1 Phrasal Comparatives,228,unknown,,0,The PC-6082 is as fast as the ITEL-XZ.,The PC-6082 is faster than the ITEL-XZ.,Don't know,,,,
-6 COMPARATIVES,6.1 Phrasal Comparatives,229,no,,0,The PC-6082 is as fast as the ITEL-XZ.,The PC-6082 is slower than the ITEL-XZ.,No,,lexical,?,"temp, quant, num, def, degree"
+6 COMPARATIVES,6.1 Phrasal Comparatives,229,no,,0,The PC-6082 is as fast as the ITEL-XZ.,The PC-6082 is slower than the ITEL-XZ.,No,,lexical,2,"temp, quant, num, def, degree"
 6 COMPARATIVES,6.1 Phrasal Comparatives,230,yes,,0,ITEL won more orders than APCOM did.,ITEL won some orders.,Yes,,,1,"temp, quant, num, def, degree"
 6 COMPARATIVES,6.1 Phrasal Comparatives,231,unknown,,0,ITEL won more orders than APCOM did.,APCOM won some orders.,Don't know,,,,
 6 COMPARATIVES,6.1 Phrasal Comparatives,232,yes,,1,ITEL won more orders than APCOM did. APCOM won ten orders.,ITEL won at least eleven orders.,Yes,,,,
@@ -249,14 +249,14 @@ section,subsection,problem_id,fracas_answer,fracas_nonstandard,multiple_p,p,h,a,
 6 COMPARATIVES,6.6 Comparatives and Quantifiers,248,yes,,1,The PC-6082 is faster than any ITEL computer. The ITEL-ZX is an ITEL computer.,The PC-6082 is faster than the ITEL-ZX.,Yes,,,,
 6 COMPARATIVES,6.6 Comparatives and Quantifiers,249,yes,,0,The PC-6082 is faster than the ITEL-ZX and the ITEL-ZY.,The PC-6082 is faster than the ITEL-ZX.,Yes,,,1,"temp, quant, num, def, degree"
 6 COMPARATIVES,6.6 Comparatives and Quantifiers,250,yes,TRUE,0,The PC-6082 is faster than the ITEL-ZX or the ITEL-ZY.,The PC-6082 is faster than the ITEL-ZX.,"Yes, on one reading of the premise",,,1,"temp, quant, num, def, degree"
-7 TEMPORAL REFERENCE,7.1 Standard Use of Tenses,251,yes,,0,ITEL has a factory in Birmingham.,ITEL currently has a factory in Birmingham.,Yes,,temporal knowledge,?,"temp, quant, num, def"
+7 TEMPORAL REFERENCE,7.1 Standard Use of Tenses,251,yes,,0,ITEL has a factory in Birmingham.,ITEL currently has a factory in Birmingham.,Yes,,temporal knowledge,2,"temp, quant, num, def"
 7 TEMPORAL REFERENCE,7.1 Standard Use of Tenses,252,yes,,1,Since 1992 ITEL has been in Birmingham. It is now 1996.,Itel was in Birmingham in 1993.,Yes,,,,
 7 TEMPORAL REFERENCE,7.1 Standard Use of Tenses,253,unknown,,1,ITEL has developed a new editor since 1992. It is now 1996.,ITEL developed a new editor in 1993.,Don't know,,,,
 7 TEMPORAL REFERENCE,7.1 Standard Use of Tenses,254,unknown,,1,ITEL has expanded since 1992. It is now 1996.,ITEL expanded in 1993.,Don't know,,,,
 7 TEMPORAL REFERENCE,7.1 Standard Use of Tenses,255,yes,,1,Since 1992 ITEL has made a loss. It is now 1996.,ITEL made a loss in 1993.,Yes,,,,
 7 TEMPORAL REFERENCE,7.1 Standard Use of Tenses,256,unknown,TRUE,1,ITEL has made a loss since 1992. It is now 1996.,ITEL made a loss in 1993.,"Don't know, on one reading of the premise",,,,
 7 TEMPORAL REFERENCE,7.1 Standard Use of Tenses,257,yes,TRUE,1,ITEL has made a loss since 1992. It is now 1996.,ITEL made a loss in 1993.,"Yes, on one reading of the premise",,,,
-7 TEMPORAL REFERENCE,7.1 Standard Use of Tenses,258,no,,0,In March 1993 APCOM founded ITEL.,ITEL existed in 1992.,No,,lexical,?,"temp, quant, num, def"
+7 TEMPORAL REFERENCE,7.1 Standard Use of Tenses,258,no,,0,In March 1993 APCOM founded ITEL.,ITEL existed in 1992.,No,,lexical,2,"temp, quant, num, def"
 7 TEMPORAL REFERENCE,7.2 Temporal Adverbials,259,yes,,1,"The conference started on July 4th, 1994. It lasted 2 days.","The conference was over on July 8th, 1994.",Yes,,,,
 7 TEMPORAL REFERENCE,7.2 Temporal Adverbials,260,yes,,1,"Yesterday APCOM signed the contract. Today is Saturday, July 14th.","APCOM signed the contract Friday, 13th.",Yes,,,,
 7 TEMPORAL REFERENCE,7.2 Temporal Adverbials,261,yes,,1,Smith left before Jones left. Jones left before Anderson left.,Smith left before Anderson left.,Yes,,,,
@@ -276,11 +276,11 @@ section,subsection,problem_id,fracas_answer,fracas_nonstandard,multiple_p,p,h,a,
 7 TEMPORAL REFERENCE,7.2 Temporal Adverbials,275,unknown,,0,Smith left the meeting before he lost his temper.,Smith lost his temper.,Don't know,,,,
 7 TEMPORAL REFERENCE,7.2 Temporal Adverbials,276,undef,TRUE,0,"When they opened the M25, traffic increased.",,,,,,
 7 TEMPORAL REFERENCE,7.2 Temporal Adverbials,277,unknown,,0,Smith lived in Birmingham in 1991.,Smith lived in Birmingham in 1992.,Don't know,,,,
-7 TEMPORAL REFERENCE,7.2 Temporal Adverbials,278,no,,0,Smith wrote his first novel in 1991.,Smith wrote his first novel in 1992.,No,,temporal knowledge,?,"temp, quant, num, def"
-7 TEMPORAL REFERENCE,7.2 Temporal Adverbials,279,no,,0,Smith wrote a novel in 1991.,Smith wrote it in 1992.,No,0,anaphora,?,"temp, quant, num, def"
+7 TEMPORAL REFERENCE,7.2 Temporal Adverbials,278,no,,0,Smith wrote his first novel in 1991.,Smith wrote his first novel in 1992.,No,,temporal knowledge,2,"temp, quant, num, def"
+7 TEMPORAL REFERENCE,7.2 Temporal Adverbials,279,no,,0,Smith wrote a novel in 1991.,Smith wrote it in 1992.,No,0,anaphora,1,"temp, quant, num, def"
 7 TEMPORAL REFERENCE,7.2 Temporal Adverbials,280,unknown,,0,Smith wrote a novel in 1991.,Smith wrote a novel in 1992.,Don't know,,,,
 7 TEMPORAL REFERENCE,7.2 Temporal Adverbials,281,unknown,,0,Smith was running a business in 1991.,Smith was running it in 1992.,Don't know,,,,
-7 TEMPORAL REFERENCE,7.2 Temporal Adverbials,282,no,,0,Smith discovered a new species in 1991.,Smith discovered it in 1992.,No,0,anaphora,?,"temp, quant, num, def"
+7 TEMPORAL REFERENCE,7.2 Temporal Adverbials,282,no,,0,Smith discovered a new species in 1991.,Smith discovered it in 1992.,No,0,anaphora,1,"temp, quant, num, def"
 7 TEMPORAL REFERENCE,7.2 Temporal Adverbials,283,unknown,,0,Smith discovered a new species in 1991.,Smith discovered a new species in 1992.,Don't know,,,,
 7 TEMPORAL REFERENCE,7.2 Temporal Adverbials,284,yes,,1,Smith wrote a report in two hours. Smith started writing the report at 8 am.,Smith had finished writing the report by 11 am.,Yes,,,,
 7 TEMPORAL REFERENCE,7.2 Temporal Adverbials,285,unknown,,0,Smith wrote a report in two hours.,Smith spent two hours writing the report.,Don't know,,,,
@@ -313,34 +313,34 @@ section,subsection,problem_id,fracas_answer,fracas_nonstandard,multiple_p,p,h,a,
 7 TEMPORAL REFERENCE,7.4 Adverbs of Quantification,312,yes,,1,ITEL always delivers reports late. In 1993 ITEL delivered reports.,ITEL delivered reports late in 1993.,Yes,,,,
 7 TEMPORAL REFERENCE,7.4 Adverbs of Quantification,313,no,,1,ITEL never delivers reports late. In 1993 ITEL delivered reports.,ITEL delivered reports late in 1993.,No,,,,
 7 TEMPORAL REFERENCE,7.5 Some more Complex Examples,314,yes,,1,"Smith arrived in Paris on the 5th of May, 1995. Today is the 15th of May, 1995. She is still in Paris.","Smith was in Paris on the 7th of May, 1995.",Yes,,,,
-7 TEMPORAL REFERENCE,7.5 Some more Complex Examples,315,yes,,0,When Smith arrived in Katmandu she had been travelling for three days.,Smith had been travelling the day before she arrived in Katmandu.,Yes,,complex temporal reasoning,?,"temp, quant, num, def, duration, BEFORE"
+7 TEMPORAL REFERENCE,7.5 Some more Complex Examples,315,yes,,0,When Smith arrived in Katmandu she had been travelling for three days.,Smith had been travelling the day before she arrived in Katmandu.,Yes,,complex temporal reasoning,2,"temp, quant, num, def, duration, BEFORE"
 7 TEMPORAL REFERENCE,7.5 Some more Complex Examples,316,yes,,1,Jones graduated in March and has been employed ever since. Jones has been unemployed in the past.,Jones was unemployed at some time before he graduated.,Yes,,,,
 7 TEMPORAL REFERENCE,7.5 Some more Complex Examples,317,yes,,1,Every representative has read this report. No two representatives have read it at the same time. No representative took less than half a day to read the report. There are sixteen representatives.,It took the representatives more than a week to read the report.,Yes,,,,
 7 TEMPORAL REFERENCE,7.5 Some more Complex Examples,318,no,,1,"While Jones was updating the program, Mary came in and told him about the board meeting. She finished before he did.",Mary's story lasted as long as Jones's updating the program.,No,,,,
 7 TEMPORAL REFERENCE,7.5 Some more Complex Examples,319,yes,,1,"Before APCOM bought its present office building, it had been paying mortgage interest on the previous one for 8 years. Since APCOM bought its present office building it has been paying mortgage interest on it for more than 10 years.",APCOM has been paying mortgage interest for a total of 15 years or more.,Yes,,,,
-7 TEMPORAL REFERENCE,7.5 Some more Complex Examples,320,yes,,0,"When Jones got his job at the CIA, he knew that he would never be allowed to write his memoirs.",It is the case that Jones is not and will never be allowed to write his memoirs.,Yes,,complex temporal reasoning,?,"temp, quant, num, def, modal"
+7 TEMPORAL REFERENCE,7.5 Some more Complex Examples,320,yes,,0,"When Jones got his job at the CIA, he knew that he would never be allowed to write his memoirs.",It is the case that Jones is not and will never be allowed to write his memoirs.,Yes,,complex temporal reasoning,2,"temp, quant, num, def, modal"
 7 TEMPORAL REFERENCE,7.5 Some more Complex Examples,321,yes,,1,Smith has been to Florence twice in the past. Smith will go to Florence twice in the coming year.,Two years from now Smith will have been to Florence at least four times.,Yes,,,,
-7 TEMPORAL REFERENCE,7.5 Some more Complex Examples,322,yes,,0,"Last week I already knew that when, in a month's time, Smith would discover that she had been duped she would be furious.",It will be the case that in a few weeks Smith will discover that she has been duped; and she will be furious.,Yes,,complex temporal reasoning,?,"temp, quant, num, def, modal, manner, RESULT"
+7 TEMPORAL REFERENCE,7.5 Some more Complex Examples,322,yes,,0,"Last week I already knew that when, in a month's time, Smith would discover that she had been duped she would be furious.",It will be the case that in a few weeks Smith will discover that she has been duped; and she will be furious.,Yes,,complex temporal reasoning,2,"temp, quant, num, def, modal, manner, RESULT"
 7 TEMPORAL REFERENCE,7.5 Some more Complex Examples,323,yes,,1,No one gambling seriously stops until he is broke. No one can gamble when he is broke.,Everyone who starts gambling seriously stops the moment he is broke.,Yes,,,,
-7 TEMPORAL REFERENCE,7.5 Some more Complex Examples,324,yes,,0,No one who starts gambling seriously stops until he is broke.,Everyone who starts gambling seriously continues until he is broke.,Yes,,lexical,?,"temp, quant, num, def, modal, BEFORE"
+7 TEMPORAL REFERENCE,7.5 Some more Complex Examples,324,yes,,0,No one who starts gambling seriously stops until he is broke.,Everyone who starts gambling seriously continues until he is broke.,Yes,,lexical,2,"temp, quant, num, def, modal, BEFORE"
 7 TEMPORAL REFERENCE,7.5 Some more Complex Examples,325,yes,,1,Nobody who is asleep ever knows that he is asleep. But some people know that they have been asleep after they have been asleep.,Some people discover that they have been asleep.,Yes,,,,
-8 VERBS,8.1 Aspectual Classes,326,yes,,0,ITEL built MTALK in 1993.,ITEL finished MTALK in 1993.,Yes,,lexical,?,"temp, quant, num, def"
+8 VERBS,8.1 Aspectual Classes,326,yes,,0,ITEL built MTALK in 1993.,ITEL finished MTALK in 1993.,Yes,,lexical,2,"temp, quant, num, def"
 8 VERBS,8.1 Aspectual Classes,327,unknown,,0,ITEL was building MTALK in 1993.,ITEL finished MTALK in 1993.,Don't know,,,,
 8 VERBS,8.1 Aspectual Classes,328,yes,,0,ITEL won the contract from APCOM in 1993.,ITEL won a contract in 1993.,Yes,,,1,"temp, quant, num, def"
 8 VERBS,8.1 Aspectual Classes,329,unknown,,0,ITEL was winning the contract from APCOM in 1993.,ITEL won a contract in 1993.,Don't know,,,,
-8 VERBS,8.1 Aspectual Classes,330,yes,,0,ITEL owned APCOM from 1988 to 1992.,ITEL owned APCOM in 1990.,Yes,,temporal knowledge,?,"temp, quant, num, def, duration"
+8 VERBS,8.1 Aspectual Classes,330,yes,,0,ITEL owned APCOM from 1988 to 1992.,ITEL owned APCOM in 1990.,Yes,,temporal knowledge,2,"temp, quant, num, def, duration"
 8 VERBS,8.2 Distributive and Collective Predication,331,yes,,0,Smith and Jones left the meeting.,Smith left the meeting.,Yes,,,1,"temp, quant, num, def, distributivity"
 8 VERBS,8.2 Distributive and Collective Predication,332,yes,,0,Smith and Jones left the meeting.,Jones left the meeting.,Yes,,,1,"temp, quant, num, def, distributivity"
-8 VERBS,8.2 Distributive and Collective Predication,333,yes,,0,"Smith, Anderson and Jones met.",There was a group of people that met.,Yes,,lexical,?,"temp, quant, num, def, distributivity"
-9 ATTITUDES,"9.1 Epistemic, Intentional and Reportive Attitudes",334,yes,,0,Smith knew that ITEL had won the contract in 1992.,ITEL won the contract in 1992.,Yes,,intensional,?,"temp, quant, num, def"
+8 VERBS,8.2 Distributive and Collective Predication,333,yes,,0,"Smith, Anderson and Jones met.",There was a group of people that met.,Yes,,lexical,2,"temp, quant, num, def, distributivity"
+9 ATTITUDES,"9.1 Epistemic, Intentional and Reportive Attitudes",334,yes,,0,Smith knew that ITEL had won the contract in 1992.,ITEL won the contract in 1992.,Yes,,intensional,2,"temp, quant, num, def"
 9 ATTITUDES,"9.1 Epistemic, Intentional and Reportive Attitudes",335,unknown,,0,Smith believed that ITEL had won the contract in 1992.,ITEL won the contract in 1992.,Don't know,,,,
-9 ATTITUDES,"9.1 Epistemic, Intentional and Reportive Attitudes",336,yes,,0,ITEL managed to win the contract in 1992.,ITEL won the contract in 1992.,Yes,,intensional,?,"temp, quant, num, def"
+9 ATTITUDES,"9.1 Epistemic, Intentional and Reportive Attitudes",336,yes,,0,ITEL managed to win the contract in 1992.,ITEL won the contract in 1992.,Yes,,intensional,2,"temp, quant, num, def"
 9 ATTITUDES,"9.1 Epistemic, Intentional and Reportive Attitudes",337,unknown,,0,ITEL tried to win the contract in 1992.,ITEL won the contract in 1992.,Don't know,,,,
-9 ATTITUDES,"9.1 Epistemic, Intentional and Reportive Attitudes",338,yes,,0,It is true that ITEL won the contract in 1992.,ITEL won the contract in 1992.,Yes,,intensional,?,"temp, quant, num, def"
-9 ATTITUDES,"9.1 Epistemic, Intentional and Reportive Attitudes",339,no,,0,It is false that ITEL won the contract in 1992.,ITEL won the contract in 1992.,No,,intensional,?,"temp, quant, num, def"
+9 ATTITUDES,"9.1 Epistemic, Intentional and Reportive Attitudes",338,yes,,0,It is true that ITEL won the contract in 1992.,ITEL won the contract in 1992.,Yes,,,1,"temp, quant, num, def"
+9 ATTITUDES,"9.1 Epistemic, Intentional and Reportive Attitudes",339,no,,0,It is false that ITEL won the contract in 1992.,ITEL won the contract in 1992.,No,,,1,"temp, quant, num, def"
 9 ATTITUDES,"9.2 Preceptive Attitudes: ""See"" with Bare Infinitive Complements",340,unknown,,1,"Smith saw Jones sign the contract. If Jones signed the contract, his heart was beating.",Smith saw Jones' heart beat.,Don't know,,,,
 9 ATTITUDES,"9.2 Preceptive Attitudes: ""See"" with Bare Infinitive Complements",341,unknown,,1,"Smith saw Jones sign the contract. When Jones signed the contract, his heart was beating.",Smith saw Jones' heart beat.,Don't know,,,,
-9 ATTITUDES,"9.2 Preceptive Attitudes: ""See"" with Bare Infinitive Complements",342,yes,,0,Smith saw Jones sign the contract.,Jones signed the contract.,Yes,,intensional,?,"temp, quant, num, def"
+9 ATTITUDES,"9.2 Preceptive Attitudes: ""See"" with Bare Infinitive Complements",342,yes,,0,Smith saw Jones sign the contract.,Jones signed the contract.,Yes,,intensional,2,"temp, quant, num, def"
 9 ATTITUDES,"9.2 Preceptive Attitudes: ""See"" with Bare Infinitive Complements",343,yes,,1,Smith saw Jones sign the contract. Jones is the chairman of ITEL.,Smith saw the chairman of ITEL sign the contract.,Yes,,,,
 9 ATTITUDES,"9.2 Preceptive Attitudes: ""See"" with Bare Infinitive Complements",344,yes,,1,Helen saw the chairman of the department answer the phone. The chairman of the department is a person.,There is someone whom Helen saw answer the phone.,Yes,,,,
 9 ATTITUDES,"9.2 Preceptive Attitudes: ""See"" with Bare Infinitive Complements",345,yes,,0,Smith saw Jones sign the contract and his secretary make a copy.,Smith saw Jones sign the contract.,Yes,,,1,"temp, quant, num, def"
