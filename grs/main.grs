@@ -1,0 +1,7 @@
+import "domain.grs"
+
+strat main {
+    Seq (
+        Onf (domain)
+    )
+}

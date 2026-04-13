@@ -1,0 +1,28 @@
+rule domain_to_be01 {
+    pattern {
+        X [type="V"];
+        Y [type="V"];
+        DOMAIN [type="E", rel="domain"];
+        X->DOMAIN;
+        DOMAIN->Y
+    }
+    commands {
+        add_node V;
+        add_node E1;
+        add_node E2;
+        V.pred = "be-01";
+        V.type = "V";
+        V.var = "";
+        E1.rel = "ARG1";
+        E1.type = "E";
+        E1.var = "";
+        E2.rel = "ARG2";
+        E2.type = "E";
+        E2.var = "";
+        add_edge e11: V->E1;
+        add_edge e12: E1->Y;
+        add_edge e21: V->E2;
+        add_edge e22: E2->X;
+        del_node DOMAIN
+    }
+}
