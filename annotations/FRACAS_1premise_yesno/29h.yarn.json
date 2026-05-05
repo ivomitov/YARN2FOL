@@ -1,0 +1,87 @@
+{
+  "meta": {
+    "sent_id": "29h",
+    "text": "Both commissioners used to be businessmen.",
+    "type": "hypothesis",
+    "fracas_answer": "yes"
+  },
+  "s": [
+    "s1"
+  ],
+  "v": [
+    "vc1",
+    "vb1"
+  ],
+  "f": {
+    "s1": [
+      "s1-temp",
+      "s1-aspect",
+      "s1-quant",
+      "s1-num",
+      "s1-def"
+    ]
+  },
+  "e": {
+    "e2": [
+      "vb1",
+      "domain",
+      "vc1"
+    ]
+  },
+  "l": {
+    "l1": [
+      "s1-quant",
+      "2",
+      "vc1"
+    ],
+    "l2": [
+      "s1-num",
+      "plural",
+      "vc1"
+    ],
+    "l3": [
+      "s1-def",
+      "definite",
+      "vc1"
+    ],
+    "l4": [
+      "s1-quant",
+      "exists",
+      "vb1"
+    ],
+    "l5": [
+      "s1-def",
+      "indefinite",
+      "vb1"
+    ],
+    "l6": [
+      "s1-num",
+      "plural",
+      "vb1"
+    ]
+  },
+  "d": {},
+  "c": {},
+  "h": {
+    "h1": [
+      "s1-aspect",
+      "state",
+      "e2"
+    ],
+    "h2": [
+      "s1-temp",
+      "past",
+      "h1"
+    ]
+  },
+  "i": {},
+  "labels": {
+    "vc1": "commissioner",
+    "vb1": "businessman",
+    "s1-temp": "temp",
+    "s1-aspect": "aspect",
+    "s1-quant": "quant",
+    "s1-num": "num",
+    "s1-def": "def"
+  }
+}

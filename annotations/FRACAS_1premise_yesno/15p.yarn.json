@@ -1,0 +1,93 @@
+{
+  "meta": {
+    "sent_id": "15p",
+    "text": "At least three tenors will take part in the concert.",
+    "type": "premise",
+    "fracas_answer": "yes"
+  },
+  "s": [
+    "s1"
+  ],
+  "v": [
+    "vp1",
+    "vt1",
+    "vc1"
+  ],
+  "f": {
+    "s1": [
+      "s1-temp",
+      "s1-quant",
+      "s1-num",
+      "s1-def",
+      "s1-loc"
+    ]
+  },
+  "e": {
+    "e1": [
+      "vp1",
+      "ARG0",
+      "vt1"
+    ],
+    "e2": [
+      "vp1",
+      "ARG1",
+      "vc1"
+    ]
+  },
+  "l": {
+    "l1": [
+      "s1-temp",
+      "future",
+      "vp1"
+    ],
+    "l2": [
+      "s1-quant",
+      "≥3",
+      "vt1"
+    ],
+    "l3": [
+      "s1-quant",
+      "exists",
+      "vc1"
+    ],
+    "l4": [
+      "s1-num",
+      "plural",
+      "vt1"
+    ],
+    "l5": [
+      "s1-num",
+      "singular",
+      "vc1"
+    ],
+    "l6": [
+      "s1-def",
+      "indefinite",
+      "vt1"
+    ],
+    "l7": [
+      "s1-def",
+      "definite",
+      "vc1"
+    ],
+    "l8": [
+      "s1-loc",
+      "",
+      "vc1"
+    ]
+  },
+  "d": {},
+  "c": {},
+  "h": {},
+  "i": {},
+  "labels": {
+    "vp1": "participate-01",
+    "vt1": "tenor",
+    "vc1": "concert",
+    "s1-temp": "temp",
+    "s1-quant": "quant",
+    "s1-num": "num",
+    "s1-def": "def",
+    "s1-loc": "loc"
+  }
+}

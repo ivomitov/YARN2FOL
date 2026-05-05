@@ -1,0 +1,105 @@
+{
+  "meta": {
+    "sent_id": "116p",
+    "text": "Mary used her workstation.",
+    "type": "premise",
+    "fracas_answer": "yes"
+  },
+  "s": [
+    "s1"
+  ],
+  "v": [
+    "vp1",
+    "vm1",
+    "vw1",
+    "vu1",
+    "vf1"
+  ],
+  "f": {
+    "s1": [
+      "s1-temp",
+      "s1-quant",
+      "s1-num",
+      "s1-def"
+    ]
+  },
+  "e": {
+    "e1": [
+      "vu1",
+      "ARG0",
+      "vp1"
+    ],
+    "e2": [
+      "vu1",
+      "ARG1",
+      "vw1"
+    ],
+    "e3": [
+      "vp1",
+      "name",
+      "vm1"
+    ],
+    "e4": [
+      "vp1",
+      "poss",
+      "vw1"
+    ],
+    "e5": [
+      "vp1",
+      "mod",
+      "vf1"
+    ]
+  },
+  "l": {
+    "l1": [
+      "s1-temp",
+      "past",
+      "vu1"
+    ],
+    "l2": [
+      "s1-quant",
+      "exists",
+      "vp1"
+    ],
+    "l3": [
+      "s1-quant",
+      "exists",
+      "vw1"
+    ],
+    "l4": [
+      "s1-num",
+      "singular",
+      "vp1"
+    ],
+    "l5": [
+      "s1-num",
+      "singular",
+      "vw1"
+    ],
+    "l6": [
+      "s1-def",
+      "definite",
+      "vp1"
+    ],
+    "l7": [
+      "s1-def",
+      "definite",
+      "vw1"
+    ]
+  },
+  "d": {},
+  "c": {},
+  "h": {},
+  "i": {},
+  "labels": {
+    "vp1": "person",
+    "vm1": "Mary",
+    "vw1": "workstation",
+    "vu1": "use-01",
+    "s1-temp": "temp",
+    "vf1": "female",
+    "s1-quant": "quant",
+    "s1-num": "num",
+    "s1-def": "def"
+  }
+}

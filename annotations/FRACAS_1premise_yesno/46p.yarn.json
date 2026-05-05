@@ -1,0 +1,109 @@
+{
+  "meta": {
+    "sent_id": "46p",
+    "text": "Neither commissioner spends time at home.",
+    "type": "premise",
+    "fracas_answer": "no"
+  },
+  "s": [
+    "s1"
+  ],
+  "v": [
+    "vc1",
+    "vt1",
+    "vh1",
+    "vs1"
+  ],
+  "f": {
+    "s1": [
+      "s1-temp",
+      "s1-aspect",
+      "s1-quant",
+      "s1-num",
+      "s1-def",
+      "s1-loc",
+      "s1-neg"
+    ]
+  },
+  "e": {
+    "e1": [
+      "vs1",
+      "ARG0",
+      "vc1"
+    ],
+    "e2": [
+      "vs1",
+      "ARG1",
+      "vt1"
+    ]
+  },
+  "l": {
+    "l1": [
+      "s1-temp",
+      "present",
+      "vs1"
+    ],
+    "l2": [
+      "s1-aspect",
+      "habitual",
+      "vs1"
+    ],
+    "l3": [
+      "s1-quant",
+      "2",
+      "vc1"
+    ],
+    "l4": [
+      "s1-quant",
+      "a lot",
+      "vt1"
+    ],
+    "l5": [
+      "s1-num",
+      "plural",
+      "vc1"
+    ],
+    "l6": [
+      "s1-num",
+      "mass",
+      "vt1"
+    ],
+    "l7": [
+      "s1-def",
+      "indefinite",
+      "vc1"
+    ],
+    "l8": [
+      "s1-def",
+      "indefinite",
+      "vt1"
+    ],
+    "l9": [
+      "s1-loc",
+      "",
+      "vh1"
+    ],
+    "l10": [
+      "s1-neg",
+      "",
+      "vs1"
+    ]
+  },
+  "d": {},
+  "c": {},
+  "h": {},
+  "i": {},
+  "labels": {
+    "vc1": "commissioner",
+    "vt1": "time",
+    "vh1": "home",
+    "vs1": "spend-02",
+    "s1-temp": "temp",
+    "s1-aspect": "aspect",
+    "s1-quant": "quant",
+    "s1-num": "num",
+    "s1-def": "def",
+    "s1-loc": "loc",
+    "s1-neg": "neg"
+  }
+}

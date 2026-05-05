@@ -1,0 +1,123 @@
+{
+  "meta": {
+    "sent_id": "93h",
+    "text": "Everyone at the meeting voted for a new chairman.",
+    "type": "hypothesis",
+    "fracas_answer": "yes"
+  },
+  "s": [
+    "s1"
+  ],
+  "v": [
+    "vp1",
+    "vv1",
+    "vc1",
+    "vn1",
+    "vm1"
+  ],
+  "f": {
+    "s1": [
+      "s1-temp",
+      "s1-quant",
+      "s1-num",
+      "s1-def",
+      "s1-loc"
+    ]
+  },
+  "e": {
+    "e1": [
+      "vn1",
+      "ARG1",
+      "vc1"
+    ],
+    "e2": [
+      "vv1",
+      "ARG0",
+      "vp1"
+    ],
+    "e3": [
+      "vv1",
+      "ARG1",
+      "vc1"
+    ],
+    "e4": [
+      "vp1",
+      "location",
+      "vm1"
+    ]
+  },
+  "l": {
+    "l1": [
+      "s1-temp",
+      "past",
+      "vv1"
+    ],
+    "l3": [
+      "s1-num",
+      "singular",
+      "vp1"
+    ],
+    "l4": [
+      "s1-num",
+      "singular",
+      "vc1"
+    ],
+    "l5": [
+      "s1-def",
+      "definite",
+      "vp1"
+    ],
+    "l6": [
+      "s1-def",
+      "indefinite",
+      "vc1"
+    ],
+    "l7": [
+      "s1-loc",
+      "",
+      "vm1"
+    ],
+    "l8": [
+      "s1-num",
+      "singular",
+      "vm1"
+    ],
+    "l2": [
+      "s1-quant",
+      "exists",
+      "vm1"
+    ]
+  },
+  "d": {},
+  "c": {},
+  "h": {
+    "h2": [
+      "s1-def",
+      "definite",
+      "l7"
+    ],
+    "h1": [
+      "l2",
+      "forall",
+      "vp1"
+    ],
+    "h3": [
+      "h1",
+      "exists",
+      "vc1"
+    ]
+  },
+  "i": {},
+  "labels": {
+    "vp1": "person",
+    "vv1": "vote-01",
+    "vc1": "chairman",
+    "vn1": "new-01",
+    "s1-temp": "temp",
+    "s1-quant": "quant",
+    "vm1": "meeting",
+    "s1-num": "num",
+    "s1-def": "def",
+    "s1-loc": "loc"
+  }
+}

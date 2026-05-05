@@ -1,0 +1,94 @@
+{
+  "meta": {
+    "sent_id": "86h",
+    "text": "Six accountants signed the contract.",
+    "type": "hypothesis",
+    "fracas_answer": "no"
+  },
+  "s": [
+    "s1"
+  ],
+  "v": [
+    "vs1",
+    "vl1",
+    "vc1"
+  ],
+  "f": {
+    "s1": [
+      "s1-temp",
+      "s1-aspect",
+      "s1-quant",
+      "s1-num",
+      "s1-def"
+    ]
+  },
+  "e": {
+    "e2": [
+      "vs1",
+      "ARG1",
+      "vc1"
+    ],
+    "e1": [
+      "vs1",
+      "ARG0",
+      "vl1"
+    ]
+  },
+  "l": {
+    "l1": [
+      "s1-temp",
+      "past",
+      "vs1"
+    ],
+    "l2": [
+      "s1-aspect",
+      "perfective",
+      "vs1"
+    ],
+    "l3": [
+      "s1-quant",
+      "≥6",
+      "vl1"
+    ],
+    "l4": [
+      "s1-num",
+      "plural",
+      "vl1"
+    ],
+    "l6": [
+      "s1-num",
+      "singular",
+      "vc1"
+    ],
+    "l7": [
+      "s1-def",
+      "indefinite",
+      "vl1"
+    ],
+    "l9": [
+      "s1-def",
+      "definite",
+      "vc1"
+    ]
+  },
+  "d": {},
+  "c": {},
+  "h": {
+    "h1": [
+      "l3",
+      "exists",
+      "vc1"
+    ]
+  },
+  "i": {},
+  "labels": {
+    "vs1": "sign-01",
+    "vl1": "accountant",
+    "vc1": "contract",
+    "s1-temp": "temp",
+    "s1-aspect": "aspect",
+    "s1-quant": "quant",
+    "s1-num": "num",
+    "s1-def": "def"
+  }
+}

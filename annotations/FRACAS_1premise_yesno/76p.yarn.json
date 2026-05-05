@@ -1,0 +1,108 @@
+{
+  "meta": {
+    "sent_id": "76p",
+    "text": "Few committee members are from southern Europe.",
+    "type": "premise",
+    "fracas_answer": "yes"
+  },
+  "s": [
+    "s1"
+  ],
+  "v": [
+    "vc1",
+    "vm1",
+    "vo1",
+    "vw1",
+    "vs1"
+  ],
+  "f": {
+    "s1": [
+      "s1-temp",
+      "s1-aspect",
+      "s1-quant",
+      "s1-num",
+      "s1-def"
+    ]
+  },
+  "e": {
+    "e2": [
+      "vm1",
+      "part-of",
+      "vc1"
+    ],
+    "e3": [
+      "vw1",
+      "name",
+      "vs1"
+    ],
+    "e4": [
+      "vo1",
+      "ARG1",
+      "vm1"
+    ],
+    "e5": [
+      "vo1",
+      "ARG2",
+      "vw1"
+    ]
+  },
+  "l": {
+    "l1": [
+      "s1-temp",
+      "present",
+      "vo1"
+    ],
+    "l2": [
+      "s1-aspect",
+      "state",
+      "vo1"
+    ],
+    "l4": [
+      "s1-num",
+      "plural",
+      "vm1"
+    ],
+    "l5": [
+      "s1-num",
+      "singular",
+      "vw1"
+    ],
+    "l3": [
+      "s1-quant",
+      "exists",
+      "vw1"
+    ],
+    "l6": [
+      "s1-def",
+      "indefinite",
+      "vm1"
+    ],
+    "l7": [
+      "s1-def",
+      "definite",
+      "vw1"
+    ]
+  },
+  "d": {},
+  "c": {},
+  "h": {
+    "h1": [
+      "l3",
+      "few",
+      "vm1"
+    ]
+  },
+  "i": {},
+  "labels": {
+    "vc1": "committee",
+    "vm1": "member",
+    "vo1": "originate-01",
+    "vw1": "world-region",
+    "vs1": "Southern Europe",
+    "s1-temp": "temp",
+    "s1-aspect": "aspect",
+    "s1-quant": "quant",
+    "s1-num": "num",
+    "s1-def": "def"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "meta": {
+    "sent_id": "97p",
+    "text": "Software faults were blamed for the system failure.",
+    "type": "premise",
+    "fracas_answer": "yes"
+  },
+  "s": [],
+  "v": [
+    "vs1",
+    "vf1",
+    "vf2"
+  ],
+  "f": {},
+  "e": {},
+  "l": {},
+  "d": {},
+  "c": {},
+  "h": {},
+  "i": {},
+  "labels": {
+    "vs1": "software",
+    "vf1": "fault",
+    "vf2": "fail-01"
+  }
+}

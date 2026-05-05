@@ -1,0 +1,86 @@
+{
+  "meta": {
+    "sent_id": "109p",
+    "text": "Just one accountant attended the meeting.",
+    "type": "premise",
+    "fracas_answer": "no"
+  },
+  "s": [
+    "s1"
+  ],
+  "v": [
+    "va1",
+    "vm1",
+    "va2"
+  ],
+  "f": {
+    "s1": [
+      "s1-temp",
+      "s1-num",
+      "s1-def",
+      "s1-quant"
+    ]
+  },
+  "e": {
+    "e1": [
+      "va2",
+      "ARG0",
+      "va1"
+    ],
+    "e2": [
+      "va2",
+      "ARG1",
+      "vm1"
+    ]
+  },
+  "l": {
+    "l1": [
+      "s1-temp",
+      "past",
+      "va2"
+    ],
+    "l2": [
+      "s1-num",
+      "singular",
+      "va1"
+    ],
+    "l3": [
+      "s1-num",
+      "singular",
+      "vm1"
+    ],
+    "l4": [
+      "s1-def",
+      "indefinite",
+      "va1"
+    ],
+    "l5": [
+      "s1-def",
+      "definite",
+      "vm1"
+    ],
+    "l6": [
+      "s1-quant",
+      "1",
+      "va1"
+    ],
+    "l7": [
+      "s1-quant",
+      "exists",
+      "vm1"
+    ]
+  },
+  "d": {},
+  "c": {},
+  "h": {},
+  "i": {},
+  "labels": {
+    "va1": "accountant",
+    "vm1": "meeting",
+    "va2": "attend-01",
+    "s1-temp": "temp",
+    "s1-num": "num",
+    "s1-def": "def",
+    "s1-quant": "quant"
+  }
+}

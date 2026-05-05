@@ -1,0 +1,144 @@
+{
+  "meta": {
+    "sent_id": "1p",
+    "text": "An Italian became the world's greatest tenor.",
+    "type": "premise",
+    "fracas_answer": "yes"
+  },
+  "s": [
+    "s1"
+  ],
+  "v": [
+    "vb1",
+    "vp1",
+    "vi1",
+    "vw1",
+    "vg1",
+    "vc1",
+    "vt1"
+  ],
+  "f": {
+    "s1": [
+      "s1-temp",
+      "s1-quant",
+      "s1-num",
+      "s1-def",
+      "s1-aspect",
+      "s1-degree"
+    ]
+  },
+  "e": {
+    "e1": [
+      "vp1",
+      "mod",
+      "vc1"
+    ],
+    "e2": [
+      "vc1",
+      "name",
+      "vi1"
+    ],
+    "e3": [
+      "vb1",
+      "ARG1",
+      "vp1"
+    ],
+    "e4": [
+      "vb1",
+      "ARG2",
+      "vt1"
+    ],
+    "e5": [
+      "vg1",
+      "ARG1",
+      "vt1"
+    ]
+  },
+  "l": {
+    "l1": [
+      "s1-temp",
+      "past",
+      "vb1"
+    ],
+    "l2": [
+      "s1-quant",
+      "exists",
+      "vp1"
+    ],
+    "l3": [
+      "s1-num",
+      "singular",
+      "vp1"
+    ],
+    "l4": [
+      "s1-def",
+      "indefinite",
+      "vp1"
+    ],
+    "l5": [
+      "s1-aspect",
+      "perfective",
+      "vb1"
+    ],
+    "l6": [
+      "s1-degree",
+      "most",
+      "vg1"
+    ],
+    "l7": [
+      "s1-quant",
+      "exists",
+      "vw1"
+    ],
+    "l8": [
+      "s1-def",
+      "definite",
+      "vw1"
+    ],
+    "l9": [
+      "s1-num",
+      "singular",
+      "vw1"
+    ],
+    "l10": [
+      "s1-quant",
+      "exists",
+      "vt1"
+    ],
+    "l11": [
+      "s1-def",
+      "definite",
+      "vt1"
+    ],
+    "l12": [
+      "s1-num",
+      "singular",
+      "vt1"
+    ]
+  },
+  "d": {},
+  "c": {},
+  "h": {
+    "h1": [
+      "l6",
+      "in/among/of",
+      "vw1"
+    ]
+  },
+  "i": {},
+  "labels": {
+    "vb1": "become-01",
+    "vp1": "person",
+    "vi1": "Italy",
+    "vw1": "world",
+    "vg1": "great-02",
+    "vc1": "country",
+    "vt1": "tenor",
+    "s1-temp": "temp",
+    "s1-quant": "quant",
+    "s1-num": "num",
+    "s1-def": "def",
+    "s1-aspect": "aspect",
+    "s1-degree": "degree"
+  }
+}

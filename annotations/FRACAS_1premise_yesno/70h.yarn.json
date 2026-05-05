@@ -1,0 +1,108 @@
+{
+  "meta": {
+    "sent_id": "70h",
+    "text": "Some Scandinavian delegate finished the report on time.",
+    "type": "hypothesis",
+    "fracas_answer": "no"
+  },
+  "s": [
+    "s1"
+  ],
+  "v": [
+    "vf1",
+    "vd1",
+    "vr1",
+    "vo1",
+    "vs1"
+  ],
+  "f": {
+    "s1": [
+      "s1-temp",
+      "s1-aspect",
+      "s1-quant",
+      "s1-num",
+      "s1-def"
+    ]
+  },
+  "e": {
+    "e1": [
+      "vf1",
+      "ARG0",
+      "vd1"
+    ],
+    "e2": [
+      "vf1",
+      "ARG1",
+      "vr1"
+    ],
+    "e3": [
+      "vf1",
+      "manner",
+      "vo1"
+    ],
+    "e4": [
+      "vd1",
+      "mod",
+      "vs1"
+    ]
+  },
+  "l": {
+    "l1": [
+      "s1-temp",
+      "past",
+      "vf1"
+    ],
+    "l2": [
+      "s1-aspect",
+      "perfective",
+      "vf1"
+    ],
+    "l4": [
+      "s1-quant",
+      "exists",
+      "vr1"
+    ],
+    "l5": [
+      "s1-num",
+      "singular",
+      "vd1"
+    ],
+    "l6": [
+      "s1-num",
+      "singular",
+      "vr1"
+    ],
+    "l3": [
+      "s1-def",
+      "definite",
+      "vr1"
+    ],
+    "l7": [
+      "s1-def",
+      "indefinite",
+      "vd1"
+    ]
+  },
+  "d": {},
+  "c": {},
+  "h": {
+    "h1": [
+      "l4",
+      "exists",
+      "vd1"
+    ]
+  },
+  "i": {},
+  "labels": {
+    "vf1": "finish-01",
+    "vd1": "delegate",
+    "vr1": "report",
+    "s1-temp": "temp",
+    "s1-aspect": "aspect",
+    "s1-quant": "quant",
+    "s1-num": "num",
+    "s1-def": "def",
+    "vo1": "on_time",
+    "vs1": "scandinavian"
+  }
+}

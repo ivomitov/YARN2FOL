@@ -1,0 +1,114 @@
+{
+  "meta": {
+    "sent_id": "17p",
+    "text": "An Irishman won the Nobel prize for literature.",
+    "type": "premise",
+    "fracas_answer": "yes"
+  },
+  "s": [
+    "s1"
+  ],
+  "v": [
+    "vm1",
+    "vi1",
+    "vp1",
+    "vn1",
+    "vl1",
+    "vw1"
+  ],
+  "f": {
+    "s1": [
+      "s1-temp",
+      "s1-quant",
+      "s1-num",
+      "s1-def",
+      "s1-aspect"
+    ]
+  },
+  "e": {
+    "e1": [
+      "vp1",
+      "name",
+      "vn1"
+    ],
+    "e2": [
+      "vm1",
+      "mod",
+      "vi1"
+    ],
+    "e3": [
+      "vp1",
+      "mod",
+      "vl1"
+    ],
+    "e4": [
+      "vw1",
+      "ARG0",
+      "vm1"
+    ],
+    "e5": [
+      "vw1",
+      "ARG1",
+      "vp1"
+    ]
+  },
+  "l": {
+    "l1": [
+      "s1-temp",
+      "past",
+      "vw1"
+    ],
+    "l2": [
+      "s1-quant",
+      "exists",
+      "vm1"
+    ],
+    "l3": [
+      "s1-quant",
+      "exists",
+      "vp1"
+    ],
+    "l4": [
+      "s1-num",
+      "singular",
+      "vm1"
+    ],
+    "l5": [
+      "s1-num",
+      "singular",
+      "vp1"
+    ],
+    "l6": [
+      "s1-def",
+      "indefinite",
+      "vm1"
+    ],
+    "l7": [
+      "s1-def",
+      "definite",
+      "vp1"
+    ],
+    "l8": [
+      "s1-aspect",
+      "perfective",
+      "vw1"
+    ]
+  },
+  "d": {},
+  "c": {},
+  "h": {},
+  "i": {},
+  "labels": {
+    "vm1": "man",
+    "vi1": "irish",
+    "vp1": "prize",
+    "vn1": "Nobel Prize",
+    "vl1": "literature",
+    "vw1": "win-01",
+    "s1-temp": "temp",
+    "s1-quant": "quant",
+    "s1-num": "num",
+    "s1-def": "def",
+    "s1-aspect": "aspect"
+  }
+}

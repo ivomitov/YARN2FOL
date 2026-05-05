@@ -1,0 +1,72 @@
+{
+  "meta": {
+    "sent_id": "116h",
+    "text": "Mary is female.",
+    "type": "hypothesis",
+    "fracas_answer": "yes"
+  },
+  "s": [
+    "s1"
+  ],
+  "v": [
+    "vp1",
+    "vm1",
+    "vf1"
+  ],
+  "f": {
+    "s1": [
+      "s1-temp",
+      "s1-quant",
+      "s1-num",
+      "s1-def"
+    ]
+  },
+  "e": {
+    "e3": [
+      "vp1",
+      "name",
+      "vm1"
+    ],
+    "e1": [
+      "vf1",
+      "domain",
+      "vp1"
+    ]
+  },
+  "l": {
+    "l2": [
+      "s1-quant",
+      "exists",
+      "vp1"
+    ],
+    "l4": [
+      "s1-num",
+      "singular",
+      "vp1"
+    ],
+    "l6": [
+      "s1-def",
+      "definite",
+      "vp1"
+    ]
+  },
+  "d": {},
+  "c": {},
+  "h": {
+    "h1": [
+      "s1-temp",
+      "present",
+      "e1"
+    ]
+  },
+  "i": {},
+  "labels": {
+    "vp1": "person",
+    "vm1": "Mary",
+    "s1-temp": "temp",
+    "vf1": "female",
+    "s1-quant": "quant",
+    "s1-num": "num",
+    "s1-def": "def"
+  }
+}

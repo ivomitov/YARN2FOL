@@ -1,0 +1,79 @@
+{
+  "meta": {
+    "sent_id": "10p",
+    "text": "Most great tenors are Italian.",
+    "type": "premise",
+    "fracas_answer": "yes"
+  },
+  "s": [
+    "s1"
+  ],
+  "v": [
+    "vg1",
+    "vt1",
+    "vg2"
+  ],
+  "f": {
+    "s1": [
+      "s1-temp",
+      "s1-quant",
+      "s1-num",
+      "s1-def",
+      "s1-aspect"
+    ]
+  },
+  "e": {
+    "e1": [
+      "vg1",
+      "domain",
+      "vt1"
+    ],
+    "e2": [
+      "vg2",
+      "ARG1",
+      "vt1"
+    ]
+  },
+  "l": {
+    "l1": [
+      "s1-quant",
+      "most",
+      "vt1"
+    ],
+    "l2": [
+      "s1-num",
+      "plural",
+      "vt1"
+    ],
+    "l3": [
+      "s1-def",
+      "indefinite",
+      "vt1"
+    ]
+  },
+  "d": {},
+  "c": {},
+  "h": {
+    "h1": [
+      "s1-temp",
+      "present",
+      "e1"
+    ],
+    "h2": [
+      "s1-aspect",
+      "state",
+      "e1"
+    ]
+  },
+  "i": {},
+  "labels": {
+    "vg1": "italian",
+    "vt1": "tenor",
+    "vg2": "great-01",
+    "s1-temp": "temp",
+    "s1-quant": "quant",
+    "s1-num": "num",
+    "s1-def": "def",
+    "s1-aspect": "aspect"
+  }
+}

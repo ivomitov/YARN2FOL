@@ -1,0 +1,107 @@
+{
+  "meta": {
+    "sent_id": "55p",
+    "text": "Some Irish delegates finished the survey on time.",
+    "type": "premise",
+    "fracas_answer": "yes"
+  },
+  "s": [
+    "s1"
+  ],
+  "v": [
+    "vf1",
+    "vd1",
+    "vs1",
+    "vo1",
+    "vi1"
+  ],
+  "f": {
+    "s1": [
+      "s1-temp",
+      "s1-quant",
+      "s1-num",
+      "s1-def",
+      "s1-aspect"
+    ]
+  },
+  "e": {
+    "e1": [
+      "vf1",
+      "ARG0",
+      "vd1"
+    ],
+    "e2": [
+      "vf1",
+      "ARG1",
+      "vs1"
+    ],
+    "e3": [
+      "vf1",
+      "manner",
+      "vo1"
+    ],
+    "e4": [
+      "vd1",
+      "mod",
+      "vi1"
+    ]
+  },
+  "l": {
+    "l1": [
+      "s1-temp",
+      "past",
+      "vf1"
+    ],
+    "l2": [
+      "s1-quant",
+      "exists",
+      "vd1"
+    ],
+    "l3": [
+      "s1-quant",
+      "exists",
+      "vs1"
+    ],
+    "l4": [
+      "s1-num",
+      "plural",
+      "vd1"
+    ],
+    "l5": [
+      "s1-num",
+      "singular",
+      "vs1"
+    ],
+    "l6": [
+      "s1-def",
+      "indefinite",
+      "vd1"
+    ],
+    "l7": [
+      "s1-def",
+      "definite",
+      "vs1"
+    ],
+    "l8": [
+      "s1-aspect",
+      "perfective",
+      "vf1"
+    ]
+  },
+  "d": {},
+  "c": {},
+  "h": {},
+  "i": {},
+  "labels": {
+    "vf1": "finish-01",
+    "vd1": "delegate",
+    "vs1": "survey",
+    "vo1": "on_time",
+    "s1-temp": "temp",
+    "s1-quant": "quant",
+    "s1-num": "num",
+    "s1-def": "def",
+    "s1-aspect": "aspect",
+    "vi1": "irish"
+  }
+}

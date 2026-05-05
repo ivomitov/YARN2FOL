@@ -1,0 +1,101 @@
+{
+  "meta": {
+    "sent_id": "38p",
+    "text": "No delegate finished the report.",
+    "type": "premise",
+    "fracas_answer": "no"
+  },
+  "s": [
+    "s1"
+  ],
+  "v": [
+    "vf1",
+    "vd1",
+    "vr1"
+  ],
+  "f": {
+    "s1": [
+      "s1-temp",
+      "s1-aspect",
+      "s1-quant",
+      "s1-num",
+      "s1-def",
+      "s1-neg"
+    ]
+  },
+  "e": {
+    "e1": [
+      "vf1",
+      "ARG0",
+      "vd1"
+    ],
+    "e2": [
+      "vf1",
+      "ARG1",
+      "vr1"
+    ]
+  },
+  "l": {
+    "l1": [
+      "s1-temp",
+      "past",
+      "vf1"
+    ],
+    "l2": [
+      "s1-aspect",
+      "perfective",
+      "vf1"
+    ],
+    "l4": [
+      "s1-quant",
+      "exists",
+      "vr1"
+    ],
+    "l5": [
+      "s1-num",
+      "singular",
+      "vd1"
+    ],
+    "l6": [
+      "s1-num",
+      "singular",
+      "vr1"
+    ],
+    "l3": [
+      "s1-def",
+      "definite",
+      "vr1"
+    ],
+    "l7": [
+      "s1-def",
+      "indefinite",
+      "vd1"
+    ]
+  },
+  "d": {},
+  "c": {},
+  "h": {
+    "h1": [
+      "l4",
+      "exists",
+      "vd1"
+    ],
+    "h2": [
+      "s1-neg",
+      "",
+      "h1"
+    ]
+  },
+  "i": {},
+  "labels": {
+    "vf1": "finish-01",
+    "vd1": "delegate",
+    "vr1": "report",
+    "s1-temp": "temp",
+    "s1-aspect": "aspect",
+    "s1-quant": "quant",
+    "s1-num": "num",
+    "s1-def": "def",
+    "s1-neg": "neg"
+  }
+}

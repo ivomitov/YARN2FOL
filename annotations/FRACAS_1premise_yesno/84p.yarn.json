@@ -1,0 +1,166 @@
+{
+  "meta": {
+    "sent_id": "84p",
+    "text": "Either Smith, Jones or Anderson signed the contract.",
+    "type": "premise",
+    "fracas_answer": "yes"
+  },
+  "s": [
+    "s1"
+  ],
+  "v": [
+    "vp1",
+    "vp2",
+    "vp3",
+    "vs1",
+    "vj1",
+    "va1",
+    "vc1",
+    "vs2",
+    "va2"
+  ],
+  "f": {
+    "s1": [
+      "s1-temp",
+      "s1-aspect",
+      "s1-quant",
+      "s1-num",
+      "s1-def"
+    ]
+  },
+  "e": {
+    "e1": [
+      "vs2",
+      "ARG0",
+      "va2"
+    ],
+    "e2": [
+      "va2",
+      "op1",
+      "vp3"
+    ],
+    "e3": [
+      "va2",
+      "op2",
+      "vp2"
+    ],
+    "e4": [
+      "va2",
+      "op3",
+      "vp1"
+    ],
+    "e5": [
+      "vp3",
+      "name",
+      "vs1"
+    ],
+    "e6": [
+      "vp2",
+      "name",
+      "vj1"
+    ],
+    "e7": [
+      "vp1",
+      "name",
+      "va1"
+    ],
+    "e8": [
+      "vs2",
+      "ARG1",
+      "vc1"
+    ]
+  },
+  "l": {
+    "l1": [
+      "s1-temp",
+      "past",
+      "vs2"
+    ],
+    "l2": [
+      "s1-aspect",
+      "perfective",
+      "vs2"
+    ],
+    "l3": [
+      "s1-quant",
+      "exists",
+      "vp3"
+    ],
+    "l4": [
+      "s1-num",
+      "singular",
+      "vp3"
+    ],
+    "l5": [
+      "s1-num",
+      "singular",
+      "vp2"
+    ],
+    "l6": [
+      "s1-num",
+      "singular",
+      "vp1"
+    ],
+    "l7": [
+      "s1-num",
+      "singular",
+      "vc1"
+    ],
+    "l9": [
+      "s1-def",
+      "definite",
+      "vp2"
+    ],
+    "l10": [
+      "s1-def",
+      "definite",
+      "vp1"
+    ],
+    "l11": [
+      "s1-def",
+      "definite",
+      "vc1"
+    ],
+    "l8": [
+      "s1-def",
+      "definite",
+      "vp3"
+    ]
+  },
+  "d": {},
+  "c": {},
+  "h": {
+    "h1": [
+      "l3",
+      "exists",
+      "vp2"
+    ],
+    "h2": [
+      "h1",
+      "exists",
+      "vp1"
+    ],
+    "h3": [
+      "h2",
+      "exists",
+      "vc1"
+    ]
+  },
+  "i": {},
+  "labels": {
+    "vp1": "person",
+    "vp2": "person",
+    "vp3": "person",
+    "vs1": "Smith",
+    "vj1": "Jones",
+    "va1": "Anderson",
+    "vc1": "contract",
+    "vs2": "sign-01",
+    "va2": "or",
+    "s1-temp": "temp",
+    "s1-aspect": "aspect",
+    "s1-quant": "quant",
+    "s1-num": "num",
+    "s1-def": "def"
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "meta": {
+    "sent_id": "82h",
+    "text": "Jones signed the contract.",
+    "type": "hypothesis",
+    "fracas_answer": "yes"
+  },
+  "s": [
+    "s1"
+  ],
+  "v": [
+    "vp2",
+    "vj1",
+    "vc1",
+    "vs2"
+  ],
+  "f": {
+    "s1": [
+      "s1-temp",
+      "s1-aspect",
+      "s1-quant",
+      "s1-num",
+      "s1-def"
+    ]
+  },
+  "e": {
+    "e6": [
+      "vp2",
+      "name",
+      "vj1"
+    ],
+    "e8": [
+      "vs2",
+      "ARG1",
+      "vc1"
+    ],
+    "e1": [
+      "vs2",
+      "ARG0",
+      "vp2"
+    ]
+  },
+  "l": {
+    "l1": [
+      "s1-temp",
+      "past",
+      "vs2"
+    ],
+    "l2": [
+      "s1-aspect",
+      "perfective",
+      "vs2"
+    ],
+    "l5": [
+      "s1-num",
+      "singular",
+      "vp2"
+    ],
+    "l7": [
+      "s1-num",
+      "singular",
+      "vc1"
+    ],
+    "l9": [
+      "s1-def",
+      "definite",
+      "vp2"
+    ],
+    "l11": [
+      "s1-def",
+      "definite",
+      "vc1"
+    ],
+    "l3": [
+      "s1-quant",
+      "exists",
+      "vp2"
+    ]
+  },
+  "d": {},
+  "c": {},
+  "h": {
+    "h1": [
+      "l3",
+      "exists",
+      "vc1"
+    ]
+  },
+  "i": {},
+  "labels": {
+    "vp2": "person",
+    "vj1": "Jones",
+    "vc1": "contract",
+    "vs2": "sign-01",
+    "s1-temp": "temp",
+    "s1-aspect": "aspect",
+    "s1-quant": "quant",
+    "s1-num": "num",
+    "s1-def": "def"
+  }
+}

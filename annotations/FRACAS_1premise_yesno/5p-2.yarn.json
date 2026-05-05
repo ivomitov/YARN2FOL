@@ -1,0 +1,93 @@
+{
+  "meta": {
+    "sent_id": "5p-2",
+    "text": "The really ambitious tenors are Italian.",
+    "type": "premise",
+    "fracas_answer": "yes"
+  },
+  "s": [
+    "s1"
+  ],
+  "v": [
+    "vi1",
+    "vc1",
+    "vr1",
+    "va1",
+    "vt1"
+  ],
+  "f": {
+    "s1": [
+      "s1-temp",
+      "s1-quant",
+      "s1-num",
+      "s1-def",
+      "s1-aspect"
+    ]
+  },
+  "e": {
+    "e2": [
+      "vc1",
+      "name",
+      "vi1"
+    ],
+    "e4": [
+      "va1",
+      "ARG0",
+      "vt1"
+    ],
+    "e5": [
+      "va1",
+      "degree",
+      "vr1"
+    ],
+    "e1": [
+      "vc1",
+      "domain",
+      "vt1"
+    ]
+  },
+  "l": {
+    "l1": [
+      "s1-num",
+      "singular",
+      "vt1"
+    ],
+    "l2": [
+      "s1-quant",
+      "forall",
+      "vt1"
+    ],
+    "l3": [
+      "s1-def",
+      "indefinite",
+      "vt1"
+    ]
+  },
+  "d": {},
+  "c": {},
+  "h": {
+    "h1": [
+      "s1-temp",
+      "present",
+      "e1"
+    ],
+    "h2": [
+      "s1-aspect",
+      "state",
+      "e1"
+    ]
+  },
+  "i": {},
+  "labels": {
+    "vi1": "Italy",
+    "vc1": "country",
+    "vr1": "really",
+    "va1": "ambitious-01",
+    "vt1": "tenor",
+    "s1-temp": "temp",
+    "s1-quant": "quant",
+    "s1-num": "num",
+    "s1-def": "def",
+    "s1-aspect": "aspect"
+  }
+}

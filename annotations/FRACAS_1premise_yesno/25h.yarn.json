@@ -1,0 +1,124 @@
+{
+  "meta": {
+    "sent_id": "25h",
+    "text": "Several delegates got the results published.",
+    "type": "hypothesis",
+    "fracas_answer": "yes"
+  },
+  "s": [
+    "s1",
+    "s2"
+  ],
+  "v": [
+    "vg1",
+    "vd1",
+    "vr1",
+    "vp1"
+  ],
+  "f": {
+    "s1": [
+      "s1-temp",
+      "s1-quant",
+      "s1-num",
+      "s1-def",
+      "s1-aspect"
+    ],
+    "s2": [
+      "s2-temp",
+      "s2-quant",
+      "s2-num",
+      "s2-def",
+      "s2-aspect"
+    ]
+  },
+  "e": {
+    "e1": [
+      "vg1",
+      "ARG0",
+      "vd1"
+    ],
+    "e3": [
+      "vp1",
+      "ARG1",
+      "vr1"
+    ]
+  },
+  "l": {
+    "l1": [
+      "s1-temp",
+      "past",
+      "vg1"
+    ],
+    "l2": [
+      "s2-temp",
+      "past",
+      "vp1"
+    ],
+    "l3": [
+      "s1-quant",
+      "several",
+      "vd1"
+    ],
+    "l4": [
+      "s1-num",
+      "plural",
+      "vd1"
+    ],
+    "l5": [
+      "s1-def",
+      "indefinite",
+      "vd1"
+    ],
+    "l6": [
+      "s2-quant",
+      "exists",
+      "vr1"
+    ],
+    "l8": [
+      "s2-num",
+      "plural",
+      "vr1"
+    ],
+    "l10": [
+      "s2-def",
+      "definite",
+      "vr1"
+    ],
+    "l13": [
+      "s2-aspect",
+      "perfective",
+      "vp1"
+    ],
+    "l14": [
+      "s1-aspect",
+      "perfective",
+      "vg1"
+    ]
+  },
+  "d": {},
+  "c": {
+    "c1": [
+      "vg1",
+      "ARG1",
+      "s2"
+    ]
+  },
+  "h": {},
+  "i": {},
+  "labels": {
+    "vg1": "get-04",
+    "vd1": "delegate",
+    "vr1": "result",
+    "vp1": "publish-01",
+    "s1-temp": "temp",
+    "s2-temp": "temp",
+    "s1-quant": "quant",
+    "s1-num": "num",
+    "s1-def": "def",
+    "s2-quant": "quant",
+    "s2-num": "num",
+    "s2-def": "def",
+    "s2-aspect": "aspect",
+    "s1-aspect": "aspect"
+  }
+}

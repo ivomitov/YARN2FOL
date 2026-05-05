@@ -1,0 +1,87 @@
+{
+  "meta": {
+    "sent_id": "87h",
+    "text": "Every representative was at the meeting.",
+    "type": "hypothesis",
+    "fracas_answer": "yes"
+  },
+  "s": [
+    "s1"
+  ],
+  "v": [
+    "vr1",
+    "vl1",
+    "vm1"
+  ],
+  "f": {
+    "s1": [
+      "s1-temp",
+      "s1-quant",
+      "s1-num",
+      "s1-def"
+    ]
+  },
+  "e": {
+    "e2": [
+      "vl1",
+      "ARGM-LOC",
+      "vm1"
+    ],
+    "e1": [
+      "vl1",
+      "ARG1",
+      "vr1"
+    ]
+  },
+  "l": {
+    "l1": [
+      "s1-temp",
+      "past",
+      "vl1"
+    ],
+    "l2": [
+      "s1-quant",
+      "exists",
+      "vm1"
+    ],
+    "l3": [
+      "s1-num",
+      "singular",
+      "vr1"
+    ],
+    "l5": [
+      "s1-num",
+      "singular",
+      "vm1"
+    ],
+    "l6": [
+      "s1-def",
+      "indefinite",
+      "vr1"
+    ],
+    "l8": [
+      "s1-def",
+      "definite",
+      "vm1"
+    ]
+  },
+  "d": {},
+  "c": {},
+  "h": {
+    "h1": [
+      "l2",
+      "forall",
+      "vr1"
+    ]
+  },
+  "i": {},
+  "labels": {
+    "vr1": "representative",
+    "vl1": "locate-01",
+    "vm1": "meeting",
+    "s1-temp": "temp",
+    "s1-quant": "quant",
+    "s1-num": "num",
+    "s1-def": "def"
+  }
+}

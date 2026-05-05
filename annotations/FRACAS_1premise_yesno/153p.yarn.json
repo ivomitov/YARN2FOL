@@ -1,0 +1,18 @@
+{
+  "meta": {
+    "sent_id": "153p",
+    "text": "John is going to Paris by car, and the students by train.",
+    "type": "premise",
+    "fracas_answer": "yes"
+  },
+  "s": [],
+  "v": [],
+  "f": {},
+  "e": {},
+  "l": {},
+  "d": {},
+  "c": {},
+  "h": {},
+  "i": {},
+  "labels": {}
+}

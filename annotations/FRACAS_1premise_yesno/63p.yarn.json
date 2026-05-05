@@ -1,0 +1,122 @@
+{
+  "meta": {
+    "sent_id": "63p",
+    "text": "At least three female commissioners spend time at home.",
+    "type": "premise",
+    "fracas_answer": "yes"
+  },
+  "s": [
+    "s1"
+  ],
+  "v": [
+    "vc1",
+    "vt1",
+    "vh1",
+    "vs1",
+    "vf1"
+  ],
+  "f": {
+    "s1": [
+      "s1-temp",
+      "s1-aspect",
+      "s1-quant",
+      "s1-num",
+      "s1-def"
+    ]
+  },
+  "e": {
+    "e1": [
+      "vs1",
+      "ARG0",
+      "vc1"
+    ],
+    "e2": [
+      "vs1",
+      "ARG1",
+      "vt1"
+    ],
+    "e3": [
+      "vc1",
+      "mod",
+      "vf1"
+    ],
+    "e4": [
+      "vs1",
+      "location",
+      "vh1"
+    ]
+  },
+  "l": {
+    "l1": [
+      "s1-temp",
+      "present",
+      "vs1"
+    ],
+    "l2": [
+      "s1-aspect",
+      "habitual",
+      "vs1"
+    ],
+    "l3": [
+      "s1-quant",
+      "≥3",
+      "vc1"
+    ],
+    "l4": [
+      "s1-quant",
+      "exists",
+      "vt1"
+    ],
+    "l5": [
+      "s1-num",
+      "plural",
+      "vc1"
+    ],
+    "l6": [
+      "s1-num",
+      "mass",
+      "vt1"
+    ],
+    "l7": [
+      "s1-def",
+      "indefinite",
+      "vc1"
+    ],
+    "l8": [
+      "s1-def",
+      "indefinite",
+      "vt1"
+    ],
+    "l9": [
+      "s1-quant",
+      "exists",
+      "vh1"
+    ],
+    "l10": [
+      "s1-num",
+      "singular",
+      "vh1"
+    ],
+    "l11": [
+      "s1-def",
+      "definite",
+      "vh1"
+    ]
+  },
+  "d": {},
+  "c": {},
+  "h": {},
+  "i": {},
+  "labels": {
+    "vc1": "commissioner",
+    "vt1": "time",
+    "vh1": "home",
+    "vs1": "spend-02",
+    "s1-temp": "temp",
+    "s1-aspect": "aspect",
+    "s1-quant": "quant",
+    "s1-num": "num",
+    "s1-def": "def",
+    "vf1": "female"
+  }
+}

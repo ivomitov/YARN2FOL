@@ -1,0 +1,232 @@
+{
+  "meta": {
+    "sent_id": "84h",
+    "text": "If Smith and Anderson did not sign the contract, Jones signed the contract.",
+    "type": "hypothesis",
+    "fracas_answer": "yes"
+  },
+  "s": [
+    "s1",
+    "s2"
+  ],
+  "v": [
+    "vp1",
+    "vp2",
+    "vp3",
+    "vs1",
+    "vj1",
+    "va1",
+    "vc1",
+    "vs2",
+    "va2",
+    "vs3",
+    "vc2"
+  ],
+  "f": {
+    "s1": [
+      "s1-temp",
+      "s1-aspect",
+      "s1-quant",
+      "s1-num",
+      "s1-def",
+      "s1-neg"
+    ],
+    "s2": [
+      "s2-temp",
+      "s2-aspect",
+      "s2-quant",
+      "s2-num",
+      "s2-def"
+    ]
+  },
+  "e": {
+    "e1": [
+      "vs2",
+      "ARG0",
+      "va2"
+    ],
+    "e2": [
+      "va2",
+      "op1",
+      "vp3"
+    ],
+    "e3": [
+      "va2",
+      "op2",
+      "vp2"
+    ],
+    "e5": [
+      "vp3",
+      "name",
+      "vs1"
+    ],
+    "e6": [
+      "vp2",
+      "name",
+      "vj1"
+    ],
+    "e7": [
+      "vp1",
+      "name",
+      "va1"
+    ],
+    "e8": [
+      "vs2",
+      "ARG1",
+      "vc1"
+    ],
+    "e4": [
+      "vs3",
+      "ARG0",
+      "vp1"
+    ],
+    "e9": [
+      "vs3",
+      "ARG1",
+      "vc2"
+    ]
+  },
+  "l": {
+    "l1": [
+      "s1-temp",
+      "past",
+      "vs2"
+    ],
+    "l2": [
+      "s1-aspect",
+      "perfective",
+      "vs2"
+    ],
+    "l3": [
+      "s1-quant",
+      "exists",
+      "vp3"
+    ],
+    "l4": [
+      "s1-num",
+      "singular",
+      "vp3"
+    ],
+    "l5": [
+      "s1-num",
+      "singular",
+      "vp2"
+    ],
+    "l7": [
+      "s1-num",
+      "singular",
+      "vc1"
+    ],
+    "l9": [
+      "s1-def",
+      "definite",
+      "vp2"
+    ],
+    "l11": [
+      "s1-def",
+      "definite",
+      "vc1"
+    ],
+    "l8": [
+      "s1-def",
+      "definite",
+      "vp3"
+    ],
+    "l6": [
+      "s1-neg",
+      "",
+      "vs2"
+    ],
+    "l10": [
+      "s2-temp",
+      "past",
+      "vs3"
+    ],
+    "l12": [
+      "s2-aspect",
+      "perfective",
+      "vs3"
+    ],
+    "l13": [
+      "s2-quant",
+      "exists",
+      "vp1"
+    ],
+    "l14": [
+      "s2-num",
+      "singular",
+      "vp1"
+    ],
+    "l15": [
+      "s2-num",
+      "singular",
+      "vc2"
+    ],
+    "l16": [
+      "s2-def",
+      "definite",
+      "vp1"
+    ],
+    "l17": [
+      "s2-def",
+      "definite",
+      "vc2"
+    ]
+  },
+  "d": {
+    "d1": [
+      "s1",
+      "CONSEQUENCE",
+      "s2"
+    ]
+  },
+  "c": {},
+  "h": {
+    "h1": [
+      "l3",
+      "exists",
+      "vp2"
+    ],
+    "h2": [
+      "h1",
+      "exists",
+      "vc1"
+    ],
+    "h3": [
+      "l13",
+      "exists",
+      "vc2"
+    ]
+  },
+  "i": {
+    "i1": [
+      "vc1",
+      "=",
+      "vc2"
+    ]
+  },
+  "labels": {
+    "vp1": "person",
+    "vp2": "person",
+    "vp3": "person",
+    "vs1": "Smith",
+    "vj1": "Anderson",
+    "va1": "Jones",
+    "vc1": "contract",
+    "vs2": "sign-01",
+    "va2": "and",
+    "s1-temp": "temp",
+    "s1-aspect": "aspect",
+    "s1-quant": "quant",
+    "s1-num": "num",
+    "s1-def": "def",
+    "s1-neg": "neg",
+    "vs3": "sign-01",
+    "vc2": "contract",
+    "s2-temp": "temp",
+    "s2-aspect": "aspect",
+    "s2-quant": "quant",
+    "s2-num": "num",
+    "s2-def": "def"
+  }
+}
