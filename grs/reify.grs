@@ -1,0 +1,71 @@
+rule domain_to_be01 {
+    pattern {
+        X [type="V"];
+        Y [type="V"];
+        Z [type="H"];
+        DOMAIN [type="E", rel="domain"];
+        e1: X->DOMAIN;
+        e2: DOMAIN->Y;
+        e3: Z->DOMAIN
+    }
+    commands {
+        DOMAIN.type = "V";
+        DOMAIN.pred = "be-01";
+        DOMAIN.var = "";
+        del_feat DOMAIN.rel;
+        add_edge e4: DOMAIN->X;
+        e4.label = "ARG2";
+        add_edge e5: DOMAIN->Y;
+        e5.label = "ARG1";
+        del_edge e1;
+        del_edge e2;
+    }
+}
+
+rule mod_to_be01 {
+    pattern {
+        X [type="V"];
+        Y [type="V"];
+        Z [type="H"];
+        MOD [type="E", rel="mod"];
+        e1: X->MOD;
+        e2: MOD->Y;
+        e3: Z->MOD
+    }
+    commands {
+        MOD.type = "V";
+        MOD.pred = "be-01";
+        MOD.var = "";
+        del_feat MOD.rel;
+        add_edge e4: MOD->X;
+        e4.label = "ARG1";
+        add_edge e5: MOD->Y;
+        e5.label = "ARG2";
+        del_edge e1;
+        del_edge e2;
+    }
+}
+
+rule poss_to_have03 {
+    pattern {
+        X [type="V"];
+        Y [type="V"];
+        Z [type="H"];
+        POSS [type="E", rel="poss"];
+        e1: X->POSS;
+        e2: POSS->Y;
+        e3: Z->POSS
+    }
+    commands {
+        POSS.type = "V";
+        POSS.pred = "have-03";
+        POSS.var = "";
+        del_feat POSS.rel;
+        add_edge e4: POSS->X;
+        e4.label = "ARG1";
+        add_edge e5: POSS->Y;
+        e5.label = "ARG0";
+        del_edge e1;
+        del_edge e2;
+    }
+}

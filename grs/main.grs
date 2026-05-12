@@ -1,7 +1,7 @@
-import "domain.grs"
+import "reify.grs"
 
 strat main {
     Seq (
-        Onf (domain)
+        Onf (reify)
     )
 }
