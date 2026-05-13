@@ -13,10 +13,16 @@ rule domain_to_be01 {
         DOMAIN.pred = "be-01";
         DOMAIN.var = "";
         del_feat DOMAIN.rel;
-        add_edge e4: DOMAIN->X;
-        e4.label = "ARG2";
-        add_edge e5: DOMAIN->Y;
-        e5.label = "ARG1";
+        add_node ARG2;
+        ARG2.type = "E";
+        ARG2.rel = "ARG2";
+        add_node ARG1;
+        ARG1.type = "E";
+        ARG1.rel = "ARG1";
+        add_edge e4: DOMAIN->ARG2;
+        add_edge e5: ARG2->X;
+        add_edge e6: DOMAIN->ARG1;
+        add_edge e7: ARG1->Y;
         del_edge e1;
         del_edge e2;
     }
@@ -37,10 +43,16 @@ rule mod_to_be01 {
         MOD.pred = "be-01";
         MOD.var = "";
         del_feat MOD.rel;
-        add_edge e4: MOD->X;
-        e4.label = "ARG1";
-        add_edge e5: MOD->Y;
-        e5.label = "ARG2";
+        add_node ARG2;
+        ARG2.type = "E";
+        ARG2.rel = "ARG2";
+        add_node ARG1;
+        ARG1.type = "E";
+        ARG1.rel = "ARG1";
+        add_edge e4: MOD->ARG2;
+        add_edge e5: ARG2->Y;
+        add_edge e6: MOD->ARG1;
+        add_edge e7: ARG1->X;
         del_edge e1;
         del_edge e2;
     }
@@ -61,10 +73,16 @@ rule poss_to_have03 {
         POSS.pred = "have-03";
         POSS.var = "";
         del_feat POSS.rel;
-        add_edge e4: POSS->X;
-        e4.label = "ARG1";
-        add_edge e5: POSS->Y;
-        e5.label = "ARG0";
+        add_node ARG2;
+        ARG2.type = "E";
+        ARG2.rel = "ARG2";
+        add_node ARG1;
+        ARG1.type = "E";
+        ARG1.rel = "ARG1";
+        add_edge e4: POSS->ARG2;
+        add_edge e5: ARG2->Y;
+        add_edge e6: POSS->ARG1;
+        add_edge e7: ARG1->X;
         del_edge e1;
         del_edge e2;
     }
