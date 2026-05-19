@@ -1,0 +1,133 @@
+{
+  "meta": {
+    "sent_id": "2",
+    "text": "Every young boy definitely didn't want the large dog to bark."
+  },
+  "s": [
+    "s1",
+    "s2"
+  ],
+  "v": [
+    "vw1",
+    "vb1",
+    "vy1",
+    "vd1",
+    "vl1",
+    "vd2",
+    "vb2"
+  ],
+  "f": {
+    "s1": [
+      "s1-temp",
+      "s1-quant",
+      "s1-num",
+      "s1-def",
+      "s1-manner",
+      "s1-neg"
+    ],
+    "s2": [
+      "s2-temp"
+    ]
+  },
+  "e": {
+    "e1": [
+      "vw1",
+      "ARG0",
+      "vb1"
+    ],
+    "e2": [
+      "vb1",
+      "mod",
+      "vy1"
+    ],
+    "e4": [
+      "vb2",
+      "ARG0",
+      "vd1"
+    ],
+    "e5": [
+      "vl1",
+      "ARG1",
+      "vb2"
+    ]
+  },
+  "l": {
+    "l1": [
+      "s1-temp",
+      "past",
+      "vw1"
+    ],
+    "l3": [
+      "s1-num",
+      "singular",
+      "vb1"
+    ],
+    "l4": [
+      "s1-def",
+      "definite",
+      "vb1"
+    ],
+    "l5": [
+      "s1-manner",
+      "",
+      "vd2"
+    ],
+    "l6": [
+      "s2-temp",
+      "past",
+      "vb2"
+    ],
+    "l2": [
+      "s1-quant",
+      "exists",
+      "vd1"
+    ],
+    "l7": [
+      "s1-def",
+      "definite",
+      "vd1"
+    ],
+    "l8": [
+      "s1-num",
+      "singular",
+      "vd1"
+    ],
+    "l9": [
+      "s1-neg",
+      "",
+      "vw1"
+    ]
+  },
+  "d": {},
+  "c": {
+    "c1": [
+      "vw1",
+      "ARG1",
+      "s2"
+    ]
+  },
+  "h": {
+    "h1": [
+      "l2",
+      "forall",
+      "vb1"
+    ]
+  },
+  "i": {},
+  "labels": {
+    "vw1": "want-01",
+    "vb1": "boy",
+    "vy1": "young",
+    "vd1": "dog",
+    "vl1": "large-01",
+    "vd2": "definitely",
+    "vb2": "bark-01",
+    "s1-temp": "temp",
+    "s1-quant": "quant",
+    "s1-num": "num",
+    "s1-def": "def",
+    "s1-manner": "manner",
+    "s2-temp": "temp",
+    "s1-neg": "neg"
+  }
+}

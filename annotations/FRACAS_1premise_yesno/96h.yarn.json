@@ -60,6 +60,11 @@
       "s1-def",
       "indefinite",
       "vp2"
+    ],
+    "l5": [
+      "s1-quant",
+      "forall",
+      "va1"
     ]
   },
   "d": {},
@@ -76,12 +81,7 @@
       "e3"
     ],
     "h3": [
-      "s1-quant",
-      "forall",
-      "e1"
-    ],
-    "h4": [
-      "h3",
+      "l5",
       "exists",
       "vp2"
     ]

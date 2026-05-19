@@ -86,16 +86,16 @@
       "s1-quant",
       "exists",
       "vm1"
+    ],
+    "l9": [
+      "s1-def",
+      "definite",
+      "vm1"
     ]
   },
   "d": {},
   "c": {},
   "h": {
-    "h2": [
-      "s1-def",
-      "definite",
-      "l7"
-    ],
     "h1": [
       "l2",
       "forall",

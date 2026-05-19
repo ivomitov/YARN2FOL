@@ -5,14 +5,148 @@
     "type": "hypothesis",
     "fracas_answer": "yes"
   },
-  "s": [],
-  "v": [],
-  "f": {},
-  "e": {},
-  "l": {},
-  "d": {},
+  "s": [
+    "s1",
+    "s2"
+  ],
+  "v": [
+    "vp1",
+    "vp2",
+    "vp3",
+    "vj1",
+    "vm1",
+    "vb1",
+    "vf1",
+    "vf2"
+  ],
+  "f": {
+    "s1": [
+      "s1-temp",
+      "s1-quant",
+      "s1-num",
+      "s1-def"
+    ],
+    "s2": [
+      "s2-temp"
+    ]
+  },
+  "e": {
+    "e1": [
+      "vp3",
+      "name",
+      "vj1"
+    ],
+    "e2": [
+      "vp2",
+      "name",
+      "vm1"
+    ],
+    "e3": [
+      "vp1",
+      "name",
+      "vb1"
+    ],
+    "e4": [
+      "vf1",
+      "ARG0",
+      "vp3"
+    ],
+    "e5": [
+      "vf1",
+      "ARG1",
+      "vp2"
+    ],
+    "e6": [
+      "vf2",
+      "ARG0",
+      "vp2"
+    ],
+    "e7": [
+      "vf2",
+      "ARG1",
+      "vp1"
+    ]
+  },
+  "l": {
+    "l1": [
+      "s1-temp",
+      "past",
+      "vf1"
+    ],
+    "l2": [
+      "s1-quant",
+      "exists",
+      "vp3"
+    ],
+    "l3": [
+      "s1-quant",
+      "exists",
+      "vp2"
+    ],
+    "l4": [
+      "s1-quant",
+      "exists",
+      "vp1"
+    ],
+    "l5": [
+      "s1-num",
+      "singular",
+      "vp3"
+    ],
+    "l6": [
+      "s1-num",
+      "singular",
+      "vp2"
+    ],
+    "l7": [
+      "s1-num",
+      "singular",
+      "vp1"
+    ],
+    "l8": [
+      "s1-def",
+      "definite",
+      "vp3"
+    ],
+    "l9": [
+      "s1-def",
+      "definite",
+      "vp2"
+    ],
+    "l10": [
+      "s1-def",
+      "definite",
+      "vp1"
+    ],
+    "l11": [
+      "s2-temp",
+      "past",
+      "vf2"
+    ]
+  },
+  "d": {
+    "d1": [
+      "s1",
+      "BEFORE",
+      "s2"
+    ]
+  },
   "c": {},
   "h": {},
   "i": {},
-  "labels": {}
+  "labels": {
+    "vp1": "person",
+    "vp2": "person",
+    "vp3": "person",
+    "vj1": "John",
+    "vm1": "Mary",
+    "vb1": "Bill",
+    "vf1": "find-01",
+    "s1-temp": "temp",
+    "s1-quant": "quant",
+    "s1-num": "num",
+    "s1-def": "def",
+    "s2-temp": "temp",
+    "vf2": "find-01"
+  }
 }

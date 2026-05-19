@@ -1,29 +1,30 @@
 {
   "meta": {
-    "sent_id": "175h",
-    "text": "Bill said Mary wrote a report.",
-    "type": "hypothesis",
-    "fracas_answer": "yes"
+    "sent_id": "1",
+    "text": "Every young boy called John definitely doesn't want a large dog to bark."
   },
   "s": [
     "s1",
     "s2"
   ],
   "v": [
-    "vp1",
-    "vp3",
+    "vw1",
+    "vb1",
     "vj1",
-    "vm1",
-    "vs1",
-    "vr1",
-    "vw1"
+    "vy1",
+    "vd1",
+    "vl1",
+    "vd2",
+    "vb2"
   ],
   "f": {
     "s1": [
       "s1-temp",
       "s1-quant",
       "s1-num",
-      "s1-def"
+      "s1-def",
+      "s1-manner",
+      "s1-neg"
     ],
     "s2": [
       "s2-temp",
@@ -34,92 +35,87 @@
   },
   "e": {
     "e1": [
-      "vs1",
+      "vw1",
       "ARG0",
-      "vp3"
+      "vb1"
     ],
     "e2": [
-      "vp3",
+      "vb1",
+      "mod",
+      "vy1"
+    ],
+    "e3": [
+      "vb1",
       "name",
       "vj1"
     ],
-    "e5": [
-      "vw1",
+    "e4": [
+      "vb2",
       "ARG0",
-      "vp1"
+      "vd1"
     ],
-    "e6": [
-      "vw1",
+    "e5": [
+      "vl1",
       "ARG1",
-      "vr1"
-    ],
-    "e7": [
-      "vp1",
-      "name",
-      "vm1"
+      "vd1"
     ]
   },
   "l": {
     "l1": [
       "s1-temp",
-      "past",
-      "vs1"
+      "present",
+      "vw1"
     ],
     "l2": [
       "s1-quant",
-      "exists",
-      "vp3"
+      "forall",
+      "vb1"
     ],
     "l3": [
       "s1-num",
       "singular",
-      "vp3"
+      "vb1"
     ],
     "l4": [
       "s1-def",
-      "definite",
-      "vp3"
+      "indefinite",
+      "vb1"
     ],
     "l5": [
-      "s2-temp",
-      "past",
-      "vw1"
+      "s1-manner",
+      "",
+      "vd2"
     ],
     "l6": [
-      "s2-quant",
-      "exists",
-      "vp1"
+      "s2-temp",
+      "present",
+      "vb2"
     ],
     "l7": [
       "s2-quant",
       "exists",
-      "vr1"
+      "vd1"
     ],
     "l8": [
       "s2-num",
       "singular",
-      "vp1"
+      "vd1"
     ],
     "l9": [
-      "s2-num",
-      "singular",
-      "vr1"
-    ],
-    "l10": [
       "s2-def",
       "indefinite",
-      "vr1"
+      "vd1"
     ],
-    "l11": [
-      "s2-def",
-      "definite",
-      "vp1"
+    "l10": [
+      "s1-neg",
+      "",
+      "vw1"
     ]
   },
   "d": {},
   "c": {
     "c1": [
-      "vs1",
+      "vw1",
       "ARG1",
       "s2"
     ]
@@ -127,24 +123,23 @@
   "h": {},
   "i": {},
   "labels": {
-    "vp1": "person",
-    "vp3": "person",
-    "vj1": "Bill",
-    "vm1": "Mary",
-    "vs1": "say-01",
-    "vr1": "report",
-    "vw1": "write-01",
+    "vw1": "want-01",
+    "vb1": "boy",
+    "vj1": "John",
+    "vy1": "young",
+    "vd1": "dog",
+    "vl1": "large-01",
+    "vd2": "definitely",
+    "vb2": "bark-01",
     "s1-temp": "temp",
     "s1-quant": "quant",
     "s1-num": "num",
     "s1-def": "def",
+    "s1-manner": "manner",
     "s2-temp": "temp",
     "s2-quant": "quant",
     "s2-num": "num",
     "s2-def": "def",
-    "s3-temp": "temp",
-    "s3-quant": "quant",
-    "s3-num": "num",
-    "s3-def": "def"
+    "s1-neg": "neg"
   }
 }

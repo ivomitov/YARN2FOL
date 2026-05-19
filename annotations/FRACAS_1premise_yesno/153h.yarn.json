@@ -5,14 +5,91 @@
     "type": "hypothesis",
     "fracas_answer": "yes"
   },
-  "s": [],
-  "v": [],
-  "f": {},
-  "e": {},
-  "l": {},
+  "s": [
+    "s1"
+  ],
+  "v": [
+    "vg1",
+    "vs1",
+    "vc1",
+    "vp1",
+    "vc2"
+  ],
+  "f": {
+    "s1": [
+      "s1-temp",
+      "s1-quant",
+      "s1-num",
+      "s1-def"
+    ]
+  },
+  "e": {
+    "e1": [
+      "vg1",
+      "ARG1",
+      "vs1"
+    ],
+    "e2": [
+      "vg1",
+      "ARG4",
+      "vc1"
+    ],
+    "e3": [
+      "vg1",
+      "manner",
+      "vc2"
+    ],
+    "e4": [
+      "vc1",
+      "name",
+      "vp1"
+    ]
+  },
+  "l": {
+    "l1": [
+      "s1-temp",
+      "present",
+      "vg1"
+    ],
+    "l2": [
+      "s1-quant",
+      "exists",
+      "vs1"
+    ],
+    "l3": [
+      "s1-num",
+      "plural",
+      "vs1"
+    ],
+    "l4": [
+      "s1-def",
+      "definite",
+      "vs1"
+    ],
+    "l5": [
+      "s1-quant",
+      "exists",
+      "vc1"
+    ],
+    "l6": [
+      "s1-quant",
+      "exists",
+      "vc2"
+    ]
+  },
   "d": {},
   "c": {},
   "h": {},
   "i": {},
-  "labels": {}
+  "labels": {
+    "vg1": "go-01",
+    "vs1": "student",
+    "vc1": "city",
+    "vp1": "Paris",
+    "vc2": "car",
+    "s1-temp": "temp",
+    "s1-quant": "quant",
+    "s1-num": "num",
+    "s1-def": "def"
+  }
 }

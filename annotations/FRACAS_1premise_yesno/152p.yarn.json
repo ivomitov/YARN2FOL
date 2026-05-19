@@ -5,14 +5,212 @@
     "type": "premise",
     "fracas_answer": "yes"
   },
-  "s": [],
-  "v": [],
-  "f": {},
-  "e": {},
-  "l": {},
-  "d": {},
+  "s": [
+    "s1",
+    "s2"
+  ],
+  "v": [
+    "vj1",
+    "vg1",
+    "vc1",
+    "vp1",
+    "vp2",
+    "vp3",
+    "vb1",
+    "vc2",
+    "vg2",
+    "vc3",
+    "vb2",
+    "vc4"
+  ],
+  "f": {
+    "s1": [
+      "s1-temp",
+      "s1-quant",
+      "s1-num",
+      "s1-def"
+    ],
+    "s2": [
+      "s2-temp",
+      "s2-quant",
+      "s2-num",
+      "s2-def"
+    ]
+  },
+  "e": {
+    "e1": [
+      "vg1",
+      "ARG1",
+      "vp2"
+    ],
+    "e2": [
+      "vg1",
+      "ARG4",
+      "vc1"
+    ],
+    "e3": [
+      "vc1",
+      "name",
+      "vp1"
+    ],
+    "e4": [
+      "vp2",
+      "name",
+      "vj1"
+    ],
+    "e5": [
+      "vg2",
+      "ARG1",
+      "vp3"
+    ],
+    "e7": [
+      "vp3",
+      "name",
+      "vb1"
+    ],
+    "e8": [
+      "vg1",
+      "manner",
+      "vc2"
+    ],
+    "e6": [
+      "vg2",
+      "ARG4",
+      "vc3"
+    ],
+    "e10": [
+      "vc3",
+      "name",
+      "vb2"
+    ],
+    "e9": [
+      "vg2",
+      "manner",
+      "vc4"
+    ]
+  },
+  "l": {
+    "l1": [
+      "s1-temp",
+      "past",
+      "vg1"
+    ],
+    "l2": [
+      "s1-quant",
+      "exists",
+      "vp2"
+    ],
+    "l3": [
+      "s1-num",
+      "singular",
+      "vp2"
+    ],
+    "l4": [
+      "s1-def",
+      "definite",
+      "vp2"
+    ],
+    "l5": [
+      "s2-temp",
+      "past",
+      "vg2"
+    ],
+    "l6": [
+      "s2-quant",
+      "exists",
+      "vp3"
+    ],
+    "l7": [
+      "s2-num",
+      "singular",
+      "vp3"
+    ],
+    "l8": [
+      "s2-def",
+      "definite",
+      "vp3"
+    ],
+    "l9": [
+      "s1-quant",
+      "exists",
+      "vc2"
+    ],
+    "l11": [
+      "s1-quant",
+      "exists",
+      "vc1"
+    ],
+    "l10": [
+      "s2-quant",
+      "exists",
+      "vc4"
+    ],
+    "l13": [
+      "s1-def",
+      "indefinite",
+      "vc2"
+    ],
+    "l14": [
+      "s1-num",
+      "singular",
+      "vc1"
+    ],
+    "l15": [
+      "s1-def",
+      "definite",
+      "vc1"
+    ],
+    "l16": [
+      "s2-num",
+      "singular",
+      "vc4"
+    ],
+    "l17": [
+      "s2-def",
+      "indefinite",
+      "vc4"
+    ],
+    "l18": [
+      "s2-num",
+      "singular",
+      "vc3"
+    ],
+    "l19": [
+      "s2-def",
+      "definite",
+      "vc3"
+    ]
+  },
+  "d": {
+    "d1": [
+      "s1",
+      "COORDINATION",
+      "s2"
+    ]
+  },
   "c": {},
   "h": {},
   "i": {},
-  "labels": {}
+  "labels": {
+    "vj1": "John",
+    "vg1": "go-01",
+    "vc1": "city",
+    "vp1": "Paris",
+    "vp2": "person",
+    "vp3": "person",
+    "vb1": "Bill",
+    "vc2": "car",
+    "vg2": "go-01",
+    "s1-temp": "temp",
+    "s1-quant": "quant",
+    "s1-num": "num",
+    "s1-def": "def",
+    "s2-temp": "temp",
+    "s2-quant": "quant",
+    "s2-num": "num",
+    "s2-def": "def",
+    "vc3": "city",
+    "vb2": "Berlin",
+    "vc4": "car"
+  }
 }
