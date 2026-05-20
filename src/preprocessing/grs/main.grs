@@ -1,0 +1,9 @@
+import "reify.grs"
+import "fix_typing.grs"
+
+strat main {
+    Seq (
+        Onf (reify),
+        Onf (fix_typing)
+    )
+}

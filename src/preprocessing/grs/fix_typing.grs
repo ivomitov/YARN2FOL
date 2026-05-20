@@ -1,0 +1,12 @@
+rule H_to_L_typing {
+    pattern {
+        A [type="F"];
+        B [type="V"];
+        A->R;
+        R->B;
+        R [type="H"]
+    }
+    commands {
+        R.type = "L"
+    }
+}
