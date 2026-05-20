@@ -4,4 +4,4 @@ FOLDER_PATH = "annotations/"
 FILE = "1.yarn.json"
 
 corpus = load_yarn(FOLDER_PATH+FILE)
-yarn2fol(corpus, mode='tptp')
+yarn2fol(corpus, mode='tptp', verbose=True)
