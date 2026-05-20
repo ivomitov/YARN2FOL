@@ -118,7 +118,9 @@ def process_one(path, yarn_json, output_queue, mode):
             "error": traceback.format_exc()
         })
 
-def yarn2fol(yarn_graphs, mode):
+def yarn2fol(yarn_graphs, mode, verbose=False):
+    all_results = []
+    
     for path, yarn_json in yarn_graphs:
 
         print("\nProcessing:", path)
@@ -132,14 +134,15 @@ def yarn2fol(yarn_graphs, mode):
         if p.is_alive():
             p.terminate()
             p.join()
-
             print(path)
             print("TIMEOUT after", TIMEOUT, "seconds")
+            all_results.append(None)
             continue
 
         if output_queue.empty():
             print(path)
             print("No output returned")
+            all_results.append(None)
             continue
 
         result = output_queue.get()
@@ -148,11 +151,16 @@ def yarn2fol(yarn_graphs, mode):
             print(path)
             print("ERROR:")
             print(result["error"])
+            all_results.append(None)
             continue
+        
+        if verbose:
+            print(result["meta"].get("type"), ":", result["meta"].get("text"))
 
-        print(result["path"])
-        print(result["meta"].get("type"), ":", result["meta"].get("text"))
+            for r in result["results"]:
+                print(r)
+                print("---")
 
-        for r in result["results"]:
-            print(r)
-            print("---")
+        all_results.append(result["results"])
+
+    return all_results
