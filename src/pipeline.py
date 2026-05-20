@@ -3,7 +3,7 @@ import json
 from pathlib import Path
 from yarn_utils import YARNGraph
 
-from src.preprocessing import reify_he, get_S_descendants, propagate_s_node_information
+from src.preprocessing.preprocessing import reify_he, get_S_descendants, propagate_s_node_information
 from src.scope_forest import build_F, build_R, build_scope_forest, add_participants_before_event_principle, add_s_node_scope
 from src.constraints import check_compatibility_of_scopes, check_locality_of_features
 from src.T_all import get_all_possible_rooted_directed_trees, build_T_all
@@ -13,7 +13,7 @@ from src.interpretation.tptp import interpret_tptp, clean_formula_tptp
 import traceback
 import multiprocessing as mp
 
-grs_path = "grs/main.grs"
+grs_path = "src/preprocessing/grs/main.grs"
 FOLDER_PATH = "annotations/"
 FILE = "1.yarn.json"
 TIMEOUT = 20
