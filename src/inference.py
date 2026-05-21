@@ -51,14 +51,25 @@ def run_vampire(tptp_formula, timeout=30):
         os.unlink(tmp_path)
 
 def evaluate_pair(p_formulas, h_formulas):
-    """Try all p/h combinations, return first yes/no found, otherwise unknown."""
+    """
+    yes + unknown -> yes
+    no + unknown -> no
+    yes + no -> unknown
+    """
+    answers = set()
     for p_formula in p_formulas:
         for h_formula in h_formulas:
             tptp = build_tptp_problem(p_formula, h_formula)
-            answer = run_vampire(tptp)
-            if answer in ['yes', 'no']:
-                return answer
-    return 'unknown'
+            answers.add(run_vampire(tptp))
+
+    if 'yes' in answers and 'no' in answers:
+        return 'unknown'
+    elif 'yes' in answers:
+        return 'yes'
+    elif 'no' in answers:
+        return 'no'
+    else:
+        return 'unknown'
 
 
 def evaluate_corpus(folder_path, mode='tptp'):
