@@ -11,7 +11,6 @@
   "v": [
     "vb1",
     "vp1",
-    "vi1",
     "vw1",
     "vg1",
     "vc1",
@@ -32,11 +31,6 @@
       "vp1",
       "mod",
       "vc1"
-    ],
-    "e2": [
-      "vc1",
-      "name",
-      "vi1"
     ],
     "e3": [
       "vb1",
@@ -129,10 +123,9 @@
   "labels": {
     "vb1": "become-01",
     "vp1": "person",
-    "vi1": "Italy",
     "vw1": "world",
     "vg1": "great-02",
-    "vc1": "country",
+    "vc1": "italian",
     "vt1": "tenor",
     "s1-temp": "temp",
     "s1-quant": "quant",

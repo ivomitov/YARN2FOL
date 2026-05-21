@@ -9,7 +9,6 @@
     "s1"
   ],
   "v": [
-    "vi1",
     "vc1",
     "vr1",
     "va1",
@@ -25,11 +24,6 @@
     ]
   },
   "e": {
-    "e2": [
-      "vc1",
-      "name",
-      "vi1"
-    ],
     "e4": [
       "va1",
       "ARG0",
@@ -79,8 +73,7 @@
   },
   "i": {},
   "labels": {
-    "vi1": "Italy",
-    "vc1": "country",
+    "vc1": "italian",
     "vr1": "really",
     "va1": "ambitious-01",
     "vt1": "tenor",
