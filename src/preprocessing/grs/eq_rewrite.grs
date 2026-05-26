@@ -1,0 +1,13 @@
+rule temp_aspect_eq {
+    pattern {
+        X [type="V"|"E"];
+        TEMP [type="H", feat="temp"];
+        ASPECT [type="L"|"H", feat="aspect"];
+        e1: TEMP->ASPECT;
+        e2: ASPECT->X;
+    }
+    commands {
+        add_edge e3: TEMP->X;
+        del_edge e1
+    }
+}

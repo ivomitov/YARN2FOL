@@ -1,8 +1,10 @@
 import "reify.grs"
 import "fix_typing.grs"
+import "eq_rewrite.grs"
 
 strat main {
     Seq (
+        Onf (eq_rewrite),
         Onf (reify),
         Onf (fix_typing)
     )
