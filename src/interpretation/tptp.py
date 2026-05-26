@@ -2,7 +2,7 @@ def fmt_temp_var(v):
     return v.lower() if v.lower() == "now" else v.upper()
 
 def fmt_rel(rel, id2var):
-    pred = rel[0].lower().replace("-", "_")
+    pred = rel[0].lower().replace("-", "_") 
     
     def fmt_arg(arg):
         val = id2var[arg]
@@ -15,6 +15,18 @@ def fmt_rel(rel, id2var):
         return f"{pred}({fmt_arg(rel[1])},{fmt_arg(rel[2])})"
     else:
         return f"{pred}({fmt_arg(rel[1])})"
+
+def fmt_gen_quant(gen_quant):
+    gen_quant = gen_quant.replace(" ", "_").replace("-", "_")
+    gen_quant = gen_quant.replace("≤", "leq_")
+    gen_quant = gen_quant.replace("≥", "geq_")
+    gen_quant = gen_quant.replace("<", "lt_")
+    gen_quant = gen_quant.replace(">", "gt_")
+
+    if gen_quant[0].isdigit():
+        gen_quant = "n" + gen_quant
+    
+    return gen_quant
 
 def get_relations(node, id2var):
     and_rels = [fmt_rel(rel, id2var) for rel in node['relations']['and']]
@@ -40,6 +52,7 @@ def wrap_quant(q, var, head, relations, bodies, connective="&"):
 
 def wrap_generalized_quant(q, var, gen_quant, head, relations, bodies, connective="&"):
     rel = conj(relations)
+    gen_quant = fmt_gen_quant(gen_quant)
     head_part = f"{head.lower().replace('-', '_')}({var.upper()}) & {gen_quant.lower()}({var.upper()})"
     left = f"{head_part} & {rel}" if rel else head_part
     body = conj(bodies)
