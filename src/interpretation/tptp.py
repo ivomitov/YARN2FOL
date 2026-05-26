@@ -93,7 +93,7 @@ def interpret_tptp(root, temp_variable, id2var):
         return wrap_generalized_quant("?", root["variable"], gen_quant, root["tar_label"], relations, child_formulas)
 
     if root["type"] == "T_present":
-        temp = f"overlap({root['variable'].upper()},{fmt_temp_var(temp_variable)})"
+        temp = f"overlaps({root['variable'].upper()},{fmt_temp_var(temp_variable)})"
         child_formulas = [interpret_tptp(child, root["variable"], id2var) for child in root["children"]]
         return wrap_temp("?", root["variable"], root['S'], root["tar_label"], relations + [temp], child_formulas)
 
