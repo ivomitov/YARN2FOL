@@ -5,14 +5,126 @@
     "type": "premise",
     "fracas_answer": "yes"
   },
-  "s": [],
-  "v": [],
-  "f": {},
-  "e": {},
-  "l": {},
+  "s": [
+    "s1"
+  ],
+  "v": [
+    "vi1",
+    "vh1",
+    "vf1",
+    "vc1",
+    "vb1",
+    "vc2"
+  ],
+  "f": {
+    "s1": [
+      "s1-temp",
+      "s1-quant",
+      "s1-num",
+      "s1-def",
+      "s1-aspect"
+    ]
+  },
+  "e": {
+    "e1": [
+      "vh1",
+      "ARG0",
+      "vc2"
+    ],
+    "e2": [
+      "vh1",
+      "ARG1",
+      "vf1"
+    ],
+    "e3": [
+      "vf1",
+      "location",
+      "vc1"
+    ],
+    "e4": [
+      "vc1",
+      "name",
+      "vb1"
+    ],
+    "e5": [
+      "vc2",
+      "name",
+      "vi1"
+    ]
+  },
+  "l": {
+    "l1": [
+      "s1-temp",
+      "present",
+      "vh1"
+    ],
+    "l2": [
+      "s1-aspect",
+      "state",
+      "vh1"
+    ],
+    "l3": [
+      "s1-quant",
+      "exists",
+      "vc1"
+    ],
+    "l4": [
+      "s1-num",
+      "singular",
+      "vc2"
+    ],
+    "l5": [
+      "s1-num",
+      "singular",
+      "vf1"
+    ],
+    "l6": [
+      "s1-num",
+      "singular",
+      "vc1"
+    ],
+    "l7": [
+      "s1-def",
+      "definite",
+      "vc2"
+    ],
+    "l8": [
+      "s1-def",
+      "indefinite",
+      "vf1"
+    ],
+    "l9": [
+      "s1-def",
+      "indefinite",
+      "vc1"
+    ]
+  },
   "d": {},
   "c": {},
-  "h": {},
+  "h": {
+    "h1": [
+      "l3",
+      "exists",
+      "vc2"
+    ],
+    "h2": [
+      "h1",
+      "exists",
+      "vf1"
+    ]
+  },
   "i": {},
-  "labels": {}
+  "labels": {
+    "vi1": "ITEL",
+    "vh1": "have-03",
+    "vf1": "factory",
+    "vc1": "city",
+    "vb1": "Birmingham",
+    "vc2": "company",
+    "s1-temp": "temp",
+    "s1-quant": "quant",
+    "s1-num": "num",
+    "s1-def": "def",
+    "s1-aspect": "aspect"
+  }
 }

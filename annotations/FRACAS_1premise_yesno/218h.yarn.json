@@ -14,5 +14,11 @@
   "c": {},
   "h": {},
   "i": {},
-  "labels": {}
+  "labels": {
+    "s1-temp": "temp",
+    "s1-quant": "quant",
+    "s1-num": "num",
+    "s1-def": "def",
+    "s1-aspect": "aspect"
+  }
 }

@@ -5,14 +5,97 @@
     "type": "hypothesis",
     "fracas_answer": "no"
   },
-  "s": [],
-  "v": [],
-  "f": {},
-  "e": {},
-  "l": {},
+  "s": [
+    "s1"
+  ],
+  "v": [
+    "va1",
+    "va2",
+    "vm1",
+    "vs1"
+  ],
+  "f": {
+    "s1": [
+      "s1-temp",
+      "s1-quant",
+      "s1-num",
+      "s1-def",
+      "s1-aspect"
+    ]
+  },
+  "e": {
+    "e1": [
+      "va2",
+      "name",
+      "vm1"
+    ],
+    "e2": [
+      "vs1",
+      "ARG1",
+      "va1"
+    ],
+    "e3": [
+      "va1",
+      "domain",
+      "va2"
+    ]
+  },
+  "l": {
+    "l1": [
+      "s1-quant",
+      "exists",
+      "va2"
+    ],
+    "l2": [
+      "s1-quant",
+      "exists",
+      "va1"
+    ],
+    "l3": [
+      "s1-num",
+      "singular",
+      "va2"
+    ],
+    "l4": [
+      "s1-num",
+      "singular",
+      "va1"
+    ],
+    "l5": [
+      "s1-def",
+      "definite",
+      "va2"
+    ],
+    "l6": [
+      "s1-def",
+      "definite",
+      "va1"
+    ]
+  },
   "d": {},
   "c": {},
-  "h": {},
+  "h": {
+    "h1": [
+      "s1-temp",
+      "present",
+      "e3"
+    ],
+    "h2": [
+      "s1-aspect",
+      "state",
+      "e3"
+    ]
+  },
   "i": {},
-  "labels": {}
+  "labels": {
+    "va1": "animal",
+    "va2": "animal",
+    "vm1": "Mickey",
+    "vs1": "large-01",
+    "s1-temp": "temp",
+    "s1-quant": "quant",
+    "s1-num": "num",
+    "s1-def": "def",
+    "s1-aspect": "aspect"
+  }
 }

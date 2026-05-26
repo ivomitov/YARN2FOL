@@ -5,14 +5,97 @@
     "type": "premise",
     "fracas_answer": "yes"
   },
-  "s": [],
-  "v": [],
-  "f": {},
-  "e": {},
-  "l": {},
+  "s": [
+    "s1"
+  ],
+  "v": [
+    "vp1",
+    "vk1",
+    "vp2",
+    "vc1"
+  ],
+  "f": {
+    "s1": [
+      "s1-temp",
+      "s1-quant",
+      "s1-num",
+      "s1-def",
+      "s1-aspect"
+    ]
+  },
+  "e": {
+    "e1": [
+      "vp1",
+      "name",
+      "vk1"
+    ],
+    "e2": [
+      "vc1",
+      "ARG1",
+      "vp2"
+    ],
+    "e3": [
+      "vp2",
+      "domain",
+      "vp1"
+    ]
+  },
+  "l": {
+    "l1": [
+      "s1-quant",
+      "exists",
+      "vp1"
+    ],
+    "l2": [
+      "s1-quant",
+      "exists",
+      "vp2"
+    ],
+    "l3": [
+      "s1-num",
+      "singular",
+      "vp1"
+    ],
+    "l4": [
+      "s1-num",
+      "singular",
+      "vp2"
+    ],
+    "l5": [
+      "s1-def",
+      "definite",
+      "vp1"
+    ],
+    "l6": [
+      "s1-def",
+      "indefinite",
+      "vp2"
+    ]
+  },
   "d": {},
   "c": {},
-  "h": {},
+  "h": {
+    "h1": [
+      "s1-temp",
+      "present",
+      "e3"
+    ],
+    "h2": [
+      "s1-aspect",
+      "state",
+      "e3"
+    ]
+  },
   "i": {},
-  "labels": {}
+  "labels": {
+    "vp1": "person",
+    "vk1": "Kim",
+    "vp2": "person",
+    "vc1": "clever-01",
+    "s1-temp": "temp",
+    "s1-quant": "quant",
+    "s1-num": "num",
+    "s1-def": "def",
+    "s1-aspect": "aspect"
+  }
 }

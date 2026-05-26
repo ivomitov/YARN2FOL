@@ -5,14 +5,83 @@
     "type": "premise",
     "fracas_answer": "yes"
   },
-  "s": [],
-  "v": [],
-  "f": {},
-  "e": {},
-  "l": {},
+  "s": [
+    "s1"
+  ],
+  "v": [
+    "vm1",
+    "va1"
+  ],
+  "f": {
+    "s1": [
+      "s1-temp",
+      "s1-quant",
+      "s1-num",
+      "s1-def",
+      "s1-aspect"
+    ]
+  },
+  "e": {
+    "e1": [
+      "va1",
+      "domain",
+      "vm1"
+    ]
+  },
+  "l": {
+    "l1": [
+      "s1-quant",
+      "forall",
+      "vm1"
+    ],
+    "l2": [
+      "s1-num",
+      "singular",
+      "va1"
+    ],
+    "l3": [
+      "s1-num",
+      "singular",
+      "vm1"
+    ],
+    "l4": [
+      "s1-def",
+      "indefinite",
+      "vm1"
+    ],
+    "l5": [
+      "s1-def",
+      "indefinite",
+      "va1"
+    ]
+  },
   "d": {},
   "c": {},
-  "h": {},
+  "h": {
+    "h1": [
+      "s1-temp",
+      "present",
+      "e1"
+    ],
+    "h2": [
+      "s1-aspect",
+      "state",
+      "e1"
+    ],
+    "h3": [
+      "l1",
+      "exists",
+      "va1"
+    ]
+  },
   "i": {},
-  "labels": {}
+  "labels": {
+    "vm1": "mammal",
+    "va1": "animal",
+    "s1-temp": "temp",
+    "s1-quant": "quant",
+    "s1-num": "num",
+    "s1-def": "def",
+    "s1-aspect": "aspect"
+  }
 }

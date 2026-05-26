@@ -5,14 +5,75 @@
     "type": "hypothesis",
     "fracas_answer": "yes"
   },
-  "s": [],
-  "v": [],
-  "f": {},
-  "e": {},
-  "l": {},
+  "s": [
+    "s1"
+  ],
+  "v": [
+    "vf1",
+    "va1",
+    "vd1"
+  ],
+  "f": {
+    "s1": [
+      "s1-temp",
+      "s1-num",
+      "s1-quant",
+      "s1-def",
+      "s1-aspect"
+    ]
+  },
+  "e": {
+    "e1": [
+      "vf1",
+      "domain",
+      "va1"
+    ],
+    "e2": [
+      "va1",
+      "name",
+      "vd1"
+    ]
+  },
+  "l": {
+    "l1": [
+      "s1-quant",
+      "exists",
+      "va1"
+    ],
+    "l2": [
+      "s1-def",
+      "definite",
+      "va1"
+    ],
+    "l3": [
+      "s1-num",
+      "singular",
+      "va1"
+    ]
+  },
   "d": {},
   "c": {},
-  "h": {},
+  "h": {
+    "h1": [
+      "s1-temp",
+      "present",
+      "e1"
+    ],
+    "h2": [
+      "s1-aspect",
+      "state",
+      "e1"
+    ]
+  },
   "i": {},
-  "labels": {}
+  "labels": {
+    "vf1": "four-legged",
+    "va1": "animal",
+    "vd1": "Dumbo",
+    "s1-temp": "temp",
+    "s1-num": "num",
+    "s1-quant": "quant",
+    "s1-def": "def",
+    "s1-aspect": "aspect"
+  }
 }

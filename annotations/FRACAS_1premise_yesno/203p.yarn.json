@@ -5,14 +5,97 @@
     "type": "premise",
     "fracas_answer": "yes"
   },
-  "s": [],
-  "v": [],
-  "f": {},
-  "e": {},
-  "l": {},
+  "s": [
+    "s1"
+  ],
+  "v": [
+    "va1",
+    "va2",
+    "vd1",
+    "vf1"
+  ],
+  "f": {
+    "s1": [
+      "s1-temp",
+      "s1-quant",
+      "s1-num",
+      "s1-def",
+      "s1-aspect"
+    ]
+  },
+  "e": {
+    "e1": [
+      "va1",
+      "name",
+      "vd1"
+    ],
+    "e2": [
+      "va2",
+      "mod",
+      "vf1"
+    ],
+    "e3": [
+      "va2",
+      "domain",
+      "va1"
+    ]
+  },
+  "l": {
+    "l1": [
+      "s1-quant",
+      "exists",
+      "va1"
+    ],
+    "l2": [
+      "s1-quant",
+      "exists",
+      "va2"
+    ],
+    "l3": [
+      "s1-num",
+      "singular",
+      "va1"
+    ],
+    "l4": [
+      "s1-num",
+      "singular",
+      "va2"
+    ],
+    "l5": [
+      "s1-def",
+      "definite",
+      "va1"
+    ],
+    "l6": [
+      "s1-def",
+      "indefinite",
+      "va2"
+    ]
+  },
   "d": {},
   "c": {},
-  "h": {},
+  "h": {
+    "h1": [
+      "s1-temp",
+      "present",
+      "e3"
+    ],
+    "h2": [
+      "s1-aspect",
+      "state",
+      "e3"
+    ]
+  },
   "i": {},
-  "labels": {}
+  "labels": {
+    "va1": "animal",
+    "va2": "animal",
+    "vd1": "Dumbo",
+    "vf1": "four-legged",
+    "s1-temp": "temp",
+    "s1-quant": "quant",
+    "s1-num": "num",
+    "s1-def": "def",
+    "s1-aspect": "aspect"
+  }
 }
