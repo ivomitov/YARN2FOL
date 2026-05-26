@@ -1,4 +1,5 @@
 from src.pipeline import load_yarn, yarn2fol
+from pathlib import Path
 import subprocess
 import tempfile
 import os
@@ -18,8 +19,9 @@ def pair_corpus(corpus):
     return groups
 
 
-def build_tptp_problem(premise_formula, hypothesis_formula):
-    return f"fof(premise, axiom, {premise_formula}).\nfof(hypothesis, conjecture, {hypothesis_formula})."
+def build_tptp_problem(premise_formula, hypothesis_formula, background_path="src/axioms.p"):
+    background = Path(background_path).read_text() if Path(background_path).exists() else ""
+    return f"{background}\nfof(premise, axiom, {premise_formula}).\nfof(hypothesis, conjecture, {hypothesis_formula})."
 
 def run_vampire(tptp_formula, timeout=30):
     with tempfile.NamedTemporaryFile(mode='w', suffix='.tptp', delete=False) as f:
