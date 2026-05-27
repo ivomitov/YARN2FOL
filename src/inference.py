@@ -3,6 +3,7 @@ from pathlib import Path
 import subprocess
 import tempfile
 import os
+import re
 from collections import defaultdict
 
 def pair_corpus(corpus):
@@ -21,6 +22,8 @@ def pair_corpus(corpus):
 
 def build_tptp_problem(premise_formula, hypothesis_formula, background_path="src/axioms.p"):
     background = Path(background_path).read_text() if Path(background_path).exists() else ""
+    # if "on_time" in hypothesis_formula:
+    #     print(f"{background}\nfof(premise, axiom, {premise_formula}).\nfof(hypothesis, conjecture, {hypothesis_formula}).")
     return f"{background}\nfof(premise, axiom, {premise_formula}).\nfof(hypothesis, conjecture, {hypothesis_formula})."
 
 def run_vampire(tptp_formula, timeout=30):
@@ -37,14 +40,14 @@ def run_vampire(tptp_formula, timeout=30):
         )
         output = result.stdout
         
-        if "Theorem" in output:
-            return "yes"
-        elif "CounterSatisfiable" in output:
-            return "no"
-        elif "Satisfiable" in output:
-            return "unknown"
-        else:
-            return output
+        match = re.search(r'SZS status (\w+)', output)
+        if match:
+            status = match.group(1)
+            if status == "Theorem":
+                return "yes"
+            else:
+                return status
+        return output
     
     except subprocess.TimeoutExpired:
         return "timeout"
@@ -52,8 +55,10 @@ def run_vampire(tptp_formula, timeout=30):
     finally:
         os.unlink(tmp_path)
 
+
 def evaluate_pair(p_formulas, h_formulas):
     """
+    Try all p/h combinations.
     yes + unknown -> yes
     no + unknown -> no
     yes + no -> unknown
@@ -61,17 +66,26 @@ def evaluate_pair(p_formulas, h_formulas):
     answers = set()
     for p_formula in p_formulas:
         for h_formula in h_formulas:
+            # test p => h
             tptp = build_tptp_problem(p_formula, h_formula)
-            answers.add(run_vampire(tptp))
+            if run_vampire(tptp) == "yes":
+                answers.add("yes")
+            else:
+                # test p => ~h
+                tptp_neg = build_tptp_problem(p_formula, f"~({h_formula})")
+                if run_vampire(tptp_neg) == "yes":
+                    answers.add("no")
+                else:
+                    answers.add("unknown")
 
-    if 'yes' in answers and 'no' in answers:
-        return 'unknown'
-    elif 'yes' in answers:
-        return 'yes'
-    elif 'no' in answers:
-        return 'no'
+    if "yes" in answers and "no" in answers:
+        return "unknown (yes&no)"
+    elif "yes" in answers:
+        return "yes"
+    elif "no" in answers:
+        return "no"
     else:
-        return 'unknown'
+        return "unknown"
 
 
 def evaluate_corpus(folder_path, mode='tptp'):
