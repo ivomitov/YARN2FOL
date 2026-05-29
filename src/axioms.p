@@ -1,3 +1,6 @@
+fof(be_01_identity, axiom,
+    ![X, Y, S, B]: (s(S) & be_01(B,S) & arg1(B,X) & arg2(B,Y) & overlaps(B,now) => X = Y)).
+
 % domain_be-01
 fof(domain_be_01, axiom,
     ![X, Y]: (domain(X,Y) <=> ?[S,B]: (s(S) & be_01(B,S) & arg1(B,Y) & arg2(B,X)))).
@@ -25,5 +28,12 @@ fof(large_not_small, axiom,
 fof(n1_not_plural, axiom,
     ![X]: (n1(X) => ~plural(X))).
 
-% fof(unique_proper_name, axiom,
-%     ![X, Y]: ((name(X,mickey) & name(Y,mickey)) => X = Y)).
+fof(plural_not_n1, axiom, 
+    ![X]: (plural(X) => ~n1(X))).
+
+% === Definiteness (up to 5)
+fof(unique_c1, axiom, ?[X]: (c1(X) & ![Y]: (c1(Y) => Y = X))).
+fof(unique_c2, axiom, ?[X]: (c2(X) & ![Y]: (c2(Y) => Y = X))).
+fof(unique_c3, axiom, ?[X]: (c3(X) & ![Y]: (c3(Y) => Y = X))).
+fof(unique_c4, axiom, ?[X]: (c4(X) & ![Y]: (c4(Y) => Y = X))).
+fof(unique_c5, axiom, ?[X]: (c5(X) & ![Y]: (c5(Y) => Y = X))).
