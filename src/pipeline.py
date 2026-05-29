@@ -60,6 +60,7 @@ def process_one(path, yarn_json, output_queue, mode):
     try:
         id2var = {}
         variables = set()
+        c_registry = {}
 
         yarn_graph = YARNGraph(yarn_json)
         yarn_grew = yarn_graph.grew()
@@ -73,7 +74,7 @@ def process_one(path, yarn_json, output_queue, mode):
         #     json.dump(yarn_grew, f)
 
         F = build_F(yarn_grew, id2var, variables)
-        R = build_R(yarn_grew, id2var)
+        R = build_R(yarn_grew, id2var, c_registry)
         forest = build_scope_forest(F, R)
         # print(forest['nodes'])
         # print(forest['edges'])

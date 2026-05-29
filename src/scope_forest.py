@@ -103,7 +103,7 @@ def build_F(yarn_grew_graph, id2var, variables):
 
     return F
 
-def build_R(yarn_grew, id2var):
+def build_R(yarn_grew, id2var, c_registry):
 
     def add_to_R(R, key, connective, relations):
         if key not in R:
@@ -146,7 +146,10 @@ def build_R(yarn_grew, id2var):
         if feats['type'] == "L" and feats['feat'] == 'def' and feats['value'] == 'definite':
             for tar in src_to_tars[node]:
                 if nodes[tar]['type'] == 'V':
-                    add_to_R(R, tar, 'and', [('C', tar)])
+                    c_index = len(c_registry) + 1
+                    if tar not in c_registry:
+                        c_registry[tar] = f'C{c_index}'
+                    add_to_R(R, tar, 'and', [(c_registry[tar], tar)])
 
         if feats['type'] == "C":
             edge_label = feats['rel']
