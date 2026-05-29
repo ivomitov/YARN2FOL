@@ -19,11 +19,26 @@ def pair_corpus(corpus):
             continue
     return groups
 
+def negate_inside_s_context(formula):
+    """
+    Transforms ?[X]: (s(X) & BODY)
+    into       ?[X]: (s(X) & ~(BODY))
+    """
+    import re
+    match = re.match(r'(\?\[(\w+)\]:\s*\(s\(\2\)\s*&\s*)(.+)\)$', formula.strip())
+    if match:
+        prefix = match.group(1)
+        body   = match.group(3)
+        return f"{prefix}~({body}))"
+    else:
+        # fallback: negate the whole formula
+        return f"~({formula})"
+
 
 def build_tptp_problem(premise_formula, hypothesis_formula, background_path="src/axioms.p"):
     background = Path(background_path).read_text() if Path(background_path).exists() else ""
-    # if "on_time" in hypothesis_formula:
-    #     print(f"{background}\nfof(premise, axiom, {premise_formula}).\nfof(hypothesis, conjecture, {hypothesis_formula}).")
+    if "four_legged" in hypothesis_formula:
+        print(f"{background}\nfof(premise, axiom, {premise_formula}).\nfof(hypothesis, conjecture, {hypothesis_formula}).")
     return f"{background}\nfof(premise, axiom, {premise_formula}).\nfof(hypothesis, conjecture, {hypothesis_formula})."
 
 def run_vampire(tptp_formula, timeout=30):
@@ -72,7 +87,7 @@ def evaluate_pair(p_formulas, h_formulas):
                 answers.add("yes")
             else:
                 # test p => ~h
-                tptp_neg = build_tptp_problem(p_formula, f"~({h_formula})")
+                tptp_neg = build_tptp_problem(p_formula, negate_inside_s_context(h_formula))
                 if run_vampire(tptp_neg) == "yes":
                     answers.add("no")
                 else:
