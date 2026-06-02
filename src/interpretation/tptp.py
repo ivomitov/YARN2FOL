@@ -37,6 +37,14 @@ def conj(parts):
     parts = [p for p in parts if p and p.strip()]
     return " & ".join(parts)
 
+def disc_conj(parts):
+    parts = [p for p in parts if p and p.strip()]
+    return " & ".join(f"({p})" for p in parts)
+
+def disc_impl(parts):
+    parts = [p for p in parts if p and p.strip()]
+    return " => ".join(f"({p})" for p in parts)
+
 def wrap_quant(q, var, head, relations, bodies, connective="&"):
     rel = conj(relations)
     head_part = f"{head.lower().replace('-', '_')}({var.upper()})"
@@ -115,3 +123,9 @@ def interpret_tptp(root, temp_variable, id2var):
 
     if root["type"] == "necessity":
         return f"necessarily({conj(child_formulas)})"
+    
+    if root["type"] == "conj":
+        return disc_conj(child_formulas)
+    
+    if root["type"] == "cause":
+        return disc_impl(child_formulas)
