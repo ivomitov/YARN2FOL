@@ -43,6 +43,32 @@ def build_F(yarn_grew_graph, id2var, variables):
                 'variable': id2var[node],
                 'tar_label': 'S',
             })
+        
+        if feats['type'] == 'D':
+            if feats['disc']:
+                edge_label = feats['disc']
+                if edge_label in ['COORDINATION']:
+                    type = "conj"
+                elif edge_label in ['CAUSE']:
+                    type = "cause"
+                elif edge_label in ['BEFORE']:
+                    type = "before"
+                elif edge_label in ['AFTER']:
+                    type = "after"
+
+                tar = src_to_tars[node][0]
+                src = tar_to_srcs[node][0]
+                            
+                F.append({
+                    'id': node,
+                    'scope': None,
+                    'incoming': src,
+                    'outgoing': tar,
+                    'S': src,
+                    'type': type,
+                    'variable': None,
+                    'tar_label': None,
+                })
 
         if (feats['type'] in ['L', 'H']) and feats['feat'] in ['quant', 'temp']:
             for tar in src_to_tars[node]:
@@ -185,13 +211,23 @@ def build_scope_forest(F, R):
         }
 
     for k1, v1 in forest['nodes'].items():
+        
         for k2, v2 in forest['nodes'].items():
-            if v1['incoming'] and v2['scope'] and v1['incoming'] == v2['scope']:
-                forest['edges'].append({'src':k1, 'tar':k2})
-            if v1['id'] and v2['outgoing'] and v1['id'] == v2['outgoing']:
-                forest['edges'].append({'src':k2, 'rel':'', 'tar':k1})
-            if v1['outgoing'] and v2['incoming'] and v1['outgoing'] == v2['incoming']:
-                forest['edges'].append({'src':k1, 'rel':'', 'tar':k2})
+
+            if v1['type'] in ["conj", "cause", "before", "after"]: #discourse relations
+                if v1['incoming'] == v2['id'] or v1['outgoing'] == v2['id']: 
+                    forest['edges'].append({'src':k1, 'tar':k2})
+
+            else:
+
+                if v1['incoming'] and v2['scope'] and v1['incoming'] == v2['scope']:
+                    forest['edges'].append({'src':k1, 'tar':k2})
+
+                if v1['id'] and v2['outgoing'] and v1['id'] == v2['outgoing'] and v2['type'] not in ["∧", "→"]:
+                    forest['edges'].append({'src':k2, 'tar':k1})
+
+                if v1['outgoing'] and v2['incoming'] and v1['outgoing'] == v2['incoming']:
+                    forest['edges'].append({'src':k1, 'tar':k2})
 
     return forest
 
