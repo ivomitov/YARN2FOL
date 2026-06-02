@@ -35,7 +35,7 @@ def get_S_descendants(yarn_grew):
             if current_type in ["L", "H", "V"]:
                 reachable_V.add(current)
 
-            if current_type == "C": # or D...
+            if current_type in ["C", "D"]: # or D...
                 continue
 
             for neighbor in adj.get(current, []):
