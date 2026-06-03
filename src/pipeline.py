@@ -6,7 +6,7 @@ from yarn_utils import YARNGraph
 from src.preprocessing.preprocessing import reify_he, get_S_descendants, propagate_s_node_information
 from src.scope_forest import build_F, build_R, build_scope_forest, add_participants_before_event_principle, add_s_node_scope
 from src.constraints import check_compatibility_of_scopes, check_locality_of_features
-from src.T_all import get_all_possible_rooted_directed_trees, build_T_all
+from src.T_all import get_all_possible_trees, build_T_all
 from src.interpretation.standard import interpret_std, clean_formula_std
 from src.interpretation.tptp import interpret_tptp, clean_formula_tptp
 
@@ -84,10 +84,10 @@ def process_one(path, yarn_json, output_queue, mode):
         forest = add_s_node_scope(forest, s_descendants)
         # print(forest['edges'])
         
-        all_possible_rooted_directed_tree_edges = get_all_possible_rooted_directed_trees(forest)
+        all_possible_trees = get_all_possible_trees(forest)
 
         valid_tree_edges = [
-            tree for tree in all_possible_rooted_directed_tree_edges
+            tree for tree in all_possible_trees
             if check_locality_of_features(tree, forest)
         ]
         valid_tree_edges = [
