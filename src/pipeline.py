@@ -4,7 +4,7 @@ from pathlib import Path
 from yarn_utils import YARNGraph
 
 from src.preprocessing.preprocessing import reify_he, get_S_descendants, propagate_s_node_information
-from src.scope_forest import build_F, build_R, build_scope_forest, add_participants_before_event_principle, add_s_node_scope
+from src.scope_forest import build_F, build_R, build_scope_forest, add_participants_before_event_principle, add_s_node_scope, events_before_events_principle
 from src.constraints import check_compatibility_of_scopes, check_locality_of_features
 from src.T_all import get_all_possible_trees, build_T_all
 from src.interpretation.standard import interpret_std, clean_formula_std
@@ -67,6 +67,7 @@ def process_one(path, yarn_json, output_queue, mode):
         yarn_grew = reify_he(yarn_grew, grs_path)
         
         s_descendants = get_S_descendants(yarn_grew)
+        # print(s_descendants)
         yarn_grew = propagate_s_node_information(yarn_grew, s_descendants)
 
         # save as json
@@ -76,14 +77,16 @@ def process_one(path, yarn_json, output_queue, mode):
         F = build_F(yarn_grew, id2var, variables)
         R = build_R(yarn_grew, id2var, c_registry)
         forest = build_scope_forest(F, R)
-        # print(forest['nodes'])
-        # print(forest['edges'])
+        print(forest['nodes'])
+        print(forest['edges'])
         
         forest = add_participants_before_event_principle(forest, yarn_grew, R)
-        # print(forest['edges'])
+        print(forest['edges'])
         forest = add_s_node_scope(forest, s_descendants)
-        # print(forest['edges'])
-        
+        print(forest['edges'])
+        forest = events_before_events_principle(forest, yarn_grew, R)
+        print(forest['edges'])
+
         all_possible_trees = get_all_possible_trees(forest)
 
         valid_tree_edges = [
