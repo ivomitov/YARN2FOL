@@ -12,23 +12,15 @@
   "v": [
     "vp1",
     "vp2",
-    "vj1",
-    "vb1",
     "vs1",
     "vh1"
   ],
   "f": {
     "s1": [
-      "s1-temp",
-      "s1-quant",
-      "s1-num",
-      "s1-def"
+      "s1-temp"
     ],
     "s2": [
-      "s2-temp",
-      "s2-quant",
-      "s2-num",
-      "s2-def"
+      "s2-temp"
     ]
   },
   "e": {
@@ -37,20 +29,10 @@
       "ARG0",
       "vp1"
     ],
-    "e2": [
-      "vp1",
-      "name",
-      "vj1"
-    ],
     "e4": [
       "vh1",
       "ARG1",
       "vp2"
-    ],
-    "e5": [
-      "vp2",
-      "name",
-      "vb1"
     ]
   },
   "l": {
@@ -59,40 +41,10 @@
       "past",
       "vs1"
     ],
-    "l2": [
-      "s1-quant",
-      "exists",
-      "vp1"
-    ],
-    "l3": [
-      "s1-num",
-      "singular",
-      "vp1"
-    ],
-    "l4": [
-      "s1-def",
-      "definite",
-      "vp1"
-    ],
     "l5": [
       "s2-temp",
       "past",
       "vh1"
-    ],
-    "l6": [
-      "s2-quant",
-      "exists",
-      "vp2"
-    ],
-    "l7": [
-      "s2-num",
-      "singular",
-      "vp2"
-    ],
-    "l8": [
-      "s2-def",
-      "definite",
-      "vp2"
     ]
   },
   "d": {},
@@ -106,19 +58,11 @@
   "h": {},
   "i": {},
   "labels": {
-    "vp1": "person",
-    "vp2": "person",
-    "vj1": "John",
-    "vb1": "Bill",
+    "vp1": "John",
+    "vp2": "Bill",
     "vs1": "say-01",
     "vh1": "hurt-01",
     "s1-temp": "temp",
-    "s1-quant": "quant",
-    "s1-num": "num",
-    "s1-def": "def",
-    "s2-temp": "temp",
-    "s2-quant": "quant",
-    "s2-num": "num",
-    "s2-def": "def"
+    "s2-temp": "temp"
   }
 }

@@ -10,15 +10,11 @@
   ],
   "v": [
     "vf1",
-    "va1",
-    "vd1"
+    "va1"
   ],
   "f": {
     "s1": [
       "s1-temp",
-      "s1-num",
-      "s1-quant",
-      "s1-def",
       "s1-aspect"
     ]
   },
@@ -27,30 +23,9 @@
       "vf1",
       "domain",
       "va1"
-    ],
-    "e2": [
-      "va1",
-      "name",
-      "vd1"
     ]
   },
-  "l": {
-    "l1": [
-      "s1-quant",
-      "exists",
-      "va1"
-    ],
-    "l2": [
-      "s1-def",
-      "definite",
-      "va1"
-    ],
-    "l3": [
-      "s1-num",
-      "singular",
-      "va1"
-    ]
-  },
+  "l": {},
   "d": {},
   "c": {},
   "h": {
@@ -68,12 +43,8 @@
   "i": {},
   "labels": {
     "vf1": "four-legged",
-    "va1": "animal",
-    "vd1": "Dumbo",
+    "va1": "Dumbo",
     "s1-temp": "temp",
-    "s1-num": "num",
-    "s1-quant": "quant",
-    "s1-def": "def",
     "s1-aspect": "aspect"
   }
 }

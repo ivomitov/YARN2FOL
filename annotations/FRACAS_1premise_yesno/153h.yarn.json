@@ -12,7 +12,6 @@
     "vg1",
     "vs1",
     "vc1",
-    "vp1",
     "vc2"
   ],
   "f": {
@@ -38,11 +37,6 @@
       "vg1",
       "manner",
       "vc2"
-    ],
-    "e4": [
-      "vc1",
-      "name",
-      "vp1"
     ]
   },
   "l": {
@@ -66,14 +60,19 @@
       "definite",
       "vs1"
     ],
-    "l5": [
-      "s1-quant",
-      "exists",
-      "vc1"
-    ],
     "l6": [
       "s1-quant",
       "exists",
+      "vc2"
+    ],
+    "l5": [
+      "s1-def",
+      "indefinite",
+      "vc2"
+    ],
+    "l7": [
+      "s1-num",
+      "singular",
       "vc2"
     ]
   },
@@ -84,8 +83,7 @@
   "labels": {
     "vg1": "go-01",
     "vs1": "student",
-    "vc1": "city",
-    "vp1": "Paris",
+    "vc1": "Paris",
     "vc2": "car",
     "s1-temp": "temp",
     "s1-quant": "quant",

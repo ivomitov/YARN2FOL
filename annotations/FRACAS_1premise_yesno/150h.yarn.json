@@ -11,10 +11,8 @@
   "v": [
     "vg1",
     "vc1",
-    "vp1",
     "vp2",
-    "vc2",
-    "vb1"
+    "vc2"
   ],
   "f": {
     "s1": [
@@ -35,20 +33,10 @@
       "ARG4",
       "vc1"
     ],
-    "e3": [
-      "vc1",
-      "name",
-      "vp1"
-    ],
     "e8": [
       "vg1",
       "manner",
       "vc2"
-    ],
-    "e4": [
-      "vp2",
-      "name",
-      "vb1"
     ]
   },
   "l": {
@@ -57,45 +45,20 @@
       "past",
       "vg1"
     ],
-    "l2": [
-      "s1-quant",
-      "exists",
-      "vp2"
-    ],
-    "l3": [
-      "s1-num",
-      "singular",
-      "vp2"
-    ],
-    "l4": [
-      "s1-def",
-      "definite",
-      "vp2"
-    ],
     "l9": [
       "s1-quant",
       "exists",
       "vc2"
-    ],
-    "l11": [
-      "s1-quant",
-      "exists",
-      "vc1"
     ],
     "l5": [
       "s1-def",
       "indefinite",
       "vc2"
     ],
-    "l6": [
+    "l2": [
       "s1-num",
       "singular",
-      "vc1"
-    ],
-    "l7": [
-      "s1-def",
-      "definite",
-      "vc1"
+      "vc2"
     ]
   },
   "d": {},
@@ -104,10 +67,9 @@
   "i": {},
   "labels": {
     "vg1": "go-01",
-    "vc1": "city",
-    "vp1": "Paris",
-    "vp2": "person",
-    "vc2": "car",
+    "vc1": "Paris",
+    "vp2": "Bill",
+    "vc2": "train",
     "s1-temp": "temp",
     "s1-quant": "quant",
     "s1-num": "num",
@@ -115,7 +77,6 @@
     "s2-temp": "temp",
     "s2-quant": "quant",
     "s2-num": "num",
-    "s2-def": "def",
-    "vb1": "Bill"
+    "s2-def": "def"
   }
 }

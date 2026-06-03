@@ -10,7 +10,6 @@
   ],
   "v": [
     "vp2",
-    "vj1",
     "vc1",
     "vs2"
   ],
@@ -24,11 +23,6 @@
     ]
   },
   "e": {
-    "e6": [
-      "vp2",
-      "name",
-      "vj1"
-    ],
     "e8": [
       "vs2",
       "ARG1",
@@ -51,20 +45,10 @@
       "perfective",
       "vs2"
     ],
-    "l5": [
-      "s1-num",
-      "singular",
-      "vp2"
-    ],
     "l7": [
       "s1-num",
       "singular",
       "vc1"
-    ],
-    "l9": [
-      "s1-def",
-      "definite",
-      "vp2"
     ],
     "l11": [
       "s1-def",
@@ -74,22 +58,15 @@
     "l3": [
       "s1-quant",
       "exists",
-      "vp2"
+      "vc1"
     ]
   },
   "d": {},
   "c": {},
-  "h": {
-    "h1": [
-      "l3",
-      "exists",
-      "vc1"
-    ]
-  },
+  "h": {},
   "i": {},
   "labels": {
-    "vp2": "person",
-    "vj1": "Jones",
+    "vp2": "Jones",
     "vc1": "contract",
     "vs2": "sign-01",
     "s1-temp": "temp",

@@ -11,7 +11,6 @@
   "v": [
     "va1",
     "va2",
-    "vd1",
     "vf1"
   ],
   "f": {
@@ -24,11 +23,6 @@
     ]
   },
   "e": {
-    "e1": [
-      "va1",
-      "name",
-      "vd1"
-    ],
     "e2": [
       "va2",
       "mod",
@@ -41,30 +35,15 @@
     ]
   },
   "l": {
-    "l1": [
-      "s1-quant",
-      "exists",
-      "va1"
-    ],
     "l2": [
       "s1-quant",
       "exists",
       "va2"
     ],
-    "l3": [
-      "s1-num",
-      "singular",
-      "va1"
-    ],
     "l4": [
       "s1-num",
       "singular",
       "va2"
-    ],
-    "l5": [
-      "s1-def",
-      "definite",
-      "va1"
     ],
     "l6": [
       "s1-def",
@@ -88,9 +67,8 @@
   },
   "i": {},
   "labels": {
-    "va1": "animal",
+    "va1": "Dumbo",
     "va2": "animal",
-    "vd1": "Dumbo",
     "vf1": "four-legged",
     "s1-temp": "temp",
     "s1-quant": "quant",

@@ -13,14 +13,10 @@
     "vp1",
     "vp2",
     "vp3",
-    "vs1",
-    "vj1",
-    "va1",
     "vc1",
     "vs2",
     "va2",
-    "vs3",
-    "vc2"
+    "vs3"
   ],
   "f": {
     "s1": [
@@ -33,10 +29,7 @@
     ],
     "s2": [
       "s2-temp",
-      "s2-aspect",
-      "s2-quant",
-      "s2-num",
-      "s2-def"
+      "s2-aspect"
     ]
   },
   "e": {
@@ -55,21 +48,6 @@
       "op2",
       "vp2"
     ],
-    "e5": [
-      "vp3",
-      "name",
-      "vs1"
-    ],
-    "e6": [
-      "vp2",
-      "name",
-      "vj1"
-    ],
-    "e7": [
-      "vp1",
-      "name",
-      "va1"
-    ],
     "e8": [
       "vs2",
       "ARG1",
@@ -80,10 +58,10 @@
       "ARG0",
       "vp1"
     ],
-    "e9": [
+    "e5": [
       "vs3",
       "ARG1",
-      "vc2"
+      "vc1"
     ]
   },
   "l": {
@@ -97,40 +75,15 @@
       "perfective",
       "vs2"
     ],
-    "l3": [
-      "s1-quant",
-      "exists",
-      "vp3"
-    ],
-    "l4": [
-      "s1-num",
-      "singular",
-      "vp3"
-    ],
-    "l5": [
-      "s1-num",
-      "singular",
-      "vp2"
-    ],
     "l7": [
       "s1-num",
       "singular",
       "vc1"
     ],
-    "l9": [
-      "s1-def",
-      "definite",
-      "vp2"
-    ],
     "l11": [
       "s1-def",
       "definite",
       "vc1"
-    ],
-    "l8": [
-      "s1-def",
-      "definite",
-      "vp3"
     ],
     "l6": [
       "s1-neg",
@@ -147,30 +100,10 @@
       "perfective",
       "vs3"
     ],
-    "l13": [
-      "s2-quant",
+    "l3": [
+      "s1-quant",
       "exists",
-      "vp1"
-    ],
-    "l14": [
-      "s2-num",
-      "singular",
-      "vp1"
-    ],
-    "l15": [
-      "s2-num",
-      "singular",
-      "vc2"
-    ],
-    "l16": [
-      "s2-def",
-      "definite",
-      "vp1"
-    ],
-    "l17": [
-      "s2-def",
-      "definite",
-      "vc2"
+      "vc1"
     ]
   },
   "d": {
@@ -181,37 +114,12 @@
     ]
   },
   "c": {},
-  "h": {
-    "h1": [
-      "l3",
-      "exists",
-      "vp2"
-    ],
-    "h2": [
-      "h1",
-      "exists",
-      "vc1"
-    ],
-    "h3": [
-      "l13",
-      "exists",
-      "vc2"
-    ]
-  },
-  "i": {
-    "i1": [
-      "vc1",
-      "=",
-      "vc2"
-    ]
-  },
+  "h": {},
+  "i": {},
   "labels": {
-    "vp1": "person",
-    "vp2": "person",
-    "vp3": "person",
-    "vs1": "Smith",
-    "vj1": "Anderson",
-    "va1": "Jones",
+    "vp1": "Jones",
+    "vp2": "Anderson",
+    "vp3": "Smith",
     "vc1": "contract",
     "vs2": "sign-01",
     "va2": "and",
@@ -222,11 +130,7 @@
     "s1-def": "def",
     "s1-neg": "neg",
     "vs3": "sign-01",
-    "vc2": "contract",
     "s2-temp": "temp",
-    "s2-aspect": "aspect",
-    "s2-quant": "quant",
-    "s2-num": "num",
-    "s2-def": "def"
+    "s2-aspect": "aspect"
   }
 }

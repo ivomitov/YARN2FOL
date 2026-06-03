@@ -10,7 +10,6 @@
   ],
   "v": [
     "vp1",
-    "vj1",
     "vh1",
     "vd1"
   ],
@@ -33,11 +32,6 @@
       "vh1",
       "ARG1",
       "vd1"
-    ],
-    "e4": [
-      "vp1",
-      "name",
-      "vj1"
     ]
   },
   "l": {
@@ -51,30 +45,15 @@
       "state",
       "vh1"
     ],
-    "l3": [
-      "s1-quant",
-      "exists",
-      "vp1"
-    ],
     "l4": [
       "s1-quant",
       "exists",
       "vd1"
     ],
-    "l5": [
-      "s1-num",
-      "singular",
-      "vp1"
-    ],
     "l6": [
       "s1-num",
       "singular",
       "vd1"
-    ],
-    "l7": [
-      "s1-def",
-      "definite",
-      "vp1"
     ],
     "l8": [
       "s1-def",
@@ -87,8 +66,7 @@
   "h": {},
   "i": {},
   "labels": {
-    "vp1": "person",
-    "vj1": "John",
+    "vp1": "John",
     "vh1": "have-03",
     "vd1": "diamond",
     "s1-temp": "temp",

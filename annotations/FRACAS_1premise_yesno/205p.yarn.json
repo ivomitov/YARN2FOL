@@ -11,7 +11,6 @@
   "v": [
     "va1",
     "va2",
-    "vm1",
     "vs1"
   ],
   "f": {
@@ -24,11 +23,6 @@
     ]
   },
   "e": {
-    "e1": [
-      "va2",
-      "name",
-      "vm1"
-    ],
     "e2": [
       "vs1",
       "ARG1",
@@ -41,30 +35,15 @@
     ]
   },
   "l": {
-    "l1": [
-      "s1-quant",
-      "exists",
-      "va2"
-    ],
     "l2": [
       "s1-quant",
       "exists",
       "va1"
     ],
-    "l3": [
-      "s1-num",
-      "singular",
-      "va2"
-    ],
     "l4": [
       "s1-num",
       "singular",
       "va1"
-    ],
-    "l5": [
-      "s1-def",
-      "definite",
-      "va2"
     ],
     "l6": [
       "s1-def",
@@ -89,8 +68,7 @@
   "i": {},
   "labels": {
     "va1": "animal",
-    "va2": "animal",
-    "vm1": "Dumbo",
+    "va2": "Dumbo",
     "vs1": "large-01",
     "s1-temp": "temp",
     "s1-quant": "quant",

@@ -10,10 +10,8 @@
     "s2"
   ],
   "v": [
-    "vj1",
     "vg1",
     "vc1",
-    "vp1",
     "vp2",
     "vp3",
     "vc2",
@@ -45,16 +43,6 @@
       "ARG4",
       "vc1"
     ],
-    "e3": [
-      "vc1",
-      "name",
-      "vp1"
-    ],
-    "e4": [
-      "vp2",
-      "name",
-      "vj1"
-    ],
     "e5": [
       "vg2",
       "ARG1",
@@ -81,21 +69,6 @@
       "s1-temp",
       "present",
       "vg1"
-    ],
-    "l2": [
-      "s1-quant",
-      "exists",
-      "vp2"
-    ],
-    "l3": [
-      "s1-num",
-      "singular",
-      "vp2"
-    ],
-    "l4": [
-      "s1-def",
-      "definite",
-      "vp2"
     ],
     "l5": [
       "s2-temp",
@@ -127,29 +100,24 @@
       "exists",
       "vt1"
     ],
-    "l11": [
-      "s1-quant",
-      "exists",
-      "vc1"
-    ],
     "l13": [
       "s1-def",
       "indefinite",
       "vc2"
     ],
-    "l14": [
-      "s1-num",
-      "singular",
-      "vc1"
-    ],
-    "l15": [
-      "s1-def",
-      "definite",
-      "vc1"
-    ],
     "l19": [
       "s2-def",
       "indefinite",
+      "vt1"
+    ],
+    "l2": [
+      "s1-num",
+      "singular",
+      "vc2"
+    ],
+    "l3": [
+      "s2-num",
+      "singular",
       "vt1"
     ]
   },
@@ -164,11 +132,9 @@
   "h": {},
   "i": {},
   "labels": {
-    "vj1": "John",
     "vg1": "go-01",
-    "vc1": "city",
-    "vp1": "Paris",
-    "vp2": "person",
+    "vc1": "Paris",
+    "vp2": "John",
     "vp3": "student",
     "vc2": "car",
     "vt1": "train",

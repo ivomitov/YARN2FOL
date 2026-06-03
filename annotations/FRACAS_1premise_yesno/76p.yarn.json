@@ -12,7 +12,6 @@
     "vc1",
     "vm1",
     "vo1",
-    "vw1",
     "vs1"
   ],
   "f": {
@@ -30,20 +29,15 @@
       "part-of",
       "vc1"
     ],
-    "e3": [
-      "vw1",
-      "name",
-      "vs1"
-    ],
     "e4": [
       "vo1",
       "ARG1",
       "vm1"
     ],
-    "e5": [
+    "e1": [
       "vo1",
       "ARG2",
-      "vw1"
+      "vs1"
     ]
   },
   "l": {
@@ -62,42 +56,25 @@
       "plural",
       "vm1"
     ],
-    "l5": [
-      "s1-num",
-      "singular",
-      "vw1"
-    ],
-    "l3": [
-      "s1-quant",
-      "exists",
-      "vw1"
-    ],
     "l6": [
       "s1-def",
       "indefinite",
       "vm1"
     ],
-    "l7": [
-      "s1-def",
-      "definite",
-      "vw1"
-    ]
-  },
-  "d": {},
-  "c": {},
-  "h": {
-    "h1": [
-      "l3",
+    "l3": [
+      "s1-quant",
       "few",
       "vm1"
     ]
   },
+  "d": {},
+  "c": {},
+  "h": {},
   "i": {},
   "labels": {
     "vc1": "committee",
     "vm1": "member",
     "vo1": "originate-01",
-    "vw1": "world-region",
     "vs1": "Southern Europe",
     "s1-temp": "temp",
     "s1-aspect": "aspect",
