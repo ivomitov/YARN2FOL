@@ -259,7 +259,7 @@ def add_participants_before_event_principle(forest, yarn_grew, R): # maybe chang
                             yarn_grew['nodes'][tar]['type'] == 'S':
                             
                             forest['edges'].append({'src':k1, 'tar':k2}) # participant after event in the case of C edges
-    
+
     return forest
 
 def add_s_node_scope(forest, s_descendants):
@@ -269,4 +269,22 @@ def add_s_node_scope(forest, s_descendants):
                 if v2['id'] in s_descendants[v1['id']]:
                     forest['edges'].append({'src':k1, 'tar':k2})
                     
+    return forest
+
+def events_before_events_principle(forest, yarn_grew, R):
+    for _, rels in R.items():
+        for rel in rels['and'] + rels['or']:
+            if len(rel) == 3:
+                src = rel[1]
+                tar = rel[2]
+
+                for k1, v1 in forest['nodes'].items():
+                    for k2, v2 in forest['nodes'].items():
+                        if v1['id'] == src and v2['id'] == tar and \
+                            yarn_grew['nodes'][src]['type'] == 'S' and \
+                            yarn_grew['nodes'][tar]['type'] == 'S':
+
+                            for edge in forest['edges']:
+                                if edge['src'] == k1 and edge['tar'] != k2:
+                                    forest['edges'].append({'src':edge['tar'], 'tar':k2}) # events before events in the case of subordinating D relations
     return forest

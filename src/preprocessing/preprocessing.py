@@ -35,16 +35,7 @@ def get_S_descendants(yarn_grew):
             if current_type in ["L", "H", "V"]:
                 reachable.append(current)
 
-            if current_type == "C":
-                continue
-
-            if current_type == "D":
-                disc = nodes[current].get("disc")
-                if disc in ["BEFORE", "AFTER"]: # and other subordinating relations...
-                    # include the target S node but don't traverse further into it
-                    for neighbor in adj.get(current, []):
-                        if nodes[neighbor].get("type") == "S":
-                            reachable.append(neighbor)
+            if current_type in ["C", "D"]:
                 continue
 
             for neighbor in adj.get(current, []):
