@@ -22,7 +22,7 @@ def get_S_descendants(yarn_grew):
 
         visited = set()
         stack = [node_id]
-        reachable_V = set()
+        reachable = []
 
         while stack:
             current = stack.pop()
@@ -33,16 +33,25 @@ def get_S_descendants(yarn_grew):
             current_type = nodes[current].get("type")
 
             if current_type in ["L", "H", "V"]:
-                reachable_V.add(current)
+                reachable.append(current)
 
-            if current_type in ["C", "D"]: # or D...
+            if current_type == "C":
+                continue
+
+            if current_type == "D":
+                disc = nodes[current].get("disc")
+                if disc in ["BEFORE", "AFTER"]: # and other subordinating relations...
+                    # include the target S node but don't traverse further into it
+                    for neighbor in adj.get(current, []):
+                        if nodes[neighbor].get("type") == "S":
+                            reachable.append(neighbor)
                 continue
 
             for neighbor in adj.get(current, []):
                 if neighbor not in visited:
                     stack.append(neighbor)
 
-        result[node_id] = list(reachable_V)
+        result[node_id] = list(reachable)
 
     return result
 
