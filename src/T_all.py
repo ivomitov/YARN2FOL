@@ -58,7 +58,7 @@ def build_T_all(forest, valid_tree_edges):
         new_tree['edges'] = tree['edges']
 
         for node1, feats1 in new_tree['nodes'].items():
-            if feats1['type'] in ['conj']: #, 'cause', 'after', 'before'
+            if feats1['type'] in ['conj_coor']:
                 incoming_id = feats1['incoming']
                 outgoing_id = feats1['outgoing']
 
