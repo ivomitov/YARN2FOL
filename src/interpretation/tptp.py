@@ -37,14 +37,6 @@ def conj(parts):
     parts = [p for p in parts if p and p.strip()]
     return " & ".join(parts)
 
-def disc_conj(parts):
-    parts = [p for p in parts if p and p.strip()]
-    return " & ".join(f"({p})" for p in parts)
-
-def disc_impl(parts):
-    parts = [p for p in parts if p and p.strip()]
-    return " => ".join(f"({p})" for p in parts)
-
 def wrap_quant(q, var, head, relations, bodies, connective="&"):
     rel = conj(relations)
     head_part = f"{head.lower().replace('-', '_')}({var.upper()})"
@@ -80,7 +72,7 @@ def wrap_temp(q, var, S, head, relations, bodies, connective="&"):
         return f"{q}[{var.upper()}]: ({left})"
 
 def clean_formula_tptp(formula):
-    return formula.replace(" & ()", "")
+    return formula.replace(" & ()", "").replace("& (=>", "=> (")
 
 def interpret_tptp(root, temp_variable, id2var):
 
@@ -124,8 +116,11 @@ def interpret_tptp(root, temp_variable, id2var):
     if root["type"] == "necessity":
         return f"necessarily({conj(child_formulas)})"
     
-    if root["type"] == "conj":
-        return disc_conj(child_formulas)
+    if root["type"] == "conj_coor":
+        return f"({child_formulas[0]}) & ({child_formulas[1]})" # must be just 2 children
     
-    if root["type"] == "cause":
-        return disc_impl(child_formulas)
+    if root["type"] == "conseq_sub":
+            return f"=> {conj(child_formulas)}" # clunky
+    
+    if root["type"] in ["before_sub", "after_sub"]: # resets temp var
+        return interpret_tptp(root['children'][0], "now", id2var)
