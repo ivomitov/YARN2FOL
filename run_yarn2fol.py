@@ -1,8 +1,11 @@
 from src.pipeline import load_yarn, yarn2fol
 from pathlib import Path
 
-FOLDER_PATH = "annotations/FRACAS_1premise_yesno"
-FILE = "1.yarn.json"
+FOLDER_PATH = "annotations/FRACAS_1premise_yesno/"
+FILE = "153p.yarn.json"
+
+# FOLDER_PATH = "annotations/"
+# FILE = "3.yarn.json"
 
 corpus = load_yarn(FOLDER_PATH)
 results = yarn2fol(corpus, mode='tptp', verbose=True)
