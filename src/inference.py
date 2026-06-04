@@ -105,7 +105,7 @@ def evaluate_pair(p_formulas, h_formulas):
 
 def evaluate_corpus(folder_path, mode='tptp'):
     corpus = load_yarn(folder_path)
-    corpus = [(path, graph) for path, graph in corpus if not graph.get('d')] #!skip discourse relations for now
+    #corpus = [(path, graph) for path, graph in corpus if not graph.get('d')] #!skip discourse relations for now
     groups = pair_corpus(corpus)
 
     results = []
@@ -129,6 +129,14 @@ def evaluate_corpus(folder_path, mode='tptp'):
 
         if p_formulas is None or h_formulas is None:
             print("  ERROR: could not generate formula")
+            results.append({
+                "id": problem_id,
+                "premise": p_graph['meta']['text'],
+                "hypothesis": h_graph['meta']['text'],
+                "expected": expected,
+                "predicted": "error",
+                "correct": False,
+            })
             continue
 
         p_formulas = [formula.replace('\n ', '') for formula in p_formulas]
