@@ -45,12 +45,16 @@ def build_F(yarn_grew_graph, id2var, variables):
             })
         
         if feats['type'] == 'D':
-            if feats.get('disc') in ['COORDINATION', 'CAUSE']: #and other coordinating relations...
+            if feats.get('disc') in ['COORDINATION', 'CONSEQUENCE', 'BEFORE', 'AFTER']: #and other discourse relations...
                 edge_label = feats['disc']
                 if edge_label == 'COORDINATION':
-                    type = "conj"
-                elif edge_label == 'CAUSE':
-                    type = "cause"
+                    type = "conj_coor"
+                elif edge_label == 'CONSEQUENCE':
+                    type = "conseq_sub"
+                elif edge_label == 'BEFORE':
+                    type = 'before_sub'
+                elif edge_label == 'AFTER':
+                    type = 'after_sub'
 
                 tar = src_to_tars[node][0]
                 src = tar_to_srcs[node][0]
@@ -188,8 +192,8 @@ def build_R(yarn_grew, id2var, c_registry):
                         key = src if id2var[tar].isupper() else tar
                         add_to_R(R, key, 'and', [(edge_label, src, tar)])
         
-        if feats['type'] == "D" and feats['disc'] in ['BEFORE', 'AFTER']:
-            edge_label = feats['disc']
+        if feats['type'] == "D" and feats['disc'] in ['BEFORE', 'AFTER']: #temporal subordinating discourse realtions
+            edge_label = feats['disc'].replace("_sub", "").lower()
             for src in tar_to_srcs[node]:
                 for tar in src_to_tars[node]:
                     add_to_R(R, tar, 'and', [(edge_label, src, tar)])
@@ -217,7 +221,7 @@ def build_scope_forest(F, R):
         
         for k2, v2 in forest['nodes'].items():
 
-            if v1['type'] in ["conj", "cause"]: #discourse relations
+            if v1['type'] in ["conj_coor"]: #coordinating discourse relations
                 if v1['incoming'] == v2['id'] or v1['outgoing'] == v2['id']: 
                     forest['edges'].append({'src':k1, 'tar':k2})
 
@@ -226,7 +230,7 @@ def build_scope_forest(F, R):
                 if v1['incoming'] and v2['scope'] and v1['incoming'] == v2['scope']:
                     forest['edges'].append({'src':k1, 'tar':k2})
 
-                if v1['id'] and v2['outgoing'] and v1['id'] == v2['outgoing'] and v2['type'] not in ["conj", "cause"]:
+                if v1['id'] and v2['outgoing'] and v1['id'] == v2['outgoing'] and v2['type'] not in ["conj_coor", "conseq_sub", "before_sub", "after_sub"]:
                     forest['edges'].append({'src':k2, 'tar':k1})
 
                 if v1['outgoing'] and v2['incoming'] and v1['outgoing'] == v2['incoming']:
@@ -271,20 +275,21 @@ def add_s_node_scope(forest, s_descendants):
                     
     return forest
 
-def events_before_events_principle(forest, yarn_grew, R):
-    for _, rels in R.items():
-        for rel in rels['and'] + rels['or']:
-            if len(rel) == 3:
-                src = rel[1]
-                tar = rel[2]
+def events_before_events_principle(forest, yarn_grew): # in the case of subordinating D relations
+    for k1, v1 in forest['nodes'].items():
+        src = v1['id']
+        for k2, v2 in forest['nodes'].items():
+            tar = v2['id']
+            for k3, v3 in forest['nodes'].items():
 
-                for k1, v1 in forest['nodes'].items():
-                    for k2, v2 in forest['nodes'].items():
-                        if v1['id'] == src and v2['id'] == tar and \
-                            yarn_grew['nodes'][src]['type'] == 'S' and \
-                            yarn_grew['nodes'][tar]['type'] == 'S':
+                if yarn_grew['nodes'][src]['type'] == 'S' and \
+                    yarn_grew['nodes'][tar]['type'] == 'S' and \
+                    v3['type'].endswith('_sub') and v3['incoming'] == src and v3['outgoing'] == tar:
 
-                            for edge in forest['edges']:
-                                if edge['src'] == k1 and edge['tar'] != k2:
-                                    forest['edges'].append({'src':edge['tar'], 'tar':k2}) # events before events in the case of subordinating D relations
+                    forest['edges'].append({'src':k3, 'tar':k2})
+
+                    for edge in forest['edges']:
+                        if edge['src'] == k1 and edge['tar'] != k2:
+                            forest['edges'].append({'src':edge['tar'], 'tar':k3}) 
+                                        
     return forest
