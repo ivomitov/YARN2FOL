@@ -77,15 +77,15 @@ def process_one(path, yarn_json, output_queue, mode):
         F = build_F(yarn_grew, id2var, variables)
         R = build_R(yarn_grew, id2var, c_registry)
         forest = build_scope_forest(F, R)
-        print(forest['nodes'])
-        print(forest['edges'])
+        # print(forest['nodes'])
+        # print(forest['edges'])
         
         forest = add_participants_before_event_principle(forest, yarn_grew, R)
-        print(forest['edges'])
+        # print(forest['edges'])
         forest = add_s_node_scope(forest, s_descendants)
-        print(forest['edges'])
-        forest = events_before_events_principle(forest, yarn_grew, R)
-        print(forest['edges'])
+        # print(forest['edges'])
+        forest = events_before_events_principle(forest, yarn_grew)
+        # print(forest['edges'])
 
         all_possible_trees = get_all_possible_trees(forest)
 
