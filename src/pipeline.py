@@ -3,7 +3,7 @@ import json
 from pathlib import Path
 from yarn_utils import YARNGraph
 
-from src.preprocessing.preprocessing import reify_he, get_S_descendants, propagate_s_node_information
+from src.preprocessing.preprocessing import reify_he, get_S_descendants, propagate_s_node_information, identify_main_preds
 from src.scope_forest import build_F, build_R, build_scope_forest, add_participants_before_event_principle, add_s_node_scope, events_before_events_principle
 from src.constraints import check_compatibility_of_scopes, check_locality_of_features
 from src.T_all import get_all_possible_trees, build_T_all
@@ -69,6 +69,8 @@ def process_one(path, yarn_json, output_queue, mode):
         s_descendants = get_S_descendants(yarn_grew)
         # print(s_descendants)
         yarn_grew = propagate_s_node_information(yarn_grew, s_descendants)
+        yarn_grew = identify_main_preds(yarn_grew)
+        print(yarn_grew)
 
         # save as json
         # with open('output.json', 'w') as f:

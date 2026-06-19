@@ -55,3 +55,28 @@ def propagate_s_node_information(yarn_grew, s_descendants):
                     feats['event'] = s_node
     
     return yarn_grew
+
+def identify_main_preds(yarn_grew):
+    nodes = yarn_grew["nodes"]
+    edges = yarn_grew["edges"]
+
+    for node_id, node_data in nodes.items():
+        if node_data.get("type") in ("L", "H") and node_data.get("feat") == "temp":
+            if node_data.get("value"):
+                for edge in edges:
+                    src = edge['src']
+                    tar = edge['tar']
+                    if src == node_id and nodes[tar]['type'] == 'V':
+                        s_node = node_data.get("event")
+                        nodes[s_node]["main_pred"] = tar
+
+    for node_id, node_data in nodes.items():
+        if node_data.get("type") in ("L", "H") and node_data.get("feat") == "temp":
+            if not node_data.get("value"):
+                src = edge['src']
+                tar = edge['tar']
+                if src == node_id and nodes[tar]['type'] == 'V':
+                    s_node = node_data.get("event")
+                    nodes[s_node].setdefault("main_pred", tar)
+    
+    return yarn_grew
