@@ -5,14 +5,156 @@
     "type": "hypothesis",
     "fracas_answer": "yes"
   },
-  "s": [],
-  "v": [],
-  "f": {},
-  "e": {},
-  "l": {},
+  "s": [
+    "s1",
+    "s2",
+    "s3"
+  ],
+  "v": [
+    "vc1",
+    "vs1",
+    "vj1",
+    "vs2",
+    "vs3",
+    "va1",
+    "vc2",
+    "vc3",
+    "vc4"
+  ],
+  "f": {
+    "s1": [
+      "s1-temp"
+    ],
+    "s2": [
+      "s2-temp",
+      "s2-quant",
+      "s2-num",
+      "s2-def"
+    ],
+    "s3": [
+      "s3-temp",
+      "s3-quant",
+      "s3-num",
+      "s3-def"
+    ]
+  },
+  "e": {
+    "e2": [
+      "vs1",
+      "ARG1",
+      "vc1"
+    ],
+    "e4": [
+      "vs2",
+      "ARG0",
+      "vs3"
+    ],
+    "e1": [
+      "vs1",
+      "ARG0",
+      "vj1"
+    ],
+    "e3": [
+      "vs2",
+      "ARG1",
+      "va1"
+    ],
+    "e5": [
+      "vc4",
+      "ARG1",
+      "vc3"
+    ],
+    "e6": [
+      "vc2",
+      "ARG1",
+      "vc3"
+    ],
+    "e7": [
+      "vc2",
+      "ARG0",
+      "vj1"
+    ]
+  },
+  "l": {
+    "l1": [
+      "s1-temp",
+      "past",
+      "vs2"
+    ],
+    "l2": [
+      "s2-temp",
+      "present",
+      "vs1"
+    ],
+    "l3": [
+      "s2-quant",
+      "exists",
+      "vc1"
+    ],
+    "l4": [
+      "s2-num",
+      "singular",
+      "vc1"
+    ],
+    "l5": [
+      "s2-def",
+      "definite",
+      "vc1"
+    ],
+    "l6": [
+      "s3-temp",
+      "present",
+      "vc2"
+    ],
+    "l7": [
+      "s3-quant",
+      "exists",
+      "vc3"
+    ],
+    "l8": [
+      "s3-num",
+      "singular",
+      "vc3"
+    ],
+    "l9": [
+      "s3-def",
+      "definite",
+      "vc3"
+    ]
+  },
   "d": {},
-  "c": {},
+  "c": {
+    "c1": [
+      "va1",
+      "op1",
+      "s2"
+    ],
+    "c2": [
+      "va1",
+      "op2",
+      "s3"
+    ]
+  },
   "h": {},
   "i": {},
-  "labels": {}
+  "labels": {
+    "vc1": "contract",
+    "vs1": "sign-01",
+    "vj1": "Jones",
+    "vs2": "see-01",
+    "vs3": "Smith",
+    "s1-temp": "temp",
+    "s2-temp": "temp",
+    "s2-quant": "quant",
+    "s2-num": "num",
+    "s2-def": "def",
+    "va1": "or",
+    "vc2": "cross_out-03",
+    "s3-temp": "temp",
+    "s3-quant": "quant",
+    "s3-num": "num",
+    "s3-def": "def",
+    "vc3": "clause",
+    "vc4": "crucial-01"
+  }
 }

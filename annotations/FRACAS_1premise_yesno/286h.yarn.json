@@ -5,14 +5,98 @@
     "type": "hypothesis",
     "fracas_answer": "no"
   },
-  "s": [],
-  "v": [],
-  "f": {},
-  "e": {},
-  "l": {},
+  "s": [
+    "s1"
+  ],
+  "v": [
+    "vs1",
+    "vr1",
+    "vw1",
+    "vh1"
+  ],
+  "f": {
+    "s1": [
+      "s1-quant",
+      "s1-num",
+      "s1-def",
+      "s1-temp",
+      "s1-aspect",
+      "s1-duration"
+    ]
+  },
+  "e": {
+    "e2": [
+      "vw1",
+      "ARG1",
+      "vr1"
+    ],
+    "e1": [
+      "vw1",
+      "ARG0",
+      "vs1"
+    ]
+  },
+  "l": {
+    "l2": [
+      "s1-quant",
+      ">2",
+      "vh1"
+    ],
+    "l1": [
+      "s1-temp",
+      "past",
+      "vw1"
+    ],
+    "l3": [
+      "s1-aspect",
+      "accomplishment",
+      "vw1"
+    ],
+    "l4": [
+      "s1-def",
+      "indefinite",
+      "vr1"
+    ],
+    "l5": [
+      "s1-num",
+      "singular",
+      "vr1"
+    ],
+    "l9": [
+      "s1-quant",
+      "exists",
+      "vr1"
+    ],
+    "l11": [
+      "s1-def",
+      "indefinite",
+      "vh1"
+    ],
+    "l12": [
+      "s1-num",
+      "plural",
+      "vh1"
+    ],
+    "l10": [
+      "s1-duration",
+      "",
+      "vh1"
+    ]
+  },
   "d": {},
   "c": {},
   "h": {},
   "i": {},
-  "labels": {}
+  "labels": {
+    "vs1": "Smith",
+    "vr1": "report",
+    "vw1": "write-01",
+    "s1-quant": "quant",
+    "s1-num": "num",
+    "s1-def": "def",
+    "vh1": "hour",
+    "s1-temp": "temp",
+    "s1-aspect": "aspect",
+    "s1-duration": "duration"
+  }
 }

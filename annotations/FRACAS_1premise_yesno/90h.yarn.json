@@ -5,14 +5,105 @@
     "type": "hypothesis",
     "fracas_answer": "yes"
   },
-  "s": [],
-  "v": [],
-  "f": {},
-  "e": {},
-  "l": {},
+  "s": [
+    "s1"
+  ],
+  "v": [
+    "vc1",
+    "vr1",
+    "vi1",
+    "va1"
+  ],
+  "f": {
+    "s1": [
+      "s1-temp",
+      "s1-quant",
+      "s1-num",
+      "s1-def"
+    ]
+  },
+  "e": {
+    "e1": [
+      "vr1",
+      "ARG0",
+      "vc1"
+    ],
+    "e2": [
+      "vr1",
+      "ARG1",
+      "vi1"
+    ],
+    "e3": [
+      "vi1",
+      "location",
+      "va1"
+    ]
+  },
+  "l": {
+    "l1": [
+      "s1-temp",
+      "past",
+      "vr1"
+    ],
+    "l2": [
+      "s1-quant",
+      "exists",
+      "vc1"
+    ],
+    "l5": [
+      "s1-num",
+      "singular",
+      "vc1"
+    ],
+    "l6": [
+      "s1-num",
+      "singular",
+      "vi1"
+    ],
+    "l7": [
+      "s1-num",
+      "singular",
+      "va1"
+    ],
+    "l8": [
+      "s1-def",
+      "definite",
+      "vc1"
+    ],
+    "l10": [
+      "s1-def",
+      "definite",
+      "va1"
+    ],
+    "l3": [
+      "s1-def",
+      "indefinite",
+      "vi1"
+    ]
+  },
   "d": {},
   "c": {},
-  "h": {},
+  "h": {
+    "h1": [
+      "l2",
+      "exists",
+      "va1"
+    ],
+    "h2": [
+      "h1",
+      "forall",
+      "vi1"
+    ]
+  },
   "i": {},
-  "labels": {}
+  "labels": {
+    "vc1": "chairman",
+    "vr1": "read-01",
+    "vi1": "item",
+    "va1": "agenda",
+    "s1-temp": "temp",
+    "s1-quant": "quant",
+    "s1-num": "num",
+    "s1-def": "def"
+  }
 }

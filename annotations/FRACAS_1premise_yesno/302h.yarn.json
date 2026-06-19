@@ -5,14 +5,72 @@
     "type": "hypothesis",
     "fracas_answer": "yes"
   },
-  "s": [],
-  "v": [],
-  "f": {},
-  "e": {},
-  "l": {},
+  "s": [
+    "s1"
+  ],
+  "v": [
+    "vb1",
+    "vr1",
+    "vs1"
+  ],
+  "f": {
+    "s1": [
+      "s1-temp",
+      "s1-quant",
+      "s1-num",
+      "s1-def"
+    ]
+  },
+  "e": {
+    "e1": [
+      "vr1",
+      "ARG1",
+      "vb1"
+    ],
+    "e2": [
+      "vr1",
+      "ARG0",
+      "vs1"
+    ],
+    "e3": [
+      "vb1",
+      "poss",
+      "vs1"
+    ]
+  },
+  "l": {
+    "l1": [
+      "s1-temp",
+      "past",
+      "vr1"
+    ],
+    "l2": [
+      "s1-def",
+      "definite",
+      "vb1"
+    ],
+    "l3": [
+      "s1-num",
+      "singular",
+      "vb1"
+    ],
+    "l4": [
+      "s1-quant",
+      "exists",
+      "vb1"
+    ]
+  },
   "d": {},
   "c": {},
   "h": {},
   "i": {},
-  "labels": {}
+  "labels": {
+    "vb1": "business",
+    "vr1": "run-01",
+    "vs1": "Smith",
+    "s1-temp": "temp",
+    "s1-quant": "quant",
+    "s1-num": "num",
+    "s1-def": "def"
+  }
 }

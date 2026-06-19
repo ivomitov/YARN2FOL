@@ -5,14 +5,145 @@
     "type": "premise",
     "fracas_answer": "yes"
   },
-  "s": [],
-  "v": [],
-  "f": {},
-  "e": {},
-  "l": {},
-  "d": {},
-  "c": {},
+  "s": [
+    "s1",
+    "s2",
+    "s3"
+  ],
+  "v": [
+    "vj1",
+    "vb1",
+    "vp1",
+    "vw1",
+    "vs1",
+    "vr1",
+    "vr2",
+    "vw2"
+  ],
+  "f": {
+    "s1": [
+      "s1-temp",
+      "s1-quant",
+      "s1-num",
+      "s1-def"
+    ],
+    "s2": [
+      "s2-temp"
+    ],
+    "s3": [
+      "s3-temp",
+      "s3-num",
+      "s3-quant",
+      "s3-def"
+    ]
+  },
+  "e": {
+    "e1": [
+      "vw1",
+      "ARG0",
+      "vj1"
+    ],
+    "e2": [
+      "vw1",
+      "ARG1",
+      "vr1"
+    ],
+    "e3": [
+      "vs1",
+      "ARG0",
+      "vb1"
+    ],
+    "e4": [
+      "vw2",
+      "ARG0",
+      "vp1"
+    ],
+    "e5": [
+      "vw2",
+      "ARG1",
+      "vr2"
+    ]
+  },
+  "l": {
+    "l1": [
+      "s1-temp",
+      "past",
+      "vw1"
+    ],
+    "l2": [
+      "s1-quant",
+      "exists",
+      "vr1"
+    ],
+    "l3": [
+      "s1-def",
+      "indefinite",
+      "vr1"
+    ],
+    "l4": [
+      "s1-num",
+      "singular",
+      "vr1"
+    ],
+    "l5": [
+      "s2-temp",
+      "past",
+      "vs1"
+    ],
+    "l6": [
+      "s3-temp",
+      "past",
+      "vw2"
+    ],
+    "l7": [
+      "s3-num",
+      "singular",
+      "vr2"
+    ],
+    "l8": [
+      "s3-quant",
+      "exists",
+      "vr2"
+    ],
+    "l9": [
+      "s3-def",
+      "indefinite",
+      "vr2"
+    ]
+  },
+  "d": {
+    "d1": [
+      "s1",
+      "COORDINATION",
+      "s2"
+    ]
+  },
+  "c": {
+    "c1": [
+      "vs1",
+      "ARG1",
+      "s3"
+    ]
+  },
   "h": {},
   "i": {},
-  "labels": {}
+  "labels": {
+    "vj1": "John",
+    "vb1": "Bill",
+    "vp1": "Peter",
+    "vw1": "write-01",
+    "vs1": "say-01",
+    "vr1": "report",
+    "vr2": "report",
+    "vw2": "write-01",
+    "s1-temp": "temp",
+    "s1-quant": "quant",
+    "s1-num": "num",
+    "s1-def": "def",
+    "s2-temp": "temp",
+    "s3-temp": "temp",
+    "s3-num": "num",
+    "s3-quant": "quant",
+    "s3-def": "def"
+  }
 }

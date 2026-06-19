@@ -5,14 +5,117 @@
     "type": "hypothesis",
     "fracas_answer": "yes"
   },
-  "s": [],
-  "v": [],
-  "f": {},
-  "e": {},
-  "l": {},
+  "s": [
+    "s1"
+  ],
+  "v": [
+    "vc1",
+    "vi1",
+    "vr1",
+    "vp1",
+    "vs1",
+    "vd1",
+    "vj1",
+    "v11"
+  ],
+  "f": {
+    "s1": [
+      "s1-temp",
+      "s1-quant",
+      "s1-num",
+      "s1-def"
+    ]
+  },
+  "e": {
+    "e1": [
+      "vr1",
+      "mod",
+      "vp1"
+    ],
+    "e2": [
+      "vc1",
+      "name",
+      "vi1"
+    ],
+    "e3": [
+      "vs1",
+      "ARG0",
+      "vc1"
+    ],
+    "e4": [
+      "vs1",
+      "ARG1",
+      "vr1"
+    ],
+    "e5": [
+      "vd1",
+      "month",
+      "vj1"
+    ],
+    "e6": [
+      "vd1",
+      "year",
+      "v11"
+    ]
+  },
+  "l": {
+    "l1": [
+      "s1-quant",
+      "exists",
+      "vr1"
+    ],
+    "l2": [
+      "s1-def",
+      "indefinite",
+      "vr1"
+    ],
+    "l3": [
+      "s1-num",
+      "singular",
+      "vr1"
+    ],
+    "l4": [
+      "s1-temp",
+      "past",
+      "vs1"
+    ],
+    "l5": [
+      "s1-temp",
+      "",
+      "vd1"
+    ],
+    "l6": [
+      "s1-num",
+      "singular",
+      "vc1"
+    ],
+    "l7": [
+      "s1-quant",
+      "exists",
+      "vc1"
+    ],
+    "l8": [
+      "s1-def",
+      "definite",
+      "vc1"
+    ]
+  },
   "d": {},
   "c": {},
   "h": {},
   "i": {},
-  "labels": {}
+  "labels": {
+    "vc1": "company",
+    "vi1": "ITEL",
+    "vr1": "report",
+    "vp1": "progress",
+    "vs1": "send-01",
+    "s1-temp": "temp",
+    "s1-quant": "quant",
+    "s1-num": "num",
+    "s1-def": "def",
+    "vd1": "date-entity",
+    "vj1": "July",
+    "v11": "1994"
+  }
 }

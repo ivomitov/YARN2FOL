@@ -5,14 +5,118 @@
     "type": "premise",
     "fracas_answer": "yes"
   },
-  "s": [],
-  "v": [],
-  "f": {},
-  "e": {},
-  "l": {},
+  "s": [
+    "s1",
+    "s2"
+  ],
+  "v": [
+    "vf1",
+    "vd1",
+    "v11",
+    "vp1",
+    "vi1",
+    "vm1"
+  ],
+  "f": {
+    "s1": [
+      "s1-temp",
+      "s1-aspect"
+    ],
+    "s2": [
+      "s2-temp",
+      "s2-quant",
+      "s2-num",
+      "s2-def",
+      "s2-aspect"
+    ]
+  },
+  "e": {
+    "e1": [
+      "vd1",
+      "year",
+      "v11"
+    ],
+    "e2": [
+      "vm1",
+      "ARG0",
+      "vi1"
+    ],
+    "e3": [
+      "vf1",
+      "ARG0",
+      "vi1"
+    ],
+    "e4": [
+      "vf1",
+      "ARG1",
+      "vp1"
+    ]
+  },
+  "l": {
+    "l8": [
+      "s1-temp",
+      "",
+      "vd1"
+    ],
+    "l1": [
+      "s1-temp",
+      "past",
+      "vm1"
+    ],
+    "l2": [
+      "s2-temp",
+      "present",
+      "vf1"
+    ],
+    "l3": [
+      "s2-quant",
+      "exists",
+      "vp1"
+    ],
+    "l4": [
+      "s2-num",
+      "singular",
+      "vp1"
+    ],
+    "l5": [
+      "s2-def",
+      "definite",
+      "vp1"
+    ],
+    "l6": [
+      "s1-aspect",
+      "achievement",
+      "vm1"
+    ],
+    "l7": [
+      "s2-aspect",
+      "achievement",
+      "vf1"
+    ]
+  },
   "d": {},
-  "c": {},
+  "c": {
+    "c1": [
+      "vm1",
+      "ARG1",
+      "s2"
+    ]
+  },
   "h": {},
   "i": {},
-  "labels": {}
+  "labels": {
+    "vf1": "win-01",
+    "vd1": "date-entity",
+    "v11": "1992",
+    "vp1": "contract",
+    "vi1": "ITEL",
+    "s1-temp": "temp",
+    "vm1": "manage-02",
+    "s2-temp": "temp",
+    "s2-quant": "quant",
+    "s2-num": "num",
+    "s2-def": "def",
+    "s1-aspect": "aspect",
+    "s2-aspect": "aspect"
+  }
 }

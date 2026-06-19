@@ -1,0 +1,55 @@
+{
+  "meta": {
+    "sent_id": "150p",
+    "text": "John went to Paris by car, and Bill by train.",
+    "type": "premise",
+    "fracas_answer": "yes"
+  },
+  "s": ["s1", "s2"],
+  "v": ["vg1", "vc1", "vp2", "vp3", "vc2", "vt1", "vg2"],
+  "f": {
+    "s1": ["s1-temp", "s1-quant", "s1-num", "s1-def"],
+    "s2": ["s2-temp", "s2-quant", "s2-num", "s2-def"]
+  },
+  "e": {
+    "e1": ["vg1", "ARG1", "vp2"],
+    "e2": ["vg1", "ARG4", "vc1"],
+    "e5": ["vg2", "ARG1", "vp3"],
+    "e6": ["vg2", "ARG4", "vc1"],
+    "e8": ["vg1", "manner", "vc2"],
+    "e9": ["vg2", "manner", "vt1"]
+  },
+  "l": {
+    "l1": ["s1-temp", "past", "vg1"],
+    "l5": ["s2-temp", "past", "vg2"],
+    "l9": ["s1-quant", "exists", "vc2"],
+    "l10": ["s2-quant", "exists", "vt1"],
+    "l13": ["s1-def", "indefinite", "vc2"],
+    "l15": ["s2-def", "indefinite", "vt1"],
+    "l2": ["s1-num", "singular", "vc2"],
+    "l3": ["s2-num", "singular", "vt1"]
+  },
+  "d": {
+    "d1": ["s1", "COORDINATION", "s2"]
+  },
+  "c": {},
+  "h": {},
+  "i": {},
+  "labels": {
+    "vg1": "go-01",
+    "vc1": "Paris",
+    "vp2": "John",
+    "vp3": "Bill",
+    "vc2": "car",
+    "vt1": "train",
+    "vg2": "go-01",
+    "s1-temp": "temp",
+    "s1-quant": "quant",
+    "s1-num": "num",
+    "s1-def": "def",
+    "s2-temp": "temp",
+    "s2-quant": "quant",
+    "s2-num": "num",
+    "s2-def": "def"
+  }
+}

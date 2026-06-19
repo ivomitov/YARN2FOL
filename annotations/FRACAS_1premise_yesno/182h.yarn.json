@@ -5,14 +5,72 @@
     "type": "hypothesis",
     "fracas_answer": "yes"
   },
-  "s": [],
-  "v": [],
-  "f": {},
-  "e": {},
-  "l": {},
+  "s": [
+    "s1"
+  ],
+  "v": [
+    "vj1",
+    "vc2",
+    "vr2"
+  ],
+  "f": {
+    "s1": [
+      "s1-temp",
+      "s1-quant",
+      "s1-num",
+      "s1-def"
+    ]
+  },
+  "e": {
+    "e4": [
+      "vr2",
+      "ARG0",
+      "vj1"
+    ],
+    "e5": [
+      "vr2",
+      "ARG1",
+      "vc2"
+    ],
+    "e6": [
+      "vc2",
+      "poss",
+      "vj1"
+    ]
+  },
+  "l": {
+    "l5": [
+      "s1-temp",
+      "present",
+      "vr2"
+    ],
+    "l6": [
+      "s1-quant",
+      "exists",
+      "vc2"
+    ],
+    "l7": [
+      "s1-num",
+      "singular",
+      "vc2"
+    ],
+    "l8": [
+      "s1-def",
+      "definite",
+      "vc2"
+    ]
+  },
   "d": {},
   "c": {},
   "h": {},
   "i": {},
-  "labels": {}
+  "labels": {
+    "vj1": "Jones",
+    "vc2": "company",
+    "vr2": "represent-01",
+    "s1-temp": "temp",
+    "s1-quant": "quant",
+    "s1-num": "num",
+    "s1-def": "def"
+  }
 }

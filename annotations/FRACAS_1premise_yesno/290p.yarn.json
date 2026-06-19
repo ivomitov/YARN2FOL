@@ -5,14 +5,120 @@
     "type": "premise",
     "fracas_answer": "yes"
   },
-  "s": [],
-  "v": [],
-  "f": {},
-  "e": {},
-  "l": {},
-  "d": {},
+  "s": [
+    "s2",
+    "s1"
+  ],
+  "v": [
+    "vs1",
+    "vr1",
+    "vw1",
+    "vh1",
+    "vn1"
+  ],
+  "f": {
+    "s2": [
+      "s2-quant",
+      "s2-num",
+      "s2-def",
+      "s2-temp",
+      "s2-aspect"
+    ],
+    "s1": [
+      "s1-temp",
+      "s1-quant",
+      "s1-num",
+      "s1-def"
+    ]
+  },
+  "e": {
+    "e2": [
+      "vw1",
+      "ARG1",
+      "vr1"
+    ],
+    "e5": [
+      "vn1",
+      "ARG1",
+      "vr1"
+    ],
+    "e1": [
+      "vw1",
+      "ARG0",
+      "vs1"
+    ]
+  },
+  "l": {
+    "l1": [
+      "s2-temp",
+      "past",
+      "vw1"
+    ],
+    "l3": [
+      "s2-aspect",
+      "achievement",
+      "vw1"
+    ],
+    "l4": [
+      "s2-def",
+      "indefinite",
+      "vr1"
+    ],
+    "l5": [
+      "s2-num",
+      "singular",
+      "vr1"
+    ],
+    "l9": [
+      "s2-quant",
+      "exists",
+      "vr1"
+    ],
+    "l2": [
+      "s1-temp",
+      "",
+      "vh1"
+    ],
+    "l6": [
+      "s1-quant",
+      "2",
+      "vh1"
+    ],
+    "l7": [
+      "s1-num",
+      "plural",
+      "vh1"
+    ],
+    "l8": [
+      "s1-def",
+      "indefinite",
+      "vh1"
+    ]
+  },
+  "d": {
+    "d1": [
+      "s1",
+      "BEFORE",
+      "s2"
+    ]
+  },
   "c": {},
   "h": {},
   "i": {},
-  "labels": {}
+  "labels": {
+    "vs1": "Smith",
+    "vr1": "species",
+    "vw1": "discover-01",
+    "s2-quant": "quant",
+    "s2-num": "num",
+    "s2-def": "def",
+    "vh1": "hour",
+    "s2-temp": "temp",
+    "s2-aspect": "aspect",
+    "vn1": "new-02",
+    "s1-temp": "temp",
+    "s1-quant": "quant",
+    "s1-num": "num",
+    "s1-def": "def"
+  }
 }

@@ -5,14 +5,74 @@
     "type": "hypothesis",
     "fracas_answer": "yes"
   },
-  "s": [],
-  "v": [],
-  "f": {},
-  "e": {},
-  "l": {},
+  "s": [
+    "s1"
+  ],
+  "v": [
+    "vs1",
+    "vr1",
+    "vw1"
+  ],
+  "f": {
+    "s1": [
+      "s1-temp",
+      "s1-quant",
+      "s1-num",
+      "s1-def",
+      "s1-aspect"
+    ]
+  },
+  "e": {
+    "e3": [
+      "vw1",
+      "ARG1",
+      "vr1"
+    ],
+    "e1": [
+      "vw1",
+      "ARG0",
+      "vs1"
+    ]
+  },
+  "l": {
+    "l4": [
+      "s1-temp",
+      "past",
+      "vw1"
+    ],
+    "l6": [
+      "s1-def",
+      "indefinite",
+      "vr1"
+    ],
+    "l7": [
+      "s1-num",
+      "singular",
+      "vr1"
+    ],
+    "l8": [
+      "s1-quant",
+      "exists",
+      "vr1"
+    ],
+    "l1": [
+      "s1-aspect",
+      "accomplishment",
+      "vw1"
+    ]
+  },
   "d": {},
   "c": {},
   "h": {},
   "i": {},
-  "labels": {}
+  "labels": {
+    "vs1": "Smith",
+    "vr1": "report",
+    "s1-temp": "temp",
+    "s1-quant": "quant",
+    "s1-num": "num",
+    "s1-def": "def",
+    "vw1": "write-01",
+    "s1-aspect": "aspect"
+  }
 }

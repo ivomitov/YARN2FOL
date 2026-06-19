@@ -5,14 +5,88 @@
     "type": "premise",
     "fracas_answer": "no"
   },
-  "s": [],
-  "v": [],
-  "f": {},
-  "e": {},
-  "l": {},
+  "s": [
+    "s1"
+  ],
+  "v": [
+    "vs1",
+    "vn1",
+    "vw1",
+    "vd1",
+    "v11"
+  ],
+  "f": {
+    "s1": [
+      "s1-temp",
+      "s1-quant",
+      "s1-num",
+      "s1-def",
+      "s1-aspect"
+    ]
+  },
+  "e": {
+    "e1": [
+      "vd1",
+      "year",
+      "v11"
+    ],
+    "e2": [
+      "vw1",
+      "ARG1",
+      "vn1"
+    ],
+    "e3": [
+      "vw1",
+      "ARG0",
+      "vs1"
+    ]
+  },
+  "l": {
+    "l1": [
+      "s1-def",
+      "indefinite",
+      "vn1"
+    ],
+    "l2": [
+      "s1-quant",
+      "exists",
+      "vn1"
+    ],
+    "l3": [
+      "s1-num",
+      "singular",
+      "vn1"
+    ],
+    "l4": [
+      "s1-temp",
+      "past",
+      "vw1"
+    ],
+    "l8": [
+      "s1-temp",
+      "",
+      "vd1"
+    ],
+    "l9": [
+      "s1-aspect",
+      "accomplishment",
+      "vw1"
+    ]
+  },
   "d": {},
   "c": {},
   "h": {},
   "i": {},
-  "labels": {}
+  "labels": {
+    "vs1": "Smith",
+    "vn1": "novel",
+    "vw1": "write-01",
+    "vd1": "date-entity",
+    "v11": "1991",
+    "s1-temp": "temp",
+    "s1-quant": "quant",
+    "s1-num": "num",
+    "s1-def": "def",
+    "s1-aspect": "aspect"
+  }
 }

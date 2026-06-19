@@ -5,14 +5,67 @@
     "type": "hypothesis",
     "fracas_answer": "yes"
   },
-  "s": [],
-  "v": [],
-  "f": {},
-  "e": {},
-  "l": {},
+  "s": [
+    "s1"
+  ],
+  "v": [
+    "vl1",
+    "vs1",
+    "vm1"
+  ],
+  "f": {
+    "s1": [
+      "s1-temp",
+      "s1-quant",
+      "s1-num",
+      "s1-def"
+    ]
+  },
+  "e": {
+    "e2": [
+      "vl1",
+      "ARG1",
+      "vm1"
+    ],
+    "e1": [
+      "vl1",
+      "ARG0",
+      "vs1"
+    ]
+  },
+  "l": {
+    "l1": [
+      "s1-temp",
+      "past",
+      "vl1"
+    ],
+    "l2": [
+      "s1-def",
+      "definite",
+      "vm1"
+    ],
+    "l3": [
+      "s1-num",
+      "singular",
+      "vm1"
+    ],
+    "l4": [
+      "s1-quant",
+      "exists",
+      "vm1"
+    ]
+  },
   "d": {},
   "c": {},
   "h": {},
   "i": {},
-  "labels": {}
+  "labels": {
+    "vl1": "leave-11",
+    "vs1": "Smith",
+    "vm1": "meeting",
+    "s1-temp": "temp",
+    "s1-quant": "quant",
+    "s1-num": "num",
+    "s1-def": "def"
+  }
 }

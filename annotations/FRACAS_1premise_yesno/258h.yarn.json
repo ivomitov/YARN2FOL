@@ -5,14 +5,53 @@
     "type": "hypothesis",
     "fracas_answer": "no"
   },
-  "s": [],
-  "v": [],
-  "f": {},
-  "e": {},
-  "l": {},
+  "s": [
+    "s1"
+  ],
+  "v": [
+    "ve1",
+    "vi1",
+    "vd1",
+    "v11"
+  ],
+  "f": {
+    "s1": [
+      "s1-temp"
+    ]
+  },
+  "e": {
+    "e3": [
+      "vd1",
+      "year",
+      "v11"
+    ],
+    "e1": [
+      "ve1",
+      "ARG1",
+      "vi1"
+    ]
+  },
+  "l": {
+    "l1": [
+      "s1-temp",
+      "past",
+      "ve1"
+    ],
+    "l5": [
+      "s1-temp",
+      "",
+      "vd1"
+    ]
+  },
   "d": {},
   "c": {},
   "h": {},
   "i": {},
-  "labels": {}
+  "labels": {
+    "ve1": "exist-01",
+    "vi1": "ITEL",
+    "s1-temp": "temp",
+    "vd1": "date-entity",
+    "v11": "1992"
+  }
 }

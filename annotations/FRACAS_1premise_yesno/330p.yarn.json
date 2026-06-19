@@ -5,14 +5,90 @@
     "type": "premise",
     "fracas_answer": "yes"
   },
-  "s": [],
-  "v": [],
-  "f": {},
-  "e": {},
-  "l": {},
+  "s": [
+    "s1"
+  ],
+  "v": [
+    "vf1",
+    "vi1",
+    "va1",
+    "vt1",
+    "vd1",
+    "vd2",
+    "v11",
+    "v12"
+  ],
+  "f": {
+    "s1": [
+      "s1-temp",
+      "s1-duration",
+      "s1-aspect"
+    ]
+  },
+  "e": {
+    "e1": [
+      "vt1",
+      "op1",
+      "vd1"
+    ],
+    "e5": [
+      "vt1",
+      "op2",
+      "vd2"
+    ],
+    "e7": [
+      "vd2",
+      "year",
+      "v12"
+    ],
+    "e8": [
+      "vd1",
+      "year",
+      "v11"
+    ],
+    "e2": [
+      "vf1",
+      "ARG1",
+      "va1"
+    ],
+    "e3": [
+      "vf1",
+      "ARG0",
+      "vi1"
+    ]
+  },
+  "l": {
+    "l1": [
+      "s1-temp",
+      "past",
+      "vf1"
+    ],
+    "l5": [
+      "s1-duration",
+      "",
+      "vt1"
+    ],
+    "l10": [
+      "s1-aspect",
+      "state",
+      "vf1"
+    ]
+  },
   "d": {},
   "c": {},
   "h": {},
   "i": {},
-  "labels": {}
+  "labels": {
+    "vf1": "own-01",
+    "vi1": "ITEL",
+    "s1-temp": "temp",
+    "va1": "APCOM",
+    "vt1": "date-interval",
+    "vd1": "date-entity",
+    "vd2": "date-entity",
+    "v11": "1988",
+    "v12": "1992",
+    "s1-duration": "duration",
+    "s1-aspect": "aspect"
+  }
 }

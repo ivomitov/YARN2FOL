@@ -5,22 +5,85 @@
     "type": "premise",
     "fracas_answer": "yes"
   },
-  "s": [],
+  "s": [
+    "s1"
+  ],
   "v": [
     "vs1",
     "vf1",
-    "vf2"
+    "vf2",
+    "vb1",
+    "vs2"
   ],
-  "f": {},
-  "e": {},
-  "l": {},
+  "f": {
+    "s1": [
+      "s1-temp",
+      "s1-quant",
+      "s1-def"
+    ]
+  },
+  "e": {
+    "e1": [
+      "vf1",
+      "mod",
+      "vs1"
+    ],
+    "e2": [
+      "vb1",
+      "ARG1",
+      "vf1"
+    ],
+    "e3": [
+      "vf2",
+      "ARG1",
+      "vs2"
+    ],
+    "e4": [
+      "vb1",
+      "ARG2",
+      "vf2"
+    ]
+  },
+  "l": {
+    "l1": [
+      "s1-temp",
+      "past",
+      "vb1"
+    ],
+    "l3": [
+      "s1-def",
+      "indefinite",
+      "vf1"
+    ],
+    "l2": [
+      "s1-quant",
+      "1",
+      "vf2"
+    ],
+    "l4": [
+      "s1-def",
+      "definite",
+      "vf2"
+    ]
+  },
   "d": {},
   "c": {},
-  "h": {},
+  "h": {
+    "h1": [
+      "l2",
+      "exists",
+      "vf1"
+    ]
+  },
   "i": {},
   "labels": {
     "vs1": "software",
     "vf1": "fault",
-    "vf2": "fail-01"
+    "vf2": "fail-01",
+    "vb1": "blame-01",
+    "s1-temp": "temp",
+    "s1-quant": "quant",
+    "s1-def": "def",
+    "vs2": "system"
   }
 }

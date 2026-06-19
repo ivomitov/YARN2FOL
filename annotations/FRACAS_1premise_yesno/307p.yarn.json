@@ -5,14 +5,108 @@
     "type": "premise",
     "fracas_answer": "yes"
   },
-  "s": [],
-  "v": [],
-  "f": {},
-  "e": {},
-  "l": {},
+  "s": [
+    "s1"
+  ],
+  "v": [
+    "vi1",
+    "vr1",
+    "vp1",
+    "vs1",
+    "vd1",
+    "v11",
+    "vx1"
+  ],
+  "f": {
+    "s1": [
+      "s1-temp",
+      "s1-quant",
+      "s1-num",
+      "s1-def",
+      "s1-freq"
+    ]
+  },
+  "e": {
+    "e1": [
+      "vr1",
+      "mod",
+      "vp1"
+    ],
+    "e4": [
+      "vs1",
+      "ARG1",
+      "vr1"
+    ],
+    "e6": [
+      "vd1",
+      "year",
+      "v11"
+    ],
+    "e7": [
+      "vd1",
+      "month",
+      "vx1"
+    ],
+    "e2": [
+      "vs1",
+      "ARG0",
+      "vi1"
+    ]
+  },
+  "l": {
+    "l1": [
+      "s1-quant",
+      "exists",
+      "vr1"
+    ],
+    "l2": [
+      "s1-def",
+      "indefinite",
+      "vr1"
+    ],
+    "l3": [
+      "s1-num",
+      "singular",
+      "vr1"
+    ],
+    "l4": [
+      "s1-temp",
+      "past",
+      "vs1"
+    ],
+    "l5": [
+      "s1-temp",
+      "",
+      "vd1"
+    ],
+    "l9": [
+      "s1-quant",
+      "forall",
+      "vx1"
+    ]
+  },
   "d": {},
   "c": {},
-  "h": {},
+  "h": {
+    "h1": [
+      "s1-freq",
+      "",
+      "l9"
+    ]
+  },
   "i": {},
-  "labels": {}
+  "labels": {
+    "vi1": "ITEL",
+    "vr1": "report",
+    "vp1": "progress",
+    "vs1": "send-01",
+    "s1-temp": "temp",
+    "s1-quant": "quant",
+    "s1-num": "num",
+    "s1-def": "def",
+    "vd1": "date-entity",
+    "v11": "1994",
+    "vx1": "",
+    "s1-freq": "freq"
+  }
 }

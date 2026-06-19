@@ -5,14 +5,169 @@
     "type": "premise",
     "fracas_answer": "yes"
   },
-  "s": [],
-  "v": [],
-  "f": {},
-  "e": {},
-  "l": {},
-  "d": {},
+  "s": [
+    "s1",
+    "s2",
+    "s3"
+  ],
+  "v": [
+    "vp1",
+    "vg1",
+    "vs2",
+    "vc1",
+    "vs3",
+    "vg2",
+    "vb1"
+  ],
+  "f": {
+    "s1": [
+      "s1-temp",
+      "s1-quant",
+      "s1-num",
+      "s1-def",
+      "s1-neg"
+    ],
+    "s2": [
+      "s2-temp",
+      "s2-quant",
+      "s2-num",
+      "s2-def"
+    ],
+    "s3": [
+      "s3-temp"
+    ]
+  },
+  "e": {
+    "e2": [
+      "vg1",
+      "manner",
+      "vs2"
+    ],
+    "e4": [
+      "vc1",
+      "ARG0",
+      "vp1"
+    ],
+    "e3": [
+      "vs3",
+      "ARG1",
+      "vg1"
+    ],
+    "e1": [
+      "vc1",
+      "ARG1",
+      "vg2"
+    ],
+    "e6": [
+      "vb1",
+      "ARG1",
+      "vp1"
+    ],
+    "e5": [
+      "vs3",
+      "ARG1",
+      "vp1"
+    ]
+  },
+  "l": {
+    "l8": [
+      "s1-temp",
+      "present",
+      "vc1"
+    ],
+    "l4": [
+      "s2-temp",
+      "present",
+      "vs3"
+    ],
+    "l5": [
+      "s2-num",
+      "mass",
+      "vg1"
+    ],
+    "l6": [
+      "s2-quant",
+      "exists",
+      "vg1"
+    ],
+    "l7": [
+      "s2-def",
+      "indefinite",
+      "vg1"
+    ],
+    "l9": [
+      "s1-quant",
+      "exists",
+      "vg2"
+    ],
+    "l10": [
+      "s1-num",
+      "mass",
+      "vg2"
+    ],
+    "l12": [
+      "s1-def",
+      "indefinite",
+      "vg2"
+    ],
+    "l11": [
+      "s3-temp",
+      "",
+      "vb1"
+    ],
+    "l1": [
+      "s1-num",
+      "singular",
+      "vp1"
+    ],
+    "l2": [
+      "s1-def",
+      "definite",
+      "vp1"
+    ],
+    "l3": [
+      "s1-quant",
+      "forall",
+      "vp1"
+    ],
+    "l13": [
+      "s1-neg",
+      "",
+      "vc1"
+    ]
+  },
+  "d": {
+    "d1": [
+      "s2",
+      "AFTER",
+      "s1"
+    ],
+    "d2": [
+      "s1",
+      "BEFORE",
+      "s3"
+    ]
+  },
   "c": {},
   "h": {},
   "i": {},
-  "labels": {}
+  "labels": {
+    "vp1": "person",
+    "s1-temp": "temp",
+    "s1-quant": "quant",
+    "s1-num": "num",
+    "s1-def": "def",
+    "vg1": "gambling",
+    "vs2": "serious",
+    "s2-def": "def",
+    "s2-quant": "quant",
+    "vc1": "stop-01",
+    "vs3": "start-01",
+    "vg2": "gambling",
+    "s2-temp": "temp",
+    "s2-num": "num",
+    "vb1": "broke-23",
+    "s1-neg": "neg",
+    "s3-temp": "temp"
+  }
 }

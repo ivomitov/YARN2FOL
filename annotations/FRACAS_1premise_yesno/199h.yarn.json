@@ -5,14 +5,46 @@
     "type": "hypothesis",
     "fracas_answer": "yes"
   },
-  "s": [],
-  "v": [],
-  "f": {},
-  "e": {},
+  "s": [
+    "s1"
+  ],
+  "v": [
+    "vj1",
+    "vs2"
+  ],
+  "f": {
+    "s1": [
+      "s1-temp",
+      "s1-aspect"
+    ]
+  },
+  "e": {
+    "e1": [
+      "vs2",
+      "domain",
+      "vj1"
+    ]
+  },
   "l": {},
   "d": {},
   "c": {},
-  "h": {},
+  "h": {
+    "h1": [
+      "s1-temp",
+      "present",
+      "e1"
+    ],
+    "h2": [
+      "s1-aspect",
+      "state",
+      "e1"
+    ]
+  },
   "i": {},
-  "labels": {}
+  "labels": {
+    "vj1": "John",
+    "s1-temp": "temp",
+    "s1-aspect": "aspect",
+    "vs2": "successful"
+  }
 }

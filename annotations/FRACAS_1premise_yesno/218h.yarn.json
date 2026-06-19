@@ -5,16 +5,64 @@
     "type": "hypothesis",
     "fracas_answer": "yes"
   },
-  "s": [],
-  "v": [],
-  "f": {},
-  "e": {},
-  "l": {},
+  "s": [
+    "s1"
+  ],
+  "v": [
+    "vp1",
+    "vp2"
+  ],
+  "f": {
+    "s1": [
+      "s1-temp",
+      "s1-quant",
+      "s1-num",
+      "s1-def",
+      "s1-aspect"
+    ]
+  },
+  "e": {
+    "e1": [
+      "vp2",
+      "domain",
+      "vp1"
+    ]
+  },
+  "l": {
+    "l2": [
+      "s1-quant",
+      "exists",
+      "vp2"
+    ],
+    "l4": [
+      "s1-num",
+      "singular",
+      "vp2"
+    ],
+    "l6": [
+      "s1-def",
+      "indefinite",
+      "vp2"
+    ]
+  },
   "d": {},
   "c": {},
-  "h": {},
+  "h": {
+    "h1": [
+      "s1-temp",
+      "present",
+      "e1"
+    ],
+    "h2": [
+      "s1-aspect",
+      "state",
+      "e1"
+    ]
+  },
   "i": {},
   "labels": {
+    "vp1": "Kim",
+    "vp2": "clever",
     "s1-temp": "temp",
     "s1-quant": "quant",
     "s1-num": "num",

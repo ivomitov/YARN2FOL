@@ -5,14 +5,131 @@
     "type": "hypothesis",
     "fracas_answer": "no"
   },
-  "s": [],
-  "v": [],
-  "f": {},
-  "e": {},
-  "l": {},
+  "s": [
+    "s1"
+  ],
+  "v": [
+    "vc1",
+    "vt1",
+    "vh1",
+    "vs1",
+    "vc2"
+  ],
+  "f": {
+    "s1": [
+      "s1-temp",
+      "s1-aspect",
+      "s1-quant",
+      "s1-num",
+      "s1-def",
+      "s1-loc"
+    ]
+  },
+  "e": {
+    "e2": [
+      "vs1",
+      "ARG1",
+      "vt1"
+    ],
+    "e1": [
+      "vs1",
+      "ARG0",
+      "vc2"
+    ]
+  },
+  "l": {
+    "l1": [
+      "s1-temp",
+      "present",
+      "vs1"
+    ],
+    "l2": [
+      "s1-aspect",
+      "habitual",
+      "vs1"
+    ],
+    "l5": [
+      "s1-num",
+      "singular",
+      "vc1"
+    ],
+    "l6": [
+      "s1-num",
+      "mass",
+      "vt1"
+    ],
+    "l7": [
+      "s1-def",
+      "definite",
+      "vc1"
+    ],
+    "l8": [
+      "s1-def",
+      "indefinite",
+      "vt1"
+    ],
+    "l9": [
+      "s1-loc",
+      "",
+      "vh1"
+    ],
+    "l3": [
+      "s1-quant",
+      "exists",
+      "vc1"
+    ],
+    "l4": [
+      "s1-def",
+      "definite",
+      "vc2"
+    ],
+    "l10": [
+      "s1-num",
+      "singular",
+      "vh1"
+    ],
+    "l11": [
+      "s1-def",
+      "indefinite",
+      "vh1"
+    ],
+    "l12": [
+      "s1-num",
+      "singular",
+      "vc2"
+    ]
+  },
   "d": {},
   "c": {},
-  "h": {},
+  "h": {
+    "h1": [
+      "l3",
+      "exists",
+      "vc2"
+    ],
+    "h3": [
+      "h1",
+      "exists",
+      "vh1"
+    ],
+    "h2": [
+      "h3",
+      "a lot",
+      "vt1"
+    ]
+  },
   "i": {},
-  "labels": {}
+  "labels": {
+    "vc1": "commissioner",
+    "vt1": "time",
+    "vh1": "home",
+    "vs1": "spend-02",
+    "s1-temp": "temp",
+    "s1-aspect": "aspect",
+    "s1-quant": "quant",
+    "s1-num": "num",
+    "s1-def": "def",
+    "s1-loc": "loc",
+    "vc2": "commissioner"
+  }
 }

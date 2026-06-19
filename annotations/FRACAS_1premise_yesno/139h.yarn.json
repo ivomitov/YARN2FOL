@@ -5,14 +5,117 @@
     "type": "hypothesis",
     "fracas_answer": "yes"
   },
-  "s": [],
-  "v": [],
-  "f": {},
-  "e": {},
-  "l": {},
-  "d": {},
+  "s": [
+    "s1",
+    "s2"
+  ],
+  "v": [
+    "vc1",
+    "va1",
+    "vp1",
+    "vl1",
+    "va2"
+  ],
+  "f": {
+    "s1": [
+      "s1-temp",
+      "s1-quant",
+      "s1-num",
+      "s1-def"
+    ],
+    "s2": [
+      "s2-temp"
+    ]
+  },
+  "e": {
+    "e1": [
+      "va1",
+      "ARG0",
+      "vc1"
+    ],
+    "e3": [
+      "vl1",
+      "ARG1",
+      "vp1"
+    ],
+    "e4": [
+      "va1",
+      "ARG1",
+      "vp1"
+    ],
+    "e2": [
+      "va2",
+      "ARG2",
+      "vc1"
+    ],
+    "e5": [
+      "va2",
+      "ARG1",
+      "vp1"
+    ]
+  },
+  "l": {
+    "l1": [
+      "s1-temp",
+      "past",
+      "va1"
+    ],
+    "l2": [
+      "s1-quant",
+      "exists",
+      "vc1"
+    ],
+    "l3": [
+      "s1-quant",
+      "exists",
+      "vp1"
+    ],
+    "l4": [
+      "s1-num",
+      "singular",
+      "vc1"
+    ],
+    "l5": [
+      "s1-num",
+      "singular",
+      "vp1"
+    ],
+    "l6": [
+      "s1-def",
+      "indefinite",
+      "vc1"
+    ],
+    "l7": [
+      "s1-def",
+      "indefinite",
+      "vp1"
+    ],
+    "l8": [
+      "s2-temp",
+      "past",
+      "va2"
+    ]
+  },
+  "d": {
+    "d1": [
+      "s1",
+      "COORDINATION",
+      "s2"
+    ]
+  },
   "c": {},
   "h": {},
   "i": {},
-  "labels": {}
+  "labels": {
+    "vc1": "company_director",
+    "va1": "award-01",
+    "vp1": "payrise",
+    "vl1": "large-01",
+    "s1-temp": "temp",
+    "s1-quant": "quant",
+    "s1-num": "num",
+    "s1-def": "def",
+    "va2": "award-01",
+    "s2-temp": "temp"
+  }
 }

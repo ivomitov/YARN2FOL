@@ -5,14 +5,60 @@
     "type": "premise",
     "fracas_answer": "yes"
   },
-  "s": [],
-  "v": [],
-  "f": {},
-  "e": {},
-  "l": {},
+  "s": [
+    "s1"
+  ],
+  "v": [
+    "vm1",
+    "va1",
+    "vs1",
+    "va2",
+    "vj1"
+  ],
+  "f": {
+    "s1": [
+      "s1-temp"
+    ]
+  },
+  "e": {
+    "e7": [
+      "vm1",
+      "ARG0",
+      "va1"
+    ],
+    "e1": [
+      "va1",
+      "op1",
+      "vs1"
+    ],
+    "e2": [
+      "va1",
+      "op2",
+      "va2"
+    ],
+    "e3": [
+      "va1",
+      "op3",
+      "vj1"
+    ]
+  },
+  "l": {
+    "l1": [
+      "s1-temp",
+      "past",
+      "vm1"
+    ]
+  },
   "d": {},
   "c": {},
   "h": {},
   "i": {},
-  "labels": {}
+  "labels": {
+    "vm1": "meet-03",
+    "s1-temp": "temp",
+    "va1": "and",
+    "vs1": "Smith",
+    "va2": "Anderson",
+    "vj1": "Jones"
+  }
 }

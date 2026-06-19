@@ -5,14 +5,106 @@
     "type": "hypothesis",
     "fracas_answer": "yes"
   },
-  "s": [],
-  "v": [],
-  "f": {},
-  "e": {},
-  "l": {},
+  "s": [
+    "s2"
+  ],
+  "v": [
+    "vp1",
+    "vj1",
+    "vw1",
+    "vm1"
+  ],
+  "f": {
+    "s2": [
+      "s2-quant",
+      "s2-num",
+      "s2-def",
+      "s2-modal",
+      "s2-neg",
+      "s2-temp"
+    ]
+  },
+  "e": {
+    "e1": [
+      "vp1",
+      "name",
+      "vj1"
+    ],
+    "e2": [
+      "vw1",
+      "ARG1",
+      "vm1"
+    ],
+    "e3": [
+      "vw1",
+      "ARG0",
+      "vp1"
+    ]
+  },
+  "l": {
+    "l2": [
+      "s2-quant",
+      "exists",
+      "vp1"
+    ],
+    "l3": [
+      "s2-num",
+      "singular",
+      "vp1"
+    ],
+    "l4": [
+      "s2-def",
+      "definite",
+      "vp1"
+    ],
+    "l5": [
+      "s2-def",
+      "definite",
+      "vm1"
+    ],
+    "l6": [
+      "s2-num",
+      "plural",
+      "vm1"
+    ],
+    "l7": [
+      "s2-quant",
+      "exists",
+      "vm1"
+    ],
+    "l8": [
+      "s2-modal",
+      "possibility",
+      "vw1"
+    ]
+  },
   "d": {},
   "c": {},
-  "h": {},
+  "h": {
+    "h2": [
+      "s2-neg",
+      "",
+      "l8"
+    ],
+    "h1": [
+      "s2-temp",
+      "present,future",
+      "l8"
+    ]
+  },
   "i": {},
-  "labels": {}
+  "labels": {
+    "vp1": "person",
+    "vj1": "Jones",
+    "vw1": "write-01",
+    "vm1": "memoir",
+    "s1-temp": "temp",
+    "s2-quant": "quant",
+    "s2-num": "num",
+    "s2-def": "def",
+    "s1-neg": "neg",
+    "s2-modal": "modal",
+    "s2-neg": "neg",
+    "s2-temp": "temp"
+  }
 }

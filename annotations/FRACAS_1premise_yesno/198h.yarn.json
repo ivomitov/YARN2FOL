@@ -5,14 +5,75 @@
     "type": "hypothesis",
     "fracas_answer": "no"
   },
-  "s": [],
-  "v": [],
-  "f": {},
-  "e": {},
-  "l": {},
+  "s": [
+    "s1"
+  ],
+  "v": [
+    "vj1",
+    "vs1",
+    "vu1"
+  ],
+  "f": {
+    "s1": [
+      "s1-temp",
+      "s1-aspect",
+      "s1-quant",
+      "s1-num",
+      "s1-def"
+    ]
+  },
+  "e": {
+    "e1": [
+      "vs1",
+      "mod",
+      "vu1"
+    ],
+    "e2": [
+      "vs1",
+      "domain",
+      "vj1"
+    ]
+  },
+  "l": {
+    "l1": [
+      "s1-quant",
+      "exists",
+      "vs1"
+    ],
+    "l2": [
+      "s1-num",
+      "singular",
+      "vs1"
+    ],
+    "l3": [
+      "s1-def",
+      "indefinite",
+      "vs1"
+    ]
+  },
   "d": {},
   "c": {},
-  "h": {},
+  "h": {
+    "h1": [
+      "s1-temp",
+      "present",
+      "e2"
+    ],
+    "h2": [
+      "s1-aspect",
+      "state",
+      "e2"
+    ]
+  },
   "i": {},
-  "labels": {}
+  "labels": {
+    "vj1": "John",
+    "vs1": "student",
+    "vu1": "university",
+    "s1-temp": "temp",
+    "s1-aspect": "aspect",
+    "s1-quant": "quant",
+    "s1-num": "num",
+    "s1-def": "def"
+  }
 }

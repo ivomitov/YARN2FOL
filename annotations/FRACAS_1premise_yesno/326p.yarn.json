@@ -5,14 +5,67 @@
     "type": "premise",
     "fracas_answer": "yes"
   },
-  "s": [],
-  "v": [],
-  "f": {},
-  "e": {},
-  "l": {},
+  "s": [
+    "s1"
+  ],
+  "v": [
+    "vf1",
+    "vd1",
+    "v11",
+    "vm1",
+    "vi1"
+  ],
+  "f": {
+    "s1": [
+      "s1-temp",
+      "s1-aspect"
+    ]
+  },
+  "e": {
+    "e1": [
+      "vd1",
+      "year",
+      "v11"
+    ],
+    "e2": [
+      "vf1",
+      "ARG1",
+      "vm1"
+    ],
+    "e3": [
+      "vf1",
+      "ARG0",
+      "vi1"
+    ]
+  },
+  "l": {
+    "l1": [
+      "s1-temp",
+      "past",
+      "vf1"
+    ],
+    "l8": [
+      "s1-temp",
+      "",
+      "vd1"
+    ],
+    "l5": [
+      "s1-aspect",
+      "accomplishment",
+      "vf1"
+    ]
+  },
   "d": {},
   "c": {},
   "h": {},
   "i": {},
-  "labels": {}
+  "labels": {
+    "vf1": "build-01",
+    "vd1": "date-entity",
+    "v11": "1993",
+    "vm1": "MTALK",
+    "vi1": "ITEL",
+    "s1-temp": "temp",
+    "s1-aspect": "aspect"
+  }
 }

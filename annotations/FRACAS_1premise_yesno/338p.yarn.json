@@ -5,14 +5,99 @@
     "type": "premise",
     "fracas_answer": "yes"
   },
-  "s": [],
-  "v": [],
-  "f": {},
-  "e": {},
-  "l": {},
+  "s": [
+    "s1",
+    "s2"
+  ],
+  "v": [
+    "vf1",
+    "vd1",
+    "v11",
+    "vp1",
+    "vi1",
+    "vt1"
+  ],
+  "f": {
+    "s1": [
+      "s1-temp"
+    ],
+    "s2": [
+      "s2-temp",
+      "s2-quant",
+      "s2-num",
+      "s2-def"
+    ]
+  },
+  "e": {
+    "e1": [
+      "vd1",
+      "year",
+      "v11"
+    ],
+    "e5": [
+      "vf1",
+      "ARG1",
+      "vp1"
+    ],
+    "e3": [
+      "vf1",
+      "ARG0",
+      "vi1"
+    ]
+  },
+  "l": {
+    "l1": [
+      "s1-temp",
+      "present",
+      "vt1"
+    ],
+    "l2": [
+      "s2-temp",
+      "past",
+      "vf1"
+    ],
+    "l3": [
+      "s2-quant",
+      "exists",
+      "vp1"
+    ],
+    "l4": [
+      "s2-num",
+      "singular",
+      "vp1"
+    ],
+    "l5": [
+      "s2-def",
+      "definite",
+      "vp1"
+    ],
+    "l6": [
+      "s2-temp",
+      "",
+      "vd1"
+    ]
+  },
   "d": {},
-  "c": {},
+  "c": {
+    "c1": [
+      "vt1",
+      "ARG1",
+      "s2"
+    ]
+  },
   "h": {},
   "i": {},
-  "labels": {}
+  "labels": {
+    "vf1": "win-01",
+    "vd1": "date-entity",
+    "v11": "1992",
+    "vp1": "contract",
+    "vi1": "ITEL",
+    "vt1": "true-01",
+    "s1-temp": "temp",
+    "s2-temp": "temp",
+    "s2-quant": "quant",
+    "s2-num": "num",
+    "s2-def": "def"
+  }
 }

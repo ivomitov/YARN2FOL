@@ -5,14 +5,127 @@
     "type": "premise",
     "fracas_answer": "yes"
   },
-  "s": [],
-  "v": [],
-  "f": {},
-  "e": {},
-  "l": {},
+  "s": [
+    "s1"
+  ],
+  "v": [
+    "vc1",
+    "vd1",
+    "vi1",
+    "vp1",
+    "vs1"
+  ],
+  "f": {
+    "s1": [
+      "s1-temp",
+      "s1-quant",
+      "s1-num",
+      "s1-def"
+    ]
+  },
+  "e": {
+    "e1": [
+      "vp1",
+      "ARG0",
+      "vs1"
+    ],
+    "e2": [
+      "vi1",
+      "ARG0",
+      "vp1"
+    ],
+    "e3": [
+      "vc1",
+      "location",
+      "vd1"
+    ],
+    "e4": [
+      "vi1",
+      "ARG1",
+      "vc1"
+    ]
+  },
+  "l": {
+    "l1": [
+      "s1-temp",
+      "past",
+      "vi1"
+    ],
+    "l3": [
+      "s1-num",
+      "singular",
+      "vc1"
+    ],
+    "l4": [
+      "s1-def",
+      "indefinite",
+      "vc1"
+    ],
+    "l5": [
+      "s1-def",
+      "definite",
+      "vp1"
+    ],
+    "l2": [
+      "s1-quant",
+      "exists",
+      "vd1"
+    ],
+    "l6": [
+      "s1-num",
+      "singular",
+      "vd1"
+    ],
+    "l7": [
+      "s1-num",
+      "mass",
+      "vp1"
+    ],
+    "l8": [
+      "s1-num",
+      "singular",
+      "vs1"
+    ],
+    "l9": [
+      "s1-def",
+      "definite",
+      "vd1"
+    ],
+    "l10": [
+      "s1-def",
+      "definite",
+      "vs1"
+    ]
+  },
   "d": {},
   "c": {},
-  "h": {},
+  "h": {
+    "h1": [
+      "l2",
+      "exists",
+      "vs1"
+    ],
+    "h2": [
+      "h1",
+      "exists",
+      "vp1"
+    ],
+    "h3": [
+      "h2",
+      "forall",
+      "vc1"
+    ]
+  },
   "i": {},
-  "labels": {}
+  "labels": {
+    "vc1": "client",
+    "vd1": "demonstration",
+    "vi1": "impress-01",
+    "vp1": "perform-02",
+    "vs1": "system",
+    "s1-temp": "temp",
+    "s1-quant": "quant",
+    "s1-num": "num",
+    "s1-def": "def"
+  }
 }

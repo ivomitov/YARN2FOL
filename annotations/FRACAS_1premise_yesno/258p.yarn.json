@@ -5,14 +5,67 @@
     "type": "premise",
     "fracas_answer": "no"
   },
-  "s": [],
-  "v": [],
-  "f": {},
-  "e": {},
-  "l": {},
+  "s": [
+    "s1"
+  ],
+  "v": [
+    "vi1",
+    "vd1",
+    "v11",
+    "vm1",
+    "va1",
+    "vf1"
+  ],
+  "f": {
+    "s1": [
+      "s1-temp"
+    ]
+  },
+  "e": {
+    "e3": [
+      "vd1",
+      "year",
+      "v11"
+    ],
+    "e4": [
+      "vd1",
+      "month",
+      "vm1"
+    ],
+    "e1": [
+      "vf1",
+      "ARG1",
+      "vi1"
+    ],
+    "e2": [
+      "vf1",
+      "ARG0",
+      "va1"
+    ]
+  },
+  "l": {
+    "l5": [
+      "s1-temp",
+      "",
+      "vd1"
+    ],
+    "l1": [
+      "s1-temp",
+      "past",
+      "vf1"
+    ]
+  },
   "d": {},
   "c": {},
   "h": {},
   "i": {},
-  "labels": {}
+  "labels": {
+    "vi1": "ITEL",
+    "s1-temp": "temp",
+    "vd1": "date-entity",
+    "v11": "1992",
+    "vm1": "March",
+    "va1": "APCOM",
+    "vf1": "found-01"
+  }
 }

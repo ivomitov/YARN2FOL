@@ -10,7 +10,6 @@
   ],
   "v": [
     "vp1",
-    "vh1",
     "vd1",
     "vg1"
   ],
@@ -24,33 +23,18 @@
     ]
   },
   "e": {
-    "e1": [
-      "vh1",
-      "ARG0",
-      "vp1"
-    ],
-    "e2": [
-      "vh1",
-      "ARG1",
-      "vd1"
-    ],
     "e3": [
       "vg1",
       "ARG1",
       "vd1"
+    ],
+    "e1": [
+      "vd1",
+      "poss",
+      "vp1"
     ]
   },
   "l": {
-    "l1": [
-      "s1-temp",
-      "present",
-      "vh1"
-    ],
-    "l2": [
-      "s1-aspect",
-      "state",
-      "vh1"
-    ],
     "l4": [
       "s1-quant",
       "exists",
@@ -69,11 +53,21 @@
   },
   "d": {},
   "c": {},
-  "h": {},
+  "h": {
+    "h1": [
+      "s1-temp",
+      "present",
+      "e1"
+    ],
+    "h2": [
+      "s1-aspect",
+      "state",
+      "e1"
+    ]
+  },
   "i": {},
   "labels": {
     "vp1": "John",
-    "vh1": "have-03",
     "vd1": "diamond",
     "vg1": "genuine-02",
     "s1-temp": "temp",

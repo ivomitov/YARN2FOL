@@ -5,14 +5,186 @@
     "type": "premise",
     "fracas_answer": "yes"
   },
-  "s": [],
-  "v": [],
-  "f": {},
-  "e": {},
-  "l": {},
-  "d": {},
-  "c": {},
-  "h": {},
+  "s": [
+    "s2",
+    "s1",
+    "s3"
+  ],
+  "v": [
+    "vp1",
+    "vj1",
+    "vw1",
+    "vm1",
+    "vg1",
+    "vj2",
+    "vc1",
+    "vk1"
+  ],
+  "f": {
+    "s2": [
+      "s2-quant",
+      "s2-num",
+      "s2-def",
+      "s2-modal",
+      "s2-neg",
+      "s2-temp"
+    ],
+    "s1": [
+      "s1-temp",
+      "s1-quant",
+      "s1-num",
+      "s1-def"
+    ],
+    "s3": [
+      "s3-temp"
+    ]
+  },
+  "e": {
+    "e1": [
+      "vp1",
+      "name",
+      "vj1"
+    ],
+    "e2": [
+      "vw1",
+      "ARG1",
+      "vm1"
+    ],
+    "e3": [
+      "vw1",
+      "ARG0",
+      "vp1"
+    ],
+    "e4": [
+      "vg1",
+      "ARG1",
+      "vj2"
+    ],
+    "e5": [
+      "vg1",
+      "ARG0",
+      "vp1"
+    ],
+    "e6": [
+      "vj2",
+      "mod",
+      "vc1"
+    ],
+    "e7": [
+      "vk1",
+      "ARG0",
+      "vp1"
+    ]
+  },
+  "l": {
+    "l2": [
+      "s2-quant",
+      "exists",
+      "vp1"
+    ],
+    "l3": [
+      "s2-num",
+      "singular",
+      "vp1"
+    ],
+    "l4": [
+      "s2-def",
+      "definite",
+      "vp1"
+    ],
+    "l5": [
+      "s2-def",
+      "definite",
+      "vm1"
+    ],
+    "l6": [
+      "s2-num",
+      "plural",
+      "vm1"
+    ],
+    "l7": [
+      "s2-quant",
+      "exists",
+      "vm1"
+    ],
+    "l8": [
+      "s2-modal",
+      "possibility",
+      "vw1"
+    ],
+    "l1": [
+      "s1-temp",
+      "past",
+      "vg1"
+    ],
+    "l9": [
+      "s1-quant",
+      "exists",
+      "vj2"
+    ],
+    "l10": [
+      "s1-num",
+      "singular",
+      "vj2"
+    ],
+    "l11": [
+      "s1-def",
+      "definite",
+      "vj2"
+    ],
+    "l12": [
+      "s3-temp",
+      "past",
+      "vk1"
+    ]
+  },
+  "d": {
+    "d1": [
+      "s1",
+      "CONTINUATION",
+      "s3"
+    ]
+  },
+  "c": {
+    "c1": [
+      "vk1",
+      "ARG1",
+      "s2"
+    ]
+  },
+  "h": {
+    "h2": [
+      "s2-neg",
+      "",
+      "l8"
+    ],
+    "h1": [
+      "s2-temp",
+      "future",
+      "l8"
+    ]
+  },
   "i": {},
-  "labels": {}
+  "labels": {
+    "vp1": "person",
+    "vj1": "Jones",
+    "vw1": "write-01",
+    "vm1": "memoir",
+    "s1-temp": "temp",
+    "s2-quant": "quant",
+    "s2-num": "num",
+    "s2-def": "def",
+    "s1-neg": "neg",
+    "s2-modal": "modal",
+    "s2-neg": "neg",
+    "s2-temp": "temp",
+    "vg1": "get-01",
+    "vj2": "job",
+    "vc1": "CIA",
+    "s1-quant": "quant",
+    "s1-num": "num",
+    "s1-def": "def",
+    "vk1": "know-01",
+    "s3-temp": "temp"
+  }
 }

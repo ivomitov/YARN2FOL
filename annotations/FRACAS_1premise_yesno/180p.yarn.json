@@ -5,14 +5,141 @@
     "type": "premise",
     "fracas_answer": "yes"
   },
-  "s": [],
-  "v": [],
-  "f": {},
-  "e": {},
-  "l": {},
-  "d": {},
-  "c": {},
+  "s": [
+    "s1",
+    "s2",
+    "s3"
+  ],
+  "v": [
+    "vw1",
+    "vb1",
+    "vj1",
+    "vc1",
+    "vb2",
+    "vc2"
+  ],
+  "f": {
+    "s1": [
+      "s1-temp"
+    ],
+    "s2": [
+      "s2-temp",
+      "s2-quant",
+      "s2-num",
+      "s2-def"
+    ],
+    "s3": [
+      "s3-temp",
+      "s3-quant",
+      "s3-num",
+      "s3-def"
+    ]
+  },
+  "e": {
+    "e1": [
+      "vw1",
+      "ARG0",
+      "vj1"
+    ],
+    "e2": [
+      "vb1",
+      "ARG1",
+      "vc1"
+    ],
+    "e3": [
+      "vb1",
+      "ARG0",
+      "vj1"
+    ],
+    "e4": [
+      "vb2",
+      "ARG1",
+      "vc2"
+    ],
+    "e5": [
+      "vb2",
+      "ARG0",
+      "vj1"
+    ]
+  },
+  "l": {
+    "l1": [
+      "s1-temp",
+      "past",
+      "vw1"
+    ],
+    "l2": [
+      "s3-temp",
+      "past",
+      "vb2"
+    ],
+    "l3": [
+      "s3-quant",
+      "exists",
+      "vc2"
+    ],
+    "l4": [
+      "s3-num",
+      "singular",
+      "vc2"
+    ],
+    "l5": [
+      "s3-def",
+      "indefinite",
+      "vc2"
+    ],
+    "l6": [
+      "s2-num",
+      "singular",
+      "vc1"
+    ],
+    "l7": [
+      "s2-quant",
+      "exists",
+      "vc1"
+    ],
+    "l8": [
+      "s2-def",
+      "indefinite",
+      "vc1"
+    ],
+    "l9": [
+      "s2-temp",
+      "future",
+      "vb1"
+    ]
+  },
+  "d": {
+    "d1": [
+      "s1",
+      "RESULT",
+      "s3"
+    ]
+  },
+  "c": {
+    "c1": [
+      "vw1",
+      "ARG1",
+      "s2"
+    ]
+  },
   "h": {},
   "i": {},
-  "labels": {}
+  "labels": {
+    "vw1": "want-01",
+    "vb1": "buy-01",
+    "vj1": "John",
+    "vc1": "car",
+    "vb2": "buy-01",
+    "vc2": "car",
+    "s1-temp": "temp",
+    "s2-temp": "temp",
+    "s2-quant": "quant",
+    "s2-num": "num",
+    "s2-def": "def",
+    "s3-temp": "temp",
+    "s3-quant": "quant",
+    "s3-num": "num",
+    "s3-def": "def"
+  }
 }

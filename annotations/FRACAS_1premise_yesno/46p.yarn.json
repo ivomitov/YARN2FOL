@@ -12,7 +12,9 @@
     "vc1",
     "vt1",
     "vh1",
-    "vs1"
+    "vs1",
+    "vc2",
+    "va1"
   ],
   "f": {
     "s1": [
@@ -26,15 +28,25 @@
     ]
   },
   "e": {
-    "e1": [
-      "vs1",
-      "ARG0",
-      "vc1"
-    ],
     "e2": [
       "vs1",
       "ARG1",
       "vt1"
+    ],
+    "e1": [
+      "va1",
+      "op1",
+      "vc1"
+    ],
+    "e3": [
+      "va1",
+      "op2",
+      "vc2"
+    ],
+    "e4": [
+      "vs1",
+      "ARG0",
+      "va1"
     ]
   },
   "l": {
@@ -48,16 +60,6 @@
       "habitual",
       "vs1"
     ],
-    "l3": [
-      "s1-quant",
-      "2",
-      "vc1"
-    ],
-    "l4": [
-      "s1-quant",
-      "a lot",
-      "vt1"
-    ],
     "l5": [
       "s1-num",
       "plural",
@@ -70,7 +72,7 @@
     ],
     "l7": [
       "s1-def",
-      "indefinite",
+      "definite",
       "vc1"
     ],
     "l8": [
@@ -78,20 +80,61 @@
       "indefinite",
       "vt1"
     ],
-    "l9": [
-      "s1-loc",
-      "",
-      "vh1"
-    ],
     "l10": [
       "s1-neg",
       "",
       "vs1"
+    ],
+    "l3": [
+      "s1-quant",
+      "exists",
+      "vc1"
+    ],
+    "l4": [
+      "s1-def",
+      "definite",
+      "vc2"
+    ],
+    "l11": [
+      "s1-num",
+      "singular",
+      "vc2"
+    ],
+    "l12": [
+      "s1-def",
+      "indefinite",
+      "vh1"
+    ],
+    "l9": [
+      "s1-num",
+      "singular",
+      "vh1"
+    ],
+    "l13": [
+      "s1-loc",
+      "",
+      "vh1"
     ]
   },
   "d": {},
   "c": {},
-  "h": {},
+  "h": {
+    "h1": [
+      "l3",
+      "exists",
+      "vc2"
+    ],
+    "h3": [
+      "h1",
+      "exists",
+      "vh1"
+    ],
+    "h2": [
+      "h3",
+      "a lot",
+      "vt1"
+    ]
+  },
   "i": {},
   "labels": {
     "vc1": "commissioner",
@@ -104,6 +147,8 @@
     "s1-num": "num",
     "s1-def": "def",
     "s1-loc": "loc",
-    "s1-neg": "neg"
+    "s1-neg": "neg",
+    "vc2": "commissioner",
+    "va1": "and"
   }
 }

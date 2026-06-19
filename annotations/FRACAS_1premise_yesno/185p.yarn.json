@@ -5,14 +5,175 @@
     "type": "premise",
     "fracas_answer": "yes"
   },
-  "s": [],
-  "v": [],
-  "f": {},
-  "e": {},
-  "l": {},
-  "d": {},
-  "c": {},
+  "s": [
+    "s1",
+    "s2",
+    "s3",
+    "s4"
+  ],
+  "v": [
+    "vc1",
+    "vs1",
+    "vc2",
+    "vp1",
+    "vc3",
+    "vj1",
+    "vc4",
+    "vp2"
+  ],
+  "f": {
+    "s1": [
+      "s1-temp"
+    ],
+    "s2": [
+      "s2-quant",
+      "s2-temp",
+      "s2-num",
+      "s2-def"
+    ],
+    "s3": [
+      "s3-temp"
+    ],
+    "s4": [
+      "s4-temp",
+      "s4-quant",
+      "s4-num",
+      "s4-def"
+    ]
+  },
+  "e": {
+    "e1": [
+      "vc1",
+      "ARG0",
+      "vs1"
+    ],
+    "e3": [
+      "vc2",
+      "ARG0",
+      "vs1"
+    ],
+    "e4": [
+      "vc2",
+      "ARG1",
+      "vp1"
+    ],
+    "e5": [
+      "vp1",
+      "poss",
+      "vs1"
+    ],
+    "e2": [
+      "vc3",
+      "ARG0",
+      "vj1"
+    ],
+    "e6": [
+      "vp2",
+      "poss",
+      "vj1"
+    ],
+    "e7": [
+      "vc4",
+      "ARG1",
+      "vp2"
+    ],
+    "e8": [
+      "vc4",
+      "ARG0",
+      "vj1"
+    ]
+  },
+  "l": {
+    "l1": [
+      "s1-temp",
+      "past",
+      "vc1"
+    ],
+    "l2": [
+      "s2-temp",
+      "past",
+      "vc2"
+    ],
+    "l3": [
+      "s2-quant",
+      "exists",
+      "vp1"
+    ],
+    "l4": [
+      "s2-num",
+      "singular",
+      "vp1"
+    ],
+    "l5": [
+      "s2-def",
+      "definite",
+      "vp1"
+    ],
+    "l6": [
+      "s3-temp",
+      "past",
+      "vc3"
+    ],
+    "l7": [
+      "s4-temp",
+      "past",
+      "vc4"
+    ],
+    "l8": [
+      "s4-quant",
+      "exists",
+      "vp2"
+    ],
+    "l9": [
+      "s4-num",
+      "singular",
+      "vp2"
+    ],
+    "l10": [
+      "s4-def",
+      "definite",
+      "vp2"
+    ]
+  },
+  "d": {
+    "d1": [
+      "s1",
+      "COORDINATION",
+      "s3"
+    ]
+  },
+  "c": {
+    "c1": [
+      "vc1",
+      "ARG1",
+      "s2"
+    ],
+    "c2": [
+      "vc3",
+      "ARG1",
+      "s4"
+    ]
+  },
   "h": {},
   "i": {},
-  "labels": {}
+  "labels": {
+    "vc1": "claim-01",
+    "vs1": "Smith",
+    "s1-temp": "temp",
+    "vc2": "cost-00",
+    "vp1": "proposal",
+    "s2-quant": "quant",
+    "s2-temp": "temp",
+    "s2-num": "num",
+    "s2-def": "def",
+    "vc3": "claim-01",
+    "vj1": "Jones",
+    "vc4": "cost-00",
+    "vp2": "proposal",
+    "s3-temp": "temp",
+    "s4-temp": "temp",
+    "s4-quant": "quant",
+    "s4-num": "num",
+    "s4-def": "def"
+  }
 }

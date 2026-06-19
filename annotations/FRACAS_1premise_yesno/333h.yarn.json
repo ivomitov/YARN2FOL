@@ -5,14 +5,82 @@
     "type": "hypothesis",
     "fracas_answer": "yes"
   },
-  "s": [],
-  "v": [],
-  "f": {},
-  "e": {},
-  "l": {},
+  "s": [
+    "s1"
+  ],
+  "v": [
+    "vg1",
+    "vp1",
+    "vm1"
+  ],
+  "f": {
+    "s1": [
+      "s1-temp",
+      "s1-quant",
+      "s1-num",
+      "s1-def"
+    ]
+  },
+  "e": {
+    "e1": [
+      "vg1",
+      "consist-of",
+      "vp1"
+    ],
+    "e2": [
+      "vm1",
+      "ARG0",
+      "vg1"
+    ]
+  },
+  "l": {
+    "l1": [
+      "s1-temp",
+      "past",
+      "vm1"
+    ],
+    "l2": [
+      "s1-quant",
+      "exists",
+      "vg1"
+    ],
+    "l3": [
+      "s1-def",
+      "definite",
+      "vg1"
+    ],
+    "l4": [
+      "s1-num",
+      "singular",
+      "vg1"
+    ],
+    "l5": [
+      "s1-num",
+      "plural",
+      "vp1"
+    ],
+    "l6": [
+      "s1-def",
+      "indefinite",
+      "vp1"
+    ],
+    "l7": [
+      "s1-quant",
+      "exists",
+      "vp1"
+    ]
+  },
   "d": {},
   "c": {},
   "h": {},
   "i": {},
-  "labels": {}
+  "labels": {
+    "vg1": "group",
+    "vp1": "person",
+    "vm1": "meet-03",
+    "s1-temp": "temp",
+    "s1-quant": "quant",
+    "s1-num": "num",
+    "s1-def": "def"
+  }
 }

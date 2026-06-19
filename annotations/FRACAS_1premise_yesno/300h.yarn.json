@@ -5,14 +5,55 @@
     "type": "hypothesis",
     "fracas_answer": "yes"
   },
-  "s": [],
-  "v": [],
-  "f": {},
-  "e": {},
-  "l": {},
+  "s": [
+    "s1"
+  ],
+  "v": [
+    "vl1",
+    "vb1",
+    "vs1"
+  ],
+  "f": {
+    "s1": [
+      "s1-temp",
+      "s1-loc",
+      "s1-aspect"
+    ]
+  },
+  "e": {
+    "e2": [
+      "vl1",
+      "ARG0",
+      "vs1"
+    ]
+  },
+  "l": {
+    "l1": [
+      "s1-temp",
+      "past",
+      "vl1"
+    ],
+    "l2": [
+      "s1-loc",
+      "",
+      "vb1"
+    ],
+    "l3": [
+      "s1-aspect",
+      "endeavor",
+      "vl1"
+    ]
+  },
   "d": {},
   "c": {},
   "h": {},
   "i": {},
-  "labels": {}
+  "labels": {
+    "vl1": "live-01",
+    "vb1": "Birmingham",
+    "s1-temp": "temp",
+    "vs1": "Smith",
+    "s1-loc": "loc",
+    "s1-aspect": "aspect"
+  }
 }

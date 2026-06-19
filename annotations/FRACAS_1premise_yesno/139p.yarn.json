@@ -5,14 +5,94 @@
     "type": "premise",
     "fracas_answer": "yes"
   },
-  "s": [],
-  "v": [],
-  "f": {},
-  "e": {},
-  "l": {},
+  "s": [
+    "s1"
+  ],
+  "v": [
+    "vc1",
+    "va1",
+    "vp1",
+    "vl1"
+  ],
+  "f": {
+    "s1": [
+      "s1-temp",
+      "s1-quant",
+      "s1-num",
+      "s1-def"
+    ]
+  },
+  "e": {
+    "e1": [
+      "va1",
+      "ARG0",
+      "vc1"
+    ],
+    "e2": [
+      "va1",
+      "ARG2",
+      "vc1"
+    ],
+    "e3": [
+      "vl1",
+      "ARG1",
+      "vp1"
+    ],
+    "e4": [
+      "va1",
+      "ARG1",
+      "vp1"
+    ]
+  },
+  "l": {
+    "l1": [
+      "s1-temp",
+      "past",
+      "va1"
+    ],
+    "l2": [
+      "s1-quant",
+      "exists",
+      "vc1"
+    ],
+    "l3": [
+      "s1-quant",
+      "exists",
+      "vp1"
+    ],
+    "l4": [
+      "s1-num",
+      "singular",
+      "vc1"
+    ],
+    "l5": [
+      "s1-num",
+      "singular",
+      "vp1"
+    ],
+    "l6": [
+      "s1-def",
+      "indefinite",
+      "vc1"
+    ],
+    "l7": [
+      "s1-def",
+      "indefinite",
+      "vp1"
+    ]
+  },
   "d": {},
   "c": {},
   "h": {},
   "i": {},
-  "labels": {}
+  "labels": {
+    "vc1": "company_director",
+    "va1": "award-01",
+    "vp1": "payrise",
+    "vl1": "large-01",
+    "s1-temp": "temp",
+    "s1-quant": "quant",
+    "s1-num": "num",
+    "s1-def": "def"
+  }
 }

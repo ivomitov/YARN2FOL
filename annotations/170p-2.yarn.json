@@ -1,0 +1,39 @@
+{
+  "meta": {
+    "sent_id": "170p",
+    "text": "John found Mary before Bill.",
+    "type": "premise",
+    "fracas_answer": "yes"
+  },
+  "s": ["s1", "s2"],
+  "v": ["vp1", "vp2", "vp3", "vf1", "vf2"],
+  "f": {
+    "s1": ["s1-temp"],
+    "s2": ["s2-temp"]
+  },
+  "e": {
+    "e4": ["vf1", "ARG0", "vp3"],
+    "e5": ["vf1", "ARG1", "vp2"],
+    "e6": ["vf2", "ARG0", "vp1"],
+    "e7": ["vf2", "ARG1", "vp2"]
+  },
+  "l": {
+    "l1": ["s1-temp", "past", "vf1"],
+    "l11": ["s2-temp", "past", "vf2"]
+  },
+  "d": {
+    "d1": ["s1", "BEFORE", "s2"]
+  },
+  "c": {},
+  "h": {},
+  "i": {},
+  "labels": {
+    "vp1": "Bill",
+    "vp2": "Mary",
+    "vp3": "John",
+    "vf1": "find-01",
+    "s1-temp": "temp",
+    "s2-temp": "temp",
+    "vf2": "find-01"
+  }
+}

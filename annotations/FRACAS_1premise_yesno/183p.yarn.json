@@ -5,14 +5,102 @@
     "type": "premise",
     "fracas_answer": "yes"
   },
-  "s": [],
-  "v": [],
-  "f": {},
-  "e": {},
-  "l": {},
-  "d": {},
+  "s": [
+    "s1",
+    "s2"
+  ],
+  "v": [
+    "vs1",
+    "vc1",
+    "vj1",
+    "vr1",
+    "vr2"
+  ],
+  "f": {
+    "s1": [
+      "s1-temp",
+      "s1-quant",
+      "s1-num",
+      "s1-def"
+    ],
+    "s2": [
+      "s2-temp"
+    ]
+  },
+  "e": {
+    "e1": [
+      "vr1",
+      "ARG0",
+      "vs1"
+    ],
+    "e2": [
+      "vr1",
+      "ARG1",
+      "vc1"
+    ],
+    "e3": [
+      "vc1",
+      "poss",
+      "vs1"
+    ],
+    "e4": [
+      "vr2",
+      "ARG0",
+      "vj1"
+    ],
+    "e5": [
+      "vr2",
+      "ARG1",
+      "vc1"
+    ]
+  },
+  "l": {
+    "l1": [
+      "s1-temp",
+      "present",
+      "vr1"
+    ],
+    "l2": [
+      "s1-quant",
+      "exists",
+      "vc1"
+    ],
+    "l3": [
+      "s1-num",
+      "singular",
+      "vc1"
+    ],
+    "l4": [
+      "s1-def",
+      "definite",
+      "vc1"
+    ],
+    "l5": [
+      "s2-temp",
+      "present",
+      "vr2"
+    ]
+  },
+  "d": {
+    "d1": [
+      "s1",
+      "COORDINATION",
+      "s2"
+    ]
+  },
   "c": {},
   "h": {},
   "i": {},
-  "labels": {}
+  "labels": {
+    "vs1": "Smith",
+    "vc1": "company",
+    "vj1": "Jones",
+    "vr1": "represent-01",
+    "vr2": "represent-01",
+    "s1-temp": "temp",
+    "s1-quant": "quant",
+    "s1-num": "num",
+    "s1-def": "def",
+    "s2-temp": "temp"
+  }
 }

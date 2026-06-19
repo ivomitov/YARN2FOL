@@ -5,14 +5,142 @@
     "type": "hypothesis",
     "fracas_answer": "yes"
   },
-  "s": [],
-  "v": [],
-  "f": {},
-  "e": {},
-  "l": {},
-  "d": {},
-  "c": {},
+  "s": [
+    "s1",
+    "s2",
+    "s3"
+  ],
+  "v": [
+    "vd1",
+    "vs1",
+    "vp1",
+    "vw1",
+    "vf1",
+    "vd2",
+    "vt1"
+  ],
+  "f": {
+    "s1": [
+      "s1-temp",
+      "s1-quant",
+      "s1-num",
+      "s1-def"
+    ],
+    "s2": [
+      "s2-temp"
+    ],
+    "s3": [
+      "s3-temp"
+    ]
+  },
+  "e": {
+    "e1": [
+      "vp1",
+      "name",
+      "vs1"
+    ],
+    "e2": [
+      "vd1",
+      "ARG0",
+      "vp1"
+    ],
+    "e3": [
+      "vf1",
+      "ARG1",
+      "vp1"
+    ],
+    "e4": [
+      "vd2",
+      "ARG1",
+      "vp1"
+    ],
+    "e5": [
+      "vt1",
+      "duration",
+      "vw1"
+    ]
+  },
+  "l": {
+    "l2": [
+      "s1-quant",
+      "a-few",
+      "vw1"
+    ],
+    "l3": [
+      "s1-num",
+      "plural",
+      "vw1"
+    ],
+    "l4": [
+      "s1-def",
+      "indefinite",
+      "vw1"
+    ],
+    "l5": [
+      "s1-temp",
+      "future",
+      "vd1"
+    ],
+    "l6": [
+      "s1-quant",
+      "exists",
+      "vp1"
+    ],
+    "l7": [
+      "s1-num",
+      "singular",
+      "vp1"
+    ],
+    "l8": [
+      "s1-def",
+      "definite",
+      "vp1"
+    ],
+    "l9": [
+      "s2-temp",
+      "future",
+      "vf1"
+    ],
+    "l10": [
+      "s3-temp",
+      "past",
+      "vd2"
+    ],
+    "l1": [
+      "s1-temp",
+      "",
+      "vt1"
+    ]
+  },
+  "d": {
+    "d1": [
+      "s1",
+      "CONSEQUENCE",
+      "s2"
+    ]
+  },
+  "c": {
+    "c1": [
+      "vd1",
+      "ARG1",
+      "s3"
+    ]
+  },
   "h": {},
   "i": {},
-  "labels": {}
+  "labels": {
+    "vd1": "discover-01",
+    "vs1": "Smith",
+    "vp1": "person",
+    "s1-temp": "temp",
+    "s1-quant": "quant",
+    "s1-num": "num",
+    "s1-def": "def",
+    "vw1": "week",
+    "vf1": "furious-02",
+    "s2-temp": "temp",
+    "vd2": "dupe-01",
+    "s3-temp": "temp",
+    "vt1": "date-interval"
+  }
 }

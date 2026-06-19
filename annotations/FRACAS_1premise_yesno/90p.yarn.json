@@ -50,11 +50,6 @@
       "exists",
       "vc1"
     ],
-    "l4": [
-      "s1-quant",
-      "exists",
-      "va1"
-    ],
     "l5": [
       "s1-num",
       "singular",
@@ -62,7 +57,7 @@
     ],
     "l6": [
       "s1-num",
-      "plural",
+      "singular",
       "vi1"
     ],
     "l7": [
@@ -79,11 +74,27 @@
       "s1-def",
       "definite",
       "va1"
+    ],
+    "l3": [
+      "s1-def",
+      "indefinite",
+      "vi1"
     ]
   },
   "d": {},
   "c": {},
-  "h": {},
+  "h": {
+    "h1": [
+      "l2",
+      "exists",
+      "va1"
+    ],
+    "h2": [
+      "h1",
+      "forall",
+      "vi1"
+    ]
+  },
   "i": {},
   "labels": {
     "vc1": "chairman",

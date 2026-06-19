@@ -10,9 +10,8 @@
   ],
   "v": [
     "vt1",
-    "vr1",
     "vm1",
-    "vg1"
+    "vr1"
   ],
   "f": {
     "s1": [
@@ -26,19 +25,14 @@
   },
   "e": {
     "e1": [
-      "vg1",
-      "ARG1",
-      "vt1"
-    ],
-    "e2": [
-      "vg1",
-      "degree",
-      "vr1"
-    ],
-    "e3": [
       "vt1",
       "mod",
-      "vm1"
+      "vr1"
+    ],
+    "e2": [
+      "vm1",
+      "domain",
+      "vt1"
     ]
   },
   "l": {
@@ -61,33 +55,32 @@
   "d": {},
   "c": {},
   "h": {
-    "h1": [
-      "s1-temp",
-      "present",
-      "e3"
-    ],
     "h2": [
       "s1-neg",
       "",
       "l1"
     ],
+    "h1": [
+      "s1-temp",
+      "present",
+      "e2"
+    ],
     "h3": [
       "s1-aspect",
       "state",
-      "e3"
+      "e2"
     ]
   },
   "i": {},
   "labels": {
     "vt1": "tenor",
-    "vr1": "really",
     "vm1": "modest",
-    "vg1": "great-02",
     "s1-temp": "temp",
     "s1-neg": "neg",
     "s1-quant": "quant",
     "s1-num": "num",
     "s1-def": "def",
-    "s1-aspect": "aspect"
+    "s1-aspect": "aspect",
+    "vr1": "really_great"
   }
 }

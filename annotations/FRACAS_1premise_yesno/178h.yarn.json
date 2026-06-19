@@ -5,14 +5,95 @@
     "type": "hypothesis",
     "fracas_answer": "yes"
   },
-  "s": [],
-  "v": [],
-  "f": {},
-  "e": {},
-  "l": {},
+  "s": [
+    "s1",
+    "s2"
+  ],
+  "v": [
+    "vb1",
+    "vp1",
+    "vs1",
+    "vr2",
+    "vw2"
+  ],
+  "f": {
+    "s1": [
+      "s1-temp"
+    ],
+    "s2": [
+      "s2-temp",
+      "s2-num",
+      "s2-quant",
+      "s2-def"
+    ]
+  },
+  "e": {
+    "e3": [
+      "vs1",
+      "ARG0",
+      "vb1"
+    ],
+    "e4": [
+      "vw2",
+      "ARG0",
+      "vp1"
+    ],
+    "e5": [
+      "vw2",
+      "ARG1",
+      "vr2"
+    ]
+  },
+  "l": {
+    "l5": [
+      "s1-temp",
+      "past",
+      "vs1"
+    ],
+    "l6": [
+      "s2-temp",
+      "past",
+      "vw2"
+    ],
+    "l7": [
+      "s2-num",
+      "singular",
+      "vr2"
+    ],
+    "l8": [
+      "s2-quant",
+      "exists",
+      "vr2"
+    ],
+    "l9": [
+      "s2-def",
+      "indefinite",
+      "vr2"
+    ]
+  },
   "d": {},
-  "c": {},
+  "c": {
+    "c1": [
+      "vs1",
+      "ARG1",
+      "s2"
+    ]
+  },
   "h": {},
   "i": {},
-  "labels": {}
+  "labels": {
+    "vb1": "Bill",
+    "vp1": "Peter",
+    "vs1": "say-01",
+    "vr2": "report",
+    "vw2": "write-01",
+    "s1-temp": "temp",
+    "s1-quant": "quant",
+    "s1-num": "num",
+    "s1-def": "def",
+    "s2-temp": "temp",
+    "s2-num": "num",
+    "s2-quant": "quant",
+    "s2-def": "def"
+  }
 }

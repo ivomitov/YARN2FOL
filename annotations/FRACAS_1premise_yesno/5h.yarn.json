@@ -5,14 +5,68 @@
     "type": "hypothesis",
     "fracas_answer": "yes"
   },
-  "s": [],
-  "v": [],
-  "f": {},
-  "e": {},
-  "l": {},
+  "s": [
+    "s1"
+  ],
+  "v": [
+    "vc1",
+    "vt1",
+    "vr1"
+  ],
+  "f": {
+    "s1": [
+      "s1-temp",
+      "s1-quant",
+      "s1-num",
+      "s1-def"
+    ]
+  },
+  "e": {
+    "e1": [
+      "vc1",
+      "domain",
+      "vt1"
+    ],
+    "e2": [
+      "vt1",
+      "mod",
+      "vr1"
+    ]
+  },
+  "l": {
+    "l1": [
+      "s1-num",
+      "plural",
+      "vt1"
+    ],
+    "l2": [
+      "s1-quant",
+      "exists",
+      "vt1"
+    ],
+    "l3": [
+      "s1-def",
+      "indefinite",
+      "vt1"
+    ]
+  },
   "d": {},
   "c": {},
-  "h": {},
+  "h": {
+    "h1": [
+      "s1-temp",
+      "present",
+      "l2"
+    ]
+  },
   "i": {},
-  "labels": {}
+  "labels": {
+    "vc1": "italian",
+    "vt1": "tenor",
+    "s1-temp": "temp",
+    "s1-quant": "quant",
+    "s1-num": "num",
+    "s1-def": "def",
+    "vr1": "really_ambitious"
+  }
 }
