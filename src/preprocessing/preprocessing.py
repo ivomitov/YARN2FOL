@@ -73,10 +73,11 @@ def identify_main_preds(yarn_grew):
     for node_id, node_data in nodes.items():
         if node_data.get("type") in ("L", "H") and node_data.get("feat") == "temp":
             if not node_data.get("value"):
-                src = edge['src']
-                tar = edge['tar']
-                if src == node_id and nodes[tar]['type'] == 'V':
-                    s_node = node_data.get("event")
-                    nodes[s_node].setdefault("main_pred", tar)
+                for edge in edges:
+                    src = edge['src']
+                    tar = edge['tar']
+                    if src == node_id and nodes[tar]['type'] == 'V':
+                        s_node = node_data.get("event")
+                        nodes[s_node].setdefault("main_pred", tar)
     
     return yarn_grew
