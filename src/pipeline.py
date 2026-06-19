@@ -70,7 +70,7 @@ def process_one(path, yarn_json, output_queue, mode):
         # print(s_descendants)
         yarn_grew = propagate_s_node_information(yarn_grew, s_descendants)
         yarn_grew = identify_main_preds(yarn_grew)
-        print(yarn_grew)
+        # print(yarn_grew)
 
         # save as json
         # with open('output.json', 'w') as f:

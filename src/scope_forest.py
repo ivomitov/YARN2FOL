@@ -104,7 +104,7 @@ def build_F(yarn_grew_graph, id2var, variables):
                         'tar_label': tar_label,
                     })
 
-        if (feats['type'] in ['L', 'H']) and feats['feat'] in ['neg', 'modal', 'aspect']:
+        if (feats['type'] in ['L', 'H']) and feats['feat'] in ['neg', 'modal']:
             for tar in src_to_tars[node]:
                 if nodes[tar]['type'] in ['V', 'L', 'H']:
                     edge_label = feats['value'] if feats['value'] else feats['feat']
@@ -124,8 +124,6 @@ def build_F(yarn_grew_graph, id2var, variables):
     for node, feats in nodes.items():
         if feats['type'] == 'V' and node not in id2var:
             id2var[node] = feats.get('pred', feats.get('concept', '')).upper()
-
-    F = [f for f in F if f['type'] not in ['perfective', 'state', 'habitual']]
 
     return F
 
@@ -182,6 +180,37 @@ def build_R(yarn_grew, id2var, c_registry):
             for src in tar_to_srcs[node]:
                 for tar in src_to_tars[node]:
                     add_to_R(R, tar, 'and', [(edge_label, src, tar)])
+        
+        if feats['type'] in ["L", "H"] and feats['feat'] == 'temp' and not feats['value']: #unlabeled temp
+            edge_label = 'includes'
+            for tar in src_to_tars[node]:
+                if nodes[tar]['type'] == 'V':
+                    for src in tar_to_srcs[node]:
+                        src = src.split('-')[0]
+                        if 'main_pred' in nodes[src]:
+                            src_pred = nodes[src]['main_pred']
+                            add_to_R(R, src_pred, 'and', [(edge_label, tar, src_pred)])
+        
+        if feats['type'] in ["L", "H"] and feats['feat'] == 'duration': #duration
+            edge_label = 'total_overlap'
+            for tar in src_to_tars[node]:
+                if nodes[tar]['type'] == 'V':
+                    for src in tar_to_srcs[node]:
+                        src = src.split('-')[0]
+                        if 'main_pred' in nodes[src]:
+                            src_pred = nodes[src]['main_pred']
+                            add_to_R(R, src_pred, 'and', [(edge_label, tar, src_pred)])
+        
+        if feats['type'] in ["L", "H"] and feats['feat'] == 'aspect': #aspect
+            edge_label = 'aspect_' + feats['value']
+            for tar in src_to_tars[node]:
+                if nodes[tar]['type'] == 'V':
+                    for src in tar_to_srcs[node]:
+                        src = src.split('-')[0]
+                        if 'main_pred' in nodes[src]:
+                            src_pred = nodes[src]['main_pred']
+                            add_to_R(R, src_pred, 'and', [(edge_label, src_pred)])
+
 
         if feats['type'] == "L" and feats['feat'] in ['manner', 'loc', 'dir', 'duration', 'mod', 'freq']:
             for tar in src_to_tars[node]:
@@ -193,10 +222,18 @@ def build_R(yarn_grew, id2var, c_registry):
                         add_to_R(R, key, 'and', [(edge_label, src, tar)])
         
         if feats['type'] == "D" and feats['disc'] in ['BEFORE', 'AFTER']: #temporal subordinating discourse realtions
-            edge_label = feats['disc'].replace("_sub", "").lower()
+            edge_label = 'precedes'
             for src in tar_to_srcs[node]:
                 for tar in src_to_tars[node]:
-                    add_to_R(R, tar, 'and', [(edge_label, src, tar)])
+                    src_pred = nodes[src].get('main_pred', src)
+                    tar_pred = nodes[tar].get('main_pred', tar)
+
+                    if feats['disc'] == 'BEFORE':
+                        first, second = src_pred, tar_pred
+                    else:
+                        first, second = tar_pred, src_pred
+
+                    add_to_R(R, second, 'and', [(edge_label, first, second)])
 
     return R
 
@@ -246,7 +283,7 @@ def add_participants_before_event_principle(forest, yarn_grew, R): # maybe chang
 
     for _, rels in R.items():
         for rel in rels['and'] + rels['or']:
-            if len(rel) == 3:
+            if len(rel) == 3 and rel[0] not in ('precedes', 'includes', 'total_ovarlap'): #! a little sloppy maybe...
                 src = rel[1]
                 tar = rel[2]
 
