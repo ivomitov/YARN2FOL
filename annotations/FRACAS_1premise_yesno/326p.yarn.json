@@ -18,7 +18,8 @@
   "f": {
     "s1": [
       "s1-temp",
-      "s1-aspect"
+      "s1-aspect",
+      "s1-quant"
     ]
   },
   "e": {
@@ -53,6 +54,11 @@
       "s1-aspect",
       "accomplishment",
       "vf1"
+    ],
+    "l2": [
+      "s1-quant",
+      "exists",
+      "vd1"
     ]
   },
   "d": {},
@@ -66,6 +72,7 @@
     "vm1": "MTALK",
     "vi1": "ITEL",
     "s1-temp": "temp",
-    "s1-aspect": "aspect"
+    "s1-aspect": "aspect",
+    "s1-quant": "quant"
   }
 }

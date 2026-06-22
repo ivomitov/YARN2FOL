@@ -18,9 +18,8 @@
   "f": {
     "s1": [
       "s1-temp",
-      "s1-quant",
-      "s1-num",
-      "s1-def"
+      "s1-aspect",
+      "s1-quant"
     ]
   },
   "e": {
@@ -52,18 +51,13 @@
       "vd1"
     ],
     "l2": [
-      "s1-quant",
-      "exists",
-      "vd1"
+      "s1-aspect",
+      "state",
+      "vf1"
     ],
     "l3": [
-      "s1-num",
-      "singular",
-      "vd1"
-    ],
-    "l4": [
-      "s1-def",
-      "definite",
+      "s1-quant",
+      "exists",
       "vd1"
     ]
   },
@@ -77,9 +71,8 @@
     "v11": "1990",
     "vi1": "ITEL",
     "s1-temp": "temp",
-    "s1-quant": "quant",
-    "s1-num": "num",
-    "s1-def": "def",
-    "va1": "APCOM"
+    "va1": "APCOM",
+    "s1-aspect": "aspect",
+    "s1-quant": "quant"
   }
 }

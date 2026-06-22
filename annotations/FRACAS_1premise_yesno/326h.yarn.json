@@ -18,10 +18,8 @@
   "f": {
     "s1": [
       "s1-temp",
-      "s1-quant",
-      "s1-num",
-      "s1-def",
-      "s1-aspect"
+      "s1-aspect",
+      "s1-quant"
     ]
   },
   "e": {
@@ -52,25 +50,15 @@
       "",
       "vd1"
     ],
+    "l5": [
+      "s1-aspect",
+      "achievement",
+      "vf1"
+    ],
     "l2": [
       "s1-quant",
       "exists",
       "vd1"
-    ],
-    "l3": [
-      "s1-num",
-      "singular",
-      "vd1"
-    ],
-    "l4": [
-      "s1-def",
-      "definite",
-      "vd1"
-    ],
-    "l5": [
-      "s1-aspect",
-      "perfective",
-      "vf1"
     ]
   },
   "d": {},
@@ -84,9 +72,7 @@
     "vm1": "MTALK",
     "vi1": "ITEL",
     "s1-temp": "temp",
-    "s1-quant": "quant",
-    "s1-num": "num",
-    "s1-def": "def",
-    "s1-aspect": "aspect"
+    "s1-aspect": "aspect",
+    "s1-quant": "quant"
   }
 }

@@ -1,0 +1,159 @@
+{
+  "meta": {
+    "sent_id": "315p_2",
+    "text": "When Smith arrived in Katmandu she had been travelling for three days.",
+    "type": "premise",
+    "fracas_answer": "yes"
+  },
+  "s": [
+    "s1",
+    "s2"
+  ],
+  "v": [
+    "vt1",
+    "va1",
+    "vk1",
+    "vc1",
+    "vp1",
+    "vs1",
+    "vd1"
+  ],
+  "f": {
+    "s1": [
+      "s1-temp",
+      "s1-quant",
+      "s1-num",
+      "s1-def",
+      "s1-aspect",
+      "s1-duration"
+    ],
+    "s2": [
+      "s2-temp",
+      "s2-quant",
+      "s2-num",
+      "s2-def"
+    ]
+  },
+  "e": {
+    "e1": [
+      "vt1",
+      "ARG0",
+      "vp1"
+    ],
+    "e2": [
+      "vp1",
+      "name",
+      "vs1"
+    ],
+    "e3": [
+      "vc1",
+      "name",
+      "vk1"
+    ],
+    "e4": [
+      "va1",
+      "ARG4",
+      "vc1"
+    ],
+    "e5": [
+      "va1",
+      "ARG0",
+      "vp1"
+    ]
+  },
+  "l": {
+    "l1": [
+      "s1-aspect",
+      "progressive",
+      "vt1"
+    ],
+    "l2": [
+      "s1-temp",
+      "past",
+      "vt1"
+    ],
+    "l3": [
+      "s1-quant",
+      "exists",
+      "vp1"
+    ],
+    "l4": [
+      "s1-num",
+      "singular",
+      "vp1"
+    ],
+    "l5": [
+      "s1-def",
+      "definite",
+      "vp1"
+    ],
+    "l6": [
+      "s2-temp",
+      "past",
+      "va1"
+    ],
+    "l7": [
+      "s2-quant",
+      "exists",
+      "vc1"
+    ],
+    "l8": [
+      "s2-def",
+      "definite",
+      "vc1"
+    ],
+    "l9": [
+      "s2-num",
+      "singular",
+      "vc1"
+    ],
+    "l11": [
+      "s1-quant",
+      "3",
+      "vd1"
+    ],
+    "l12": [
+      "s1-num",
+      "plural",
+      "vd1"
+    ],
+    "l13": [
+      "s1-def",
+      "indefinite",
+      "vd1"
+    ],
+    "l14": [
+      "s1-temp",
+      "",
+      "va1"
+    ],
+    "l10": [
+      "s1-duration",
+      "",
+      "vd1"
+    ]
+  },
+  "d": {},
+  "c": {},
+  "h": {},
+  "i": {},
+  "labels": {
+    "vt1": "travel-01",
+    "va1": "arrive-01",
+    "vk1": "Katmandu",
+    "vc1": "city",
+    "vp1": "person",
+    "vs1": "Smith",
+    "s1-temp": "temp",
+    "s1-quant": "quant",
+    "s1-num": "num",
+    "s1-def": "def",
+    "s1-aspect": "aspect",
+    "s2-temp": "temp",
+    "s2-quant": "quant",
+    "s2-num": "num",
+    "s2-def": "def",
+    "vd1": "day",
+    "s1-duration": "duration"
+  }
+}

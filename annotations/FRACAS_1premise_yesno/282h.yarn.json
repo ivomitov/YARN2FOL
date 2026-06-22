@@ -71,6 +71,11 @@
       "s1-def",
       "definite",
       "vi1"
+    ],
+    "l6": [
+      "s1-quant",
+      "exists",
+      "vd1"
     ]
   },
   "d": {},

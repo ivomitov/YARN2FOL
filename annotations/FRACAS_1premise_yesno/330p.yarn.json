@@ -22,7 +22,8 @@
     "s1": [
       "s1-temp",
       "s1-duration",
-      "s1-aspect"
+      "s1-aspect",
+      "s1-quant"
     ]
   },
   "e": {
@@ -72,6 +73,21 @@
       "s1-aspect",
       "state",
       "vf1"
+    ],
+    "l2": [
+      "s1-quant",
+      "exists",
+      "vt1"
+    ],
+    "l3": [
+      "s1-quant",
+      "exists",
+      "vd1"
+    ],
+    "l4": [
+      "s1-quant",
+      "exists",
+      "vd2"
     ]
   },
   "d": {},
@@ -89,6 +105,7 @@
     "v11": "1988",
     "v12": "1992",
     "s1-duration": "duration",
-    "s1-aspect": "aspect"
+    "s1-aspect": "aspect",
+    "s1-quant": "quant"
   }
 }

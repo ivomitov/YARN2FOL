@@ -71,6 +71,11 @@
       "s1-num",
       "singular",
       "vi1"
+    ],
+    "l6": [
+      "s1-quant",
+      "exists",
+      "vd1"
     ]
   },
   "d": {},

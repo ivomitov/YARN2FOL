@@ -20,7 +20,8 @@
   "f": {
     "s1": [
       "s1-temp",
-      "s1-aspect"
+      "s1-aspect",
+      "s1-quant"
     ],
     "s2": [
       "s2-temp",
@@ -92,6 +93,11 @@
       "s2-aspect",
       "achievement",
       "vf1"
+    ],
+    "l9": [
+      "s1-quant",
+      "exists",
+      "vd1"
     ]
   },
   "d": {},
@@ -117,6 +123,7 @@
     "s2-num": "num",
     "s2-def": "def",
     "s1-aspect": "aspect",
-    "s2-aspect": "aspect"
+    "s2-aspect": "aspect",
+    "s1-quant": "quant"
   }
 }

@@ -16,7 +16,8 @@
   ],
   "f": {
     "s1": [
-      "s1-temp"
+      "s1-temp",
+      "s1-quant"
     ]
   },
   "e": {
@@ -41,6 +42,11 @@
       "s1-temp",
       "",
       "vd1"
+    ],
+    "l2": [
+      "s1-quant",
+      "exists",
+      "vd1"
     ]
   },
   "d": {},
@@ -52,6 +58,7 @@
     "vi1": "ITEL",
     "s1-temp": "temp",
     "vd1": "date-entity",
-    "v11": "1992"
+    "v11": "1992",
+    "s1-quant": "quant"
   }
 }

@@ -77,6 +77,11 @@
       "s1-aspect",
       "achievement",
       "vw1"
+    ],
+    "l5": [
+      "s1-quant",
+      "exists",
+      "vd1"
     ]
   },
   "d": {},
