@@ -70,10 +70,10 @@ def build_F(yarn_grew_graph, id2var, variables):
                     'tar_label': None,
                 })
 
-        if (feats['type'] in ['L', 'H']) and feats['feat'] in ['quant', 'temp']:
+        if (feats['type'] in ['L', 'H']) and feats['feat'] in ['quant', 'temp'] and feats['value']:
             for tar in src_to_tars[node]:
                 if nodes[tar]['type'] == 'V':
-                    edge_label = feats['value'] if feats['value'] else feats['feat']
+                    edge_label = feats['value']
                     src = next((s for s in tar_to_srcs[node] if nodes[s]['type'] in ['L', 'H'] and nodes[s]['feat'] == 'quant'), None)
 
                     if feats['feat'] == 'quant':
@@ -146,17 +146,20 @@ def build_R(yarn_grew, id2var, c_registry):
     R = {}
     for node, feats in nodes.items():
         if feats['type'] == "E":
-            if feats['rel'].startswith('op'):
-                continue
+        #     if feats['rel'].startswith('op'):
+        #         continue
 
             edge_label = feats['rel']
             for src in tar_to_srcs[node]:
+                if nodes[src].get('concept') in ['and', 'or'] and edge_label.startswith('op'):
+                    continue
+
                 for tar in src_to_tars[node]:
                     key = tar if id2var[src].isupper() else src
-                    if nodes[tar]['concept'] == 'or':
+                    if nodes[tar].get('concept') == 'or':
                         grandchildren = [src_to_tars[e][0] for e in src_to_tars[tar]]
                         add_to_R(R, key, 'or', [(edge_label, src, t) for t in grandchildren])
-                    elif nodes[tar]['concept'] == 'and':
+                    elif nodes[tar].get('concept') == 'and':
                         grandchildren = [src_to_tars[e][0] for e in src_to_tars[tar]]
                         add_to_R(R, key, 'and', [(edge_label, src, t) for t in grandchildren])
                     else:
@@ -189,7 +192,8 @@ def build_R(yarn_grew, id2var, c_registry):
                         src = src.split('-')[0]
                         if 'main_pred' in nodes[src]:
                             src_pred = nodes[src]['main_pred']
-                            add_to_R(R, src_pred, 'and', [(edge_label, tar, src_pred)])
+                            if tar != src_pred:
+                                add_to_R(R, src_pred, 'and', [(edge_label, src_pred, tar)])
         
         if feats['type'] in ["L", "H"] and feats['feat'] == 'duration': #duration
             edge_label = 'total_overlap'
@@ -199,7 +203,7 @@ def build_R(yarn_grew, id2var, c_registry):
                         src = src.split('-')[0]
                         if 'main_pred' in nodes[src]:
                             src_pred = nodes[src]['main_pred']
-                            add_to_R(R, src_pred, 'and', [(edge_label, tar, src_pred)])
+                            add_to_R(R, src_pred, 'and', [(edge_label, src_pred, tar)])
         
         if feats['type'] in ["L", "H"] and feats['feat'] == 'aspect': #aspect
             edge_label = 'aspect_' + feats['value']
@@ -212,7 +216,7 @@ def build_R(yarn_grew, id2var, c_registry):
                             add_to_R(R, src_pred, 'and', [(edge_label, src_pred)])
 
 
-        if feats['type'] == "L" and feats['feat'] in ['manner', 'loc', 'dir', 'duration', 'mod', 'freq']:
+        if feats['type'] == "L" and feats['feat'] in ['manner', 'loc', 'dir', 'mod']:
             for tar in src_to_tars[node]:
                 if nodes[tar]['type'] == 'V':
                     edge_label = feats['value'] if feats['value'] else feats['feat']
@@ -283,7 +287,7 @@ def add_participants_before_event_principle(forest, yarn_grew, R): # maybe chang
 
     for _, rels in R.items():
         for rel in rels['and'] + rels['or']:
-            if len(rel) == 3 and rel[0] not in ('precedes', 'includes', 'total_ovarlap'): #! a little sloppy maybe...
+            if len(rel) == 3 and rel[0] != 'precedes': #! a little sloppy maybe; precedes is handled by other scope stuff
                 src = rel[1]
                 tar = rel[2]
 
