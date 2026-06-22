@@ -41,7 +41,7 @@ def build_tptp_problem(premise_formula, hypothesis_formula, background_path="src
         print(f"{background}\nfof(premise, axiom, {premise_formula}).\nfof(hypothesis, conjecture, {hypothesis_formula}).")
     return f"{background}\nfof(premise, axiom, {premise_formula}).\nfof(hypothesis, conjecture, {hypothesis_formula})."
 
-def run_vampire(tptp_formula, timeout=30):
+def run_vampire(tptp_formula, timeout=10):
     with tempfile.NamedTemporaryFile(mode='w', suffix='.tptp', delete=False) as f:
         f.write(tptp_formula)
         tmp_path = f.name
