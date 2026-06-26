@@ -26,49 +26,52 @@ def build_F(yarn_grew_graph, id2var, variables):
 
         if feats['type'] == 'S':
             id2var[node] = feats['var']
-            variables.add(feats['var'])
+            variables.add(feats['var']) 
+            srcs = tar_to_srcs[node]
 
-            scope = None
-            for src in tar_to_srcs[node]:
-                if nodes[src]['type'] == 'C':
-                    scope = tar_to_srcs[src][0] if tar_to_srcs[src] else None
+            if not srcs:
 
-            F.append({
-                'id': node,
-                'scope': scope,
-                'incoming': None,
-                'outgoing': None,
-                'S': feats['event'],
-                'type': '∃',
-                'variable': id2var[node],
-                'tar_label': 'S',
-            })
-        
-        if feats['type'] == 'D':
-            if feats.get('disc') in ['COORDINATION', 'CONSEQUENCE', 'BEFORE', 'AFTER']: #and other discourse relations...
-                edge_label = feats['disc']
-                if edge_label == 'COORDINATION':
-                    type = "conj_coor"
-                elif edge_label == 'CONSEQUENCE':
-                    type = "conseq_sub"
-                elif edge_label == 'BEFORE':
-                    type = 'before_sub'
-                elif edge_label == 'AFTER':
-                    type = 'after_sub'
-
-                tar = src_to_tars[node][0]
-                src = tar_to_srcs[node][0]
-                            
                 F.append({
-                    'id': node,
-                    'scope': None,
-                    'incoming': src,
-                    'outgoing': tar,
-                    'S': src,
-                    'type': type,
-                    'variable': None,
-                    'tar_label': None,
-                })
+                            'id': node,
+                            'scope': None, # None
+                            'incoming': None,
+                            'outgoing': None,
+                            'S': feats['event'],
+                            'type': 'S',
+                            'variable': id2var[node],
+                            'tar_label': 'S',
+                        })
+            else:
+                for src in srcs:
+                    src_feats = nodes.get(src)
+
+                    if src_feats['type'] == 'C':
+                        scope = tar_to_srcs[src][0]if tar_to_srcs[src] else None 
+
+                        F.append({
+                                'id': node,
+                                'scope': scope, # the src pred
+                                'incoming': None,
+                                'outgoing': None,
+                                'S': feats['event'],
+                                'type': 'S',
+                                'variable': id2var[node],
+                                'tar_label': 'S',
+                            })
+                        
+                    elif src_feats['type'] == 'D' and src_feats['disc'] in ['BEFORE', 'AFTER', 'COORDINATION']:
+                        scope = tar_to_srcs[src][0]if tar_to_srcs[src] else None 
+
+                        F.append({
+                                'id': node, #node
+                                'scope': scope, # the src S node
+                                'incoming': None, #not necessary?
+                                'outgoing': None,
+                                'S': node,
+                                'type': "S_" + src_feats['disc'].lower(),
+                                'variable': id2var[node],
+                                'tar_label': 'S',
+                            })
 
         if (feats['type'] in ['L', 'H']) and feats['feat'] in ['quant', 'temp'] and feats['value']:
             for tar in src_to_tars[node]:
@@ -78,9 +81,9 @@ def build_F(yarn_grew_graph, id2var, variables):
 
                     if feats['feat'] == 'quant':
                         if edge_label == 'exists':
-                            q_type = '∃'
+                            q_type = 'Q_exists'
                         elif edge_label == 'forall':
-                            q_type = '∀'
+                            q_type = 'Q_forall'
                         else:
                             q_type = f'Q_{edge_label}'
                     else:
@@ -104,7 +107,7 @@ def build_F(yarn_grew_graph, id2var, variables):
                         'tar_label': tar_label,
                     })
 
-        if (feats['type'] in ['L', 'H']) and feats['feat'] in ['neg', 'modal']:
+        if (feats['type'] in ['L', 'H']) and feats['feat'] in ['neg', 'modal']: # no modal?
             for tar in src_to_tars[node]:
                 if nodes[tar]['type'] in ['V', 'L', 'H']:
                     edge_label = feats['value'] if feats['value'] else feats['feat']
@@ -185,15 +188,15 @@ def build_R(yarn_grew, id2var, c_registry):
                     add_to_R(R, tar, 'and', [(edge_label, src, tar)])
         
         if feats['type'] in ["L", "H"] and feats['feat'] == 'temp' and not feats['value']: #unlabeled temp
-            edge_label = 'includes'
+            edge_label = 'include'
             for tar in src_to_tars[node]:
                 if nodes[tar]['type'] == 'V':
                     for src in tar_to_srcs[node]:
                         src = src.split('-')[0]
-                        if 'main_pred' in nodes[src]:
-                            src_pred = nodes[src]['main_pred']
-                            if tar != src_pred:
-                                add_to_R(R, src_pred, 'and', [(edge_label, src_pred, tar)])
+                        if id2var[tar].isupper():
+                            add_to_R(R, src, 'and', [(edge_label, src, tar)])
+                        else:
+                            add_to_R(R, tar, 'and', [(edge_label, src, tar)])
         
         if feats['type'] in ["L", "H"] and feats['feat'] == 'duration': #duration
             edge_label = 'total_overlap'
@@ -201,19 +204,16 @@ def build_R(yarn_grew, id2var, c_registry):
                 if nodes[tar]['type'] == 'V':
                     for src in tar_to_srcs[node]:
                         src = src.split('-')[0]
-                        if 'main_pred' in nodes[src]:
-                            src_pred = nodes[src]['main_pred']
-                            add_to_R(R, src_pred, 'and', [(edge_label, src_pred, tar)])
+                        if id2var[tar].isupper():
+                            add_to_R(R, src, 'and', [(edge_label, src, tar)])
+                        else:
+                            add_to_R(R, tar, 'and', [(edge_label, src, tar)])
         
         if feats['type'] in ["L", "H"] and feats['feat'] == 'aspect': #aspect
             edge_label = 'aspect_' + feats['value']
             for tar in src_to_tars[node]:
                 if nodes[tar]['type'] == 'V':
-                    for src in tar_to_srcs[node]:
-                        src = src.split('-')[0]
-                        if 'main_pred' in nodes[src]:
-                            src_pred = nodes[src]['main_pred']
-                            add_to_R(R, src_pred, 'and', [(edge_label, src_pred)])
+                    add_to_R(R, tar, 'and', [(edge_label, tar)])
 
 
         if feats['type'] == "L" and feats['feat'] in ['manner', 'loc', 'dir', 'mod']:
@@ -224,20 +224,6 @@ def build_R(yarn_grew, id2var, c_registry):
                         src = src.split('-')[0]
                         key = src if id2var[tar].isupper() else tar
                         add_to_R(R, key, 'and', [(edge_label, src, tar)])
-        
-        if feats['type'] == "D" and feats['disc'] in ['BEFORE', 'AFTER']: #temporal subordinating discourse realtions
-            edge_label = 'precedes'
-            for src in tar_to_srcs[node]:
-                for tar in src_to_tars[node]:
-                    src_pred = nodes[src].get('main_pred', src)
-                    tar_pred = nodes[tar].get('main_pred', tar)
-
-                    if feats['disc'] == 'BEFORE':
-                        first, second = src_pred, tar_pred
-                    else:
-                        first, second = tar_pred, src_pred
-
-                    add_to_R(R, second, 'and', [(edge_label, first, second)])
 
     return R
 
@@ -262,19 +248,18 @@ def build_scope_forest(F, R):
         
         for k2, v2 in forest['nodes'].items():
 
-            if v1['type'] in ["conj_coor"]: #coordinating discourse relations
-                if v1['incoming'] == v2['id'] or v1['outgoing'] == v2['id']: 
+            # C edges id - scope
+
+                if v2['scope'] and v1['id'] == v2['scope']: # quant, temp
                     forest['edges'].append({'src':k1, 'tar':k2})
 
-            else:
-
-                if v1['incoming'] and v2['scope'] and v1['incoming'] == v2['scope']:
+                if v1['incoming'] and v2['scope'] and v1['incoming'] == v2['scope']: # quant, temp
                     forest['edges'].append({'src':k1, 'tar':k2})
 
-                if v1['id'] and v2['outgoing'] and v1['id'] == v2['outgoing'] and v2['type'] not in ["conj_coor", "conseq_sub", "before_sub", "after_sub"]:
+                if v1['id'] and v2['outgoing'] and v1['id'] == v2['outgoing']: #neg L edge #and v2['type'] not in ["conj_coor", "conseq_sub", "before_sub", "after_sub"]:
                     forest['edges'].append({'src':k2, 'tar':k1})
 
-                if v1['outgoing'] and v2['incoming'] and v1['outgoing'] == v2['incoming']:
+                if v1['outgoing'] and v2['incoming'] and v1['outgoing'] == v2['incoming']: # neg H edge
                     forest['edges'].append({'src':k1, 'tar':k2})
 
     return forest
