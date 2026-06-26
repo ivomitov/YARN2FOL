@@ -3,7 +3,7 @@ import json
 from pathlib import Path
 from yarn_utils import YARNGraph
 
-from src.preprocessing.preprocessing import reify_he, get_S_descendants, propagate_s_node_information, identify_main_preds
+from src.preprocessing.preprocessing import reify_he, get_S_descendants, propagate_s_node_information
 from src.scope_forest import build_F, build_R, build_scope_forest, add_participants_before_event_principle, add_s_node_scope, events_before_events_principle
 from src.constraints import check_compatibility_of_scopes, check_locality_of_features
 from src.T_all import get_all_possible_trees, build_T_all
@@ -16,13 +16,14 @@ import multiprocessing as mp
 grs_path = "src/preprocessing/grs/main.grs"
 FOLDER_PATH = "annotations/"
 FILE = "1.yarn.json"
-TIMEOUT = 20
+TIMEOUT = 10
 
 def extract_number(path):
 
     match = re.match(r"(\d+)", path.name)
     return int(match.group(1)) if match else float("inf")
 
+SKIP_IDS = {1, 59, 107, 108, 172, 191, 193, 195, 216, 229, 230, 233, 236, 237, 239, 244, 245, 249, 250, 307, 315, 320, 322, 324}
 
 def load_yarn(input_path, recursive=False):
     if isinstance(input_path, (str, Path)):
@@ -45,12 +46,13 @@ def load_yarn(input_path, recursive=False):
             raise FileNotFoundError(f"{path} does not exist")
 
     all_files = sorted(all_files, key=extract_number)
+    all_files = [f for f in all_files if extract_number(f) not in SKIP_IDS]
 
     graphs = []
     for file_path in all_files:
         with open(file_path, "r", encoding="utf-8") as f:
             graph = json.load(f)
-            if graph.get('labels'):  # safer
+            if graph.get('labels'):
                 graphs.append((file_path, graph))
 
     return graphs
@@ -69,7 +71,7 @@ def process_one(path, yarn_json, output_queue, mode):
         s_descendants = get_S_descendants(yarn_grew)
         # print(s_descendants)
         yarn_grew = propagate_s_node_information(yarn_grew, s_descendants)
-        yarn_grew = identify_main_preds(yarn_grew)
+        # yarn_grew = identify_main_preds(yarn_grew)
         # print(yarn_grew)
 
         # save as json
@@ -79,9 +81,9 @@ def process_one(path, yarn_json, output_queue, mode):
         F = build_F(yarn_grew, id2var, variables)
         R = build_R(yarn_grew, id2var, c_registry)
         forest = build_scope_forest(F, R)
-        # print(forest['nodes'])
+        # print(json.dumps(forest['nodes'], indent=2, default=str))
         # print(forest['edges'])
-        
+
         forest = add_participants_before_event_principle(forest, yarn_grew, R)
         # print(forest['edges'])
         forest = add_s_node_scope(forest, s_descendants)
@@ -107,7 +109,7 @@ def process_one(path, yarn_json, output_queue, mode):
             if mode == 'std':
                 results.append(clean_formula_std(interpret_std(T, 'NOW', id2var)))
             elif mode == 'tptp':
-                results.append(clean_formula_tptp(interpret_tptp(T, 'now', id2var)))
+                results.append(clean_formula_tptp(interpret_tptp(T, 'now', 'now', id2var)))
 
         output_queue.put({
             "path": str(path),
