@@ -54,7 +54,7 @@ def build_F(yarn_grew_graph, id2var, variables):
                                 'incoming': None,
                                 'outgoing': None,
                                 'S': feats['event'],
-                                'type': 'S',
+                                'type': 'S_c',
                                 'variable': id2var[node],
                                 'tar_label': 'S',
                             })
@@ -272,7 +272,7 @@ def add_participants_before_event_principle(forest, yarn_grew, R): # maybe chang
 
     for _, rels in R.items():
         for rel in rels['and'] + rels['or']:
-            if len(rel) == 3 and rel[0] != 'precedes': #! a little sloppy maybe; precedes is handled by other scope stuff
+            if len(rel) == 3 and rel[0] != 'precede': #! a little sloppy maybe; precede is handled by other scope stuff
                 src = rel[1]
                 tar = rel[2]
 
