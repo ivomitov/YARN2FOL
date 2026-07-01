@@ -1,4 +1,5 @@
 from collections import defaultdict
+import copy
 
 def build_F(yarn_grew_graph, id2var, variables):
 
@@ -59,7 +60,7 @@ def build_F(yarn_grew_graph, id2var, variables):
                                 'tar_label': 'S',
                             })
                         
-                    elif src_feats['type'] == 'D' and src_feats['disc'] in ['BEFORE', 'AFTER', 'COORDINATION']:
+                    elif src_feats['type'] == 'D' and src_feats['disc'] in ['BEFORE', 'AFTER', 'COORDINATION' 'RESULT', 'CONSEQUENCE']:
                         scope = tar_to_srcs[src][0]if tar_to_srcs[src] else None 
 
                         F.append({
@@ -319,3 +320,42 @@ def events_before_events_principle(forest, yarn_grew): # in the case of subordin
                             forest['edges'].append({'src':edge['tar'], 'tar':k3}) 
                                         
     return forest
+
+def rewrite_conseq(forest):
+    new_forest = copy.deepcopy(forest)
+    nodes = forest['nodes']
+    edges = forest['edges']
+
+    for k1, v1 in nodes.items():
+        for k2, v2 in nodes.items():
+            if v1['type'] in ["S","S_coordination","S_before","S_after","S_result","S_consequence","S_c"]:
+                if v2['type'] == "S_consequence" and k1 != k2:
+                    print("yes")
+                    for edge in edges:
+                        if edge['src'] == k1 and edge['tar'] == k2:
+                            neg1_id = max(new_forest['nodes'].keys())+1
+                            neg1_feats = {
+                                'type':'neg',
+                                'variable': None,
+                                'tar_label': None,
+                            }
+                            new_forest['nodes'][neg1_id] = neg1_feats
+
+                            neg2_id = max(new_forest['nodes'].keys())+1
+                            neg2_feats = {
+                                'type':'neg',
+                                'variable': None,
+                                'tar_label': None,
+                            }
+                            new_forest['nodes'][neg2_id] = neg2_feats
+
+                            new_forest['edges'].append({'src':neg1_id, 'tar':k1})
+                            new_forest['edges'].append({'src':neg1_id, 'tar':neg2_id})
+                            new_forest['edges'].append({'src':neg2_id, 'tar':k2})
+
+                            for edge in edges:
+                                if edge['tar'] == k1:
+                                    new_forest['edges'].append({'src':edge['src'], 'tar':neg1_id})
+                                    new_forest['edges'].remove(edge)
+
+    return new_forest
