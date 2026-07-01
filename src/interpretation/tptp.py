@@ -82,15 +82,13 @@ def interpret_tptp(root, temp_variable, speech_time, id2var):
     child_formulas = [interpret_tptp(child, temp_variable, speech_time, id2var) for child in root["children"]]
     relations = get_relations(root, id2var)
 
-    if root['type'] in ["S", "S_coordination"]:
-        temp = f"overlap({root['variable'].upper()},{fmt_temp_var(speech_time)})"
+    if root['type'] in ["S", "S_coordination", "S_consequence"]:
         child_formulas = [interpret_tptp(child, root["variable"], speech_time, id2var) for child in root["children"]]
-        return wrap_quant("?", root["variable"], root["tar_label"], relations +[temp], child_formulas)
+        return wrap_quant("?", root["variable"], root["tar_label"], relations, child_formulas)
     
-    if root['type'] == "S_c": # to confirm with Rémi
-        temp = f"overlap({root['variable'].upper()},{fmt_temp_var(temp_variable)})"
+    if root['type'] == "S_c":
         child_formulas = [interpret_tptp(child, root["variable"], temp_variable, id2var) for child in root["children"]]
-        return wrap_quant("?", root["variable"], root["tar_label"], relations +[temp], child_formulas)
+        return wrap_quant("?", root["variable"], root["tar_label"], relations, child_formulas)
     
     if root['type'] == "S_before":
         temp = f"precede({fmt_temp_var(temp_variable)},{root['variable'].upper()})"
@@ -113,19 +111,19 @@ def interpret_tptp(root, temp_variable, speech_time, id2var):
         return wrap_generalized_quant("?", root["variable"], gen_quant, root["tar_label"], relations, child_formulas)
 
     if root["type"] == "T_present":
-        context_link = f"include({root['variable'].upper()},{fmt_temp_var(temp_variable)})"
-        # temp = f"overlaps({root['variable'].upper()},{fmt_temp_var(speech_time)})"
+        context_link = f"total_overlap({root['variable'].upper()},{fmt_temp_var(temp_variable)})"
+        temp = f"overlap({root['variable'].upper()},{fmt_temp_var(speech_time)})"
         child_formulas = [interpret_tptp(child, root["variable"], speech_time, id2var) for child in root["children"]]
-        return wrap_temp("?", root["variable"], root["tar_label"], relations + [context_link], child_formulas)
+        return wrap_temp("?", root["variable"], root["tar_label"], relations + [context_link, temp], child_formulas)
 
     if root["type"] == "T_past":
-        context_link = f"include({root['variable'].upper()},{fmt_temp_var(temp_variable)})"
+        context_link = f"total_overlap({root['variable'].upper()},{fmt_temp_var(temp_variable)})"
         temp = f"precede({root['variable'].upper()},{fmt_temp_var(speech_time)})"
         child_formulas = [interpret_tptp(child, root["variable"], speech_time, id2var) for child in root["children"]]
         return wrap_temp("?", root["variable"], root["tar_label"], relations + [context_link, temp], child_formulas)
 
     if root["type"] == "T_future":
-        context_link = f"include({root['variable'].upper()},{fmt_temp_var(temp_variable)})"
+        context_link = f"total_overlap({root['variable'].upper()},{fmt_temp_var(temp_variable)})"
         temp = f"precede({fmt_temp_var(speech_time)},{root['variable'].upper()})"
         child_formulas = [interpret_tptp(child, root["variable"], speech_time, id2var) for child in root["children"]]
         return wrap_temp("?", root["variable"], root["tar_label"], relations + [context_link, temp], child_formulas)
@@ -138,12 +136,3 @@ def interpret_tptp(root, temp_variable, speech_time, id2var):
 
     if root["type"] == "necessity":
         return f"necessarily({conj(child_formulas)})"
-    
-    # if root["type"] == "conj_coor":
-    #     return f"({child_formulas[0]}) & ({child_formulas[1]})" # must be just 2 children
-    
-    # if root["type"] == "conseq_sub":
-    #         return f"=> {conj(child_formulas)}" # clunky
-    
-    # if root["type"] in ["before_sub", "after_sub"]: # resets temp var
-    #     return interpret_tptp(root['children'][0], "now", id2var)
