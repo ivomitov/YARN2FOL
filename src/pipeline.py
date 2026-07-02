@@ -1,11 +1,13 @@
 import re
 import json
 from pathlib import Path
+import copy
 from yarn_utils import YARNGraph
 
 from src.preprocessing.preprocessing import reify_he, get_S_descendants, propagate_s_node_information
-from src.scope_forest import build_F, build_R, build_scope_forest, add_participants_before_event_principle, add_s_node_scope, events_before_events_principle
+from src.scope_forest import build_F, build_R, build_scope_forests, add_participants_before_event_principle, add_s_node_scope, events_before_events_principle, rewrite_conseq
 from src.constraints import check_compatibility_of_scopes, check_locality_of_features
+from src.attatch_contexts import dedupe_edges_by_target, pick_next_edge, attatch_contexts
 from src.T_all import get_all_possible_trees, build_T_all
 from src.interpretation.standard import interpret_std, clean_formula_std
 from src.interpretation.tptp import interpret_tptp, clean_formula_tptp
@@ -23,6 +25,7 @@ def extract_number(path):
     match = re.match(r"(\d+)", path.name)
     return int(match.group(1)) if match else float("inf")
 
+# SKIP_IDS = {1, 59, 107, 108, 172, 191, 193, 195, 216, 229, 230, 233, 236, 237, 239, 244, 245, 249, 250, 307, 315, 320, 322, 324} | set(range(258))
 SKIP_IDS = {1, 59, 107, 108, 172, 191, 193, 195, 216, 229, 230, 233, 236, 237, 239, 244, 245, 249, 250, 307, 315, 320, 322, 324}
 
 def load_yarn(input_path, recursive=False):
@@ -57,7 +60,6 @@ def load_yarn(input_path, recursive=False):
 
     return graphs
 
-
 def process_one(path, yarn_json, output_queue, mode):
     try:
         id2var = {}
@@ -65,44 +67,80 @@ def process_one(path, yarn_json, output_queue, mode):
         c_registry = {}
 
         yarn_graph = YARNGraph(yarn_json)
+        # print(yarn_graph)
         yarn_grew = yarn_graph.grew()
         yarn_grew = reify_he(yarn_grew, grs_path)
         
         s_descendants = get_S_descendants(yarn_grew)
         # print(s_descendants)
         yarn_grew = propagate_s_node_information(yarn_grew, s_descendants)
-        # yarn_grew = identify_main_preds(yarn_grew)
-        # print(yarn_grew)
+        
+        # print(json.dumps(yarn_grew, indent=2, default=str))
 
         # save as json
         # with open('output.json', 'w') as f:
         #     json.dump(yarn_grew, f)
 
-        F = build_F(yarn_grew, id2var, variables)
-        R = build_R(yarn_grew, id2var, c_registry)
-        forest = build_scope_forest(F, R)
-        # print(json.dumps(forest['nodes'], indent=2, default=str))
-        # print(forest['edges'])
+        discourse = build_F(yarn_grew, id2var, variables)
+        discourse = build_R(yarn_grew, id2var, discourse, c_registry)
+        discourse = build_scope_forests(discourse)
+        # print(json.dumps(discourse, indent=2, default=str))
 
-        forest = add_participants_before_event_principle(forest, yarn_grew, R)
-        # print(forest['edges'])
-        forest = add_s_node_scope(forest, s_descendants)
-        # print(forest['edges'])
-        forest = events_before_events_principle(forest, yarn_grew)
-        # print(forest['edges'])
+        for key, context in discourse['nodes'].items():
+            forest = context['forest']
+            R = context['R']
+            # print(json.dumps(forest['nodes'], indent=2, default=str))
+            forest = add_participants_before_event_principle(forest, yarn_grew, R)
+            # print(forest['edges'])
+            forest = add_s_node_scope(forest, s_descendants)
+            # print(forest['edges'])
+            forest = events_before_events_principle(forest, yarn_grew)
+            # print(forest['edges'])
+            forest = rewrite_conseq(forest)
+            # print(json.dumps(forest['nodes'], indent=2, default=str))
+            # print(forest['edges'])
+            all_possible_trees = get_all_possible_trees(forest)
 
-        all_possible_trees = get_all_possible_trees(forest)
+            valid_tree_edges = [tree for tree in all_possible_trees if check_locality_of_features(tree, forest)]
+            # print()
+            # print(valid_tree_edges)
 
-        valid_tree_edges = [
-            tree for tree in all_possible_trees
-            if check_locality_of_features(tree, forest)
-        ]
-        valid_tree_edges = [
-            tree for tree in valid_tree_edges
-            if check_compatibility_of_scopes(tree, forest)
-        ]
+            valid_tree_edges = [tree for tree in valid_tree_edges if check_compatibility_of_scopes(tree, forest)]
+            # print()
+            # print(valid_tree_edges)
+            T_all = build_T_all(forest, valid_tree_edges)
+            # print()
+            # print(T_all)
+            discourse['nodes'][key] = T_all
 
-        T_all = build_T_all(forest, valid_tree_edges)
+        # print(json.dumps(discourse, indent=2, default=str))
+
+        discourse['edges'] = dedupe_edges_by_target(discourse['edges'])
+
+        remaining_edges = discourse['edges'][:]
+
+        while remaining_edges:
+            edge = pick_next_edge(remaining_edges)
+            src = edge['src']
+            label = edge['label']
+            tar = edge['tar']
+
+            new_versions = []
+            for parent_context in discourse['nodes'][src]:
+                for child_context in discourse['nodes'][tar]:
+                    new_versions.extend(attatch_contexts(parent_context, child_context, label))
+
+            discourse['nodes'][src] = new_versions
+
+            del discourse['nodes'][tar]
+            remaining_edges.remove(edge)
+            discourse['edges'].remove(edge)
+
+        # print(json.dumps(discourse, indent=2, default=str))
+
+        assert len(discourse['nodes']) == 1, f"Expected 1 remaining node, got {len(discourse['nodes'])}"
+        T_all = next(iter(discourse['nodes'].values()))
+        # print(T_all)
 
         results = []
         for T in T_all:
