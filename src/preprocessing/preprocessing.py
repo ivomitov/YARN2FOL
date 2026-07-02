@@ -1,3 +1,4 @@
+import re
 from grewpy import Graph, GRS
 
 def reify_he(yarn_grew, grs_path):
@@ -11,38 +12,81 @@ def get_S_descendants(yarn_grew):
     edges = yarn_grew["edges"]
 
     adj = {}
+    radj = {}
     for e in edges:
         adj.setdefault(e["src"], []).append(e["tar"])
+        radj.setdefault(e["tar"], []).append(e["src"])
 
-    result = {}
+    LISTED_TYPES = {"L", "H", "V", "E", "F"}
 
-    for node_id, node_data in nodes.items():
-        if node_data.get("type") != "S":
-            continue
+    def s_sort_key(s_id):
+        m = re.search(r'\d+', s_id)
+        return (int(m.group()) if m else float('inf'), s_id)
 
+    s_ids = sorted(
+        (n for n, d in nodes.items() if d.get("type") == "S"),
+        key=s_sort_key
+    )
+
+    # --- Phase 1: forward-only reachability, establishes true ownership ---
+    forward_reachable = {}
+    for s_id in s_ids:
         visited = set()
-        stack = [node_id]
-        reachable = []
+        stack = [s_id]
+        reach = set()
+        while stack:
+            current = stack.pop()
+            if current in visited:
+                continue
+            visited.add(current)
+            t = nodes[current].get("type")
+            if t in LISTED_TYPES:
+                reach.add(current)
+            if t in ("C", "D"):
+                continue
+            for neighbor in adj.get(current, []):
+                if neighbor not in visited:
+                    stack.append(neighbor)
+        forward_reachable[s_id] = reach
 
+    owner = {}
+    for s_id in s_ids:  # earliest S processed first -> wins ties
+        for n in forward_reachable[s_id]:
+            owner.setdefault(n, s_id)
+
+    # --- Phase 2: full forward+reverse traversal, gated by ownership ---
+    result = {}
+    for s_id in s_ids:
+        visited = set()
+        stack = [s_id]
+        reachable = []
         while stack:
             current = stack.pop()
             if current in visited:
                 continue
             visited.add(current)
 
-            current_type = nodes[current].get("type")
+            t = nodes[current].get("type")
 
-            if current_type in ["L", "H", "V"]:
+            if t in LISTED_TYPES and owner.get(current, s_id) == s_id:
                 reachable.append(current)
 
-            if current_type in ["C", "D"]:
+            if t in ("C", "D"):
                 continue
 
             for neighbor in adj.get(current, []):
                 if neighbor not in visited:
                     stack.append(neighbor)
 
-        result[node_id] = list(reachable)
+            for neighbor in radj.get(current, []):
+                if (
+                    neighbor not in visited
+                    and nodes[neighbor].get("type") in ("V", "E")
+                    and owner.get(neighbor, s_id) == s_id
+                ):
+                    stack.append(neighbor)
+
+        result[s_id] = reachable
 
     return result
 
