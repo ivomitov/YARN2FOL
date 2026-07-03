@@ -1,5 +1,4 @@
 from collections import defaultdict
-import copy
 
 def build_F(yarn_grew_graph, id2var, variables):
 
@@ -72,7 +71,7 @@ def build_F(yarn_grew_graph, id2var, variables):
                         
                         discourse['edges'].append({'src':scope, 'label':'vertical', 'tar':context})
                         
-                    elif src_feats['type'] == 'D' and src_feats['disc'] in ['BEFORE', 'AFTER', 'COORDINATION', 'RESULT', 'CONSEQUENCE']:
+                    elif src_feats['type'] == 'D' and src_feats['disc'] in ['BEFORE', 'AFTER', 'CONJUNCTION', 'RESULT', 'CONSEQUENCE']:
                         scope = tar_to_srcs[src][0]if tar_to_srcs[src] else None 
 
                         discourse['nodes'][context]['F'].append({
@@ -208,7 +207,17 @@ def build_R(yarn_grew, id2var, discourse, c_registry):
                     context = yarn_grew['nodes'][tar]['event']
                     R = discourse['nodes'][context]['R']
 
-                    add_to_R(R, tar, 'and', [(edge_label, src, tar)])
+                    src_concept = nodes[src].get('concept')
+                    if src_concept in ['and', 'or'] and edge_label.startswith('op'):
+                        connective = src_concept
+                        for e_node in tar_to_srcs[src]:
+                            if nodes[e_node]['type'] != "E":
+                                continue
+                            real_label = nodes[e_node]['rel']
+                            for grandparent in tar_to_srcs[e_node]:
+                                add_to_R(R, tar, connective, [(real_label, grandparent, tar)])
+                    else:
+                        add_to_R(R, tar, 'and', [(edge_label, src, tar)])
         
         if feats['type'] in ["L", "H"] and feats['feat'] == 'temp' and not feats['value']: #unlabeled temp
             context = feats['event']
@@ -255,6 +264,16 @@ def build_R(yarn_grew, id2var, discourse, c_registry):
                         src = src.split('-')[0]
                         key = src if id2var[tar].isupper() else tar
                         add_to_R(R, key, 'and', [(edge_label, src, tar)])
+        
+        if feats['type'] == "D" and feats.get('disc') in ['RESULT']:
+            for tar in src_to_tars[node]:
+                if nodes[tar]['type'] == 'S':
+                    edge_label = "disc_" + feats['disc'].lower()
+                    for src in tar_to_srcs[node]:
+                        src = src.split('-')[0]
+                        context = nodes[tar]['event']
+                        R = discourse['nodes'][context]['R']
+                        add_to_R(R, tar, 'and', [('disc_result', src, tar)])
 
     return discourse
 
@@ -366,7 +385,12 @@ def rewrite_conseq(discourse):
                         'relations':{'and': [], 'or': []},
                     }
                     tar_forest_nodes[neg2_id] = neg2_feats
-                    tar_forest_edges.append({'src':neg2_id, 'tar':k2})
+
+                    for edge in tar_forest_edges:
+                        if edge['src'] == k2:
+                            edge['src'] = neg2_id
+                    
+                    tar_forest_edges.append({'src':k2, 'tar':neg2_id})
             
                     for k1,v1 in list(src_forest_nodes.items()):
                         if v1['id'] == src_forest_id:
@@ -379,7 +403,12 @@ def rewrite_conseq(discourse):
                                 'relations':{'and': [], 'or': []},
                             }
                             src_forest_nodes[neg1_id] = neg1_feats
-                            src_forest_edges.append({'src':neg1_id, 'tar':k1})
+                            
+                            for edge in src_forest_edges:
+                                if edge['src'] == k1:
+                                    edge['src'] = neg1_id
+
+                            src_forest_edges.append({'src':k1, 'tar':neg1_id})
 
                             break
 

@@ -82,7 +82,7 @@ def interpret_tptp(root, temp_variable, speech_time, id2var):
     child_formulas = [interpret_tptp(child, temp_variable, speech_time, id2var) for child in root["children"]]
     relations = get_relations(root, id2var)
 
-    if root['type'] in ["S", "S_coordination", "S_consequence"]:
+    if root['type'] in ["S", "S_conjunction", "S_consequence"]:
         child_formulas = [interpret_tptp(child, root["variable"], speech_time, id2var) for child in root["children"]]
         return wrap_quant("?", root["variable"], root["tar_label"], relations, child_formulas)
     
@@ -90,7 +90,7 @@ def interpret_tptp(root, temp_variable, speech_time, id2var):
         child_formulas = [interpret_tptp(child, root["variable"], temp_variable, id2var) for child in root["children"]]
         return wrap_quant("?", root["variable"], root["tar_label"], relations, child_formulas)
     
-    if root['type'] == "S_before":
+    if root['type'] in ["S_before", "S_result"]:
         temp = f"precede({fmt_temp_var(temp_variable)},{root['variable'].upper()})"
         child_formulas = [interpret_tptp(child, root["variable"], speech_time, id2var) for child in root["children"]]
         return wrap_quant("?", root["variable"], root["tar_label"], relations +[temp], child_formulas)
