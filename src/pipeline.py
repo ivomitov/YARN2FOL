@@ -5,7 +5,7 @@ import copy
 from yarn_utils import YARNGraph
 
 from src.preprocessing.preprocessing import reify_he, get_S_descendants, propagate_s_node_information
-from src.scope_forest import build_F, build_R, build_scope_forests, add_participants_before_event_principle, add_s_node_scope, events_before_events_principle, rewrite_conseq
+from src.scope_forest import build_F, build_R, build_scope_forests, add_participants_before_event_principle, add_s_node_scope, rewrite_conseq
 from src.constraints import check_compatibility_of_scopes, check_locality_of_features
 from src.attatch_contexts import dedupe_edges_by_target, pick_next_edge, attatch_contexts
 from src.T_all import get_all_possible_trees, build_T_all
@@ -84,6 +84,7 @@ def process_one(path, yarn_json, output_queue, mode):
         discourse = build_F(yarn_grew, id2var, variables)
         discourse = build_R(yarn_grew, id2var, discourse, c_registry)
         discourse = build_scope_forests(discourse)
+        discourse = rewrite_conseq(discourse)
         # print(json.dumps(discourse, indent=2, default=str))
 
         for key, context in discourse['nodes'].items():
@@ -94,9 +95,7 @@ def process_one(path, yarn_json, output_queue, mode):
             # print(forest['edges'])
             forest = add_s_node_scope(forest, s_descendants)
             # print(forest['edges'])
-            forest = events_before_events_principle(forest, yarn_grew)
-            # print(forest['edges'])
-            forest = rewrite_conseq(forest)
+            # forest = events_before_events_principle(forest, yarn_grew)
             # print(json.dumps(forest['nodes'], indent=2, default=str))
             # print(forest['edges'])
             all_possible_trees = get_all_possible_trees(forest)
