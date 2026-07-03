@@ -1,0 +1,89 @@
+{
+  "meta": {
+    "sent_id": "298p",
+    "text": "Smith lived in Birmingham for two years.",
+    "type": "premise",
+    "fracas_answer": "yes"
+  },
+  "s": [
+    "s1"
+  ],
+  "v": [
+    "vl1",
+    "vb1",
+    "vy1",
+    "vs1"
+  ],
+  "f": {
+    "s1": [
+      "s1-temp",
+      "s1-quant",
+      "s1-num",
+      "s1-def",
+      "s1-duration",
+      "s1-loc",
+      "s1-aspect"
+    ]
+  },
+  "e": {
+    "e2": [
+      "vl1",
+      "ARG0",
+      "vs1"
+    ]
+  },
+  "l": {
+    "l1": [
+      "s1-temp",
+      "past",
+      "vl1"
+    ],
+    "l6": [
+      "s1-quant",
+      "≥2",
+      "vy1"
+    ],
+    "l7": [
+      "s1-num",
+      "plural",
+      "vy1"
+    ],
+    "l8": [
+      "s1-def",
+      "indefinite",
+      "vy1"
+    ],
+    "l5": [
+      "s1-duration",
+      "",
+      "vy1"
+    ],
+    "l2": [
+      "s1-loc",
+      "",
+      "vb1"
+    ],
+    "l3": [
+      "s1-aspect",
+      "state",
+      "vl1"
+    ]
+  },
+  "d": {},
+  "c": {},
+  "h": {},
+  "i": {},
+  "labels": {
+    "vl1": "live-01",
+    "vb1": "Birmingham",
+    "vy1": "year",
+    "s1-temp": "temp",
+    "s1-quant": "quant",
+    "s1-num": "num",
+    "s1-def": "def",
+    "s1-duration": "duration",
+    "vs1": "Smith",
+    "s1-loc": "loc",
+    "s1-aspect": "aspect"
+  }
+}
