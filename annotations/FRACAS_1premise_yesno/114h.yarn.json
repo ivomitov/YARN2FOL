@@ -9,11 +9,9 @@
     "s1"
   ],
   "v": [
-    "vp1",
     "vm1",
     "vw1",
-    "vu1",
-    "vf1"
+    "vu1"
   ],
   "f": {
     "s1": [
@@ -29,20 +27,10 @@
       "ARG1",
       "vw1"
     ],
-    "e3": [
-      "vp1",
-      "name",
-      "vm1"
-    ],
-    "e5": [
-      "vp1",
-      "mod",
-      "vf1"
-    ],
-    "e1": [
+    "e4": [
       "vw1",
       "poss",
-      "vp1"
+      "vm1"
     ]
   },
   "l": {
@@ -51,30 +39,15 @@
       "past",
       "vu1"
     ],
-    "l2": [
-      "s1-quant",
-      "exists",
-      "vp1"
-    ],
     "l3": [
       "s1-quant",
       "exists",
       "vw1"
     ],
-    "l4": [
-      "s1-num",
-      "singular",
-      "vp1"
-    ],
     "l5": [
       "s1-num",
       "singular",
       "vw1"
-    ],
-    "l6": [
-      "s1-def",
-      "definite",
-      "vp1"
     ],
     "l7": [
       "s1-def",
@@ -87,12 +60,10 @@
   "h": {},
   "i": {},
   "labels": {
-    "vp1": "person",
     "vm1": "Mary",
     "vw1": "workstation",
     "vu1": "use-01",
     "s1-temp": "temp",
-    "vf1": "female",
     "s1-quant": "quant",
     "s1-num": "num",
     "s1-def": "def"

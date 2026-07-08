@@ -9,11 +9,11 @@
     "s1"
   ],
   "v": [
-    "vf1",
     "vc1",
     "vm1",
     "vo1",
-    "vw1"
+    "vw1",
+    "vf1"
   ],
   "f": {
     "s1": [
@@ -25,11 +25,6 @@
     ]
   },
   "e": {
-    "e1": [
-      "vm1",
-      "mod",
-      "vf1"
-    ],
     "e2": [
       "vm1",
       "part-of",
@@ -44,6 +39,11 @@
       "vo1",
       "ARG2",
       "vw1"
+    ],
+    "e1": [
+      "vm1",
+      "mod",
+      "vf1"
     ]
   },
   "l": {
@@ -78,7 +78,6 @@
   "h": {},
   "i": {},
   "labels": {
-    "vf1": "female",
     "vc1": "committee",
     "vm1": "member",
     "vo1": "originate-01",
@@ -87,6 +86,7 @@
     "s1-aspect": "aspect",
     "s1-quant": "quant",
     "s1-num": "num",
-    "s1-def": "def"
+    "s1-def": "def",
+    "vf1": "female"
   }
 }

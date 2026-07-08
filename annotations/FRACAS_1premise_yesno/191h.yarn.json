@@ -5,14 +5,174 @@
     "type": "hypothesis",
     "fracas_answer": "yes"
   },
-  "s": [],
-  "v": [],
-  "f": {},
-  "e": {},
-  "l": {},
-  "d": {},
-  "c": {},
+  "s": [
+    "s1",
+    "s2",
+    "s3",
+    "s4"
+  ],
+  "v": [
+    "vs1",
+    "vb1",
+    "vf1",
+    "vg1",
+    "va1",
+    "vt1",
+    "vm1",
+    "vs2",
+    "vc1",
+    "va2",
+    "vg2",
+    "va3",
+    "vt2"
+  ],
+  "f": {
+    "s1": [
+      "s1-temp"
+    ],
+    "s2": [
+      "s2-temp",
+      "s2-quant",
+      "s2-num",
+      "s2-def"
+    ],
+    "s3": [
+      "s3-temp"
+    ],
+    "s4": [
+      "s4-temp"
+    ]
+  },
+  "e": {
+    "e3": [
+      "vg1",
+      "ARG1",
+      "va1"
+    ],
+    "e4": [
+      "va1",
+      "op1",
+      "vb1"
+    ],
+    "e5": [
+      "va1",
+      "op2",
+      "vf1"
+    ],
+    "e6": [
+      "vg1",
+      "manner",
+      "vt1"
+    ],
+    "e7": [
+      "vg1",
+      "ARG4",
+      "vm1"
+    ],
+    "e12": [
+      "vg2",
+      "ARG1",
+      "va3"
+    ],
+    "e13": [
+      "va3",
+      "op1",
+      "vc1"
+    ],
+    "e14": [
+      "va3",
+      "op2",
+      "va2"
+    ],
+    "e15": [
+      "vg2",
+      "ARG4",
+      "vm1"
+    ],
+    "e16": [
+      "vg2",
+      "manner",
+      "vt2"
+    ]
+  },
+  "l": {
+    "l1": [
+      "s1-temp",
+      "past",
+      "vs1"
+    ],
+    "l5": [
+      "s2-temp",
+      "future",
+      "vg1"
+    ],
+    "l6": [
+      "s2-quant",
+      "exists",
+      "vm1"
+    ],
+    "l7": [
+      "s2-num",
+      "singular",
+      "vm1"
+    ],
+    "l8": [
+      "s2-def",
+      "definite",
+      "vm1"
+    ],
+    "l9": [
+      "s3-temp",
+      "past",
+      "vs2"
+    ],
+    "l13": [
+      "s4-temp",
+      "future",
+      "vg2"
+    ]
+  },
+  "d": {
+    "d1": [
+      "s1",
+      "CONSEQUENCE",
+      "s3"
+    ]
+  },
+  "c": {
+    "c1": [
+      "vs1",
+      "ARG1",
+      "s2"
+    ],
+    "c2": [
+      "vs2",
+      "ARG1",
+      "s4"
+    ]
+  },
   "h": {},
   "i": {},
-  "labels": {}
+  "labels": {
+    "vs1": "suggest-01",
+    "vb1": "Bill",
+    "vf1": "Frank",
+    "vg1": "go-01",
+    "va1": "and",
+    "vt1": "together",
+    "vm1": "meeting",
+    "s1-temp": "temp",
+    "s2-temp": "temp",
+    "s2-quant": "quant",
+    "s2-num": "num",
+    "s2-def": "def",
+    "vs2": "suggest-01",
+    "vc1": "Carl",
+    "va2": "Alan",
+    "s3-temp": "temp",
+    "vg2": "go-01",
+    "va3": "and",
+    "vt2": "together",
+    "s4-temp": "temp"
+  }
 }

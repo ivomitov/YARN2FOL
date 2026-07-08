@@ -5,14 +5,88 @@
     "type": "hypothesis",
     "fracas_answer": "yes"
   },
-  "s": [],
-  "v": [],
-  "f": {},
-  "e": {},
-  "l": {},
+  "s": [
+    "s1"
+  ],
+  "v": [
+    "vc1",
+    "vm1",
+    "vo1",
+    "vw1",
+    "vf1"
+  ],
+  "f": {
+    "s1": [
+      "s1-temp",
+      "s1-aspect",
+      "s1-quant",
+      "s1-num",
+      "s1-def"
+    ]
+  },
+  "e": {
+    "e2": [
+      "vm1",
+      "part-of",
+      "vc1"
+    ],
+    "e4": [
+      "vo1",
+      "ARG1",
+      "vm1"
+    ],
+    "e5": [
+      "vo1",
+      "ARG2",
+      "vw1"
+    ],
+    "e1": [
+      "vm1",
+      "mod",
+      "vf1"
+    ]
+  },
+  "l": {
+    "l1": [
+      "s1-temp",
+      "present",
+      "vo1"
+    ],
+    "l2": [
+      "s1-aspect",
+      "state",
+      "vo1"
+    ],
+    "l4": [
+      "s1-num",
+      "plural",
+      "vm1"
+    ],
+    "l6": [
+      "s1-def",
+      "indefinite",
+      "vm1"
+    ],
+    "l3": [
+      "s1-quant",
+      "≥a few",
+      "vm1"
+    ]
+  },
   "d": {},
   "c": {},
   "h": {},
   "i": {},
-  "labels": {}
+  "labels": {
+    "vc1": "committee",
+    "vm1": "member",
+    "vo1": "originate-01",
+    "vw1": "Scandinavia",
+    "s1-temp": "temp",
+    "s1-aspect": "aspect",
+    "s1-quant": "quant",
+    "s1-num": "num",
+    "s1-def": "def",
+    "vf1": "female"
+  }
 }

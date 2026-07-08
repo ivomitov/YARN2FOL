@@ -10,7 +10,6 @@
   ],
   "v": [
     "vp1",
-    "vm1",
     "vw1"
   ],
   "f": {
@@ -23,11 +22,6 @@
     ]
   },
   "e": {
-    "e3": [
-      "vp1",
-      "name",
-      "vm1"
-    ],
     "e1": [
       "vw1",
       "poss",
@@ -35,30 +29,15 @@
     ]
   },
   "l": {
-    "l2": [
-      "s1-quant",
-      "exists",
-      "vp1"
-    ],
     "l3": [
       "s1-quant",
       "exists",
       "vw1"
     ],
-    "l4": [
-      "s1-num",
-      "singular",
-      "vp1"
-    ],
     "l5": [
       "s1-num",
       "singular",
       "vw1"
-    ],
-    "l6": [
-      "s1-def",
-      "definite",
-      "vp1"
     ],
     "l7": [
       "s1-def",
@@ -82,8 +61,7 @@
   },
   "i": {},
   "labels": {
-    "vp1": "person",
-    "vm1": "Mary",
+    "vp1": "Mary",
     "vw1": "workstation",
     "s1-temp": "temp",
     "s1-quant": "quant",

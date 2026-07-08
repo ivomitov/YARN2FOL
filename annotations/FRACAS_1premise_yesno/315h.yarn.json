@@ -12,10 +12,10 @@
   "v": [
     "vt1",
     "va1",
-    "vk1",
     "vc1",
     "vp1",
-    "vs1"
+    "vd1",
+    "vd2"
   ],
   "f": {
     "s1": [
@@ -29,7 +29,8 @@
       "s2-temp",
       "s2-quant",
       "s2-num",
-      "s2-def"
+      "s2-def",
+      "s2-aspect"
     ]
   },
   "e": {
@@ -37,16 +38,6 @@
       "vt1",
       "ARG0",
       "vp1"
-    ],
-    "e2": [
-      "vp1",
-      "name",
-      "vs1"
-    ],
-    "e3": [
-      "vc1",
-      "name",
-      "vk1"
     ],
     "e4": [
       "va1",
@@ -70,40 +61,50 @@
       "past",
       "vt1"
     ],
-    "l3": [
-      "s1-quant",
-      "exists",
-      "vp1"
-    ],
-    "l4": [
-      "s1-num",
-      "singular",
-      "vp1"
-    ],
-    "l5": [
-      "s1-def",
-      "definite",
-      "vp1"
-    ],
     "l6": [
       "s2-temp",
       "past",
       "va1"
     ],
+    "l3": [
+      "s1-quant",
+      "1",
+      "vd1"
+    ],
+    "l4": [
+      "s1-num",
+      "singular",
+      "vd1"
+    ],
+    "l5": [
+      "s1-def",
+      "definite",
+      "vd1"
+    ],
     "l7": [
       "s2-quant",
-      "exists",
-      "vc1"
+      "1",
+      "vd2"
     ],
     "l8": [
-      "s2-def",
-      "definite",
-      "vc1"
-    ],
-    "l9": [
       "s2-num",
       "singular",
-      "vc1"
+      "vd2"
+    ],
+    "l9": [
+      "s2-def",
+      "indefinite",
+      "vd2"
+    ],
+    "l10": [
+      "s2-aspect",
+      "achievement",
+      "va1"
+    ],
+    "l11": [
+      "s2-temp",
+      "",
+      "vd2"
     ]
   },
   "d": {
@@ -119,10 +120,8 @@
   "labels": {
     "vt1": "travel-01",
     "va1": "arrive-01",
-    "vk1": "Katmandu",
-    "vc1": "city",
-    "vp1": "person",
-    "vs1": "Smith",
+    "vc1": "Katmandu",
+    "vp1": "Smith",
     "s1-temp": "temp",
     "s1-quant": "quant",
     "s1-num": "num",
@@ -131,6 +130,9 @@
     "s2-temp": "temp",
     "s2-quant": "quant",
     "s2-num": "num",
-    "s2-def": "def"
+    "s2-def": "def",
+    "vd1": "day",
+    "vd2": "day",
+    "s2-aspect": "aspect"
   }
 }
