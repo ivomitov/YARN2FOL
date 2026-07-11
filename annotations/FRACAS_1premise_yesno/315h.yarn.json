@@ -5,114 +5,33 @@
     "type": "hypothesis",
     "fracas_answer": "yes"
   },
-  "s": [
-    "s1",
-    "s2"
-  ],
-  "v": [
-    "vt1",
-    "va1",
-    "vc1",
-    "vp1",
-    "vd1",
-    "vd2"
-  ],
+  "s": ["s1", "s2"],
+  "v": ["vt1", "va1", "vc1", "vp1", "vd1", "vd2"],
   "f": {
-    "s1": [
-      "s1-temp",
-      "s1-quant",
-      "s1-num",
-      "s1-def",
-      "s1-aspect"
-    ],
-    "s2": [
-      "s2-temp",
-      "s2-quant",
-      "s2-num",
-      "s2-def",
-      "s2-aspect"
-    ]
+    "s1": ["s1-temp", "s1-quant", "s1-num", "s1-def", "s1-aspect", "s1-duration"],
+    "s2": ["s2-temp", "s2-quant", "s2-num", "s2-def", "s2-aspect"]
   },
   "e": {
-    "e1": [
-      "vt1",
-      "ARG0",
-      "vp1"
-    ],
-    "e4": [
-      "va1",
-      "ARG4",
-      "vc1"
-    ],
-    "e5": [
-      "va1",
-      "ARG0",
-      "vp1"
-    ]
+    "e1": ["vt1", "ARG0", "vp1"],
+    "e4": ["va1", "ARG4", "vc1"],
+    "e5": ["va1", "ARG0", "vp1"]
   },
   "l": {
-    "l1": [
-      "s1-aspect",
-      "progressive",
-      "vt1"
-    ],
-    "l2": [
-      "s1-temp",
-      "past",
-      "vt1"
-    ],
-    "l6": [
-      "s2-temp",
-      "past",
-      "va1"
-    ],
-    "l3": [
-      "s1-quant",
-      "1",
-      "vd1"
-    ],
-    "l4": [
-      "s1-num",
-      "singular",
-      "vd1"
-    ],
-    "l5": [
-      "s1-def",
-      "definite",
-      "vd1"
-    ],
-    "l7": [
-      "s2-quant",
-      "1",
-      "vd2"
-    ],
-    "l8": [
-      "s2-num",
-      "singular",
-      "vd2"
-    ],
-    "l9": [
-      "s2-def",
-      "indefinite",
-      "vd2"
-    ],
-    "l10": [
-      "s2-aspect",
-      "achievement",
-      "va1"
-    ],
-    "l11": [
-      "s2-temp",
-      "",
-      "vd2"
-    ]
+    "l1": ["s1-aspect", "progressive", "vt1"],
+    "l2": ["s1-temp", "past", "vt1"],
+    "l6": ["s2-temp", "past", "va1"],
+    "l3": ["s1-quant", "1", "vd1"],
+    "l4": ["s1-num", "singular", "vd1"],
+    "l5": ["s1-def", "definite", "vd1"],
+    "l7": ["s2-quant", "1", "vd2"],
+    "l8": ["s2-num", "singular", "vd2"],
+    "l9": ["s2-def", "indefinite", "vd2"],
+    "l10": ["s2-aspect", "achievement", "va1"],
+    "l11": ["s2-temp", "", "vd2"],
+    "l12": ["s1-duration", "", "vd1"]
   },
   "d": {
-    "d1": [
-      "s1",
-      "BEFORE",
-      "s2"
-    ]
+    "d1": ["s1", "BEFORE", "s2"]
   },
   "c": {},
   "h": {},
@@ -133,6 +52,7 @@
     "s2-def": "def",
     "vd1": "day",
     "vd2": "day",
-    "s2-aspect": "aspect"
+    "s2-aspect": "aspect",
+    "s1-duration": "duration"
   }
 }
