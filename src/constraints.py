@@ -1,13 +1,13 @@
 # Gets the children of nodes that don't introduce variables
-def get_H_children(graph):
-    H_children_dict = {}
+def get_children_no_var(graph):
+    children_no_var_dict = {}
     for edge in graph['edges']:
         src = edge['src']
         tar = edge['tar']
-        if not graph['nodes'][src]['variable']:
-            H_children_dict[src] = H_children_dict.get(src, []) + [tar]
-
-    return H_children_dict
+        if graph['nodes'][src].get('outgoing') and not graph['nodes'][src]['variable']: #restrict to elements from F
+            children_no_var_dict[src] = children_no_var_dict.get(src, []) + [tar]
+        
+    return children_no_var_dict
 
 # Get all children
 def get_children(graph):
@@ -54,9 +54,9 @@ def check_compatibility_of_scopes(tree, forest):
 
 def check_locality_of_features(tree, forest):
     children_tree = get_children(tree)
-    H_children_forest = get_H_children(forest)
+    children_no_var_forest = get_children_no_var(forest)
     
-    for k, v in H_children_forest.items():
+    for k, v in children_no_var_forest.items():
         if not v:
             continue
         if k not in children_tree:
@@ -64,4 +64,14 @@ def check_locality_of_features(tree, forest):
         for child in v:
             if child not in children_tree[k]:
                 return False
+    return True
+
+def check_events_are_always_leaves(tree, forest):
+    children_tree = get_children(tree)
+    # print(children_tree)
+
+    for node in children_tree.keys():
+        if forest['nodes'][node]['type'].startswith("T_"):
+            # print(node)
+            return False
     return True
