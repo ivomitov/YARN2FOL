@@ -6,7 +6,9 @@ def fmt_rel(rel, id2var):
     
     def fmt_arg(arg):
         val = id2var[arg]
-        if val.isupper():  # constant
+        if val.isdigit():  # numeral -> needs sort-safe prefix
+            return f"i{val}"
+        elif val.isupper():  # constant
             return val.lower().replace(" ", "_").replace("-", "_")
         else:  # variable
             return val.upper()
