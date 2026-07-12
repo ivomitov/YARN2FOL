@@ -5,80 +5,28 @@
     "type": "hypothesis",
     "fracas_answer": "no"
   },
-  "s": [
-    "s1"
-  ],
-  "v": [
-    "va1",
-    "vm1",
-    "va2"
-  ],
+  "s": ["s1"],
+  "v": ["va1", "vm1", "va2"],
   "f": {
-    "s1": [
-      "s1-temp",
-      "s1-num",
-      "s1-def",
-      "s1-quant",
-      "s1-neg"
-    ]
+    "s1": ["s1-temp", "s1-num", "s1-def", "s1-quant", "s1-neg"]
   },
   "e": {
-    "e1": [
-      "va2",
-      "ARG0",
-      "va1"
-    ],
-    "e2": [
-      "va2",
-      "ARG1",
-      "vm1"
-    ]
+    "e1": ["va2", "ARG0", "va1"],
+    "e2": ["va2", "ARG1", "vm1"]
   },
   "l": {
-    "l1": [
-      "s1-temp",
-      "past",
-      "va2"
-    ],
-    "l2": [
-      "s1-num",
-      "plural",
-      "va1"
-    ],
-    "l3": [
-      "s1-num",
-      "singular",
-      "vm1"
-    ],
-    "l4": [
-      "s1-def",
-      "indefinite",
-      "va1"
-    ],
-    "l5": [
-      "s1-def",
-      "definite",
-      "vm1"
-    ],
-    "l7": [
-      "s1-quant",
-      "exists",
-      "vm1"
-    ]
+    "l1": ["s1-temp", "past", "va2"],
+    "l2": ["s1-num", "singular", "va1"],
+    "l3": ["s1-num", "singular", "vm1"],
+    "l4": ["s1-def", "indefinite", "va1"],
+    "l5": ["s1-def", "definite", "vm1"],
+    "l7": ["s1-quant", "exists", "vm1"]
   },
   "d": {},
   "c": {},
   "h": {
-    "h1": [
-      "l7",
-      "exists",
-      "va1"
-    ],
-    "h2": [
-      "s1-neg",
-      "",
-      "h1"
-    ]
+    "h1": ["l7", "exists", "va1"],
+    "h2": ["s1-neg", "", "h1"]
   },
   "i": {},
   "labels": {

@@ -5,14 +5,32 @@
     "type": "hypothesis",
     "fracas_answer": "yes"
   },
-  "s": [],
-  "v": [],
-  "f": {},
-  "e": {},
-  "l": {},
+  "s": ["s1"],
+  "v": ["vb1", "vj1", "vc1"],
+  "f": {
+    "s1": ["s1-temp", "s1-quant", "s1-num", "s1-def"]
+  },
+  "e": {
+    "e1": ["vb1", "ARG0", "vj1"],
+    "e2": ["vb1", "ARG1", "vc1"]
+  },
+  "l": {
+    "l1": ["s1-temp", "past", "vb1"],
+    "l2": ["s1-quant", "exists", "vc1"],
+    "l3": ["s1-num", "singular", "vc1"],
+    "l4": ["s1-def", "indefinite", "vc1"]
+  },
   "d": {},
   "c": {},
   "h": {},
   "i": {},
-  "labels": {}
+  "labels": {
+    "vb1": "buy-01",
+    "vj1": "John",
+    "vc1": "car",
+    "s1-temp": "temp",
+    "s1-quant": "quant",
+    "s1-num": "num",
+    "s1-def": "def"
+  }
 }

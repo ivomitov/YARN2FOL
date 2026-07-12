@@ -5,136 +5,36 @@
     "type": "premise",
     "fracas_answer": "yes"
   },
-  "s": [
-    "s1",
-    "s2",
-    "s3"
-  ],
-  "v": [
-    "vp1",
-    "vp2",
-    "vp3",
-    "vs1",
-    "vr1",
-    "vw1",
-    "vw2",
-    "vr2",
-    "va1"
-  ],
+  "s": ["s1", "s2", "s3"],
+  "v": ["vp1", "vp2", "vp3", "vs1", "vr1", "vw1", "vw2", "vr2", "va1"],
   "f": {
-    "s1": [
-      "s1-temp"
-    ],
-    "s2": [
-      "s2-temp",
-      "s2-quant",
-      "s2-num",
-      "s2-def"
-    ],
-    "s3": [
-      "s3-temp",
-      "s3-quant",
-      "s3-num",
-      "s3-def"
-    ]
+    "s1": ["s1-temp"],
+    "s2": ["s2-temp", "s2-quant", "s2-num", "s2-def"],
+    "s3": ["s3-temp", "s3-quant", "s3-num", "s3-def"]
   },
   "e": {
-    "e1": [
-      "vs1",
-      "ARG0",
-      "vp3"
-    ],
-    "e5": [
-      "vw1",
-      "ARG0",
-      "vp1"
-    ],
-    "e6": [
-      "vw1",
-      "ARG1",
-      "vr1"
-    ],
-    "e3": [
-      "vw2",
-      "ARG0",
-      "vp2"
-    ],
-    "e8": [
-      "vw2",
-      "ARG1",
-      "vr2"
-    ],
-    "e9": [
-      "vs1",
-      "ARG1",
-      "va1"
-    ]
+    "e1": ["vs1", "ARG0", "vp3"],
+    "e5": ["vw1", "ARG0", "vp1"],
+    "e6": ["vw1", "ARG1", "vr1"],
+    "e3": ["vw2", "ARG0", "vp2"],
+    "e8": ["vw2", "ARG1", "vr2"],
+    "e9": ["vs1", "ARG1", "va1"]
   },
   "l": {
-    "l1": [
-      "s1-temp",
-      "past",
-      "vs1"
-    ],
-    "l5": [
-      "s2-temp",
-      "past",
-      "vw1"
-    ],
-    "l7": [
-      "s2-quant",
-      "exists",
-      "vr1"
-    ],
-    "l9": [
-      "s2-num",
-      "singular",
-      "vr1"
-    ],
-    "l10": [
-      "s2-def",
-      "indefinite",
-      "vr1"
-    ],
-    "l12": [
-      "s3-temp",
-      "past",
-      "vw2"
-    ],
-    "l16": [
-      "s3-quant",
-      "exists",
-      "vr2"
-    ],
-    "l17": [
-      "s3-num",
-      "singular",
-      "vr2"
-    ],
-    "l18": [
-      "s3-def",
-      "indefinite",
-      "vr2"
-    ]
+    "l1": ["s1-temp", "past", "vs1"],
+    "l5": ["s2-temp", "past", "vw1"],
+    "l7": ["s2-quant", "exists", "vr1"],
+    "l9": ["s2-num", "singular", "vr1"],
+    "l10": ["s2-def", "indefinite", "vr1"],
+    "l12": ["s3-temp", "past", "vw2"],
+    "l16": ["s3-quant", "exists", "vr2"],
+    "l17": ["s3-num", "singular", "vr2"],
+    "l18": ["s3-def", "indefinite", "vr2"]
   },
-  "d": {
-    "d1": [
-      "s2",
-      "CONJUNCTION",
-      "s3"
-    ]
-  },
+  "d": {},
   "c": {
-    "c1": [
-      "va1",
-      "op1",
-      "s2"
-    ],
-    "c2": [
-      "va1",
-      "op2",
-      "s3"
-    ]
+    "c1": ["va1", "op1", "s2"],
+    "c2": ["va1", "op2", "s3"]
   },
   "h": {},
   "i": {},
