@@ -1,0 +1,1 @@
+fof(c1_c2_same_company, axiom, ![X,Y]: ((c1(X) & c2(Y)) => X = Y)).
