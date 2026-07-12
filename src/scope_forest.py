@@ -174,10 +174,16 @@ def build_R(yarn_grew, id2var, discourse, c_registry):
                 for tar in src_to_tars[node]:
                     key = tar if id2var[src].isupper() else src
                     if nodes[tar].get('concept') == 'or':
-                        grandchildren = [src_to_tars[e][0] for e in src_to_tars[tar]]
+                        grandchildren = [
+                            src_to_tars[e][0] for e in src_to_tars[tar]
+                            if nodes[e]['type'] == "E"
+                        ]
                         add_to_R(R, key, 'or', [(edge_label, src, t) for t in grandchildren])
                     elif nodes[tar].get('concept') == 'and':
-                        grandchildren = [src_to_tars[e][0] for e in src_to_tars[tar]]
+                        grandchildren = [
+                            src_to_tars[e][0] for e in src_to_tars[tar]
+                            if nodes[e]['type'] == "E"
+                        ]
                         add_to_R(R, key, 'and', [(edge_label, src, t) for t in grandchildren])
                     else:
                         add_to_R(R, key, 'and', [(edge_label, src, tar)])
