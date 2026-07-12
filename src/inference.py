@@ -35,11 +35,13 @@ def negate_inside_s_context(formula):
         return f"~({formula})"
 
 
-def build_tptp_problem(premise_formula, hypothesis_formula, background_path="src/axioms.p"):
-    background = Path(background_path).read_text() if Path(background_path).exists() else ""
-    if "four_legged" in hypothesis_formula:
-        print(f"{background}\nfof(premise, axiom, {premise_formula}).\nfof(hypothesis, conjecture, {hypothesis_formula}).")
-    return f"{background}\nfof(premise, axiom, {premise_formula}).\nfof(hypothesis, conjecture, {hypothesis_formula})."
+def build_tptp_problem(problem_id, premise_formula, hypothesis_formula, background_path="src/axioms/"):
+    general_axioms = Path(background_path + "axioms.p").read_text() if Path(background_path).exists() else ""
+    problems_specific_axioms_path = background_path + f"{problem_id}_axioms.p"
+    problems_specific_axioms = Path(problems_specific_axioms_path).read_text() if Path(problems_specific_axioms_path).exists() else ""
+    if "apcom" in premise_formula and "win" in premise_formula:
+        print(f"{general_axioms}\n{problems_specific_axioms}\nfof(premise, axiom, {premise_formula}).\nfof(hypothesis, conjecture, {hypothesis_formula}).")
+    return f"{general_axioms}\n{problems_specific_axioms}\nfof(premise, axiom, {premise_formula}).\nfof(hypothesis, conjecture, {hypothesis_formula})."
 
 def run_vampire(tptp_formula, timeout=10):
     with tempfile.NamedTemporaryFile(mode='w', suffix='.tptp', delete=False) as f:
@@ -71,7 +73,7 @@ def run_vampire(tptp_formula, timeout=10):
         os.unlink(tmp_path)
 
 
-def evaluate_pair(p_formulas, h_formulas):
+def evaluate_pair(problem_id, p_formulas, h_formulas):
     """
     Try all p/h combinations.
     yes + unknown -> yes
@@ -82,12 +84,12 @@ def evaluate_pair(p_formulas, h_formulas):
     for p_formula in p_formulas:
         for h_formula in h_formulas:
             # test p => h
-            tptp = build_tptp_problem(p_formula, h_formula)
+            tptp = build_tptp_problem(problem_id, p_formula, h_formula)
             if run_vampire(tptp) == "yes":
                 answers.add("yes")
             else:
                 # test p => ~h
-                tptp_neg = build_tptp_problem(p_formula, negate_inside_s_context(h_formula))
+                tptp_neg = build_tptp_problem(problem_id, p_formula, negate_inside_s_context(h_formula))
                 if run_vampire(tptp_neg) == "yes":
                     answers.add("no")
                 else:
@@ -142,7 +144,7 @@ def evaluate_corpus(folder_path, mode='tptp'):
         p_formulas = [formula.replace('\n ', '') for formula in p_formulas]
         h_formulas = [formula.replace('\n ', '') for formula in h_formulas]
 
-        predicted = evaluate_pair(p_formulas, h_formulas)
+        predicted = evaluate_pair(problem_id, p_formulas, h_formulas)
         correct = predicted == expected
 
         print(f"  Predicted: {predicted} | Correct: {correct}")
